@@ -1,0 +1,494 @@
+Timing Analyzer report for progetto_0_Itis
+Tue Jun 01 10:57:25 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clk'
+ 12. Hold: 'clk'
+ 13. Setup Transfers
+ 14. Hold Transfers
+ 15. Report TCCS
+ 16. Report RSKM
+ 17. Unconstrained Paths Summary
+ 18. Clock Status Summary
+ 19. Unconstrained Input Ports
+ 20. Unconstrained Output Ports
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; progetto_0_Itis                                     ;
+; Device Family         ; MAX II                                              ;
+; Device Name           ; EPM240T100A5                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 32          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Fmax Summary                                     ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 112.27 MHz ; 112.27 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Setup Summary                  ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -7.907 ; -329.362      ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Hold Summary                  ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 1.377 ; 0.000         ;
++-------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++--------------------------------+
+; Minimum Pulse Width Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -2.289 ; -2.289        ;
++-------+--------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                                           ;
++--------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                  ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; -7.907 ; sine_rom:sine_rom0|data[1] ; pwm:pwm0|half_duty_new[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.574      ;
+; -7.907 ; sine_rom:sine_rom0|data[1] ; pwm:pwm0|half_duty_new[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.574      ;
+; -7.907 ; sine_rom:sine_rom0|data[1] ; pwm:pwm0|half_duty_new[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.574      ;
+; -7.907 ; sine_rom:sine_rom0|data[1] ; pwm:pwm0|half_duty_new[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.574      ;
+; -7.907 ; sine_rom:sine_rom0|data[1] ; pwm:pwm0|half_duty_new[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.574      ;
+; -7.894 ; sine_rom:sine_rom0|data[1] ; pwm:pwm0|half_duty_new[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.561      ;
+; -7.776 ; cnt_div[19]                ; sine_rom:sine_rom0|data[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.443      ;
+; -7.747 ; cnt_div[19]                ; sine_rom:sine_rom0|data[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.414      ;
+; -7.739 ; cnt_div[20]                ; sine_rom:sine_rom0|data[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.406      ;
+; -7.729 ; cnt_div[23]                ; sine_rom:sine_rom0|data[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.396      ;
+; -7.727 ; cnt_div[20]                ; sine_rom:sine_rom0|data[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.394      ;
+; -7.708 ; cnt_div[21]                ; sine_rom:sine_rom0|data[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.375      ;
+; -7.678 ; cnt_div[20]                ; sine_rom:sine_rom0|data[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.345      ;
+; -7.660 ; cnt_div[24]                ; sine_rom:sine_rom0|data[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.327      ;
+; -7.657 ; pwm:pwm0|half_duty[0][2]   ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 8.324      ;
+; -7.575 ; pwm:pwm0|half_duty[0][0]   ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 8.242      ;
+; -7.573 ; sine_rom:sine_rom0|data[3] ; pwm:pwm0|half_duty_new[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.240      ;
+; -7.573 ; sine_rom:sine_rom0|data[3] ; pwm:pwm0|half_duty_new[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.240      ;
+; -7.573 ; sine_rom:sine_rom0|data[3] ; pwm:pwm0|half_duty_new[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.240      ;
+; -7.573 ; sine_rom:sine_rom0|data[3] ; pwm:pwm0|half_duty_new[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.240      ;
+; -7.573 ; sine_rom:sine_rom0|data[3] ; pwm:pwm0|half_duty_new[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.240      ;
+; -7.569 ; cnt_div[23]                ; sine_rom:sine_rom0|data[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.236      ;
+; -7.560 ; sine_rom:sine_rom0|data[3] ; pwm:pwm0|half_duty_new[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.227      ;
+; -7.484 ; cnt_div[21]                ; sine_rom:sine_rom0|data[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.151      ;
+; -7.484 ; pwm:pwm0|half_duty[0][3]   ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 8.151      ;
+; -7.468 ; cnt_div[21]                ; sine_rom:sine_rom0|data[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.135      ;
+; -7.466 ; cnt_div[19]                ; sine_rom:sine_rom0|data[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.133      ;
+; -7.427 ; cnt_div[21]                ; sine_rom:sine_rom0|data[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.094      ;
+; -7.386 ; cnt_div[19]                ; sine_rom:sine_rom0|data[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.053      ;
+; -7.381 ; cnt_div[22]                ; sine_rom:sine_rom0|data[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.048      ;
+; -7.377 ; cnt_div[24]                ; sine_rom:sine_rom0|data[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.044      ;
+; -7.372 ; pwm:pwm0|half_duty[0][4]   ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 8.039      ;
+; -7.360 ; pwm:pwm0|half_duty[0][1]   ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 8.027      ;
+; -7.314 ; cnt_div[21]                ; sine_rom:sine_rom0|data[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.981      ;
+; -7.295 ; pwm:pwm0|count[0][4]       ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 7.962      ;
+; -7.294 ; cnt_div[23]                ; sine_rom:sine_rom0|data[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.961      ;
+; -7.294 ; cnt_div[22]                ; sine_rom:sine_rom0|data[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.961      ;
+; -7.286 ; cnt_div[24]                ; sine_rom:sine_rom0|data[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.953      ;
+; -7.274 ; cnt_div[20]                ; sine_rom:sine_rom0|data[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.941      ;
+; -7.249 ; sine_rom:sine_rom0|data[2] ; pwm:pwm0|half_duty_new[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.916      ;
+; -7.249 ; sine_rom:sine_rom0|data[2] ; pwm:pwm0|half_duty_new[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.916      ;
+; -7.249 ; sine_rom:sine_rom0|data[2] ; pwm:pwm0|half_duty_new[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.916      ;
+; -7.249 ; sine_rom:sine_rom0|data[2] ; pwm:pwm0|half_duty_new[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.916      ;
+; -7.249 ; sine_rom:sine_rom0|data[2] ; pwm:pwm0|half_duty_new[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.916      ;
+; -7.236 ; sine_rom:sine_rom0|data[2] ; pwm:pwm0|half_duty_new[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.903      ;
+; -7.159 ; cnt_div[22]                ; sine_rom:sine_rom0|data[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.826      ;
+; -7.114 ; pwm:pwm0|count[0][7]       ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 7.781      ;
+; -7.106 ; cnt_div[19]                ; sine_rom:sine_rom0|data[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.773      ;
+; -7.086 ; cnt_div[21]                ; sine_rom:sine_rom0|data[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.753      ;
+; -7.043 ; sine_rom:sine_rom0|data[1] ; pwm:pwm0|half_duty_new[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.710      ;
+; -7.034 ; cnt_div[22]                ; sine_rom:sine_rom0|data[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.701      ;
+; -6.993 ; cnt_div[19]                ; sine_rom:sine_rom0|data[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.660      ;
+; -6.953 ; sine_rom:sine_rom0|data[0] ; pwm:pwm0|half_duty_new[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.620      ;
+; -6.953 ; sine_rom:sine_rom0|data[0] ; pwm:pwm0|half_duty_new[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.620      ;
+; -6.953 ; sine_rom:sine_rom0|data[0] ; pwm:pwm0|half_duty_new[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.620      ;
+; -6.953 ; sine_rom:sine_rom0|data[0] ; pwm:pwm0|half_duty_new[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.620      ;
+; -6.953 ; sine_rom:sine_rom0|data[0] ; pwm:pwm0|half_duty_new[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.620      ;
+; -6.940 ; sine_rom:sine_rom0|data[0] ; pwm:pwm0|half_duty_new[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.607      ;
+; -6.926 ; cnt_div[24]                ; sine_rom:sine_rom0|data[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.593      ;
+; -6.926 ; cnt_div[20]                ; sine_rom:sine_rom0|data[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.593      ;
+; -6.920 ; sine_rom:sine_rom0|data[1] ; pwm:pwm0|half_duty_new[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.587      ;
+; -6.917 ; pwm:pwm0|count[0][6]       ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 7.584      ;
+; -6.840 ; cnt_div[23]                ; sine_rom:sine_rom0|data[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.507      ;
+; -6.805 ; cnt_div[22]                ; sine_rom:sine_rom0|data[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.472      ;
+; -6.784 ; pwm:pwm0|half_duty[0][5]   ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 7.451      ;
+; -6.784 ; pwm:pwm0|count[0][1]       ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 7.451      ;
+; -6.770 ; sine_rom:sine_rom0|data[4] ; pwm:pwm0|half_duty_new[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.437      ;
+; -6.712 ; pwm:pwm0|count[0][0]       ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 7.379      ;
+; -6.709 ; sine_rom:sine_rom0|data[3] ; pwm:pwm0|half_duty_new[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.376      ;
+; -6.676 ; cnt_div[21]                ; sine_rom:sine_rom0|data[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.343      ;
+; -6.642 ; pwm:pwm0|half_duty[0][6]   ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 1.000        ; 0.000      ; 7.309      ;
+; -6.635 ; cnt_div[20]                ; sine_rom:sine_rom0|data[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.302      ;
+; -6.621 ; pwm:pwm0|count[0][6]       ; pwm:pwm0|half_duty[0][3]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.288      ;
+; -6.621 ; pwm:pwm0|count[0][6]       ; pwm:pwm0|half_duty[0][5]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.288      ;
+; -6.621 ; pwm:pwm0|count[0][6]       ; pwm:pwm0|half_duty[0][7]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.288      ;
+; -6.616 ; pwm:pwm0|count[0][6]       ; pwm:pwm0|half_duty[0][0]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.283      ;
+; -6.616 ; pwm:pwm0|count[0][6]       ; pwm:pwm0|half_duty[0][1]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.283      ;
+; -6.605 ; cnt_div[19]                ; sine_rom:sine_rom0|data[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.272      ;
+; -6.586 ; sine_rom:sine_rom0|data[3] ; pwm:pwm0|half_duty_new[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.253      ;
+; -6.563 ; pwm:pwm0|count[0][3]       ; pwm:pwm0|half_duty[0][3]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.230      ;
+; -6.563 ; pwm:pwm0|count[0][3]       ; pwm:pwm0|half_duty[0][5]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.230      ;
+; -6.563 ; pwm:pwm0|count[0][3]       ; pwm:pwm0|half_duty[0][7]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.230      ;
+; -6.558 ; pwm:pwm0|count[0][3]       ; pwm:pwm0|half_duty[0][0]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.225      ;
+; -6.558 ; pwm:pwm0|count[0][3]       ; pwm:pwm0|half_duty[0][1]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.225      ;
+; -6.542 ; cnt_div[24]                ; sine_rom:sine_rom0|data[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.209      ;
+; -6.536 ; cnt_div[22]                ; sine_rom:sine_rom0|data[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.203      ;
+; -6.470 ; pwm:pwm0|count[0][5]       ; pwm:pwm0|half_duty[0][3]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.137      ;
+; -6.470 ; pwm:pwm0|count[0][5]       ; pwm:pwm0|half_duty[0][5]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.137      ;
+; -6.470 ; pwm:pwm0|count[0][5]       ; pwm:pwm0|half_duty[0][7]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.137      ;
+; -6.465 ; pwm:pwm0|count[0][5]       ; pwm:pwm0|half_duty[0][0]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.132      ;
+; -6.465 ; pwm:pwm0|count[0][5]       ; pwm:pwm0|half_duty[0][1]   ; clk          ; clk         ; 1.000        ; 0.000      ; 7.132      ;
+; -6.385 ; sine_rom:sine_rom0|data[2] ; pwm:pwm0|half_duty_new[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.052      ;
+; -6.374 ; sine_rom:sine_rom0|data[5] ; pwm:pwm0|half_duty_new[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.041      ;
+; -6.331 ; cnt_div[20]                ; sine_rom:sine_rom0|data[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.998      ;
+; -6.303 ; sine_rom:sine_rom0|data[4] ; pwm:pwm0|half_duty_new[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 6.970      ;
+; -6.281 ; cnt_div[23]                ; sine_rom:sine_rom0|data[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.948      ;
+; -6.267 ; pwm:pwm0|count[0][1]       ; pwm:pwm0|count[0][5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 6.934      ;
+; -6.263 ; cnt_div[24]                ; sine_rom:sine_rom0|data[7] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.930      ;
+; -6.262 ; sine_rom:sine_rom0|data[2] ; pwm:pwm0|half_duty_new[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 6.929      ;
+; -6.218 ; pwm:pwm0|count[0][7]       ; pwm:pwm0|half_duty[0][3]   ; clk          ; clk         ; 1.000        ; 0.000      ; 6.885      ;
++--------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                                          ;
++-------+---------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                 ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; 1.377 ; pwm:pwm0|half_duty_new[6] ; pwm:pwm0|half_duty[0][6]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.598      ;
+; 1.382 ; pwm:pwm0|half_duty_new[2] ; pwm:pwm0|half_duty[0][2]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.603      ;
+; 1.645 ; pwm:pwm0|half_duty_new[4] ; pwm:pwm0|half_duty[0][4]   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.866      ;
+; 1.659 ; cnt_div[26]               ; cnt_div[26]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.880      ;
+; 1.898 ; pwm:pwm0|pwm_out[0]       ; pwm:pwm0|pwm_out[0]        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.119      ;
+; 2.013 ; pwm:pwm0|count[0][0]      ; pwm:pwm0|count[0][5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.234      ;
+; 2.014 ; pwm:pwm0|count[0][0]      ; pwm:pwm0|count[0][7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.235      ;
+; 2.015 ; pwm:pwm0|count[0][0]      ; pwm:pwm0|count[0][8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.236      ;
+; 2.017 ; pwm:pwm0|count[0][0]      ; pwm:pwm0|count[0][4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.238      ;
+; 2.108 ; cnt_div[5]                ; cnt_div[5]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.329      ;
+; 2.116 ; cnt_div[18]               ; cnt_div[18]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.337      ;
+; 2.116 ; cnt_div[8]                ; cnt_div[8]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.337      ;
+; 2.117 ; cnt_div[25]               ; cnt_div[25]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.117 ; cnt_div[15]               ; cnt_div[15]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.117 ; cnt_div[7]                ; cnt_div[7]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.117 ; cnt_div[0]                ; cnt_div[0]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.126 ; cnt_div[17]               ; cnt_div[17]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.347      ;
+; 2.126 ; cnt_div[10]               ; cnt_div[10]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.347      ;
+; 2.126 ; cnt_div[9]                ; cnt_div[9]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.347      ;
+; 2.143 ; cnt_div[19]               ; cnt_div[19]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.364      ;
+; 2.145 ; cnt_div[20]               ; cnt_div[20]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.366      ;
+; 2.161 ; pwm:pwm0|count[0][1]      ; pwm:pwm0|count[0][2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.382      ;
+; 2.170 ; pwm:pwm0|count[0][1]      ; pwm:pwm0|count[0][6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.391      ;
+; 2.221 ; cnt_div[16]               ; cnt_div[16]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.442      ;
+; 2.221 ; cnt_div[11]               ; cnt_div[11]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.442      ;
+; 2.221 ; cnt_div[6]                ; cnt_div[6]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.442      ;
+; 2.221 ; cnt_div[1]                ; cnt_div[1]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.442      ;
+; 2.230 ; cnt_div[13]               ; cnt_div[13]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.451      ;
+; 2.230 ; cnt_div[3]                ; cnt_div[3]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.451      ;
+; 2.231 ; cnt_div[14]               ; cnt_div[14]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.452      ;
+; 2.231 ; cnt_div[12]               ; cnt_div[12]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.452      ;
+; 2.231 ; cnt_div[4]                ; cnt_div[4]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.452      ;
+; 2.231 ; cnt_div[2]                ; cnt_div[2]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.452      ;
+; 2.239 ; cnt_div[23]               ; cnt_div[23]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.460      ;
+; 2.240 ; cnt_div[22]               ; cnt_div[22]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.461      ;
+; 2.241 ; cnt_div[21]               ; cnt_div[21]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.462      ;
+; 2.249 ; cnt_div[24]               ; cnt_div[24]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.470      ;
+; 2.338 ; pwm:pwm0|count[0][0]      ; pwm:pwm0|count[0][2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.559      ;
+; 2.343 ; pwm:pwm0|count[0][0]      ; pwm:pwm0|count[0][6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.564      ;
+; 2.474 ; pwm:pwm0|half_duty_new[3] ; pwm:pwm0|half_duty[0][3]   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.695      ;
+; 2.512 ; pwm:pwm0|half_duty_new[0] ; pwm:pwm0|half_duty[0][0]   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.733      ;
+; 2.571 ; cnt_div[25]               ; sine_rom:sine_rom0|data[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.792      ;
+; 2.740 ; pwm:pwm0|count[0][1]      ; pwm:pwm0|count[0][5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.961      ;
+; 2.741 ; pwm:pwm0|count[0][1]      ; pwm:pwm0|count[0][7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.962      ;
+; 2.746 ; pwm:pwm0|count[0][1]      ; pwm:pwm0|count[0][8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.967      ;
+; 2.748 ; pwm:pwm0|count[0][1]      ; pwm:pwm0|count[0][4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.969      ;
+; 2.752 ; pwm:pwm0|half_duty_new[5] ; pwm:pwm0|half_duty[0][5]   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.973      ;
+; 2.940 ; cnt_div[5]                ; cnt_div[6]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.161      ;
+; 2.948 ; cnt_div[18]               ; cnt_div[19]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.169      ;
+; 2.948 ; cnt_div[8]                ; cnt_div[9]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.169      ;
+; 2.949 ; cnt_div[25]               ; cnt_div[26]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.170      ;
+; 2.949 ; cnt_div[15]               ; cnt_div[16]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.170      ;
+; 2.949 ; cnt_div[0]                ; cnt_div[1]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.170      ;
+; 2.958 ; cnt_div[10]               ; cnt_div[11]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.179      ;
+; 2.958 ; cnt_div[9]                ; cnt_div[10]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.179      ;
+; 2.975 ; cnt_div[19]               ; cnt_div[20]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.196      ;
+; 2.977 ; cnt_div[20]               ; cnt_div[21]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.198      ;
+; 3.051 ; cnt_div[5]                ; cnt_div[7]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.272      ;
+; 3.059 ; cnt_div[8]                ; cnt_div[10]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.280      ;
+; 3.059 ; cnt_div[18]               ; cnt_div[20]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.280      ;
+; 3.060 ; cnt_div[15]               ; cnt_div[17]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.281      ;
+; 3.060 ; cnt_div[0]                ; cnt_div[2]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.281      ;
+; 3.069 ; cnt_div[10]               ; cnt_div[12]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.290      ;
+; 3.069 ; cnt_div[9]                ; cnt_div[11]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.290      ;
+; 3.086 ; cnt_div[19]               ; cnt_div[21]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.307      ;
+; 3.088 ; cnt_div[20]               ; cnt_div[22]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.309      ;
+; 3.127 ; pwm:pwm0|half_duty_new[7] ; pwm:pwm0|half_duty[0][7]   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.348      ;
+; 3.129 ; cnt_div[25]               ; sine_rom:sine_rom0|data[7] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.350      ;
+; 3.161 ; cnt_div[6]                ; cnt_div[7]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161 ; cnt_div[16]               ; cnt_div[17]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161 ; cnt_div[1]                ; cnt_div[2]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161 ; cnt_div[11]               ; cnt_div[12]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.382      ;
+; 3.170 ; cnt_div[13]               ; cnt_div[14]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.391      ;
+; 3.170 ; cnt_div[3]                ; cnt_div[4]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.391      ;
+; 3.170 ; cnt_div[8]                ; cnt_div[11]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.391      ;
+; 3.170 ; cnt_div[18]               ; cnt_div[21]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.391      ;
+; 3.171 ; cnt_div[14]               ; cnt_div[15]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.392      ;
+; 3.171 ; cnt_div[4]                ; cnt_div[5]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.392      ;
+; 3.179 ; cnt_div[23]               ; cnt_div[24]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.400      ;
+; 3.180 ; cnt_div[9]                ; cnt_div[12]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.401      ;
+; 3.181 ; cnt_div[21]               ; cnt_div[22]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.402      ;
+; 3.189 ; pwm:pwm0|count[0][8]      ; pwm:pwm0|count[0][8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 3.410      ;
+; 3.189 ; cnt_div[24]               ; cnt_div[25]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.410      ;
+; 3.191 ; pwm:pwm0|count[0][8]      ; pwm:pwm0|count[0][6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 3.412      ;
+; 3.192 ; pwm:pwm0|count[0][8]      ; pwm:pwm0|count[0][4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 3.413      ;
+; 3.197 ; pwm:pwm0|count[0][8]      ; pwm:pwm0|count[0][2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 3.418      ;
+; 3.197 ; cnt_div[19]               ; cnt_div[22]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.418      ;
+; 3.198 ; pwm:pwm0|count[0][8]      ; pwm:pwm0|count[0][5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 3.419      ;
+; 3.199 ; pwm:pwm0|count[0][8]      ; pwm:pwm0|count[0][7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 3.420      ;
+; 3.267 ; cnt_div[25]               ; sine_rom:sine_rom0|data[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.488      ;
+; 3.268 ; pwm:pwm0|count[0][2]      ; pwm:pwm0|count[0][2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 3.489      ;
+; 3.277 ; pwm:pwm0|count[0][2]      ; pwm:pwm0|count[0][6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 3.498      ;
+; 3.281 ; cnt_div[13]               ; cnt_div[15]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.502      ;
+; 3.281 ; cnt_div[3]                ; cnt_div[5]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.502      ;
+; 3.281 ; cnt_div[8]                ; cnt_div[12]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.502      ;
+; 3.281 ; cnt_div[18]               ; cnt_div[22]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.502      ;
+; 3.282 ; cnt_div[4]                ; cnt_div[6]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.503      ;
+; 3.282 ; cnt_div[14]               ; cnt_div[16]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.503      ;
+; 3.290 ; cnt_div[23]               ; cnt_div[25]                ; clk          ; clk         ; 0.000        ; 0.000      ; 3.511      ;
+; 3.299 ; cnt_div[26]               ; sine_rom:sine_rom0|data[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.520      ;
++-------+---------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 1987     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 1987     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 53    ; 53   ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 1     ; 1    ;
++---------------------------------+-------+------+
+
+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; clk    ; clk   ; Base ; Constrained ;
++--------+-------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; rst        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; led_out     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; rst        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; led_out     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Tue Jun 01 10:57:23 2021
+Info: Command: quartus_sta progetto_0_Itis -c progetto_0_Itis
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 125 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'progetto_0_Itis.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -7.907
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -7.907            -329.362 clk 
+Info (332146): Worst-case hold slack is 1.377
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.377               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4668 megabytes
+    Info: Processing ended: Tue Jun 01 10:57:25 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

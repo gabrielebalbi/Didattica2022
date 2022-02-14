@@ -1,0 +1,139 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/simulation/modelsim
+Epwm
+Z1 w1622532659
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/intelFPGA_lite/18.1/pwm.vhd
+Z7 FC:/intelFPGA_lite/18.1/pwm.vhd
+l0
+L5
+VCXY^__6jN0M3MNFS_f;SY0
+!s100 kO5nlT:;CKk`?I]6;UfWm1
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1622533380
+!i10b 1
+Z10 !s108 1622533380.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/pwm.vhd|
+Z12 !s107 C:/intelFPGA_lite/18.1/pwm.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Alogic
+R2
+R3
+R4
+R5
+DEx4 work 3 pwm 0 22 CXY^__6jN0M3MNFS_f;SY0
+l28
+L21
+V[W8GL=E`4nae`SbVh8MiE2
+!s100 zYPA?`]hgWFL^5fh2;3WI2
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Esine_rom
+Z15 w1622532703
+Z16 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z17 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z18 8C:/intelFPGA_lite/18.1/sine_rom.vhd
+Z19 FC:/intelFPGA_lite/18.1/sine_rom.vhd
+l0
+L33
+VeEDzOBFfCd7zeZBin@F2Q2
+!s100 1mTH^mPX3=61e6MNiQ1ee1
+R8
+31
+R9
+!i10b 1
+R10
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/sine_rom.vhd|
+Z21 !s107 C:/intelFPGA_lite/18.1/sine_rom.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R16
+R17
+R4
+R5
+DEx4 work 8 sine_rom 0 22 eEDzOBFfCd7zeZBin@F2Q2
+l75
+L46
+V7MMX2`1P2U8]5T:5WjQ]d0
+!s100 WDX[>e`H[GHAjm=7]F;U42
+R8
+31
+R9
+!i10b 1
+R10
+R20
+R21
+!i113 1
+R13
+R14
+Etop
+Z22 w1622532740
+R16
+R17
+R4
+R5
+R0
+Z23 8C:/intelFPGA_lite/18.1/top.vhd
+Z24 FC:/intelFPGA_lite/18.1/top.vhd
+l0
+L6
+Vf1@lF=^aR4g]60B:1f1Ya1
+!s100 o^:[0C;f:Fg^GSS5bD0FR0
+R8
+31
+R9
+!i10b 1
+R10
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/top.vhd|
+Z26 !s107 C:/intelFPGA_lite/18.1/top.vhd|
+!i113 1
+R13
+R14
+Astr
+R16
+R17
+R4
+R5
+DEx4 work 3 top 0 22 f1@lF=^aR4g]60B:1f1Ya1
+l88
+L24
+VV1JO]]T?[[NT5WES:OGLU3
+!s100 MmOU6OM5Ch_c;LRX109:01
+R8
+31
+R9
+!i10b 1
+R10
+R25
+R26
+!i113 1
+R13
+R14
