@@ -1,0 +1,37 @@
+`timescale 1ns / 1ps
+
+
+module top(
+
+	input 	r_A,
+	input 	r_B,
+	input 	clk,
+	
+	output  out_led
+	);
+
+	
+	reg [3:0] r_X = 4'b0101;
+	reg [3:0] r_Y = 4'b1100;
+	wire [3:0] w_AND_VECTOR, w_OR_VECTOR, w_XOR_VECTOR, w_NOT_VECTOR;
+	reg meta;
+	
+	always @(clk)
+	begin
+		meta = w_OR_SCALAR;
+	end;
+	
+	assign w_AND_SCALAR = r_A & r_B;
+	assign w_OR_SCALAR  = r_A | r_B;
+	assign w_XOR_SCALAR = r_A ^ r_B;
+	assign w_NOT_SCALAR = ~r_A;
+	
+	assign w_AND_VECTOR = r_X & r_Y;
+	assign w_OR_VECTOR  = r_X | r_Y;
+	assign w_XOR_VECTOR = r_X ^ r_Y;
+	assign w_NOT_VECTOR = ~r_X;
+	
+	
+	assign out_led = meta; //w_OR_SCALAR;
+	
+endmodule

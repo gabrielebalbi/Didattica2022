@@ -1,0 +1,10 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+AND of 1 and 0 is 0
+OR  of 1 and 0 is 1
+XOR of 1 and 0 is 1
+NOT of 1 is 0
+AND of 0101 and 1100 is 0100
+OR  of 0101 and 1100 is 1101
+XOR of 0101 and 1100 is 1001
+NOT of 0101 is 1010

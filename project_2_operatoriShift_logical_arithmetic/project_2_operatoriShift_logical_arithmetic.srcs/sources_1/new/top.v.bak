@@ -1,0 +1,30 @@
+`timescale 1ns / 1ps
+
+
+module top(
+
+	input 	r_A,
+	input 	r_B,
+	input 	clk,
+	
+	output  out_led
+	);
+
+	
+	integer i=-5;
+	integer j= 5;
+	
+	integer result;
+	
+	
+	
+	always @(clk,r_A)
+	begin
+		result = j+i;
+	end;
+	
+	
+	assign out_led = r_A; 
+	
+endmodule
+
