@@ -1,0 +1,104 @@
+`timescale 1ns / 1ps  
+
+
+
+module top (); // Non ci sono input nel progetto
+ 
+  reg [7:0] r_Mux_Addr_Data = 0;
+  reg       r_Addr_Valid = 1'b0;
+  reg       r_Data_Valid = 1'b0;
+
+ 
+  initial 
+  begin
+  
+      $display("Printing Automatic Tasks");
+	
+   fork
+	display_auto(3); 	
+	display_auto(6);
+	display_auto(1);
+   join
+
+	
+	#10;
+
+    $display("Printing Static Tasks");
+		
+   fork
+	display_static(3); 	
+	display_static(6);
+	display_static(1);
+   join
+	
+  end	
+
+  
+  
+  initial
+    begin
+      #10;
+      do_write(8'h00, 8'hAB);
+      do_write(8'h01, 8'hBC);
+      do_write(8'h02, 8'hCD);
+	 
+    end
+
+
+    reg[15:0]a;
+    reg [15:0] b;
+
+    integer i;
+
+    initial 
+    begin
+
+       for (i=0; i<6; i=i+1)
+        begin
+           a=$urandom%10; 
+           #100;
+           b=$urandom%20;
+           $display("A %d, B: %d",a,b);    
+        end 
+
+    end	
+
+
+/////////////////////////////////////////////////////////////   
+  task automatic do_write;
+    input [7:0] i_addr, i_data; 
+    begin
+//      demonstrates driving external Global Reg
+      r_Addr_Valid    = 1'b1;
+      r_Mux_Addr_Data = i_addr;
+      #10;
+      r_Addr_Valid    = 1'b0;
+      r_Data_Valid    = 1'b1;
+      r_Mux_Addr_Data = i_data;
+      #10;
+      r_Data_Valid = 1'b0;
+      #10;
+    end
+  endtask
+//////////////////////////////////////////////////////////////
+
+   
+task automatic display_auto;
+	input [3:0] i_x;
+	begin 
+//		i_x= i_x+1;
+		#(i_x) $display("GUARDA QUI  --->   i_x=%0d",i_x);
+	end
+endtask
+
+task display_static;
+	input [3:0] i_s;
+	begin 
+//		i_s= i_s+1;
+		#(i_s) $display("GUARDA QUI  --->   i_s=%0d",i_s);
+	end
+endtask
+
+   
+endmodule
+
