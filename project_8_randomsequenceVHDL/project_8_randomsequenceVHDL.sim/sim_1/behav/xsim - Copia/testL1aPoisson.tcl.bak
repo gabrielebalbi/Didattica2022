@@ -1,0 +1,9 @@
+relaunch_sim
+restart
+add_force {/topP/clk_slow} -radix hex {0 0ns} {1 500000000ps} -repeat_every 1000000000ps
+add_force {/topP/clk} -radix hex {0 0ns} {1 12500ps} -repeat_every 25000ps
+
+add_force {/topP/rst} -radix hex {1 0ns}
+run 200 ns
+add_force {/topP/rst} -radix hex {0 0ns}
+run 3 ms

@@ -1,0 +1,2 @@
+N_eventsRom_1ms_512.v,verilog,xil_defaultlib,../../../../project_8_randomsequenceVHDL.gen/sources_1/ip/N_eventsRom_1ms_512/sim/N_eventsRom_1ms_512.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

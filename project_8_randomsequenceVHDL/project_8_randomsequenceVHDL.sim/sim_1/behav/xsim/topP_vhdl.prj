@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_8_randomsequenceVHDL.srcs/sources_1/imports/mcc-simulator/4-bit_counter.vhd" \
+"../../../../project_8_randomsequenceVHDL.srcs/sources_1/imports/mcc-simulator/8-bit_counter.vhd" \
+"../../../../project_8_randomsequenceVHDL.srcs/sources_1/imports/mcc-simulator/bit-flipper.vhd" \
+"../../../../project_8_randomsequenceVHDL.srcs/sources_1/imports/mcc-simulator/fe_cmd_decoder_pxl.vhd" \
+"../../../../project_8_randomsequenceVHDL.srcs/sources_1/imports/mcc-simulator/level1_stretcher.vhd" \
+"../../../../project_8_randomsequenceVHDL.srcs/sources_1/imports/mcc-simulator/multiplexer.vhd" \
+"../../../../project_8_randomsequenceVHDL.srcs/sources_1/imports/mcc-simulator/pixel_simulator.vhd" \
+"../../../../project_8_randomsequenceVHDL.srcs/sources_1/imports/mcc-simulator/treadmill.vhd" \
+"../../../../project_8_randomsequenceVHDL.srcs/sources_1/imports/mcc-simulator/lfsr.vhd" \
+
+# Do not sort compile order
+nosort
