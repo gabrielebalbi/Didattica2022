@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="topP_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="topP" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="11734005514fs"></ZoomStartTime>
+      <ZoomEndTime time="26945055454fs"></ZoomEndTime>
+      <Cursor1Time time="24409880464fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="310"></NameColumnWidth>
+      <ValueColumnWidth column_width="132"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wave_markers>
+      <marker time="23272232369" label="" />
+      <marker time="5374460088" label="" />
+      <marker time="958870489374" label="" />
+      <marker time="45575017" label="" />
+      <marker time="7350870596" label="" />
+   </wave_markers>
+   <wvobject fp_name="/topP/l1a_i" type="logic">
+      <obj_property name="ElementShortName">l1a_i</obj_property>
+      <obj_property name="ObjectShortName">l1a_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/overlap" type="logic">
+      <obj_property name="ElementShortName">overlap</obj_property>
+      <obj_property name="ObjectShortName">overlap</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/clk40" type="logic">
+      <obj_property name="ElementShortName">clk40</obj_property>
+      <obj_property name="ObjectShortName">clk40</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/edge_out" type="logic">
+      <obj_property name="ElementShortName">edge_out</obj_property>
+      <obj_property name="ObjectShortName">edge_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/config1" type="array">
+      <obj_property name="ElementShortName">config1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">config1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/config2" type="array">
+      <obj_property name="ElementShortName">config2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">config2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/pixel_sim_out" type="array">
+      <obj_property name="ElementShortName">pixel_sim_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_sim_out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/edge_detected" type="logic">
+      <obj_property name="ElementShortName">edge_detected</obj_property>
+      <obj_property name="ObjectShortName">edge_detected</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider226">
+   </wvobject>
+   <wvobject fp_name="/topP/nEventsToBeSent" type="array">
+      <obj_property name="ElementShortName">nEventsToBeSent[15:0]</obj_property>
+      <obj_property name="ObjectShortName">nEventsToBeSent[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/waitExp" type="array">
+      <obj_property name="ElementShortName">waitExp[15:0]</obj_property>
+      <obj_property name="ObjectShortName">waitExp[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/test" type="array">
+      <obj_property name="ElementShortName">test[15:0]</obj_property>
+      <obj_property name="ObjectShortName">test[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/n_events_processed" type="array">
+      <obj_property name="ElementShortName">n_events_processed[9:0]</obj_property>
+      <obj_property name="ObjectShortName">n_events_processed[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/localTime" type="array">
+      <obj_property name="ElementShortName">localTime[15:0]</obj_property>
+      <obj_property name="ObjectShortName">localTime[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/counterEv" type="array">
+      <obj_property name="ElementShortName">counterEv[8:0]</obj_property>
+      <obj_property name="ObjectShortName">counterEv[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/counterStartTime" type="array">
+      <obj_property name="ElementShortName">counterStartTime[11:0]</obj_property>
+      <obj_property name="ObjectShortName">counterStartTime[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/riduttore" type="array">
+      <obj_property name="ElementShortName">riduttore[15:0]</obj_property>
+      <obj_property name="ObjectShortName">riduttore[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/bcr" type="logic">
+      <obj_property name="ElementShortName">bcr</obj_property>
+      <obj_property name="ObjectShortName">bcr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/ecr" type="logic">
+      <obj_property name="ElementShortName">ecr</obj_property>
+      <obj_property name="ObjectShortName">ecr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/riduttoreBCR" type="array">
+      <obj_property name="ElementShortName">riduttoreBCR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">riduttoreBCR[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topP/riduttoreECR" type="array">
+      <obj_property name="ElementShortName">riduttoreECR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">riduttoreECR[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_10.gen/sources_1/ip/clk_generator" \
+"../../../../project_10.gen/sources_1/ip/N_eventsRom_1ms_512/sim/N_eventsRom_1ms_512.v" \
+"../../../../project_10.gen/sources_1/ip/Hit_poisson_Mu30/sim/Hit_poisson_Mu30.v" \
+"../../../../project_10.gen/sources_1/ip/Time_exp_mu100_1ms_4096/sim/Time_exp_mu100_1ms_4096.v" \
+"../../../../project_10.gen/sources_1/ip/pixsimFifo/sim/pixsimFifo.v" \
+"../../../../project_10.srcs/sources_1/new/topP.v" \
+"../../../../project_10.gen/sources_1/ip/clk_generator/clk_generator_clk_wiz.v" \
+"../../../../project_10.gen/sources_1/ip/clk_generator/clk_generator.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

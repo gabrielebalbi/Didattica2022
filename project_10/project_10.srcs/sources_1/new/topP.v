@@ -1,0 +1,342 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 09.05.2022 23:00:22
+// Design Name: 
+// Module Name: topP
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+// VHDL file (bottom_vhdl.vhd)
+
+// LIBRARY ieee;
+// USE ieee.std_logic_1164.ALL;
+
+// ENTITY bottom_vhdl IS
+// PORT (a, b : IN std_logic;
+      // c : OUT std_logic);
+// END bottom_vhdl;
+
+module topP( rst, clk, l1a, pixel_sim_out, trigger_out, led0, bcr, ecr);
+
+	input clk;
+	input rst;
+
+	// input btn0;
+	
+	output led0;
+	
+	output l1a;
+	output ecr;
+	output bcr;
+	
+	output pixel_sim_out;
+	output trigger_out;
+	
+	// output test;
+	
+	integer seed_dis = 3;
+
+	reg trigger_out;
+	reg [ 15 : 0 ]   data_poisson_100 ; // 100kHz
+	reg [ 15 : 0 ]   data_poisson_10 ;  // 10 kHz
+ 	reg [ 15 : 0 ]   data_poisson_1 ;   // 1 kHz
+	reg [ 15 : 0 ]   data_poisson_x ;   // 1 kHz
+	reg [ 15 : 0 ]   hit_poisson_x ;
+	// reg [15:0] test;
+	
+	
+	reg [ 7 : 0 ] data_uniform_0_255;
+	reg [ 15 : 0 ]   data__exp ; 
+	integer fp_wE, fp_w, i;
+	
+//	wire rst=1'b0;
+	
+	integer fp_H, cnt;
+	
+	wire led0_i;
+	
+	reg [7:0] reg1, reg2, reg3;
+	
+	reg [9:0] counterForSlow = 10'b0000000000;
+	reg [9:0] counter = 10'b0000000000;
+	reg [15:0] localTime = 16'b0000000000000000;
+
+	reg [8:0] counterEv = 9'b000000000;
+	reg [11:0] counterStartTime = 12'b000000000000;
+	
+	wire [15:0] waitExp;
+	wire [15:0] nEventsToBeSent;
+	
+	reg [15:0] riduttore = 16'b0000000000000000;
+	reg [15:0] riduttoreBCR = 16'b0000000000000000;
+	reg [31:0] riduttoreECR = 32'b00000000000000000000000000000000;
+	
+	parameter b0 = 3'b000;
+	parameter s0 = 3'b100;
+    parameter s1 = 3'b101;
+    parameter s2 = 3'b110;
+    parameter s3 = 3'b111;
+    parameter s4 = 3'b001;
+	parameter s5 = 3'b010;
+
+	
+	reg [2:0] state = b0;
+	reg [9:0] n_events_processed;
+
+	reg l1a;
+	reg bcr;
+	reg ecr;
+	
+	reg events_finished = 1'b0;
+	
+	reg cnt_old;
+	
+	wire edge_detected; 
+	wire rst_n;
+	
+	wire [3:0] pixel_sim_out;
+ 
+	wire [15:0] test; 
+	
+	wire [31:0] config1;
+	wire [31:0] config2;
+	reg l1a_i ;
+
+	reg overlap =1'b0;
+	
+	wire clk40;
+	reg edge_out;
+
+	clk_generator clk0 ( .clk40(clk40), .reset(rst), .locked (led0_i),.clk_in1(clk));
+
+	Time_exp_mu100_1ms_4096 time_rom (.a(counterStartTime[11:0]), .clk(clk40), .qspo(waitExp));
+	N_eventsRom_1ms_512 event_rom (.a(counterEv[8:0]), .clk(clk40), .qspo(nEventsToBeSent)); 	
+	Hit_poisson_Mu30 hit_rom (.a(counter[9:0]), .clk(clk40),.qspo(test));
+	
+	assign led0 = led0_i;
+	
+	assign config1 = 4'h000d; 
+	assign config2 = {test[7:0],24'h000000};
+	
+	pixel_simulator pix0 (.clk_in(clk40), .rst_n_in(rst_n),.config_in_1(config1),.config_in_2(config2),.ser_data_in(l1a_i),.inlinks(4'b0000),.outlinks(pixel_sim_out),.debug());
+
+	assign rst_n = ~rst;
+
+
+// Riduttore di frequenza 
+
+	 always @(posedge clk40) begin
+	
+		 if (rst) begin
+			 riduttore <= 0;
+			 edge_out<=1'b0;
+		 end else begin
+		
+			 cnt_old <= edge_out;
+			
+			 if (riduttore == 40000) begin
+				riduttore <= 0;
+				edge_out<=1'b1;
+			 end else begin
+				riduttore <= riduttore + 1;
+				edge_out<=1'b0;
+			 end;	
+		 end;
+	 end;	
+
+
+	 always @(posedge clk40) begin
+	
+		 if (rst) begin
+			 riduttoreBCR <= 0;
+			 bcr<=1'b0;
+		 end else begin
+					
+			 if (riduttoreBCR == 3563) begin
+				riduttoreBCR <= 0;
+				bcr<=1'b1;
+			 end else begin
+				riduttoreBCR <= riduttoreBCR + 1'b1;
+				bcr<=1'b0;
+			 end;	
+		 end;
+	 end;	
+
+
+	 always @(posedge clk40) begin
+	
+		 if (rst) begin
+			 riduttoreECR <= 0;
+			 ecr<=1'b0;
+		 end else begin
+		
+			
+			 if (riduttoreECR == 200000000) begin
+				riduttoreECR <= 0;
+				ecr<=1'b1;
+			 end else begin
+				riduttoreECR <= riduttoreECR + 1'b1;
+				ecr<=1'b0;
+			 end;	
+		 end;
+	 end;
+
+
+	assign edge_detected = edge_out & (~cnt_old);
+
+
+//	assign clk_slow = riduttore[13];
+	
+	always @(posedge clk40)
+	
+      if (rst) begin
+         state <= b0;
+		 n_events_processed<= 0; //numero eventi nel ms lavorati
+
+		 overlap <= 0; // eventi sovrapposti
+		 
+		 counter<=0; // address per rom n.Hits
+		 counterEv<=0; //address per rom degli eventi poissoniani
+		 counterStartTime <=0;   //address per rom dei tempi
+		 
+		 l1a <= 1'b0;
+		 l1a_i <= 1'b0;
+		 
+      end  else begin
+		 		 
+		 trigger_out <=0;
+		 cnt_old <= edge_out;
+		
+									
+			case (state)
+				b0 : begin // start frame da 1 ms
+				
+					if ( edge_detected ) begin
+						
+						counterEv <= counterEv + 1'b1;
+						
+						n_events_processed <=0;
+						
+	
+						state <= s0;
+					end	
+	
+				end
+				
+				s0 : begin  // emissione di un trigger
+						l1a <=1'b0;
+						l1a_i <= 1'b0;
+						
+						if ( edge_detected ) begin
+							overlap <= 1'b1;
+						end;	
+						
+						if ( n_events_processed <= nEventsToBeSent ) begin 
+							state <= s1;
+							localTime <= 0;
+							n_events_processed <= n_events_processed + 1'b1;
+							counterStartTime <= counterStartTime + 1'b1;
+								
+						end  else if (overlap == 1'b1 ) begin
+							n_events_processed <=0;
+							overlap <=1'b0;		
+							counterEv <= counterEv + 1'b1;
+							state <= s0;
+						
+						end else begin
+							n_events_processed <=0;					
+							state <= b0;
+	
+						end
+	
+	
+				end
+				s1 : begin //randomizzo i tempi di partenza per ogni trigger
+					l1a_i <= 1'b0;
+					l1a <=1'b0;
+					
+					if ( edge_detected ) begin
+						overlap <= 1'b1;
+					end;
+					
+					if (localTime < waitExp) begin
+					
+						localTime <= localTime +1'b1;
+						state <= s1;
+					
+					end else begin
+						l1a <=1'b1;
+						l1a_i <= 1'b1;
+						localTime <= 0;
+						state <= s2;				
+					
+					end 
+	
+	
+				end
+				s2 : begin  // formazione del trigger
+						l1a <=1'b1;
+						l1a_i <= 1'b1;
+						
+						if ( edge_detected ) begin
+							overlap <= 1'b1;
+						end;
+						
+						state 	<= s3;
+						
+						counter <= counter + 1'b1; // preparo il numero delle hits
+						
+				end	
+				s3 : begin
+						l1a <=1'b1;
+						l1a_i <= 1'b1;
+						
+						if ( edge_detected ) begin
+							overlap <= 1'b1;
+						end;
+						
+						state <= s4;
+				end
+				s4 : begin
+						l1a <=1'b0;
+						l1a_i <= 1'b0;
+						
+						if ( edge_detected ) begin
+							overlap <= 1'b1;
+						end;
+						
+						state <= s5;
+				end
+				s5 : begin
+						l1a_i <= 1'b1;
+						l1a <=1'b1;
+						
+						if ( edge_detected ) begin
+							overlap <= 1'b1;
+						end;
+						
+						trigger_out <=1'b1;
+						state <= s0;
+				end
+				
+			endcase
+		 
+
+     end ;
+	
+	
+endmodule

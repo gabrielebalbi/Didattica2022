@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1653045974">
+  <File Type="PA-TCL" Name="topP.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="topP_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="topP_reports.tcl"/>
+  <File Type="RDS-RDS" Name="topP.vds"/>
+  <File Type="RDS-UTIL" Name="topP_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="topP_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="topP.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="topP_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="topP_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/pixsimFifo/pixsimFifo.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../pixelSlave_sim/project_2/project_2.srcs/sources_1/ip/pixsimFifo/pixsimFifo.xci"/>
+        <Attr Name="ImportTime" Val="1650655042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mcc-simulator/4-bit_counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../pixelSlave_sim/project_2/project_2.srcs/sources_1/imports/dataTaking/mcc-simulator/4-bit_counter.vhd"/>
+        <Attr Name="ImportTime" Val="1647385451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mcc-simulator/8-bit_counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../pixelSlave_sim/project_2/project_2.srcs/sources_1/imports/dataTaking/mcc-simulator/8-bit_counter.vhd"/>
+        <Attr Name="ImportTime" Val="1647385451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mcc-simulator/bit-flipper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../pixelSlave_sim/project_2/project_2.srcs/sources_1/imports/dataTaking/mcc-simulator/bit-flipper.vhd"/>
+        <Attr Name="ImportTime" Val="1647385451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mcc-simulator/fe_cmd_decoder_pxl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../pixelSlave_sim/project_2/project_2.srcs/sources_1/imports/dataTaking/mcc-simulator/fe_cmd_decoder_pxl.vhd"/>
+        <Attr Name="ImportTime" Val="1647385451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mcc-simulator/level1_stretcher.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../pixelSlave_sim/project_2/project_2.srcs/sources_1/imports/dataTaking/mcc-simulator/level1_stretcher.vhd"/>
+        <Attr Name="ImportTime" Val="1647385451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mcc-simulator/multiplexer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../pixelSlave_sim/project_2/project_2.srcs/sources_1/imports/dataTaking/mcc-simulator/multiplexer.vhd"/>
+        <Attr Name="ImportTime" Val="1647385451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mcc-simulator/pixel_simulator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../pixelSlave_sim/project_2/project_2.srcs/sources_1/imports/dataTaking/mcc-simulator/pixel_simulator.vhd"/>
+        <Attr Name="ImportTime" Val="1647385451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mcc-simulator/treadmill.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../pixelSlave_sim/project_2/project_2.srcs/sources_1/imports/dataTaking/mcc-simulator/treadmill.vhd"/>
+        <Attr Name="ImportTime" Val="1647385451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/topP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_8_randomsequenceVHDL/project_8_randomsequenceVHDL.srcs/sources_1/new/topP.v"/>
+        <Attr Name="ImportTime" Val="1652883577"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip_hitPoisson50.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_8_randomsequenceVHDL/project_8_randomsequenceVHDL.srcs/sources_1/ip_hitPoisson50.coe"/>
+        <Attr Name="ImportTime" Val="1652622387"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mcc-simulator/lfsr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../pixelSlave_sim/project_2/project_2.srcs/sources_1/imports/dataTaking/mcc-simulator/lfsr.vhd"/>
+        <Attr Name="ImportTime" Val="1652629075"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/Numeri di eventi_in_1ms_mu100_512.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_8_randomsequenceVHDL/project_8_randomsequenceVHDL.srcs/sources_1/Numeri di eventi_in_1ms_mu100_512.coe"/>
+        <Attr Name="ImportTime" Val="1652789487"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/HITS_poisson_mu30_1024.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_8_randomsequenceVHDL/project_8_randomsequenceVHDL.srcs/sources_1/HITS_poisson_mu30_1024.coe"/>
+        <Attr Name="ImportTime" Val="1652789282"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/Time_Exp_out_mu100_4096.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_8_randomsequenceVHDL/project_8_randomsequenceVHDL.srcs/sources_1/Time_Exp_out_mu100_4096.coe"/>
+        <Attr Name="ImportTime" Val="1652789127"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_generator/clk_generator.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_8_randomsequenceVHDL/project_8_randomsequenceVHDL.srcs/sources_1/ip/clk_generator/clk_generator.xci"/>
+        <Attr Name="ImportTime" Val="1652817677"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="topP"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/top.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_7_FSM_con_starter/project_7_FSM.srcs/constrs_1/imports/new/top.xdc"/>
+        <Attr Name="ImportTime" Val="1652392874"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/new/top.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="N_eventsRom_1ms_512"/>
+  <BlockFileSet Type="BlockSrcs" Name="Hit_poisson_Mu30"/>
+  <BlockFileSet Type="BlockSrcs" Name="Time_exp_mu100_1ms_4096"/>
+</GenRun>

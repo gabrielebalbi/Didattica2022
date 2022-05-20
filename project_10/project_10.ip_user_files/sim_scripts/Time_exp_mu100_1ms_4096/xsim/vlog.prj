@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../project_8_randomsequenceVHDL.gen/sources_1/ip/Time_exp_mu100_1ms_4096/sim/Time_exp_mu100_1ms_4096.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

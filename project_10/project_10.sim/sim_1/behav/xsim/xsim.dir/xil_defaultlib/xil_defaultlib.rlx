@@ -1,0 +1,21 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/Hit_poisson_Mu30/sim/Hit_poisson_Mu30.v,1652809057,verilog,,C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/Time_exp_mu100_1ms_4096/sim/Time_exp_mu100_1ms_4096.v,,Hit_poisson_Mu30,,,../../../../project_10.gen/sources_1/ip/clk_generator,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/N_eventsRom_1ms_512/sim/N_eventsRom_1ms_512.v,1652808910,verilog,,C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/Hit_poisson_Mu30/sim/Hit_poisson_Mu30.v,,N_eventsRom_1ms_512,,,../../../../project_10.gen/sources_1/ip/clk_generator,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/Time_exp_mu100_1ms_4096/sim/Time_exp_mu100_1ms_4096.v,1652809181,verilog,,C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/pixsimFifo/sim/pixsimFifo.v,,Time_exp_mu100_1ms_4096,,,../../../../project_10.gen/sources_1/ip/clk_generator,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/clk_generator/clk_generator.v,1652817684,verilog,,,,clk_generator,,,../../../../project_10.gen/sources_1/ip/clk_generator,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/clk_generator/clk_generator_clk_wiz.v,1652817684,verilog,,C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/clk_generator/clk_generator.v,,clk_generator_clk_wiz,,,../../../../project_10.gen/sources_1/ip/clk_generator,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/pixsimFifo/sim/pixsimFifo.v,1650061310,verilog,,C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/new/topP.v,,pixsimFifo,,,../../../../project_10.gen/sources_1/ip/clk_generator,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/imports/mcc-simulator/4-bit_counter.vhd,1647385451,vhdl,,,,counter_4_bit,,,,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/imports/mcc-simulator/8-bit_counter.vhd,1647385451,vhdl,,,,counter_8_bit,,,,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/imports/mcc-simulator/bit-flipper.vhd,1647385451,vhdl,,,,bitflipper,,,,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/imports/mcc-simulator/fe_cmd_decoder_pxl.vhd,1647385451,vhdl,,,,fe_cmd_decoder_pxl,,,,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/imports/mcc-simulator/level1_stretcher.vhd,1647385451,vhdl,,,,level1_stretcher,,,,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/imports/mcc-simulator/lfsr.vhd,1652629075,vhdl,,,,lfsr,,,,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/imports/mcc-simulator/multiplexer.vhd,1647385451,vhdl,,,,multiplexer,,,,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/imports/mcc-simulator/pixel_simulator.vhd,1647385451,vhdl,,,,pixel_simulator,,,,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/imports/mcc-simulator/treadmill.vhd,1647385451,vhdl,,,,treadmill,,,,,,,,
+C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.srcs/sources_1/new/topP.v,1652949384,verilog,,C:/Users/ilpes/Desktop/Didattica2022/project_10/project_10.gen/sources_1/ip/clk_generator/clk_generator_clk_wiz.v,,topP,,,../../../../project_10.gen/sources_1/ip/clk_generator,,,,,

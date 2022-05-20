@@ -1,0 +1,213 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri May 20 13:44:33 2022
+| Host         : LAPTOP-IMI5H5SA running 64-bit major release  (build 9200)
+| Command      : report_methodology -file topP_methodology_drc_routed.rpt -pb topP_methodology_drc_routed.pb -rpx topP_methodology_drc_routed.rpx
+| Design       : topP
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 32
++-----------+------------------+------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                      | Violations |
++-----------+------------------+------------------------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks                   | 2          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                     | 1          |
+| TIMING-20 | Warning          | Non-clocked latch                                                | 27         |
+| TIMING-56 | Warning          | Missing logically or physically excluded clock groups constraint | 2          |
++-----------+------------------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk40_clk_generator and clk40_clk_generator_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk40_clk_generator] -to [get_clocks clk40_clk_generator_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk40_clk_generator_1 and clk40_clk_generator are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk40_clk_generator_1] -to [get_clocks clk40_clk_generator]
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpr1.dout_i[15]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]_rep/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]_rep__0/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]_rep__1/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]_rep__2/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]_rep__3/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[10]/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]_rep/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]_rep__0/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]_rep__1/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]_rep__2/CLR,
+pix0/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]_rep__3/CLR
+ (the first 15 of 111 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch pix0/concenator1/next_fill_counter_reg[0] cannot be properly analyzed as its control pin pix0/concenator1/next_fill_counter_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch pix0/concenator1/next_fill_counter_reg[1] cannot be properly analyzed as its control pin pix0/concenator1/next_fill_counter_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch pix0/concenator1/next_fill_counter_reg[2] cannot be properly analyzed as its control pin pix0/concenator1/next_fill_counter_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch pix0/concenator1/next_fill_counter_reg[3] cannot be properly analyzed as its control pin pix0/concenator1/next_fill_counter_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch pix0/concenator1/next_fill_counter_reg[4] cannot be properly analyzed as its control pin pix0/concenator1/next_fill_counter_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch pix0/concenator2/next_fill_counter_reg[0] cannot be properly analyzed as its control pin pix0/concenator2/next_fill_counter_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch pix0/concenator2/next_fill_counter_reg[1] cannot be properly analyzed as its control pin pix0/concenator2/next_fill_counter_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch pix0/concenator2/next_fill_counter_reg[2] cannot be properly analyzed as its control pin pix0/concenator2/next_fill_counter_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch pix0/concenator2/next_fill_counter_reg[3] cannot be properly analyzed as its control pin pix0/concenator2/next_fill_counter_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch pix0/concenator2/next_fill_counter_reg[4] cannot be properly analyzed as its control pin pix0/concenator2/next_fill_counter_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch pix0/concenator3/next_fill_counter_reg[0] cannot be properly analyzed as its control pin pix0/concenator3/next_fill_counter_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch pix0/concenator3/next_fill_counter_reg[1] cannot be properly analyzed as its control pin pix0/concenator3/next_fill_counter_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch pix0/concenator3/next_fill_counter_reg[2] cannot be properly analyzed as its control pin pix0/concenator3/next_fill_counter_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch pix0/concenator3/next_fill_counter_reg[3] cannot be properly analyzed as its control pin pix0/concenator3/next_fill_counter_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch pix0/concenator3/next_fill_counter_reg[4] cannot be properly analyzed as its control pin pix0/concenator3/next_fill_counter_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch pix0/concenator4/next_fill_counter_reg[0] cannot be properly analyzed as its control pin pix0/concenator4/next_fill_counter_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch pix0/concenator4/next_fill_counter_reg[1] cannot be properly analyzed as its control pin pix0/concenator4/next_fill_counter_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch pix0/concenator4/next_fill_counter_reg[2] cannot be properly analyzed as its control pin pix0/concenator4/next_fill_counter_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch pix0/concenator4/next_fill_counter_reg[3] cannot be properly analyzed as its control pin pix0/concenator4/next_fill_counter_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch pix0/concenator4/next_fill_counter_reg[4] cannot be properly analyzed as its control pin pix0/concenator4/next_fill_counter_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch pix0/next_data_length_reg[2] cannot be properly analyzed as its control pin pix0/next_data_length_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch pix0/next_data_length_reg[3] cannot be properly analyzed as its control pin pix0/next_data_length_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch pix0/next_data_length_reg[4] cannot be properly analyzed as its control pin pix0/next_data_length_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch pix0/next_state_reg[0] cannot be properly analyzed as its control pin pix0/next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch pix0/next_state_reg[1] cannot be properly analyzed as its control pin pix0/next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch pix0/next_state_reg[2] cannot be properly analyzed as its control pin pix0/next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch pix0/read_event_id_reg cannot be properly analyzed as its control pin pix0/read_event_id_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-56#1 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin clk0/inst/mmcm_adv_inst/CLKFBOUT but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clkfbout_clk_generator, clkfbout_clk_generator_1
+Related violations: <none>
+
+TIMING-56#2 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin clk0/inst/mmcm_adv_inst/CLKOUT0 but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clk40_clk_generator, clk40_clk_generator_1
+Related violations: <none>
+
+

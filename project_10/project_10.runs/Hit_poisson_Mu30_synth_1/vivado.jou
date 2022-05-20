@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 17 19:37:41 2022
+# Process ID: 13988
+# Current directory: C:/Users/ilpes/Desktop/Didattica2022/project_8_randomsequenceVHDL/project_8_randomsequenceVHDL.runs/Hit_poisson_Mu30_synth_1
+# Command line: vivado.exe -log Hit_poisson_Mu30.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Hit_poisson_Mu30.tcl
+# Log file: C:/Users/ilpes/Desktop/Didattica2022/project_8_randomsequenceVHDL/project_8_randomsequenceVHDL.runs/Hit_poisson_Mu30_synth_1/Hit_poisson_Mu30.vds
+# Journal file: C:/Users/ilpes/Desktop/Didattica2022/project_8_randomsequenceVHDL/project_8_randomsequenceVHDL.runs/Hit_poisson_Mu30_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Hit_poisson_Mu30.tcl -notrace
