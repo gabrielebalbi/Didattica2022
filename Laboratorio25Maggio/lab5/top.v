@@ -1,0 +1,89 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 16.02.2022 22:21:05
+// Design Name: 
+// Module Name: top
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module top(btn0,clk,S, led0);
+
+   input btn0;
+   input clk;
+   output [3:0] S;
+   output led0;
+
+
+// Registers in input
+
+   reg [24:0] clk_reg = {25{'b0}};
+
+   wire clk_red;
+   
+   reg led0 = 1'b0;
+   
+   reg [3:0] cnt_reg = {4'b0000};
+   wire edge_detected;
+   
+   
+   reg toggle = 1'b0; 	
+   reg btn0_i;	
+
+//////////////////////////////////////////
+	always @ (posedge  clk)	
+	begin		
+		btn0_i<=btn0;
+	end
+
+	assign edge_detected = btn0 & (~btn0_i);
+//////////////////////////////////////////////
+
+
+	always @ ( posedge clk)
+	begin
+		if (edge_detected) begin
+			toggle <= ~toggle;
+		end
+	end;
+
+////////////////////////////////////
+
+   always @(posedge clk)
+	begin
+         clk_reg <= clk_reg + 1'b1;
+	end;  
+
+	
+
+	assign clk_red = clk_reg[23];
+	
+   always @(posedge clk_red)
+	begin
+      if (toggle) begin
+         cnt_reg <= cnt_reg + 1'b1;
+	  end	 
+      else begin
+         cnt_reg <= cnt_reg - 1'b1;
+      end
+	end;  
+	
+	
+//////////////////////////////////
+assign  S = cnt_reg;
+
+
+endmodule
