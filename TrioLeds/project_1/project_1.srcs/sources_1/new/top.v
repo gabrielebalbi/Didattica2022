@@ -1,0 +1,265 @@
+`timescale 1ns / 1ps
+
+module top( 	input clk,
+	input rst,
+	
+	input btn1,
+	
+	output wire[1:0] ledoff,
+	output led0,
+	output led1,
+	output led2
+);
+			
+	parameter s0 = 2'b00;
+    parameter s1 = 2'b01;
+    parameter s2 = 2'b10;
+    parameter s3 = 2'b11;
+	reg [1:0] b_state = s0;
+
+    reg [3:0] cnt_reg = {4'b0000};
+    wire clk_red;
+	
+	reg toggle = 1'b0;
+	
+	reg [24:0] clk_reg = {25{'b0}};	
+	reg old_btn1;	
+
+	reg [7:0]tempPWM0=0;
+	reg [7:0]tempPWM1=0;
+	reg [7:0]tempPWM2=0;
+
+	reg [7:0]PWM_reference0 [0:7];
+	reg [7:0]PWM_reference1 [0:7];
+	reg [7:0]PWM_reference2 [0:7];
+	
+	reg [2:0] index0 = 0;
+	reg [2:0] index1 = 0;
+	reg [2:0] index2 = 0;
+	wire tester;
+	
+	reg edge_detected;
+
+	reg [7:0] mem2 [0:8];
+	reg run_0;
+	reg run_1;
+	reg run_2;
+	
+	wire start_0;
+	wire start_1;
+	wire start_2;
+	
+	wire led0_i;
+	wire led1_i;
+	wire led2_i;
+	
+	assign ledoff[1] = 1'b1;
+	assign ledoff[0] = 1'b1;
+	
+	reg [31:0] timer = 32'h00000000;
+	reg [31:0] time_cut = 32'h000ffFFF;
+
+   always @(posedge clk)
+	begin
+        clk_reg <= clk_reg + 1'b1;
+   		old_btn1<=btn1;
+		edge_detected <= btn1 & (~old_btn1);
+		
+		 case (b_state)
+		    
+			s0 : begin //stato di OFF
+				toggle <= 1'b0;
+				if (edge_detected) begin
+                  b_state <= s1;
+				end  
+            end
+		 
+            s1 : begin
+				  toggle <= 1'b1;
+				  timer <= timer + 1'b1;
+				  if (timer==time_cut ) begin
+					b_state <= s0;
+					timer <= 0;
+				  end 	
+            end
+			
+			default: begin
+				b_state <= s0;
+				toggle <= 1'b0;
+				timer <= 0;
+			end 
+			
+		endcase
+	end  
+
+   assign clk_red = clk_reg[14];
+
+   parameter  state1 = 4'b0001;
+   parameter  state2 = 4'b0010;
+   parameter  state3 = 4'b0100;
+   parameter  state0 = 4'b1000;
+
+   reg [3:0] state = state0;
+   reg [3:0] next_state = state0;
+
+	initial begin
+		PWM_reference0[0]<=8'h19;
+		PWM_reference0[1]<=8'h32;
+		PWM_reference0[2]<=8'h4B;
+		PWM_reference0[3]<=8'hE5;
+		PWM_reference0[4]<=8'h4B;
+		PWM_reference0[5]<=8'h32;
+		PWM_reference0[6]<=8'h19;
+		PWM_reference0[7]<=8'h00;
+		PWM_reference1[0]<=8'h19;
+		PWM_reference1[1]<=8'h32;
+		PWM_reference1[2]<=8'h4B;
+		PWM_reference1[3]<=8'hE5;
+		PWM_reference1[4]<=8'h4B;
+		PWM_reference1[5]<=8'h32;
+		PWM_reference1[6]<=8'h19;
+		PWM_reference1[7]<=8'h00;
+		PWM_reference2[0]<=8'h19;
+		PWM_reference2[1]<=8'h32;
+		PWM_reference2[2]<=8'h4B;
+		PWM_reference2[3]<=8'ha5;
+		PWM_reference2[4]<=8'h4B;
+		PWM_reference2[5]<=8'h32;
+		PWM_reference2[6]<=8'h19;
+		PWM_reference2[7]<=8'h00;
+	end
+
+
+
+   always @( posedge clk_red) begin
+
+		if (rst == 1'b1) begin
+			state <= state0;
+		end	else 
+		begin	 
+		 
+        case (state)
+		    
+			state0 : begin //stato di OFF
+				if (toggle == 1'b1)
+					state <= state1;					
+				else
+					state <= state0;
+            end
+		 
+
+            state1 : begin
+					
+				if (index0 == 3'b111)	
+					state <= state2;					
+				//  end else begin
+				else
+					state <= state1;
+            end
+            state2 : begin
+				if (index1 == 3'b111)	
+					state <= state3;
+				else
+					state <= state2;
+				  
+            end
+            state3 : begin
+			
+				if (index2 == 3'b111)	
+					state <= state0;
+				else
+					state <= state3;
+				  
+            end
+			
+         endcase
+		 
+		  end 
+	end
+
+assign start_0 = state == state1 ? 1:0;
+assign start_1 = state == state2 ? 1:0;
+assign start_2 = state == state3 ? 1:0;
+
+
+ always @(posedge clk_red)
+ begin 
+	if (rst == 1'b1) begin
+		index0 <= 0;
+	end
+	else begin
+	
+		if ((start_0 == 1'b1) && (index0 < 7) ) begin 
+			
+			tempPWM0 <= tempPWM0 + 1'b1;	
+			
+			if (tempPWM0==8'hFF) begin 			
+				tempPWM0 <= 0;
+				index0 <= index0 + 1'b1;
+			end 
+		end
+		
+		else begin
+			index0 <= 0;		
+		end
+	end	
+ end
+
+ always @(posedge clk_red)
+ begin 
+	if (rst == 1'b1) begin
+		index1 <= 0;
+	end
+	else begin
+	
+		if ((start_1 == 1'b1) && (index1 < 7) ) begin 
+			
+			tempPWM1 <= tempPWM1 + 1'b1;	
+			
+			if (tempPWM1==8'hFF) begin 			
+				tempPWM1 <= 0;
+				index1 <= index1 + 1'b1;
+			end 
+		end
+		
+		else begin
+			index1 <= 0;		
+		end
+	end	
+
+end
+
+ always @(posedge clk_red)
+ begin 
+	if (rst == 1'b1) begin
+		index2 <= 0;
+	end
+	else begin
+	
+		if ((start_2 == 1'b1) && (index2 < 7) ) begin 
+			
+			tempPWM2 <= tempPWM2 + 1'b1;	
+			
+			if (tempPWM2==8'hFF) begin 			
+				tempPWM2 <= 0;
+				index2 <= index2 + 1'b1;
+			end 
+		end
+		
+		else begin
+			index2 <= 0;		
+		end
+	end	
+
+end
+
+controller_pwm pw0( .clk(clk_red), .rst(rst),.load(start_0), .PWM_ref(PWM_reference0[index0]), .PWM_istantaneo(tempPWM0),.PWM_OUT(led0_i));
+controller_pwm pw1( .clk(clk_red), .rst(rst),.load(start_1), .PWM_ref(PWM_reference1[index1]), .PWM_istantaneo(tempPWM1),.PWM_OUT(led1_i));
+controller_pwm pw2( .clk(clk_red), .rst(rst),.load(start_2), .PWM_ref(PWM_reference2[index2]), .PWM_istantaneo(tempPWM2),.PWM_OUT(led2_i));
+
+assign led0 = led0_i;
+assign led1 = led1_i;
+assign led2 = ~(led2_i);
+	
+	
+endmodule
