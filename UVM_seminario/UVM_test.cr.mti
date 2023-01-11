@@ -1,0 +1,163 @@
+/home/balbi/UVM_seminario/scoreboard.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/scoreboard.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:24 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/scoreboard.sv 
+** Note: (vlog-2286) /home/balbi/UVM_seminario/scoreboard.sv(12): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 00:33:24 on Jan 11,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} /home/balbi/UVM_seminario/tb.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/tb.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:23 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/tb.sv 
+** Note: (vlog-2286) /home/balbi/UVM_seminario/tb.sv(4): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package tb_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package my_package
+** Warning: test_1011.sv(20): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+-- Compiling package my_package
+** Warning: gen_item_seq.sv(22): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 00:33:23 on Jan 11,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 2
+
+} {} {}} /home/balbi/UVM_seminario/Item.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/Item.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:23 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/Item.sv 
+** Note: (vlog-2286) /home/balbi/UVM_seminario/Item.sv(9): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 00:33:24 on Jan 11,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+
+} {} {}} /home/balbi/UVM_seminario/agent.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/agent.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:24 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/agent.sv 
+** Note: (vlog-2286) /home/balbi/UVM_seminario/agent.sv(8): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 00:33:25 on Jan 11,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+
+} {} {}} /home/balbi/UVM_seminario/gen_item_seq.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/gen_item_seq.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:25 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/gen_item_seq.sv 
+** Note: (vlog-2286) /home/balbi/UVM_seminario/gen_item_seq.sv(4): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Warning: /home/balbi/UVM_seminario/gen_item_seq.sv(22): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+
+Top level modules:
+	--none--
+End time: 00:33:26 on Jan 11,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+
+} {} {}} /home/balbi/UVM_seminario/monitor.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/monitor.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:26 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/monitor.sv 
+** Note: (vlog-2286) /home/balbi/UVM_seminario/monitor.sv(11): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 00:33:27 on Jan 11,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+
+} {} {}} /home/balbi/UVM_seminario/env.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/env.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:26 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/env.sv 
+** Note: (vlog-2286) /home/balbi/UVM_seminario/env.sv(10): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 00:33:26 on Jan 11,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} /home/balbi/UVM_seminario/base_test.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/base_test.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:26 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/base_test.sv 
+** Note: (vlog-2286) /home/balbi/UVM_seminario/base_test.sv(7): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 00:33:26 on Jan 11,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} /home/balbi/UVM_seminario/des_if.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/des_if.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:23 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/des_if.sv 
+-- Compiling interface des_if
+
+Top level modules:
+	--none--
+End time: 00:33:23 on Jan 11,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} /home/balbi/UVM_seminario/my_macros.svh {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/my_macros.svh
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:28 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/my_macros.svh 
+End time: 00:33:28 on Jan 11,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} /home/balbi/UVM_seminario/driver.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/driver.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:25 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/driver.sv 
+** Note: (vlog-2286) /home/balbi/UVM_seminario/driver.sv(9): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 00:33:25 on Jan 11,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} /home/balbi/UVM_seminario/my_package.svh {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/my_package.svh
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:27 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/my_package.svh 
+-- Compiling package my_package
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) Item.sv(9): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Warning: gen_item_seq.sv(22): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+
+Top level modules:
+	--none--
+End time: 00:33:28 on Jan 11,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+
+} {} {}} /home/balbi/UVM_seminario/test_1011.sv {1 {vlog -work work -vopt -sv /home/balbi/UVM_seminario/test_1011.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:27 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt -sv /home/balbi/UVM_seminario/test_1011.sv 
+** Note: (vlog-2286) /home/balbi/UVM_seminario/test_1011.sv(6): Using implicit +incdir+/home/QuestaSim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Warning: /home/balbi/UVM_seminario/test_1011.sv(20): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+
+Top level modules:
+	--none--
+End time: 00:33:27 on Jan 11,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+
+} {} {}} /home/balbi/UVM_seminario/det_1011_v2.v {1 {vlog -work work -vopt /home/balbi/UVM_seminario/det_1011_v2.v
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 00:33:28 on Jan 11,2023
+vlog -reportprogress 300 -work work -vopt /home/balbi/UVM_seminario/det_1011_v2.v 
+-- Compiling module det_1011
+
+Top level modules:
+	det_1011
+End time: 00:33:28 on Jan 11,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}}
