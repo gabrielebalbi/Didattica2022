@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar 31 13:26:42 2023
+# Process ID: 14240
+# Current directory: C:/Users/ilpes/Downloads/Cmod-A7-35T-XADC-hw.xpr/hw/hw.runs/synth_1
+# Command line: vivado.exe -log XADCdemo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source XADCdemo.tcl
+# Log file: C:/Users/ilpes/Downloads/Cmod-A7-35T-XADC-hw.xpr/hw/hw.runs/synth_1/XADCdemo.vds
+# Journal file: C:/Users/ilpes/Downloads/Cmod-A7-35T-XADC-hw.xpr/hw/hw.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source XADCdemo.tcl -notrace
