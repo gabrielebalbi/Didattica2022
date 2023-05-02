@@ -24,7 +24,7 @@ module XADCdemo(
     reg zero = 7'b1111110;  // zero
 //	reg [6:0] rotor = 7'b1000000;  // ruota
     reg [10:0] view [6:0];
-    wire [7:0] seven_data_out;
+ //  wire [7:0] seven_data_out;
     
 //     initial begin
 //           view[0]=7'b1111110;
@@ -88,7 +88,7 @@ module XADCdemo(
            
     integer pwm_end = 3070;      
     wire [11:0] shifted_data;
-    wire [11:0] xadc_data;
+    //wire [11:0] xadc_data;
     
     //filter out tiny noisy part of signal to achieve zero at ground
     assign shifted_data = (data >> 4) & 12'hff0;
@@ -124,9 +124,9 @@ module XADCdemo(
 		    else begin
 				count <= 0;
 				rotor <= (rotor << 1) | (rotor >> (5));		   
-			end; 
+			end 
 
-		end;
+		end
 
 	    assign seven_data_out = {2'b00, rotor };
 
