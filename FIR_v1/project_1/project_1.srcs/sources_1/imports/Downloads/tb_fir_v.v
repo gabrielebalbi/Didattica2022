@@ -31,10 +31,21 @@ module tb_FIR;
     reg signed [19:0] tet;                       	
     reg signed [15:0] tet16;
     reg signed [15:0] slow_tet16;
+  
+    reg signed [15:0] sinA16;
+    reg signed [15:0] sinB16;
+    reg signed [15:0] sinC16;
+    reg signed [15:0] sinD16;            
+    
+    reg signed [19:0] total_sins20;    
+    
     reg signed [7:0]  tet8;                       	    
     reg signed [15:0] sin_mem [0:255];
     reg signed [7:0]  sin_mem_noisy [0:255];
     reg signed [15:0]  sin_mem_noisy16 [0:255];
+            
+    reg signed [19:0]  four_sins_mem [0:255];                       	
+                           	
                            	
 	reg signed [7:0] sin_mem8 [0:255];
  	reg signed [7:0] sin_mem8noisy [0:255];
@@ -477,6 +488,14 @@ module tb_FIR;
 					SIGNAL_noise_iii=$signed($urandom_range(-11500,11500));
 					tet<=hiddenvalue(sin_mem[cntr256],SIGNAL_noise_iii);
 					tet16<=hiddenvalue16(sin_mem[cntr256],SIGNAL_noise_iii);
+					
+					sinA16<=sin_mem[cntr256];
+					sinB16<=sin_mem[cntr256_slow[9:2]];
+					sinC16<=sin_mem[cntr256_slow[10:3]];
+					sinD16<=sin_mem[cntr256_slow[11:4]];
+					 
+					total_sins20 <= sinA16+ sinB16 + sinC16 + sinD16 + SIGNAL_noise_iii; 
+					
 					slow_tet16<=hiddenvalue16(sin_mem[cntr256_slow[11:4]],SIGNAL_noise_iii);
 					//$display("%b",sin_mem[cntr256][15]); 
 					//$display(".................");
@@ -507,7 +526,8 @@ module tb_FIR;
 					sin_mem8noisy[cntr256]<= sin_mem[cntr256][15:8];
 					tet8 <= tet16[15:8]; //sin_mem8noisy[cntr256];
 					sin_mem_noisy[cntr256] <= tet8;
-					sin_mem_noisy16[cntr256] <= tet16;	
+					sin_mem_noisy16[cntr256] <= tet16;
+					four_sins_mem[cntr256] <= total_sins20;	
 				end	
 		end
 			    
@@ -517,6 +537,7 @@ module tb_FIR;
 		
 	 #1000000 $writememh ("sin_v1_noisy_8bits.mem", sin_mem_noisy, 0, 255);
 	 $writememh ("sin_v1_noisy_16bits.mem", sin_mem_noisy16, 0, 255);
+	 $writememh ("four_sins_v1_noisy_16bits.mem", four_sins_mem , 0, 255);
 	 
 	 $finish;         	
     end

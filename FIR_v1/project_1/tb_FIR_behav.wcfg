@@ -11,15 +11,19 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="51000001fs"></ZoomEndTime>
-      <Cursor1Time time="999169fs"></Cursor1Time>
+      <ZoomStartTime time="30279757fs"></ZoomStartTime>
+      <ZoomEndTime time="125279758fs"></ZoomEndTime>
+      <Cursor1Time time="51180000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="226"></NameColumnWidth>
-      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+      <NameColumnWidth column_width="167"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="19" />
+   <WVObjectSize size="22" />
+   <wave_markers>
+      <marker time="37790" label="" />
+      <marker time="92179757" label="" />
+   </wave_markers>
    <wvobject fp_name="/tb_FIR/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -28,13 +32,40 @@
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_FIR/s_axis_fir_tvalid" type="logic">
-      <obj_property name="ElementShortName">s_axis_fir_tvalid</obj_property>
-      <obj_property name="ObjectShortName">s_axis_fir_tvalid</obj_property>
+   <wvobject fp_name="/tb_FIR/sinA16" type="array">
+      <obj_property name="ElementShortName">sinA16[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sinA16[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_FIR/m_axis_fir_tready" type="logic">
-      <obj_property name="ElementShortName">m_axis_fir_tready</obj_property>
-      <obj_property name="ObjectShortName">m_axis_fir_tready</obj_property>
+   <wvobject fp_name="/tb_FIR/sinB16" type="array">
+      <obj_property name="ElementShortName">sinB16[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sinB16[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/sinC16" type="array">
+      <obj_property name="ElementShortName">sinC16[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sinC16[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/sinD16" type="array">
+      <obj_property name="ElementShortName">sinD16[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sinD16[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/total_sins20" type="array">
+      <obj_property name="ElementShortName">total_sins20[19:0]</obj_property>
+      <obj_property name="ObjectShortName">total_sins20[19:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_FIR/cntr256" type="array">
       <obj_property name="ElementShortName">cntr256[7:0]</obj_property>
