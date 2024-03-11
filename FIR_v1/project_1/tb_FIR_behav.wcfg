@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_FIR_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_FIR" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="51000001fs"></ZoomEndTime>
+      <Cursor1Time time="999169fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="226"></NameColumnWidth>
+      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/tb_FIR/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/s_axis_fir_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_fir_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_fir_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/m_axis_fir_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_fir_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_fir_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/cntr256" type="array">
+      <obj_property name="ElementShortName">cntr256[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cntr256[7:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+      <obj_property name="AnalogYRangeMin">1.84467e+19</obj_property>
+      <obj_property name="AnalogYRRangeMax">128</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/slow_tet16" type="array">
+      <obj_property name="ElementShortName">slow_tet16[15:0]</obj_property>
+      <obj_property name="ObjectShortName">slow_tet16[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/tet8" type="array">
+      <obj_property name="ElementShortName">tet8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tet8[7:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/sino" type="array">
+      <obj_property name="ElementShortName">sino[19:0]</obj_property>
+      <obj_property name="ObjectShortName">sino[19:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">-24464100.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">105911000.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/sin_mem8noisy" type="array">
+      <obj_property name="ElementShortName">sin_mem8noisy[0:255][7:0]</obj_property>
+      <obj_property name="ObjectShortName">sin_mem8noisy[0:255][7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/tet" type="array">
+      <obj_property name="ElementShortName">tet[19:0]</obj_property>
+      <obj_property name="ObjectShortName">tet[19:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">209</obj_property>
+      <obj_property name="AnalogYRangeMin">-30000.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">30000.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/tet16" type="array">
+      <obj_property name="ElementShortName">tet16[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tet16[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+      <obj_property name="AnalogYRangeMin">-32767.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">32767.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/sino_senza" type="array">
+      <obj_property name="ElementShortName">sino_senza[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sino_senza[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">223</obj_property>
+      <obj_property name="AnalogYRangeMin">-6381</obj_property>
+      <obj_property name="AnalogYRRangeMax">8298</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/SIGNAL_noise_iii" type="array">
+      <obj_property name="ElementShortName">SIGNAL_noise_iii[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SIGNAL_noise_iii[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/s_axis_fir_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_fir_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_fir_tdata[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">-869398.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">179177.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/s_axis_fir_tdata_2" type="array">
+      <obj_property name="ElementShortName">s_axis_fir_tdata_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_fir_tdata_2[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/s_axis_fir_tdata_sum" type="array">
+      <obj_property name="ElementShortName">s_axis_fir_tdata_sum[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_fir_tdata_sum[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/m_axis_fir_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_fir_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_fir_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/m_axis_fir_tkeep" type="array">
+      <obj_property name="ElementShortName">m_axis_fir_tkeep[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_fir_tkeep[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FIR/m_axis_fir_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_fir_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_fir_tdata[31:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
