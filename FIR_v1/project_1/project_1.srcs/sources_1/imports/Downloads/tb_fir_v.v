@@ -38,6 +38,7 @@ module tb_FIR;
     reg signed [15:0] sinD16;            
     
     reg signed [19:0] total_sins20;    
+    reg signed [19:0] total_sins20_filtered;    
     
     reg signed [7:0]  tet8;                       	    
     reg signed [15:0] sin_mem [0:255];
@@ -57,6 +58,77 @@ module tb_FIR;
     
     wire [31:0] m_axis_fir_tdata_sum;
     wire [63:0] m_axis_fir_tdata_sum_L;
+    
+    
+    wire signed [19:0] mtap0;
+    wire signed [19:0] mtap1;
+    wire signed [19:0] mtap2;
+    wire signed [19:0] mtap3;
+   	wire signed [19:0] mtap4;
+    
+    reg signed [19:0] macc0;
+   	reg signed [19:0] macc1;
+   	reg signed [19:0] macc2;
+   	reg signed [19:0] macc3;
+   	reg signed [19:0] macc4;
+    
+    reg signed [19:0] mbuf0;
+   	reg signed [19:0] mbuf1;
+   	reg signed [19:0] mbuf2;
+   	reg signed [19:0] mbuf3;
+   	reg signed [19:0] mbuf4;
+    
+    reg menable_buff;
+    reg menable_fir;
+    
+    assign mtap0 = 20'h00001;  // 
+   	assign mtap1 = 20'h00001;  // 
+   	assign mtap2 = 20'h00001;  // 
+   	assign mtap3 = 20'h00001;  // 
+   	assign mtap4 = 20'h00001; 
+    
+    always @ (posedge clk)
+   	        begin
+   	            if(menable_buff == 1'b1)
+   	                begin
+   	                    mbuf0 <= total_sins20;
+   	                    mbuf1 <= mbuf0;        
+   	                    mbuf2 <= mbuf1;         
+   	                    mbuf3 <= mbuf2;      
+   	                    mbuf4 <= mbuf3;      
+   	                end
+   	            else
+   	                begin
+   	                    mbuf0 <= mbuf0;
+   	                    mbuf1 <= mbuf1;        
+   	                    mbuf2 <= mbuf2;         
+   	                    mbuf3 <= mbuf3;      
+   	                    mbuf4 <= mbuf4;      
+   	                end
+   	        end
+    
+     /* Multiply stage of FIR */
+   	           always @ (posedge clk)
+   	               begin
+   	                   if (menable_fir == 1'b1)
+   	                       begin
+   	                           macc0 <= mtap0 * mbuf0;
+   	                           macc1 <= mtap1 * mbuf1;
+   	                           macc2 <= mtap2 * mbuf2;
+   	                           macc3 <= mtap3 * mbuf3;
+   	                           macc4 <= mtap4 * mbuf4;
+   	                       end
+   	               end    
+   	               
+   	            /* Accumulate stage of FIR */   
+   	           always @ (posedge clk) 
+   	               begin
+   	                   if (menable_fir == 1'b1)
+   	                       begin
+   	                            total_sins20_filtered <=0.2 * ( macc0 + macc1 + macc2 + macc3 + macc4);
+   	                       end
+   	               end     
+
     
     
     function signed [19:0] hiddenvalue (input signed [15:0] in_a, in_noise);
@@ -541,6 +613,12 @@ module tb_FIR;
 	 
 	 $finish;         	
     end
+    
+    
+    
+    
+    
+    
 endmodule
 
 
