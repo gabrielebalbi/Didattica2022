@@ -1,0 +1,88 @@
+
+*** Running vivado
+    with args -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: link_design -top top -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1023.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc]
+WARNING: [Vivado 12-507] No nets matched 'signal_out_OBUF[7]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:143]
+WARNING: [Vivado 12-507] No nets matched 'cntr256_reg[0]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'cntr256_reg[1]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'cntr256_reg[2]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'cntr256_reg[3]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'cntr256_reg[4]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'cntr256_reg[5]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'cntr256_reg[6]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'cntr256_reg[7]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:147]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'cntr256_slow_reg[10]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:151]
+WARNING: [Vivado 12-507] No nets matched 'cntr256_slow_reg[11]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:151]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[0]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[1]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[2]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[3]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[4]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[5]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[6]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[7]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[8]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[9]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[10]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[11]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[12]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[13]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[14]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[15]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[16]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'total_sins20[19]'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc:155]
+Finished Parsing XDC File [C:/Users/ilpes/Desktop/Didattica2023/FIR_v1/project_2/project_2.srcs/constrs_1/imports/new/top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1023.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 29 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1023.414 ; gain = 0.000
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.801 . Memory (MB): peak = 1023.414 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 197139dbf
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1430.262 ; gain = 406.848
+
+Starting Logic Optimization Task
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 29 Warnings, 2 Critical Warnings and 1 Errors encountered.
+opt_design failed
+ERROR: [Chipscope 16-213] The debug port 'u_ila_0/probe0' has 1 unconnected channels (bits). This will cause errors during implementation.
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 14 16:40:28 2024...

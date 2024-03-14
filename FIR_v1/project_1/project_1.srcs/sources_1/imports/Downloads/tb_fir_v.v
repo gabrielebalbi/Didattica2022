@@ -22,6 +22,11 @@ module tb_FIR;
 	 
 	reg signed [19:0] sino;
  	reg signed [15:0] sino_senza;
+ 	
+ 	integer Nsample=256;
+ 	 
+ 	reg signed [15:0] twiddleFactor_cos[255:0][255:0]; 
+ 	reg signed [15:0] twiddleFactor_sin[255:0][255:0];  
  	 
 	reg [6:0] addr;
     reg [7:0] inbus;
@@ -603,6 +608,14 @@ module tb_FIR;
 				end	
 		end
 			    
+			    
+			
+    initial begin
+    	// twiddleFactor_cos[nSample][255:0]   
+    	twiddleFactor_cos[0][0] <= $cos(2*3.141592*0/$itor(Nsample));
+    	twiddleFactor_cos[1][0] <= $cos(2*3.141592*1/$itor(Nsample));
+    	twiddleFactor_cos[2][0] <= $cos(2*3.141592*1/$itor(Nsample));
+    end
     
     
     initial begin
