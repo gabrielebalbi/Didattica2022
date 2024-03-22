@@ -6,6 +6,9 @@ module top(
     input btn0,
     output reg led,
     output reg signed [19:0] signal_out
+//	 output reg [19:0] usignal_out
+//	 output reg signed [31:0] m_axis_fir_tdata
+	 
     );
     
 
@@ -17,6 +20,7 @@ reg [11:0] cntr256_slow;
 reg signed [15:0] SIGNAL_noise_iii;
 
 reg signed [15:0] sinA16;
+reg signed [15:0] sinAA16;
 reg signed [15:0] sinB16;
 reg signed [15:0] sinC16;
 reg signed [15:0] sinD16;            
@@ -101,11 +105,12 @@ end
 					cntr256_slow <= cntr256_slow+1;
 					
 					sinA16<=sin_mem_noisy[cntr256][15:8];
+					sinAA16<=sin_mem_noisy[cntr256];
 					sinB16<=sin_mem_noisy[cntr256_slow[9:2]];
 					sinC16<=sin_mem_noisy[cntr256_slow[10:3]];
 					sinD16<=sin_mem_noisy[cntr256_slow[11:4]];
 					 
-					total_sins20 <= sinB16;// + sinC16 + sinD16;// + SIGNAL_noise_iii; 
+					total_sins20 <= sinAA16;// + sinC16 + sinD16;// + SIGNAL_noise_iii; 
 					//total_sins20 <= sinA16;// + SIGNAL_noise_iii; 					
 				end	
 		end
@@ -210,17 +215,25 @@ end
    	                   if (btn0 == 1'b1)
    	                       begin
    	                            total_sins20_filtered <=( macc0 + macc1 + macc2 + macc3+ macc4 + macc5 + macc6 + macc7 + macc8 + macc9 + macc10 + macc11 + macc12 + macc13+ macc14 + macc15)/16;
-   	                            signal_out <= total_sins20_filtered;
+   	                            signal_out <= total_sins20_filtered + 524287;
    	                       end
    	                   else
-	   	                   signal_out <= total_sins20;    
+	   	                   signal_out <= total_sins20 + 524287;    
    	               end     
 
 
 
 
 
-     
+   //  FIR FIR_i(
+     //   .clk(clk),
+      //  .reset(reset),
+		  //.s_axis_fir_tdata(total_sins20[19:4])),   
+        //.s_axis_fir_tkeep(s_axis_fir_tkeep),   
+       // .s_axis_fir_tlast(1'b0),   
+       // .s_axis_fir_tvalid(1'b1), 
+       // .m_axis_fir_tready(1'b1),  
+       // .m_axis_fir_tdata(m_axis_fir_tdata));
     
     
 endmodule
