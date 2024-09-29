@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep 29 08:16:31 2024
+# Process ID: 19216
+# Current directory: c:/Users/ilpes/Desktop/Didattica2023/drp_master_ex_fromscratch/gtwizard_0_gtpe2_ex
+# Command line: vivado.exe -notrace -source c:/Users/ilpes/Desktop/Didattica2023/drp_master_ex/project_3/project_3.gen/sources_1/ip/gtwizard_0_gtpe2/gtwizard_0_gtpe2_ex.tcl
+# Log file: c:/Users/ilpes/Desktop/Didattica2023/drp_master_ex_fromscratch/gtwizard_0_gtpe2_ex/vivado.log
+# Journal file: c:/Users/ilpes/Desktop/Didattica2023/drp_master_ex_fromscratch/gtwizard_0_gtpe2_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/Users/ilpes/Desktop/Didattica2023/drp_master_ex/project_3/project_3.gen/sources_1/ip/gtwizard_0_gtpe2/gtwizard_0_gtpe2_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_project

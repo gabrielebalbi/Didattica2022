@@ -1,0 +1,99 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              sys_clk_pin |              drpclk_in_i |                    ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/current_state_reg[0]/D|
+|              sys_clk_pin |              drpclk_in_i |                    ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/current_state_reg[3]/D|
+|              sys_clk_pin |              drpclk_in_i |                    ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/current_state_reg[0]/D|
+|              sys_clk_pin |              drpclk_in_i |                             ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_srl_fff/current_state_reg[1]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[14]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[8]/D|
+|              sys_clk_pin |              drpclk_in_i | gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/FSM_sequential_tx_state_reg[0]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[1]/D|
+|              sys_clk_pin |              drpclk_in_i |          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_stream_ffe/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[8]/D|
+|              sys_clk_pin |              drpclk_in_i |          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_stream_ffe/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[6]/D|
+|              sys_clk_pin |              drpclk_in_i |                                      ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_3_reg[8]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[9]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[12]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[7]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[10]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[12]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[3]/D|
+|              sys_clk_pin |              drpclk_in_i |          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_stream_ffe/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[11]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[9]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[14]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[2]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[13]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[11]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[2]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[5]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[4]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[5]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[4]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[10]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[6]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[1]/D|
+|              sys_clk_pin |              drpclk_in_i |               ila_drp/inst/ila_core_inst/u_ila_regs/reg_stream_ffe/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[2]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[6]/D|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[9]|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[6]|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[7]|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[5]|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[7]/D|
+|              sys_clk_pin |              drpclk_in_i |                           ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[0]/D|
+|              sys_clk_pin |              drpclk_in_i |              ila_drp/inst/ila_core_inst/u_ila_regs/reg_stream_ffe/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[13]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/shadow_reg[13]/D|
+|              sys_clk_pin |              drpclk_in_i |ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/multiple_enable_latency.enable_out_reg[2]_srl3_srlopt/D|
+|              sys_clk_pin |              drpclk_in_i |       gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/time_out_counter_reg[12]/D|
+|              sys_clk_pin |              drpclk_in_i |                                        gtwizard_0_gtpe2_support_i/common_reset_i/init_wait_count_reg[7]/D|
+|              sys_clk_pin |              drpclk_in_i |              ila_drp/inst/ila_core_inst/u_ila_regs/reg_stream_ffe/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[12]/D|
+|              sys_clk_pin |              drpclk_in_i |                                        gtwizard_0_gtpe2_support_i/common_reset_i/init_wait_count_reg[6]/D|
+|              sys_clk_pin |              drpclk_in_i |       gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/time_out_counter_reg[14]/D|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[7]/D|
+|              sys_clk_pin |              drpclk_in_i |                                        gtwizard_0_gtpe2_support_i/common_reset_i/init_wait_count_reg[5]/D|
+|              sys_clk_pin |              drpclk_in_i | gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/FSM_sequential_tx_state_reg[2]/D|
+|              sys_clk_pin |              drpclk_in_i |                gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/gttxreset_i_reg/D|
+|              sys_clk_pin |              drpclk_in_i |               ila_drp/inst/ila_core_inst/u_ila_regs/reg_stream_ffe/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[4]/D|
+|              sys_clk_pin |              drpclk_in_i |               ila_drp/inst/ila_core_inst/u_ila_regs/reg_stream_ffe/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3]/D|
+|              sys_clk_pin |              drpclk_in_i |               ila_drp/inst/ila_core_inst/u_ila_regs/reg_stream_ffe/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[9]/D|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN|
+|              sys_clk_pin |              drpclk_in_i |    gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/run_phase_alignment_int_reg/D|
+|              sys_clk_pin |              drpclk_in_i |                  gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/TXUSERRDY_reg/D|
+|              sys_clk_pin |              drpclk_in_i |                                                                                    gt0_drpaddr_i_reg[8]/D|
+|              sys_clk_pin |              drpclk_in_i |                                                                                    gt0_drpaddr_i_reg[3]/D|
+|              sys_clk_pin |              drpclk_in_i |                                        gtwizard_0_gtpe2_support_i/common_reset_i/init_wait_count_reg[3]/D|
+|              sys_clk_pin |              drpclk_in_i |                                                                                    gt0_drpaddr_i_reg[5]/D|
+|              sys_clk_pin |              drpclk_in_i |                                                                                    gt0_drpaddr_i_reg[2]/D|
+|              sys_clk_pin |              drpclk_in_i |                               ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_D/CE|
+|              sys_clk_pin |              drpclk_in_i |                               ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_A/CE|
+|              sys_clk_pin |              drpclk_in_i |                               ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_B/CE|
+|              sys_clk_pin |              drpclk_in_i |                               ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_C/CE|
+|              sys_clk_pin |              drpclk_in_i |                               ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_A/CE|
+|              sys_clk_pin |              drpclk_in_i |                               ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_B/CE|
+|              sys_clk_pin |              drpclk_in_i |                               ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_D/CE|
+|              sys_clk_pin |              drpclk_in_i |                               ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_C/CE|
+|              sys_clk_pin |              drpclk_in_i |            ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/I_YESLUT6.U_SRL32_A/CE|
+|              sys_clk_pin |              drpclk_in_i |                         ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/i_o_to_64k.u_selx/CE|
+|              sys_clk_pin |              drpclk_in_i |            ila_rx0_inst/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/I_YESLUT6.U_SRL32_B/CE|
+|              sys_clk_pin |              drpclk_in_i |       gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/time_out_counter_reg[14]/R|
+|              sys_clk_pin |              drpclk_in_i |       gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/time_out_counter_reg[12]/R|
+|              sys_clk_pin |              drpclk_in_i |       gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/time_out_counter_reg[13]/R|
+|              sys_clk_pin |              drpclk_in_i |                                                     gtwizard_0_gtpe2_support_i/common_reset_i/state_reg/D|
+|              sys_clk_pin |              drpclk_in_i |                                              ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/itrigger_out_reg/D|
+|              sys_clk_pin |              drpclk_in_i |                                        gtwizard_0_gtpe2_support_i/common_reset_i/init_wait_count_reg[4]/D|
+|              sys_clk_pin |              drpclk_in_i |    ila_drp/inst/ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_out_transfer_inst/din_reg_reg/D|
+|              sys_clk_pin |              drpclk_in_i |             gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_txresetfsm_i/txresetdone_s3_reg/D|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]/D|
+|              sys_clk_pin |              drpclk_in_i |    ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/multiple_enable_latency.enable_out_reg[2]_srl3/D|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[4]/D|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]/D|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[5]/D|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]/D|
+|              sys_clk_pin |              drpclk_in_i |ila_drp/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[1]/D|
+|              sys_clk_pin |              drpclk_in_i |                         ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[6].mu_srl_reg/serial_dout_reg/D|
+|              sys_clk_pin |              drpclk_in_i |                              ila_drp/inst/ila_core_inst/u_ila_regs/MU_SRL[6].mu_srl_reg/serial_dout_reg/D|
+|              sys_clk_pin |              drpclk_in_i |                         ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[4].mu_srl_reg/serial_dout_reg/D|
+|              sys_clk_pin |              drpclk_in_i |                         ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/serial_dout_reg/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

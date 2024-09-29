@@ -1,0 +1,1265 @@
+
+*** Running vivado
+    with args -log gtwizard_0_gtpe2_exdes.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source gtwizard_0_gtpe2_exdes.tcl -notrace
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source gtwizard_0_gtpe2_exdes.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1023.242 ; gain = 0.000
+Command: link_design -top gtwizard_0_gtpe2_exdes -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_DRP/ila_DRP.dcp' for cell 'ila_drp'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_0/ila_0.dcp' for cell 'ila_rx0_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_1/ila_1.dcp' for cell 'ila_tx0_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/vio_0/vio_0.dcp' for cell 'vio_gt_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/gtwizard_0_gtpe2/gtwizard_0_gtpe2.dcp' for cell 'gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1023.242 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 342 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: ila_drp UUID: a89b3fc6-975c-59a8-aef9-a2195eb37d64 
+INFO: [Chipscope 16-324] Core: ila_rx0_inst UUID: 7cca0218-2b85-5475-9b92-d3e18c2395ef 
+INFO: [Chipscope 16-324] Core: ila_tx0_inst UUID: a5c39bdc-294d-5f28-899d-fbba99006aad 
+INFO: [Chipscope 16-324] Core: vio_gt_inst UUID: 286852e8-fc5d-5b53-8b49-bfa230e69918 
+Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/gtwizard_0_gtpe2/gtwizard_0_gtpe2.xdc] for cell 'gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/gtwizard_0_gtpe2/gtwizard_0_gtpe2.xdc] for cell 'gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst'
+Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/vio_0/vio_0.xdc] for cell 'vio_gt_inst'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/vio_0/vio_0.xdc] for cell 'vio_gt_inst'
+Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_rx0_inst/inst'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_rx0_inst/inst'
+Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_rx0_inst/inst'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_rx0_inst/inst'
+Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_tx0_inst/inst'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_tx0_inst/inst'
+Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'ila_tx0_inst/inst'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'ila_tx0_inst/inst'
+Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_DRP/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_drp/inst'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_DRP/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_drp/inst'
+Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_DRP/ila_v6_2/constraints/ila.xdc] for cell 'ila_drp/inst'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/ila_DRP/ila_v6_2/constraints/ila.xdc] for cell 'ila_drp/inst'
+Parsing XDC File [C:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.srcs/constrs_1/imports/example_design/gtwizard_0_gtpe2_exdes.xdc]
+Finished Parsing XDC File [C:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.srcs/constrs_1/imports/example_design/gtwizard_0_gtpe2_exdes.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1023.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 196 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 196 instances
+
+16 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:50 . Memory (MB): peak = 1023.242 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Parsing TCL File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/gtwizard_0_gtpe2/tcl/v7ht.tcl] from IP C:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.srcs/sources_1/ip/gtwizard_0_gtpe2/gtwizard_0_gtpe2.xci
+Sourcing Tcl File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/gtwizard_0_gtpe2/tcl/v7ht.tcl]
+
+****************************************************************************************
+*  WARNING: This script only supports the xc7vh290t, xc7vh580t and xc7vh870t devices.  *
+*           Your current part is xc7a35t.                                            *
+****************************************************************************************
+
+Finished Sourcing Tcl File [c:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.gen/sources_1/ip/gtwizard_0_gtpe2/tcl/v7ht.tcl]
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1027.332 ; gain = 4.090
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1374dc7e0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.598 ; gain = 549.266
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1845.574 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 199eda370
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:59 . Memory (MB): peak = 1845.574 ; gain = 44.488
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: d0728372
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:01:59 . Memory (MB): peak = 1845.574 ; gain = 44.488
+INFO: [Opt 31-389] Phase Retarget created 17 cells and removed 31 cells
+INFO: [Opt 31-1021] In phase Retarget, 195 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: d3a7e1df
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:01:59 . Memory (MB): peak = 1845.574 ; gain = 44.488
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 48 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 150 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 19385b0a8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:02:00 . Memory (MB): peak = 1845.574 ; gain = 44.488
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 168 cells
+INFO: [Opt 31-1021] In phase Sweep, 2047 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+Phase 5 BUFG optimization | Checksum: 19385b0a8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:02:00 . Memory (MB): peak = 1845.574 ; gain = 44.488
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: 19385b0a8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:02:00 . Memory (MB): peak = 1845.574 ; gain = 44.488
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 19385b0a8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:02:00 . Memory (MB): peak = 1845.574 ; gain = 44.488
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 155 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              17  |              31  |                                            195  |
+|  Constant propagation         |               0  |              48  |                                            150  |
+|  Sweep                        |               0  |             168  |                                           2047  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            155  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1845.574 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: cb2417c0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:02:00 . Memory (MB): peak = 1845.574 ; gain = 44.488
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 4 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 6 newly gated: 0 Total Ports: 12
+Ending PowerOpt Patch Enables Task | Checksum: d3634db3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Ending Power Optimization Task | Checksum: d3634db3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1935.203 ; gain = 89.629
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: d3634db3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1041f1949
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:02:16 . Memory (MB): peak = 1935.203 ; gain = 911.961
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.runs/impl_1/gtwizard_0_gtpe2_exdes_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file gtwizard_0_gtpe2_exdes_drc_opted.rpt -pb gtwizard_0_gtpe2_exdes_drc_opted.pb -rpx gtwizard_0_gtpe2_exdes_drc_opted.rpx
+Command: report_drc -file gtwizard_0_gtpe2_exdes_drc_opted.rpt -pb gtwizard_0_gtpe2_exdes_drc_opted.pb -rpx gtwizard_0_gtpe2_exdes_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.runs/impl_1/gtwizard_0_gtpe2_exdes_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 79dde812
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 9a838d7c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.713 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 14646b1c5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 14646b1c5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 14646b1c5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: c280e43e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1494fda0e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 154 LUTNM shape to break, 157 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 154, total 154, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 228 nets or cells. Created 154 new cells, deleted 74 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 59 nets or cells. Created 100 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Physopt 32-527] Pass 1: Identified 6 candidate cells for BRAM register optimization
+INFO: [Physopt 32-666] Processed cell ila_drp/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram. No change.
+INFO: [Physopt 32-666] Processed cell ila_drp/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram. No change.
+INFO: [Physopt 32-666] Processed cell ila_rx0_inst/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram. No change.
+INFO: [Physopt 32-666] Processed cell ila_rx0_inst/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram. No change.
+INFO: [Physopt 32-666] Processed cell ila_rx0_inst/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram. No change.
+INFO: [Physopt 32-666] Processed cell ila_tx0_inst/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram. No change.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          154  |             74  |                   228  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |          100  |              0  |                    59  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          254  |             74  |                   287  |           0  |           8  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 21410dddc
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Phase 2.3 Global Placement Core | Checksum: 1d5f8a31b
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1d5f8a31b
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 140f3ac59
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1a5b925c9
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1447fee96
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1267c19e1
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 14d684568
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:28 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1e4cbfe0f
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:39 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 25da8bdb0
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:40 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 17f7658d8
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:40 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 10882bfb6
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:01 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 10882bfb6
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:01 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1f914d54d
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.089 | TNS=-17252.425 |
+Phase 1 Physical Synthesis Initialization | Checksum: 204759bd1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.420 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 132549e2f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.450 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1f914d54d
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:05 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-4.505. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:23 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1f134b319
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:23 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1f134b319
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:23 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                2x2|                4x4|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1f134b319
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:23 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 1f134b319
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:23 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:23 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17e28af75
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:23 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Ending Placer Task | Checksum: 146c5de29
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:23 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:35 ; elapsed = 00:01:24 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.618 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.runs/impl_1/gtwizard_0_gtpe2_exdes_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file gtwizard_0_gtpe2_exdes_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file gtwizard_0_gtpe2_exdes_utilization_placed.rpt -pb gtwizard_0_gtpe2_exdes_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file gtwizard_0_gtpe2_exdes_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.421 | TNS=-17197.261 |
+Phase 1 Physical Synthesis Initialization | Checksum: de2c4a39
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.421 | TNS=-17197.261 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: de2c4a39
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.421 | TNS=-17197.261 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[11].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2_reg[11]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.421 | TNS=-17197.832 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[12].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2_reg[12]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.421 | TNS=-17198.614 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[13].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2_reg[13]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.421 | TNS=-17199.045 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[14].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2_reg[14]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.387 | TNS=-17199.960 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_19/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[0]_0.  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_19/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[0]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_19/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[0]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.385 | TNS=-17199.482 |
+INFO: [Physopt 32-702] Processed net ila_drp/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-782] Net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_den_o was not replicated
+INFO: [Physopt 32-780] Instance ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_den_o.  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_den_r_reg
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_den_o. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.374 | TNS=-17198.430 |
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_reg[3]_0[0].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_reg[0]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_reg[3]_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.374 | TNS=-17198.885 |
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_reg[3]_0[1].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_reg[1]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_reg[3]_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.374 | TNS=-17199.181 |
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_reg[3]_0[2].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_reg[2]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_reg[3]_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.373 | TNS=-17199.493 |
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[6].  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[6]
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.370 | TNS=-17229.517 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_17/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg_n_0_[12].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_17/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[12]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_17/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg_n_0_[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.368 | TNS=-17229.098 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[15].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2_reg[15]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.368 | TNS=-17229.666 |
+INFO: [Physopt 32-662] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[5].  Did not re-place instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2_reg[5]
+INFO: [Physopt 32-702] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-782] Net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[2] was not replicated
+INFO: [Physopt 32-780] Instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[2].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[2]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.366 | TNS=-17227.952 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-782] Net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3] was not replicated
+INFO: [Physopt 32-780] Instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3].  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[3]
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.338 | TNS=-17217.981 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[11]_0.  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[11]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[11]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.338 | TNS=-17217.973 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[1]_0.  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[1]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[1]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.338 | TNS=-17217.862 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg_n_0_[5].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[5]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg_n_0_[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.338 | TNS=-17217.626 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[6]_0.  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[6]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[6]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.336 | TNS=-17217.506 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/SR[0].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[0]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/SR[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.336 | TNS=-17219.192 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[10]_0.  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[10]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[10]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.336 | TNS=-17220.947 |
+INFO: [Physopt 32-662] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[2]_0.  Did not re-place instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[2]
+INFO: [Physopt 32-702] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[2]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[9].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[9]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.331 | TNS=-17179.198 |
+INFO: [Physopt 32-663] Processed net vio_gt_inst/inst/PROBE_IN_INST/Read_int.  Re-placed instance vio_gt_inst/inst/PROBE_IN_INST/Read_int_reg
+INFO: [Physopt 32-735] Processed net vio_gt_inst/inst/PROBE_IN_INST/Read_int. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.330 | TNS=-17179.629 |
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[3]_0[0].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[0]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[3]_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.330 | TNS=-17180.366 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[3]_0[1].  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[1]
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[3]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/U_RD_REQ_FLAG/rd_req_edge.  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/U_RD_REQ_FLAG/G_POS_EDGE.flag_reg
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/U_RD_REQ_FLAG/rd_req_edge. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17180.568 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0].  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/Q_reg.  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/Q_reg_reg[0]
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/Q_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/AS[0].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/AS[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17179.582 |
+INFO: [Physopt 32-663] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[0].  Re-placed instance gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[0]
+INFO: [Physopt 32-735] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17179.758 |
+INFO: [Physopt 32-663] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[1].  Re-placed instance gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[1]
+INFO: [Physopt 32-735] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17180.233 |
+INFO: [Physopt 32-663] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[2].  Re-placed instance gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[2]
+INFO: [Physopt 32-735] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17180.733 |
+INFO: [Physopt 32-663] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[3].  Re-placed instance gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[3]
+INFO: [Physopt 32-735] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17181.255 |
+INFO: [Physopt 32-663] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[4].  Re-placed instance gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[4]
+INFO: [Physopt 32-735] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17181.350 |
+INFO: [Physopt 32-663] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[5].  Re-placed instance gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[5]
+INFO: [Physopt 32-735] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17181.654 |
+INFO: [Physopt 32-663] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[6].  Re-placed instance gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[6]
+INFO: [Physopt 32-735] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17181.936 |
+INFO: [Physopt 32-662] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[7].  Did not re-place instance gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[7]
+INFO: [Physopt 32-702] Processed net gtwizard_0_gtpe2_support_i/gtwizard_0_gtpe2_init_i/inst/gt0_rxresetfsm_i/init_wait_count_reg[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net vio_gt_inst/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/probe_out0[0].  Re-placed instance vio_gt_inst/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/Probe_out_reg[0]
+INFO: [Physopt 32-735] Processed net vio_gt_inst/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/probe_out0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17176.015 |
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i.  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.327 | TNS=-17172.115 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i.  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DRP_CLK_IN_P_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DRP_CLK_IN_P. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ila_drp/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[11].  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[11]
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.319 | TNS=-17171.755 |
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/Q[1].  Re-placed instance ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/read_addr_reg[1]
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/Q[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.319 | TNS=-17172.379 |
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/Q[5].  Re-placed instance ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/read_addr_reg[5]
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/Q[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.315 | TNS=-17172.910 |
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/drdy_ffa.  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/drdy_ffa_reg
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/drdy_ffa. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.315 | TNS=-17172.666 |
+INFO: [Physopt 32-702] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[2].  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[2]
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.314 | TNS=-17167.727 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[4].  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[4]
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.314 | TNS=-17167.640 |
+INFO: [Physopt 32-662] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[5].  Did not re-place instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2_reg[5]
+INFO: [Physopt 32-702] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[0].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[0]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.308 | TNS=-17165.479 |
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[4].  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[4]
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.306 | TNS=-17161.545 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[6].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[6]
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[5]_i_2_n_0.  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[5]_i_2
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[5]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/G_1PIPE_IFACE.s_daddr_r_reg[0].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/xsdb_reg[15]_i_2__6
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/G_1PIPE_IFACE.s_daddr_r_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_6/I_EN_CTL_EQ1.U_CTL/G_1PIPE_IFACE.s_daddr_r_reg[3].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_6/I_EN_CTL_EQ1.U_CTL/current_state[3]_i_5
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_6/I_EN_CTL_EQ1.U_CTL/G_1PIPE_IFACE.s_daddr_r_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.303 | TNS=-17158.283 |
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/Q[0].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/read_addr_reg[0]
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/Q[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[8].  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[8]
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.303 | TNS=-17156.925 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[3]_0[1].  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[1]
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[3]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i.  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i_reg
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.302 | TNS=-17155.940 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i.  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.302 | TNS=-17152.617 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i.  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i_reg
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.302 | TNS=-17152.099 |
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.302 | TNS=-17153.361 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0].  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/Q_reg.  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/Q_reg_reg[0]
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/Q_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/AS[0].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/AS[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.302 | TNS=-17153.299 |
+INFO: [Physopt 32-702] Processed net DRP_CLK_IN_P_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DRP_CLK_IN_P. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.302 | TNS=-17153.299 |
+Phase 3 Critical Path Optimization | Checksum: de2c4a39
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1935.203 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.302 | TNS=-17153.299 |
+INFO: [Physopt 32-702] Processed net ila_drp/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[8].  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[8]
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.298 | TNS=-17151.222 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[5].  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[5]
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.293 | TNS=-17142.496 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-782] Net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3] was not replicated
+INFO: [Physopt 32-780] Instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[3]
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[4]_0.  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[4]_i_5
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[4]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.289 | TNS=-17142.424 |
+INFO: [Physopt 32-662] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[5].  Did not re-place instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2_reg[5]
+INFO: [Physopt 32-702] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-782] Net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[1] was not replicated
+INFO: [Physopt 32-780] Instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-662] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[1].  Did not re-place instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[1]
+INFO: [Physopt 32-702] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[6]_i_4_n_0.  Did not re-place instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[6]_i_4
+INFO: [Physopt 32-710] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[15]_i_1_n_0. Critical path length was reduced through logic transformation on cell ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[15]_i_1_comp.
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_2[6]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.285 | TNS=-17141.354 |
+INFO: [Physopt 32-662] Processed net vio_gt_inst/inst/PROBE_IN_INST/Read_int.  Did not re-place instance vio_gt_inst/inst/PROBE_IN_INST/Read_int_reg
+INFO: [Physopt 32-702] Processed net vio_gt_inst/inst/PROBE_IN_INST/Read_int. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/sl_iport0_o[13].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/addr_reg[13]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/sl_iport0_o[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.285 | TNS=-17141.083 |
+INFO: [Physopt 32-702] Processed net ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-782] Net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[4] was not replicated
+INFO: [Physopt 32-780] Instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[4].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[4]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.283 | TNS=-17139.426 |
+INFO: [Physopt 32-662] Processed net ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/wcnt_hcmp.  Did not re-place instance ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp_q
+INFO: [Physopt 32-702] Processed net ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/wcnt_hcmp. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_drp/inst/ila_core_inst/en_adv_trigger.  Did not re-place instance ila_drp/inst/ila_core_inst/en_adv_trigger_reg
+INFO: [Physopt 32-702] Processed net ila_drp/inst/ila_core_inst/en_adv_trigger. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/cmp_reset.  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/u_scnt_cmp_q_i_1
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/cmp_reset. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.281 | TNS=-17138.531 |
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[6].  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[6]
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.278 | TNS=-17137.856 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[9]_0.  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[9]_i_5
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[9]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.274 | TNS=-17137.794 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[9].  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[9]
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.272 | TNS=-17142.358 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_16/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[10]_i_2_n_0.  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_16/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[10]_i_2
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_16/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[10]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.272 | TNS=-17142.131 |
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/sl_iport0_o[11].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/addr_reg[11]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/sl_iport0_o[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.269 | TNS=-17138.358 |
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[9].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[9]
+INFO: [Physopt 32-782] Net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[9] was not replicated
+INFO: [Physopt 32-780] Instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[5]_i_2_n_0.  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[5]_i_2
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[5]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/G_1PIPE_IFACE.s_daddr_r_reg[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/G_1PIPE_IFACE.s_daddr_r_reg[0].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/xsdb_reg[15]_i_2__6
+INFO: [Physopt 32-710] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[5]_i_2_n_0. Critical path length was reduced through logic transformation on cell ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[5]_i_2_comp.
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/G_1PIPE_IFACE.s_daddr_r_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.268 | TNS=-17138.380 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_17/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[3]_0.  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_17/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[3]_i_3
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_17/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[3]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.267 | TNS=-17138.278 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i.  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0].  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DRP_CLK_IN_P_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DRP_CLK_IN_P. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[4].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[4]
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_9/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[6]_0.  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_9/I_EN_STAT_EQ1.U_STAT/slaveRegDo_mux_0[6]_i_5
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_9/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[6]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[9]_i_7_n_0.  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[9]_i_7
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[9]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.265 | TNS=-17138.269 |
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[9]_i_7_n_0.  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[9]_i_7
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[9]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.264 | TNS=-17138.085 |
+INFO: [Physopt 32-702] Processed net ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[1].  Did not re-place instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[1]
+INFO: [Physopt 32-702] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block0.  Did not re-place instance ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block[2]_i_2
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.262 | TNS=-17137.831 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[9].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[9]
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_85/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[1]_i_2_n_0.  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_85/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[1]_i_2
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_85/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[1]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.255 | TNS=-17137.734 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[0].  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[0]
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.253 | TNS=-17137.745 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3].  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[3]
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.252 | TNS=-17140.666 |
+INFO: [Physopt 32-702] Processed net ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/next_state__0[4].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/current_state[4]_i_1
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/next_state__0[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.239 | TNS=-17140.439 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[3]
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[7]_i_2_n_0.  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[7]_i_2
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_83/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[7]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.238 | TNS=-17140.370 |
+INFO: [Physopt 32-662] Processed net vio_gt_inst/inst/PROBE_IN_INST/Read_int.  Did not re-place instance vio_gt_inst/inst/PROBE_IN_INST/Read_int_reg
+INFO: [Physopt 32-702] Processed net vio_gt_inst/inst/PROBE_IN_INST/Read_int. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/sl_iport0_o[14].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/addr_reg[14]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/sl_iport0_o[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.237 | TNS=-17139.726 |
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[3]_0[0].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[0]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[3]_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.237 | TNS=-17139.755 |
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/Q[0].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/read_addr_reg[0]
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/Q[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/read_addr[9]_i_3_n_0.  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/read_addr[9]_i_3
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/read_addr[9]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/G_1PIPE_IFACE.s_daddr_r_reg[12].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/current_state[6]_i_3
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/G_1PIPE_IFACE.s_daddr_r_reg[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.234 | TNS=-17132.881 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[3]_0[1].  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[1]
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_reg[3]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/FSM_onehot_current_state_reg_n_0_[2].  Re-placed instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/FSM_onehot_current_state_reg[2]
+INFO: [Physopt 32-735] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/FSM_onehot_current_state_reg_n_0_[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.231 | TNS=-17132.688 |
+INFO: [Physopt 32-702] Processed net ila_drp/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[7].  Did not re-place instance ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[7]
+INFO: [Physopt 32-702] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_drp/inst/ila_core_inst/xsdb_memory_read_inst/read_en0.  Did not re-place instance ila_drp/inst/ila_core_inst/xsdb_memory_read_inst/current_state[1]_i_1__8
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/xsdb_memory_read_inst/read_en0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.222 | TNS=-17131.755 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[10].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0_reg[10]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.222 | TNS=-17132.164 |
+INFO: [Physopt 32-663] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[5].  Re-placed instance ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0_reg[5]
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.218 | TNS=-17132.439 |
+INFO: [Physopt 32-662] Processed net ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/next_state__0[4].  Did not re-place instance ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/current_state[4]_i_1
+INFO: [Physopt 32-735] Processed net ila_rx0_inst/inst/ila_core_inst/xsdb_memory_read_inst/next_state__0[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.211 | TNS=-17131.975 |
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[6].  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[6]
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_1a/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[6]_i_2_n_0.  Did not re-place instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_1a/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[6]_i_2
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_1a/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[6]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.209 | TNS=-17131.939 |
+INFO: [Physopt 32-702] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/slaveRegDo_mux_0[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_18/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[8]_0.  Re-placed instance ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_18/I_EN_CTL_EQ1.U_CTL/slaveRegDo_mux_0[8]_i_3
+INFO: [Physopt 32-735] Processed net ila_tx0_inst/inst/ila_core_inst/u_ila_regs/reg_18/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[8]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.207 | TNS=-17131.926 |
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/reg_16/I_EN_CTL_EQ1.U_CTL/read_reset_addr[0].  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_regs/reg_16/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[0]
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/reg_16/I_EN_CTL_EQ1.U_CTL/read_reset_addr[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.205 | TNS=-17131.970 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/sl_iport0_o[11].  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/addr_reg[11]
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/sl_iport0_o[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net vio_gt_inst/inst/DECODER_INST/wr_en[4]_i_3_n_0.  Did not re-place instance vio_gt_inst/inst/DECODER_INST/wr_en[4]_i_3
+INFO: [Physopt 32-702] Processed net vio_gt_inst/inst/DECODER_INST/wr_en[4]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net vio_gt_inst/inst/U_XSDB_SLAVE/s_den_o.  Did not re-place instance vio_gt_inst/inst/U_XSDB_SLAVE/s_den_o_INST_0
+INFO: [Physopt 32-702] Processed net vio_gt_inst/inst/U_XSDB_SLAVE/s_den_o. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net vio_gt_inst/inst/U_XSDB_SLAVE/s_den_o_INST_0_i_1_n_0.  Re-placed instance vio_gt_inst/inst/U_XSDB_SLAVE/s_den_o_INST_0_i_1
+INFO: [Physopt 32-735] Processed net vio_gt_inst/inst/U_XSDB_SLAVE/s_den_o_INST_0_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.205 | TNS=-17131.078 |
+INFO: [Physopt 32-702] Processed net ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/wcnt_hcmp. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/Q[8].  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/iwcnt_reg[8]
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/Q[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.203 | TNS=-17131.213 |
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/reg_7/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[0]_0.  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_regs/reg_7/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[0]
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/reg_7/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[0]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.203 | TNS=-17131.249 |
+INFO: [Physopt 32-663] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/reg_7/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg_n_0_[10].  Re-placed instance ila_drp/inst/ila_core_inst/u_ila_regs/reg_7/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg[10]
+INFO: [Physopt 32-735] Processed net ila_drp/inst/ila_core_inst/u_ila_regs/reg_7/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg_n_0_[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.203 | TNS=-17131.133 |
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i.  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0].  Did not re-place instance dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]
+INFO: [Physopt 32-702] Processed net dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DRP_CLK_IN_P_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net DRP_CLK_IN_P. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.203 | TNS=-17131.133 |
+Phase 4 Critical Path Optimization | Checksum: de2c4a39
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-4.203 | TNS=-17131.133 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.218  |         66.128  |            0  |              0  |                    86  |           0  |           2  |  00:00:06  |
+|  Total          |          0.218  |         66.128  |            0  |              0  |                    86  |           0  |           3  |  00:00:06  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1935.203 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 17fde652a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+503 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.734 . Memory (MB): peak = 1935.203 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.runs/impl_1/gtwizard_0_gtpe2_exdes_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 73fb68f5 ConstDB: 0 ShapeSum: 6aabe6fd RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 16dc99b58
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1987.305 ; gain = 52.102
+Post Restoration Checksum: NetGraph: be554102 NumContArr: af745a56 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 16dc99b58
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1987.305 ; gain = 52.102
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 16dc99b58
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1993.297 ; gain = 58.094
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 16dc99b58
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1993.297 ; gain = 58.094
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 186915497
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 2007.293 ; gain = 72.090
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.225 | TNS=-17284.287| WHS=-0.337 | THS=-313.883|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 15699e201
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 2014.219 ; gain = 79.016
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.225 | TNS=-16582.970| WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: d854345a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 2028.562 ; gain = 93.359
+Phase 2 Router Initialization | Checksum: 165f2393d
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 8514
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 8514
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 165f2393d
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 2028.562 ; gain = 93.359
+Phase 3 Initial Routing | Checksum: 156d058dd
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 2028.562 ; gain = 93.359
+INFO: [Route 35-580] Design has 95 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              sys_clk_pin |              drpclk_in_i |                    ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/current_state_reg[0]/D|
+|              sys_clk_pin |              drpclk_in_i |                    ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/current_state_reg[3]/D|
+|              sys_clk_pin |              drpclk_in_i |                    ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[1].mu_srl_reg/current_state_reg[0]/D|
+|              sys_clk_pin |              drpclk_in_i |                             ila_rx0_inst/inst/ila_core_inst/u_ila_regs/reg_srl_fff/current_state_reg[1]/D|
+|              sys_clk_pin |              drpclk_in_i |                          ila_rx0_inst/inst/ila_core_inst/u_ila_regs/MU_SRL[2].mu_srl_reg/shadow_reg[14]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1199
+ Number of Nodes with overlaps = 214
+ Number of Nodes with overlaps = 92
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.804 | TNS=-18746.205| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1a298a263
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.673 | TNS=-18741.946| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 163ac03d3
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:32 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 193
+ Number of Nodes with overlaps = 146
+ Number of Nodes with overlaps = 89
+ Number of Nodes with overlaps = 53
+ Number of Nodes with overlaps = 31
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.688 | TNS=-18676.865| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 16ed74def
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:37 . Memory (MB): peak = 2028.562 ; gain = 93.359
+Phase 4 Rip-up And Reroute | Checksum: 16ed74def
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:37 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1d9cb6ed7
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:38 . Memory (MB): peak = 2028.562 ; gain = 93.359
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.585 | TNS=-18045.921| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: d61d8791
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:38 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: d61d8791
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:38 . Memory (MB): peak = 2028.562 ; gain = 93.359
+Phase 5 Delay and Skew Optimization | Checksum: d61d8791
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:38 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 15a95930e
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:39 . Memory (MB): peak = 2028.562 ; gain = 93.359
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.585 | TNS=-18040.964| WHS=0.027  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: f8b7e1e5
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:39 . Memory (MB): peak = 2028.562 ; gain = 93.359
+Phase 6 Post Hold Fix | Checksum: f8b7e1e5
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:39 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.83218 %
+  Global Horizontal Routing Utilization  = 3.49649 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 75.6757%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 54.955%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 79.4118%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 63.2353%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: c70293f0
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:39 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: c70293f0
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:39 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: c3e0f853
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.585 | TNS=-18040.964| WHS=0.027  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: c3e0f853
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 2028.562 ; gain = 93.359
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 2028.562 ; gain = 93.359
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+524 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:42 . Memory (MB): peak = 2028.562 ; gain = 93.359
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.892 . Memory (MB): peak = 2036.648 ; gain = 8.086
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.runs/impl_1/gtwizard_0_gtpe2_exdes_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file gtwizard_0_gtpe2_exdes_drc_routed.rpt -pb gtwizard_0_gtpe2_exdes_drc_routed.pb -rpx gtwizard_0_gtpe2_exdes_drc_routed.rpx
+Command: report_drc -file gtwizard_0_gtpe2_exdes_drc_routed.rpt -pb gtwizard_0_gtpe2_exdes_drc_routed.pb -rpx gtwizard_0_gtpe2_exdes_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.runs/impl_1/gtwizard_0_gtpe2_exdes_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file gtwizard_0_gtpe2_exdes_methodology_drc_routed.rpt -pb gtwizard_0_gtpe2_exdes_methodology_drc_routed.pb -rpx gtwizard_0_gtpe2_exdes_methodology_drc_routed.rpx
+Command: report_methodology -file gtwizard_0_gtpe2_exdes_methodology_drc_routed.rpt -pb gtwizard_0_gtpe2_exdes_methodology_drc_routed.pb -rpx gtwizard_0_gtpe2_exdes_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/ilpes/Desktop/GTPE2/gtwizard_0_gtpe2_ex.runs/impl_1/gtwizard_0_gtpe2_exdes_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file gtwizard_0_gtpe2_exdes_power_routed.rpt -pb gtwizard_0_gtpe2_exdes_power_summary_routed.pb -rpx gtwizard_0_gtpe2_exdes_power_routed.rpx
+Command: report_power -file gtwizard_0_gtpe2_exdes_power_routed.rpt -pb gtwizard_0_gtpe2_exdes_power_summary_routed.pb -rpx gtwizard_0_gtpe2_exdes_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+536 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file gtwizard_0_gtpe2_exdes_route_status.rpt -pb gtwizard_0_gtpe2_exdes_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file gtwizard_0_gtpe2_exdes_timing_summary_routed.rpt -pb gtwizard_0_gtpe2_exdes_timing_summary_routed.pb -rpx gtwizard_0_gtpe2_exdes_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file gtwizard_0_gtpe2_exdes_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file gtwizard_0_gtpe2_exdes_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file gtwizard_0_gtpe2_exdes_bus_skew_routed.rpt -pb gtwizard_0_gtpe2_exdes_bus_skew_routed.pb -rpx gtwizard_0_gtpe2_exdes_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force gtwizard_0_gtpe2_exdes.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC RTSTAT-10] No routable loads: 37 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, ila_rx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], ila_tx0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13]... and (the first 15 of 35 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./gtwizard_0_gtpe2_exdes.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 2516.199 ; gain = 455.453
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 29 16:07:52 2024...
