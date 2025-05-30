@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 28 21:27:41 2025
+# Process ID: 20704
+# Current directory: C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/micro_core_v0_ilmb_bram_if_cntlr_2_synth_1
+# Command line: vivado.exe -log micro_core_v0_ilmb_bram_if_cntlr_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source micro_core_v0_ilmb_bram_if_cntlr_2.tcl
+# Log file: C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/micro_core_v0_ilmb_bram_if_cntlr_2_synth_1/micro_core_v0_ilmb_bram_if_cntlr_2.vds
+# Journal file: C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/micro_core_v0_ilmb_bram_if_cntlr_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source micro_core_v0_ilmb_bram_if_cntlr_2.tcl -notrace

@@ -1,0 +1,346 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 28 22:15:23 2025
+# Process ID: 23224
+# Current directory: C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1
+# Command line: vivado.exe -log micro_core_v0_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source micro_core_v0_wrapper.tcl
+# Log file: C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/micro_core_v0_wrapper.vds
+# Journal file: C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source micro_core_v0_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XVITIS/Vivado/2020.2/data/ip'.
+Command: synth_design -top micro_core_v0_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8084
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.617 ; gain = 58.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_wrapper' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/hdl/micro_core_v0_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:409]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_axi_gpio_0_0' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_axi_gpio_0_0' (1#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_axi_uartlite_0_0' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_axi_uartlite_0_0' (2#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'micro_core_v0_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:570]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'micro_core_v0_axi_uartlite_0_0' has 22 connections declared, but only 21 given [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:570]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_clk_wiz_0_0' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_clk_wiz_0_0' (3#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_mdm_1_1' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_mdm_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_mdm_1_1' (4#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_mdm_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_microblaze_0_1' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_microblaze_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_microblaze_0_1' (5#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_microblaze_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'micro_core_v0_microblaze_0_1' is unconnected for instance 'microblaze_0' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:633]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'micro_core_v0_microblaze_0_1' has 52 connections declared, but only 51 given [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:633]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_microblaze_0_axi_periph_1' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:805]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8KQFXW' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8KQFXW' (6#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_112KBMO' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_112KBMO' (7#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1VK6SBH' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1VK6SBH' (8#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:276]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_BU4WB' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1617]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_BU4WB' (9#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1617]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_xbar_0' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_xbar_0' (10#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'micro_core_v0_xbar_0' is unconnected for instance 'xbar' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1342]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'micro_core_v0_xbar_0' is unconnected for instance 'xbar' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1342]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'micro_core_v0_xbar_0' has 40 connections declared, but only 38 given [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1342]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_microblaze_0_axi_periph_1' (11#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:805]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1I4M22N' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1383]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_dlmb_bram_if_cntlr_2' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_dlmb_bram_if_cntlr_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_dlmb_bram_if_cntlr_2' (12#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_dlmb_bram_if_cntlr_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_dlmb_v10_2' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_dlmb_v10_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_dlmb_v10_2' (13#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_dlmb_v10_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'micro_core_v0_dlmb_v10_2' is unconnected for instance 'dlmb_v10' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1529]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'micro_core_v0_dlmb_v10_2' has 25 connections declared, but only 24 given [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1529]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_ilmb_bram_if_cntlr_2' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_ilmb_bram_if_cntlr_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_ilmb_bram_if_cntlr_2' (14#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_ilmb_bram_if_cntlr_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_ilmb_v10_2' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_ilmb_v10_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_ilmb_v10_2' (15#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_ilmb_v10_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'micro_core_v0_ilmb_v10_2' is unconnected for instance 'ilmb_v10' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1575]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'micro_core_v0_ilmb_v10_2' has 25 connections declared, but only 24 given [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1575]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_lmb_bram_2' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_lmb_bram_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_lmb_bram_2' (16#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_lmb_bram_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'micro_core_v0_lmb_bram_2' is unconnected for instance 'lmb_bram' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1600]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'micro_core_v0_lmb_bram_2' is unconnected for instance 'lmb_bram' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1600]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'micro_core_v0_lmb_bram_2' has 16 connections declared, but only 14 given [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1600]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1I4M22N' (17#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:1383]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_rst_sys_clock_12M_0' [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_rst_sys_clock_12M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_rst_sys_clock_12M_0' (18#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/.Xil/Vivado-23224-LAPTOP-IMI5H5SA/realtime/micro_core_v0_rst_sys_clock_12M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'micro_core_v0_rst_sys_clock_12M_0' is unconnected for instance 'rst_sys_clock_12M' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:788]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'micro_core_v0_rst_sys_clock_12M_0' is unconnected for instance 'rst_sys_clock_12M' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:788]
+WARNING: [Synth 8-7023] instance 'rst_sys_clock_12M' of module 'micro_core_v0_rst_sys_clock_12M_0' has 10 connections declared, but only 8 given [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:788]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_xlslice_0_0' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_xlslice_0_0/synth/micro_core_v0_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 2 - type: integer 
+	Parameter DIN_FROM bound to: 0 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (19#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_xlslice_0_0' (20#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_xlslice_0_0/synth/micro_core_v0_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'micro_core_v0_xlslice_1_0' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_xlslice_1_0/synth/micro_core_v0_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 2 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (20#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_xlslice_1_0' (21#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_xlslice_1_0/synth/micro_core_v0_xlslice_1_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0' (22#1) [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/synth/micro_core_v0.v:409]
+INFO: [Synth 8-6155] done synthesizing module 'micro_core_v0_wrapper' (23#1) [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/hdl/micro_core_v0_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1261.238 ; gain = 116.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1261.238 ; gain = 116.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1261.238 ; gain = 116.867
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1261.238 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_axi_uartlite_0_0/micro_core_v0_axi_uartlite_0_0/micro_core_v0_axi_uartlite_0_0_in_context.xdc] for cell 'micro_core_v0_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_axi_uartlite_0_0/micro_core_v0_axi_uartlite_0_0/micro_core_v0_axi_uartlite_0_0_in_context.xdc] for cell 'micro_core_v0_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_microblaze_0_1/micro_core_v0_microblaze_0_1/micro_core_v0_microblaze_0_1_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_microblaze_0_1/micro_core_v0_microblaze_0_1/micro_core_v0_microblaze_0_1_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_dlmb_v10_2/micro_core_v0_dlmb_v10_2/micro_core_v0_dlmb_v10_2_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_dlmb_v10_2/micro_core_v0_dlmb_v10_2/micro_core_v0_dlmb_v10_2_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_ilmb_v10_2/micro_core_v0_ilmb_v10_2/micro_core_v0_dlmb_v10_2_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_ilmb_v10_2/micro_core_v0_ilmb_v10_2/micro_core_v0_dlmb_v10_2_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_dlmb_bram_if_cntlr_2/micro_core_v0_dlmb_bram_if_cntlr_2/micro_core_v0_dlmb_bram_if_cntlr_2_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_dlmb_bram_if_cntlr_2/micro_core_v0_dlmb_bram_if_cntlr_2/micro_core_v0_dlmb_bram_if_cntlr_2_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_ilmb_bram_if_cntlr_2/micro_core_v0_ilmb_bram_if_cntlr_2/micro_core_v0_ilmb_bram_if_cntlr_2_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_ilmb_bram_if_cntlr_2/micro_core_v0_ilmb_bram_if_cntlr_2/micro_core_v0_ilmb_bram_if_cntlr_2_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_lmb_bram_2/micro_core_v0_lmb_bram_2/micro_core_v0_lmb_bram_2_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_lmb_bram_2/micro_core_v0_lmb_bram_2/micro_core_v0_lmb_bram_2_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_mdm_1_1/micro_core_v0_mdm_1_1/micro_core_v0_mdm_1_1_in_context.xdc] for cell 'micro_core_v0_i/mdm_1'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_mdm_1_1/micro_core_v0_mdm_1_1/micro_core_v0_mdm_1_1_in_context.xdc] for cell 'micro_core_v0_i/mdm_1'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_rst_sys_clock_12M_0/micro_core_v0_rst_sys_clock_12M_0/micro_core_v0_rst_sys_clock_12M_0_in_context.xdc] for cell 'micro_core_v0_i/rst_sys_clock_12M'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_rst_sys_clock_12M_0/micro_core_v0_rst_sys_clock_12M_0/micro_core_v0_rst_sys_clock_12M_0_in_context.xdc] for cell 'micro_core_v0_i/rst_sys_clock_12M'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_xbar_0/micro_core_v0_xbar_0/micro_core_v0_xbar_0_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_xbar_0/micro_core_v0_xbar_0/micro_core_v0_xbar_0_in_context.xdc] for cell 'micro_core_v0_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_clk_wiz_0_0/micro_core_v0_clk_wiz_0_0/micro_core_v0_clk_wiz_0_0_in_context.xdc] for cell 'micro_core_v0_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_clk_wiz_0_0/micro_core_v0_clk_wiz_0_0/micro_core_v0_clk_wiz_0_0_in_context.xdc] for cell 'micro_core_v0_i/clk_wiz_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_axi_gpio_0_0/micro_core_v0_axi_gpio_0_0/micro_core_v0_axi_gpio_0_0_in_context.xdc] for cell 'micro_core_v0_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_axi_gpio_0_0/micro_core_v0_axi_gpio_0_0/micro_core_v0_axi_gpio_0_0_in_context.xdc] for cell 'micro_core_v0_i/axi_gpio_0'
+Parsing XDC File [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.srcs/constrs_1/imports/constrs_1/imports/new/top.xdc]
+Finished Parsing XDC File [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.srcs/constrs_1/imports/constrs_1/imports/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.srcs/constrs_1/imports/constrs_1/imports/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/micro_core_v0_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/micro_core_v0_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1293.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1293.504 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '83.333' specified during out-of-context synthesis of instance 'micro_core_v0_i/axi_uartlite_0' at clock pin 's_axi_aclk' is different from the actual clock period '83.330', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '83.333' specified during out-of-context synthesis of instance 'micro_core_v0_i/microblaze_0' at clock pin 'Clk' is different from the actual clock period '83.330', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '83.333' specified during out-of-context synthesis of instance 'micro_core_v0_i/rst_sys_clock_12M' at clock pin 'slowest_sync_clk' is different from the actual clock period '83.330', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '83.333' specified during out-of-context synthesis of instance 'micro_core_v0_i/microblaze_0_axi_periph/xbar' at clock pin 'aclk' is different from the actual clock period '83.330', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '83.333' specified during out-of-context synthesis of instance 'micro_core_v0_i/microblaze_0_local_memory/dlmb_bram_if_cntlr' at clock pin 'LMB_Clk' is different from the actual clock period '83.330', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '83.333' specified during out-of-context synthesis of instance 'micro_core_v0_i/microblaze_0_local_memory/dlmb_v10' at clock pin 'LMB_Clk' is different from the actual clock period '83.330', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '83.333' specified during out-of-context synthesis of instance 'micro_core_v0_i/microblaze_0_local_memory/ilmb_bram_if_cntlr' at clock pin 'LMB_Clk' is different from the actual clock period '83.330', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '83.333' specified during out-of-context synthesis of instance 'micro_core_v0_i/microblaze_0_local_memory/ilmb_v10' at clock pin 'LMB_Clk' is different from the actual clock period '83.330', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1297.559 ; gain = 153.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1297.559 ; gain = 153.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_clk_wiz_0_0/micro_core_v0_clk_wiz_0_0/micro_core_v0_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.gen/sources_1/bd/micro_core_v0/ip/micro_core_v0_clk_wiz_0_0/micro_core_v0_clk_wiz_0_0/micro_core_v0_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/rst_sys_clock_12M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for micro_core_v0_i/xlslice_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1297.559 ; gain = 153.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1297.559 ; gain = 153.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1297.559 ; gain = 153.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1343.734 ; gain = 199.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1343.957 ; gain = 199.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1363.086 ; gain = 218.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.859 ; gain = 224.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.859 ; gain = 224.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.859 ; gain = 224.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.859 ; gain = 224.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.859 ; gain = 224.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.859 ; gain = 224.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |micro_core_v0_xbar_0               |         1|
+|2     |micro_core_v0_axi_gpio_0_0         |         1|
+|3     |micro_core_v0_axi_uartlite_0_0     |         1|
+|4     |micro_core_v0_clk_wiz_0_0          |         1|
+|5     |micro_core_v0_mdm_1_1              |         1|
+|6     |micro_core_v0_microblaze_0_1       |         1|
+|7     |micro_core_v0_rst_sys_clock_12M_0  |         1|
+|8     |micro_core_v0_dlmb_bram_if_cntlr_2 |         1|
+|9     |micro_core_v0_dlmb_v10_2           |         1|
+|10    |micro_core_v0_ilmb_bram_if_cntlr_2 |         1|
+|11    |micro_core_v0_ilmb_v10_2           |         1|
+|12    |micro_core_v0_lmb_bram_2           |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |micro_core_v0_axi_gpio_0         |     1|
+|2     |micro_core_v0_axi_uartlite_0     |     1|
+|3     |micro_core_v0_clk_wiz_0          |     1|
+|4     |micro_core_v0_dlmb_bram_if_cntlr |     1|
+|5     |micro_core_v0_dlmb_v10           |     1|
+|6     |micro_core_v0_ilmb_bram_if_cntlr |     1|
+|7     |micro_core_v0_ilmb_v10           |     1|
+|8     |micro_core_v0_lmb_bram           |     1|
+|9     |micro_core_v0_mdm_1              |     1|
+|10    |micro_core_v0_microblaze_0       |     1|
+|11    |micro_core_v0_rst_sys_clock_12M  |     1|
+|12    |micro_core_v0_xbar               |     1|
+|13    |IBUF                             |     2|
+|14    |OBUF                             |     5|
++------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.859 ; gain = 224.488
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1368.859 ; gain = 188.168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.859 ; gain = 224.488
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1380.930 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1385.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:18 . Memory (MB): peak = 1385.328 ; gain = 240.957
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/project_MicroBlaze_simple.runs/synth_1/micro_core_v0_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file micro_core_v0_wrapper_utilization_synth.rpt -pb micro_core_v0_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 28 22:16:50 2025...

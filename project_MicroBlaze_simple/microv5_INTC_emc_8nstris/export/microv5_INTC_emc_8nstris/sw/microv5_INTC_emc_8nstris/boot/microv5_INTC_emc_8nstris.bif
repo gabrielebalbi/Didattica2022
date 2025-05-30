@@ -1,0 +1,6 @@
+/*microv5_INTC_emc_8nstris*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

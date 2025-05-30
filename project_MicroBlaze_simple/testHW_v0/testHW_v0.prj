@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="testHW_v0" location="C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/testHW_v0" platform="C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/micro_core_v0_wrapper_12MHZ/export/micro_core_v0_wrapper_12MHZ/micro_core_v0_wrapper_12MHZ.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" systemProject="testHW_v0_system" sysConfig="micro_core_v0_wrapper_12MHZ" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="de59f996df0a2b9a38384992a32c832b">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.328207999">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1091621708">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

@@ -1,0 +1,16 @@
+22:53:38 **** Incremental Build of configuration Debug for project testemcv3 ****
+make all 
+'Building target: testemcv3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv3_INTC_emc_8ns/export/microv3_INTC_emc_8ns/sw/microv3_INTC_emc_8ns/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "testemcv3.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: testemcv3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size testemcv3.elf  |tee "testemcv3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2496	    332	   3108	   5936	   1730	testemcv3.elf
+'Finished building: testemcv3.elf.size'
+' '
+
+22:53:39 Build Finished (took 603ms)
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Cmod A7 - 35T 210328B25054A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Cmod A7 - 35T-210328B25054A-0362d093-0&quot;}}]}"/>
+	<item key="reconfig_v0_system-bitFile" value="C:\Users\ilpes\Desktop\Antenne_e_clocks\project_MB_INTC_emc\project_MB_INTC_emc.runs\impl_1\micro_core_v0_wrapper.bit"/>
+	<item key="reconfig_v0_system-bmmFile" value=""/>
+	<item key="reconfig_v0_system-target" value="Local"/>
+	<item key="reconfig_v0_system-device" value="Auto Detect"/>
+	<item key="reconfig_v0_system-partial_bit" value="false"/>
+	<item key="reconfig_v0_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="reconfig_v1_INTC_system"/>
+	<item key="reconfig_v0_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="reconfig_v1_INTC_system-bitFile" value="C:\Users\ilpes\Desktop\Antenne_e_clocks\project_pasticcio\project_pasticcio.runs\impl_1\micro_core_v0_wrapper.bit"/>
+	<item key="reconfig_v1_INTC_system-bmmFile" value=""/>
+	<item key="reconfig_v1_INTC_system-target" value="Local"/>
+	<item key="reconfig_v1_INTC_system-device" value="Auto Detect"/>
+	<item key="reconfig_v1_INTC_system-partial_bit" value="false"/>
+	<item key="reconfig_v1_INTC_system-skip_rev_check" value="false"/>
+	<item key="reconfig_v1_INTC_system-microblaze_0-initElf" value="bootloop"/>
+</section>

@@ -1,0 +1,15 @@
+
+*** Running vivado
+    with args -log micro_core_v0_dlmb_v10_8.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source micro_core_v0_dlmb_v10_8.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source micro_core_v0_dlmb_v10_8.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1126.453 ; gain = 0.000
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP micro_core_v0_dlmb_v10_8, cache-ID = 0cebd2336d8120b0.
+INFO: [Common 17-206] Exiting Vivado at Fri May 30 12:15:42 2025...

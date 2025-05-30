@@ -1,0 +1,39 @@
+23:59:28 **** Incremental Build of configuration Debug for project reconfig_v0 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1/export/microv1/sw/microv1/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1/export/microv1/sw/microv1/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from ../src/main.c:50:
+../src/main.c: In function 'main':
+C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1/export/microv1/sw/microv1/standalone_domain/bspinclude/include/xparameters.h:564:33: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1151336448' to '0' [-Woverflow]
+  564 | #define XPAR_CLK_WIZ_0_BASEADDR 0x44A00000
+      |                                 ^~~~~~~~~~
+../src/main.c:83:32: note: in expansion of macro 'XPAR_CLK_WIZ_0_BASEADDR'
+   83 |     readConfiguration_AXI_LITE(XPAR_CLK_WIZ_0_BASEADDR); //XPAR_CLK_WIZ_0_DEVICE_ID);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:85:5: warning: implicit declaration of function 'readConfigurationDPR'; did you mean 'readConfiguration_DPR'? [-Wimplicit-function-declaration]
+   85 |     readConfigurationDPR(XPAR_CLK_WIZ_0_DEVICE_ID); //XPAR_CLK_WIZ_0_DEVICE_ID);
+      |     ^~~~~~~~~~~~~~~~~~~~
+      |     readConfiguration_DPR
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/mmcm_reconfig.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mmcm_reconfig.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1/export/microv1/sw/microv1/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mmcm_reconfig.d" -MT"src/mmcm_reconfig.o" -o "src/mmcm_reconfig.o" "../src/mmcm_reconfig.c"
+'Finished building: ../src/mmcm_reconfig.c'
+' '
+'Building target: reconfig_v0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1/export/microv1/sw/microv1/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "reconfig_v0.elf"  ./src/main.o ./src/mmcm_reconfig.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: reconfig_v0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size reconfig_v0.elf  |tee "reconfig_v0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8748	    332	   3112	  12192	   2fa0	reconfig_v0.elf
+'Finished building: reconfig_v0.elf.size'
+' '
+
+23:59:30 Build Finished (took 1s.623ms)
+

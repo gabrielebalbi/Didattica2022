@@ -1,0 +1,183 @@
+/*
+ * mmcm_reconfig.c
+ *
+ *  Created on: 28 mag 2025
+ *      Author: balbi
+
+
+
+To do a dynamic reconfiguration, follow the below steps:
+
+1. Write all the Clock Configuration Registers, and then check for the status register.
+
+2. Before writing into the C_BASEADDR + 0x200 register detailed in Table: Kintex-7 FPGA Resource Utilization with AXI4-Lite Interface , make sure that these values result in a valid VCO frequency range of MMCM/PLL which is calculated using the following equation:
+
+VCO Frequency = (Input Clock Frequency) * (CLKFBOUT_MULT)/DIVCLK_DIVIDE
+
+
+
+
+ */
+
+
+
+
+/***************************** Include Files ********************************/
+
+#include "mmcm_reconfig.h"
+
+#include "xparameters.h"
+//#include "xgpio.h"
+#include "stdio.h"
+#include "xstatus.h"
+#include "xil_printf.h"
+
+
+#ifndef TESTAPP_GEN
+#define GPIO_OUTPUT_DEVICE_ID	XPAR_GPIO_0_DEVICE_ID
+#define GPIO_INPUT_DEVICE_ID	XPAR_GPIO_0_DEVICE_ID
+#endif /* TESTAPP_GEN */
+
+
+/************************** Function Prototypes ****************************/
+
+//int GpioOutputExample(u16 DeviceId, u32 GpioWidth);
+
+//int GpioInputExample(u16 DeviceId, u32 *DataRead);
+
+//void GpioDriverHandler(void *CallBackRef);
+
+
+/************************** Variable Definitions **************************/
+
+/*
+ * The following are declared globally so they are zeroed and so they are
+ * easily accessible from a debugger
+ */
+//XGpio GpioOutput; /* The driver instance for GPIO Device configured as O/P */
+//XGpio GpioInput;  /* The driver instance for GPIO Device configured as I/P */
+
+
+
+#ifndef TESTAPP_GEN
+//int main(void)
+//{
+	//int Status;
+	u32 InputData;
+
+/*	Status = GpioOutputExample(GPIO_OUTPUT_DEVICE_ID, GPIO_BITWIDTH);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio tapp Example Failed\r\n");
+		  return XST_FAILURE;
+	}
+
+	Status = GpioInputExample(GPIO_INPUT_DEVICE_ID, &InputData);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio tapp Example Failed\r\n");
+		  return XST_FAILURE;
+	}
+
+	printf("Data read from GPIO Input is  0x%x \n\r", (int)InputData);
+
+	xil_printf("Successfully ran Gpio tapp Example\r\n");
+	*/
+	//return XST_SUCCESS;
+//}
+#endif
+
+int sendConfigurationDPR(u16 moduleId)
+{
+		  Xil_Out32((u32)moduleId + PowerReg,     0xffff);
+	      Xil_Out32((u32)moduleId + FiltReg1,   0x0800);
+	      Xil_Out32((u32)moduleId + DivReg,    0x1041);
+	      Xil_Out32((u32)moduleId + CLKOUT0_ClkReg1,  0x10c3);
+	      Xil_Out32((u32)moduleId + CLKOUT0_ClkReg2,  0x0000);
+	      Xil_Out32((u32)moduleId + CLKOUT1_ClkReg1,  0x10c3);
+	      Xil_Out32((u32)moduleId + CLKOUT1_ClkReg2,  0x0000);
+	      Xil_Out32((u32)moduleId + LockReg1,     0x03e8);
+	      Xil_Out32((u32)moduleId + LockReg2,     0x4401);
+	      Xil_Out32((u32)moduleId + LockReg3,     0x47e9);
+	      Xil_Out32((u32)moduleId + FiltReg2,   0x9990);
+		  Xil_Out32((u32)moduleId + PowerReg,     0x0000);
+	return XST_SUCCESS;
+	}
+
+
+int sendConfiguration_AXI_LITE(u16 moduleId)
+{
+		  Xil_Out32((u32)moduleId + PowerReg,     0xffff);
+	      Xil_Out32((u32)moduleId + FiltReg1,   0x0800);
+	      Xil_Out32((u32)moduleId + DivReg,    0x1041);
+	      Xil_Out32((u32)moduleId + CLKOUT0_ClkReg1,  0x10c3);
+	      Xil_Out32((u32)moduleId + CLKOUT0_ClkReg2,  0x0000);
+	      Xil_Out32((u32)moduleId + CLKOUT1_ClkReg1,  0x10c3);
+	      Xil_Out32((u32)moduleId + CLKOUT1_ClkReg2,  0x0000);
+	      Xil_Out32((u32)moduleId + LockReg1,     0x03e8);
+	      Xil_Out32((u32)moduleId + LockReg2,     0x4401);
+	      Xil_Out32((u32)moduleId + LockReg3,     0x47e9);
+	      Xil_Out32((u32)moduleId + FiltReg2,   0x9990);
+		  Xil_Out32((u32)moduleId + PowerReg,     0x0000);
+	return XST_SUCCESS;
+	}
+
+
+
+int readConfigurationDPR(u16 moduleId)
+{
+	xil_printf("PowerReg		0x%x", Xil_In32((u32)moduleId + PowerReg		));
+	xil_printf("FiltReg1		0x%x", Xil_In32((u32)moduleId + FiltReg1		)			);
+	xil_printf("DivReg			0x%x", Xil_In32((u32)moduleId + DivReg			)			);
+	xil_printf("CLKOUT0_ClkReg1	0x%x", Xil_In32((u32)moduleId + CLKOUT0_ClkReg1	)	);
+	xil_printf("CLKOUT0_ClkReg2	0x%x", Xil_In32((u32)moduleId + CLKOUT0_ClkReg2	)	);
+	xil_printf("CLKOUT1_ClkReg1	0x%x", Xil_In32((u32)moduleId + CLKOUT1_ClkReg1	)	);
+	xil_printf("CLKOUT1_ClkReg2	0x%x", Xil_In32((u32)moduleId + CLKOUT1_ClkReg2	)	);
+	xil_printf("LockReg1		0x%x", Xil_In32((u32)moduleId + LockReg1		)			);
+	xil_printf("LockReg2		0x%x", Xil_In32((u32)moduleId + LockReg2		)			);
+	xil_printf("LockReg3		0x%x", Xil_In32((u32)moduleId + LockReg3		)			);
+	xil_printf("FiltReg2		0x%x", Xil_In32((u32)moduleId + FiltReg2		)			);
+
+
+
+	return XST_SUCCESS;
+	}
+
+
+
+int readConfiguration_AXI_LITE(u16 moduleId)
+{
+	//xil_printf ("SSR	0x%x", Xil_In32((u32) moduleId+ SSR		));	//0x00	//Software Reset Register write 0xA (Only Write register 1 bit)
+	 u32 param = Xil_In32((u32) moduleId+ SSR	);
+	  xil_printf("SSR  %x \n\r", param);
+
+	xil_printf ("SR	  	0x%x", Xil_In32((u32) moduleId+ SR	  	));	//0x04	//Status Register R
+	xil_printf ("CMESR	0x%x", Xil_In32((u32) moduleId+ CMESR	));	//0x08 //Clock Monitor Error Status Register
+	xil_printf ("IS		0x%x", Xil_In32((u32) moduleId+ IS		));	//0x0C	//Interrupt Status 32 RW
+	xil_printf ("IE		0x%x", Xil_In32((u32) moduleId+ IE		));	//0x10	//Interrupt Enable 32 RW
+	xil_printf ("CCR_0	0x%x", Xil_In32((u32) moduleId+ CCR_0	));	//0x200	//Clock configuration Register 0   32 RW	CLKFBout
+	xil_printf ("CCR_1	0x%x", Xil_In32((u32) moduleId+ CCR_1	));	//0x204	//Clock configuration Register 1   32 RW	CLKFBout Phase (Signed)
+	xil_printf ("CCR_2	0x%x", Xil_In32((u32) moduleId+ CCR_2	));	//0x208	//Clock configuration Register 2   32 RW   Clkout0 numbers
+	xil_printf ("CCR_3	0x%x", Xil_In32((u32) moduleId+ CCR_3	));	//0x20C	//Clock configuration Register 3   32 RW   Clkout0 Phase (Signed)
+	xil_printf ("CCR_4	0x%x", Xil_In32((u32) moduleId+ CCR_4	));	//0x210	//Clock configuration Register 4   32 RW   Clkout0 Duty
+	xil_printf ("CCR_5	0x%x", Xil_In32((u32) moduleId+ CCR_5	));	//0x214	//Clock configuration Register 5   32 RW   Clkout1 numbers
+	xil_printf ("CCR_6	0x%x", Xil_In32((u32) moduleId+ CCR_6	));	//0x218	//Clock configuration Register 6   32 RW   Clkout1 Phase (Signed)
+	xil_printf ("CCR_7	0x%x", Xil_In32((u32) moduleId+ CCR_7	));	//0x21C	//Clock configuration Register 7   32 RW   Clkout1 Duty
+	xil_printf ("CCR_8	0x%x", Xil_In32((u32) moduleId+ CCR_8	));	//0x220	//Clock configuration Register 8   32 RW   Clkout2 numbers
+	xil_printf ("CCR_9	0x%x", Xil_In32((u32) moduleId+ CCR_9	));	//0x224	//Clock configuration Register 9   32 RW   Clkout2 Phase (Signed)
+	xil_printf ("CCR_10	0x%x", Xil_In32((u32) moduleId+ CCR_10	));	//0x228	//Clock configuration Register 10   32 RW   Clkout2 Duty
+	xil_printf ("CCR_11	0x%x", Xil_In32((u32) moduleId+ CCR_11	));	//0x22C	//Clock configuration Register 11   32 RW   Clkout3 numbers
+	xil_printf ("CCR_12	0x%x", Xil_In32((u32) moduleId+ CCR_12	));	//0x230	//Clock configuration Register 12   32 RW   Clkout3 Phase (Signed)
+	xil_printf ("CCR_13	0x%x", Xil_In32((u32) moduleId+ CCR_13	));	//0x234	//Clock configuration Register 13   32 RW   Clkout3 Duty
+	xil_printf ("CCR_14	0x%x", Xil_In32((u32) moduleId+ CCR_14	));	//0x238	//Clock configuration Register 14   32 RW   Clkout4 numbers
+	xil_printf ("CCR_15	0x%x", Xil_In32((u32) moduleId+ CCR_15	));	//0x23C	//Clock configuration Register 15   32 RW   Clkout4 Phase (Signed)
+	xil_printf ("CCR_16	0x%x", Xil_In32((u32) moduleId+ CCR_16	));	//0x240	//Clock configuration Register 16   32 RW   Clkout4 Duty
+	xil_printf ("CCR_17	0x%x", Xil_In32((u32) moduleId+ CCR_17	));	//0x244	//Clock configuration Register 17   32 RW   Clkout5 numbers
+	xil_printf ("CCR_18	0x%x", Xil_In32((u32) moduleId+ CCR_18	));	//0x248	//Clock configuration Register 18   32 RW   Clkout5 Phase (Signed)
+	xil_printf ("CCR_19	0x%x", Xil_In32((u32) moduleId+ CCR_19	));	//0x24C	//Clock configuration Register 19   32 RW   Clkout5 Duty
+	xil_printf ("CCR_20	0x%x", Xil_In32((u32) moduleId+ CCR_20	));	//0x250	//Clock configuration Register 20   32 RW   Clkout6 numbers
+	xil_printf ("CCR_21	0x%x", Xil_In32((u32) moduleId+ CCR_21	));	//0x254	//Clock configuration Register 21   32 RW   Clkout6 Phase (Signed)
+	xil_printf ("CCR_22	0x%x", Xil_In32((u32) moduleId+ CCR_22	));	//0x258	//Clock configuration Register 22   32 RW   Clkout6 Duty
+	xil_printf ("CCR_23	0x%x", Xil_In32((u32) moduleId+ CCR_23	));  //0x25C	//Clock configuration Register 23   32 RW   Clk Configuration Register 23
+
+	return XST_SUCCESS;
+}
+

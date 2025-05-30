@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="micro_core_v0_wrapper_12MHZ"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+micro_core_v0_wrapper_12MHZ
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="micro_core_v0_wrapper_12MHZ">
+        <sdx:configuration sdx:name="micro_core_v0_wrapper_12MHZ"
+                           sdx:displayName="micro_core_v0_wrapper_12MHZ"
+                           sdx:defaultProcessorGroup="standalone_microblaze_0"
+                           sdx:runtimes="cpp">
+            <sdx:description>micro_core_v0_wrapper_12MHZ</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="micro_core_v0_wrapper_12MHZ/boot/micro_core_v0_wrapper_12MHZ.bif"
+                            sdx:readme="micro_core_v0_wrapper_12MHZ/boot/generic.readme"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone_microblaze_0"
+                                sdx:displayName="standalone_microblaze_0"
+                                sdx:cpuType="microblaze_0"
+                                sdx:cpuInstance="microblaze_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="micro_core_v0_wrapper_12MHZ/standalone_microblaze_0/bsplib/lib"
+                        sdx:bspIncludePaths="micro_core_v0_wrapper_12MHZ/standalone_microblaze_0/bspinclude/include"
+                        sdx:bspConfig="micro_core_v0_wrapper_12MHZ/standalone_microblaze_0/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>

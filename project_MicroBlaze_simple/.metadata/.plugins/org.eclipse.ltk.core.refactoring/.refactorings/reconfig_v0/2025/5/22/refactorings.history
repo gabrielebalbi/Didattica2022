@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;reconfig_v0/src/uart_comm&apos; to &apos;uart_comm.h&apos;" description="Rename resource &apos;uart_comm&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/uart_comm" name="uart_comm.h" stamp="1748512919633" updateReferences="true"/>
+</session>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="reconfig_v0" location="C:/Users/ilpes/Desktop/Antenne_e_clocks/workspace_XSA_emc/reconfig_v0" platform="C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1/export/microv1/microv1.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" systemProject="reconfig_v0_system" sysConfig="microv1" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" dimmRepoPath="" mssSignature="8a57b641e9ab23bf0566efb1c6b41ecb">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.599599312">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1080773530" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

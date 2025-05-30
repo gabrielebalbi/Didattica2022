@@ -1,0 +1,29 @@
+/*
+ * uart_comm.c
+ *
+ *  Created on: 29 mag 2025
+ *      Author: balbi
+ */
+
+
+void RecvHandler(void *CallBackRef, unsigned int EventData)
+{
+	XUartLite_Recv(&UartLite, ReceiveBuffer, 1); // Get ready to receive 1st byte
+	if(ReceiveBuffer[0] == 'f') //Look at the start of the message to determine the remaining bytes.
+	{
+		for(int i=1;i<6;i++){
+			ReceiveBuffer[i]=XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+		}
+	}
+
+	printBuffer(); // print the contents of the buffer.
+	XUartLite_ResetFifos(&UartLite); // Reset the FIFOs
+	resetBuffer(); // Reset the contents of the buffer.
+}
+
+void resetBuffer()
+	{
+		for(int i=0;i<TEST_BUFFER_SIZE;i++){
+		ReceiveBuffer[i]=0;
+	}
+}

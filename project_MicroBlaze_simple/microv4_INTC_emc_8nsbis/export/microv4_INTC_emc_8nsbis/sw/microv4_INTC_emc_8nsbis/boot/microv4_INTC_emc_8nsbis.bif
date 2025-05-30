@@ -1,0 +1,6 @@
+/*microv4_INTC_emc_8nsbis*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

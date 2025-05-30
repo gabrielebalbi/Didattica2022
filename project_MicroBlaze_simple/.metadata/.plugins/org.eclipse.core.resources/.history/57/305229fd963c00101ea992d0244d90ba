@@ -1,0 +1,53 @@
+/*
+ * uart_comm.h
+ *
+ *  Created on: 29 mag 2025
+ *      Author: balbi
+ */
+
+#ifndef UART_COMM_H_
+#define UART_COMM_H_
+
+#include "xparameters.h"
+#include "xuartlite.h"
+#include "xintc.h"
+
+
+#define TEST_BUFFER_SIZE 30
+
+
+/************************** Function Prototypes ******************************/
+
+int SetupUartLite(u16 DeviceId);
+
+int SetupInterruptSystem(XUartLite *UartLitePtr);
+
+void SendHandler(void *CallBackRef, unsigned int EventData);
+
+void RecvHandler(void *CallBackRef, unsigned int EventData);
+
+void resetBuffer();
+
+void printBuffer();
+
+/************************** Variable Definitions *****************************/
+
+extern  XUartLite UartLite;             /* The instance of the UartLite Device */
+extern XUartLite_Config *UartLite_Cfg; /* The instance of the UartLite Config */
+extern XIntc InterruptController;      /* The instance of the Interrupt Controller */
+
+
+
+
+
+extern u8 SendBuffer[TEST_BUFFER_SIZE];
+extern u8 ReceiveBuffer[TEST_BUFFER_SIZE];
+/* Here are the pointers to the buffer */
+extern u8* ReceiveBufferPtr = &ReceiveBuffer[0];
+
+
+static volatile int TotalReceivedCount;
+static volatile int TotalSentCount;
+
+
+#endif /* UART_COMM_H_ */

@@ -1,0 +1,1399 @@
+TRACE::2025-05-29.09:22:52::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:52::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:52::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:54::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-05-29.09:22:54::SCWPlatform::Opened new HwDB with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:54::SCWWriter::formatted JSON is {
+	"platformName":	"microv1_INTC",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microv1_INTC",
+	"platHandOff":	"C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple_INTC/micro_core_v1_INTC.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_core_v1_INTC.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2025-05-29.09:22:54::SCWWriter::formatted JSON is {
+	"platformName":	"microv1_INTC",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microv1_INTC",
+	"platHandOff":	"C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple_INTC/micro_core_v1_INTC.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_core_v1_INTC.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microv1_INTC",
+	"systems":	[{
+			"systemName":	"microv1_INTC",
+			"systemDesc":	"microv1_INTC",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microv1_INTC"
+		}]
+}
+TRACE::2025-05-29.09:22:54::SCWPlatform::Boot application domains not present, creating them
+TRACE::2025-05-29.09:22:54::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2025-05-29.09:22:54::SCWWriter::formatted JSON is {
+	"platformName":	"microv1_INTC",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microv1_INTC",
+	"platHandOff":	"C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple_INTC/micro_core_v1_INTC.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_core_v1_INTC.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microv1_INTC",
+	"systems":	[{
+			"systemName":	"microv1_INTC",
+			"systemDesc":	"microv1_INTC",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microv1_INTC"
+		}]
+}
+TRACE::2025-05-29.09:22:54::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:54::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:54::SCWDomain::checking for install qemu data   : 
+TRACE::2025-05-29.09:22:54::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:54::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:54::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:54::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:54::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:54::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:54::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:54::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:54::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-05-29.09:22:54::SCWMssOS::No sw design opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:54::SCWMssOS::mss does not exists at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:54::SCWMssOS::Creating sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:54::SCWMssOS::Adding the swdes entry, created swdb C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss with des name C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:54::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:54::SCWMssOS::Writing mss at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:54::SCWMssOS::Completed writing the mss file at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp
+TRACE::2025-05-29.09:22:54::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2025-05-29.09:22:54::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2025-05-29.09:22:54::SCWMssOS::Completed writing the mss file at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp
+TRACE::2025-05-29.09:22:54::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2025-05-29.09:22:57::SCWMssOS::Saving the mss changes C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-29.09:22:57::SCWMssOS::Running validate of swdbs.
+KEYINFO::2025-05-29.09:22:57::SCWMssOS::Could not open the swdb for C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+KEYINFO::2025-05-29.09:22:57::SCWMssOS::Could not open the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2025-05-29.09:22:57::SCWMssOS::Cleared the swdb table entry
+TRACE::2025-05-29.09:22:57::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2025-05-29.09:22:57::SCWMssOS::Writing the mss file completed C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::Commit changes completed.
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:57::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:57::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:57::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:57::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:57::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:57::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWWriter::formatted JSON is {
+	"platformName":	"microv1_INTC",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microv1_INTC",
+	"platHandOff":	"C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple_INTC/micro_core_v1_INTC.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_core_v1_INTC.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microv1_INTC",
+	"systems":	[{
+			"systemName":	"microv1_INTC",
+			"systemDesc":	"microv1_INTC",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microv1_INTC",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"5f905889939a4ca30bdb1f6c0f2f362c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-05-29.09:22:57::SCWPlatform::Started generating the artifacts platform microv1_INTC
+TRACE::2025-05-29.09:22:57::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-05-29.09:22:57::SCWPlatform::Started generating the artifacts for system configuration microv1_INTC
+LOG::2025-05-29.09:22:57::SCWSystem::Checking the domain standalone_domain
+LOG::2025-05-29.09:22:57::SCWSystem::Not a boot domain 
+LOG::2025-05-29.09:22:57::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-05-29.09:22:57::SCWDomain::Generating domain artifcats
+TRACE::2025-05-29.09:22:57::SCWMssOS::Generating standalone artifcats
+TRACE::2025-05-29.09:22:57::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:57::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:57::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::Completed writing the mss file at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp
+TRACE::2025-05-29.09:22:57::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-05-29.09:22:57::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-05-29.09:22:57::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2025-05-29.09:22:57::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-05-29.09:22:57::SCWMssOS::Copying to export directory.
+TRACE::2025-05-29.09:22:57::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-05-29.09:22:57::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-05-29.09:22:57::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-05-29.09:22:57::SCWSystem::Completed Processing the sysconfig microv1_INTC
+LOG::2025-05-29.09:22:57::SCWPlatform::Completed generating the artifacts for system configuration microv1_INTC
+TRACE::2025-05-29.09:22:57::SCWPlatform::Started preparing the platform 
+TRACE::2025-05-29.09:22:57::SCWSystem::Writing the bif file for system config microv1_INTC
+TRACE::2025-05-29.09:22:57::SCWSystem::dir created 
+TRACE::2025-05-29.09:22:57::SCWSystem::Writing the bif 
+TRACE::2025-05-29.09:22:57::SCWPlatform::Started writing the spfm file 
+TRACE::2025-05-29.09:22:57::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-05-29.09:22:57::SCWPlatform::Completed generating the platform
+TRACE::2025-05-29.09:22:57::SCWMssOS::Saving the mss changes C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-29.09:22:57::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-29.09:22:57::SCWMssOS::Commit changes completed.
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:57::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:57::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:57::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:57::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:57::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:57::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:57::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:57::SCWWriter::formatted JSON is {
+	"platformName":	"microv1_INTC",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microv1_INTC",
+	"platHandOff":	"C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple_INTC/micro_core_v1_INTC.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_core_v1_INTC.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microv1_INTC",
+	"systems":	[{
+			"systemName":	"microv1_INTC",
+			"systemDesc":	"microv1_INTC",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microv1_INTC",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"5f905889939a4ca30bdb1f6c0f2f362c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-05-29.09:22:57::SCWPlatform::updated the xpfm file.
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::Saving the mss changes C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-29.09:22:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-29.09:22:58::SCWMssOS::Commit changes completed.
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWWriter::formatted JSON is {
+	"platformName":	"microv1_INTC",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microv1_INTC",
+	"platHandOff":	"C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple_INTC/micro_core_v1_INTC.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_core_v1_INTC.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microv1_INTC",
+	"systems":	[{
+			"systemName":	"microv1_INTC",
+			"systemDesc":	"microv1_INTC",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microv1_INTC",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"5f905889939a4ca30bdb1f6c0f2f362c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::Saving the mss changes C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-29.09:22:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-29.09:22:58::SCWMssOS::Commit changes completed.
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWWriter::formatted JSON is {
+	"platformName":	"microv1_INTC",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microv1_INTC",
+	"platHandOff":	"C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple_INTC/micro_core_v1_INTC.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_core_v1_INTC.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microv1_INTC",
+	"systems":	[{
+			"systemName":	"microv1_INTC",
+			"systemDesc":	"microv1_INTC",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microv1_INTC",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"5f905889939a4ca30bdb1f6c0f2f362c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-05-29.09:22:58::SCWMssOS::Saving the mss changes C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-29.09:22:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-29.09:22:58::SCWMssOS::Commit changes completed.
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWWriter::formatted JSON is {
+	"platformName":	"microv1_INTC",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microv1_INTC",
+	"platHandOff":	"C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple_INTC/micro_core_v1_INTC.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_core_v1_INTC.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microv1_INTC",
+	"systems":	[{
+			"systemName":	"microv1_INTC",
+			"systemDesc":	"microv1_INTC",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microv1_INTC",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"5f905889939a4ca30bdb1f6c0f2f362c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-05-29.09:22:58::SCWPlatform::Clearing the existing platform
+TRACE::2025-05-29.09:22:58::SCWSystem::Clearing the existing sysconfig
+TRACE::2025-05-29.09:22:58::SCWMssOS::Removing the swdes entry for  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWSystem::Clearing the domains completed.
+TRACE::2025-05-29.09:22:58::SCWPlatform::Clearing the opened hw db.
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform location is C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Removing the HwDB with name C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened new HwDB with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWReader::Active system found as  microv1_INTC
+TRACE::2025-05-29.09:22:58::SCWReader::Handling sysconfig microv1_INTC
+TRACE::2025-05-29.09:22:58::SCWDomain::checking for install qemu data   : 
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-05-29.09:22:58::SCWMssOS::No sw design opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::mss exists loading the mss file  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::Opened the sw design from mss  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::Adding the swdes entry C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2025-05-29.09:22:58::SCWMssOS::updating the scw layer about changes
+TRACE::2025-05-29.09:22:58::SCWMssOS::Opened the sw design.  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::Saving the mss changes C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-29.09:22:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-29.09:22:58::SCWMssOS::Commit changes completed.
+TRACE::2025-05-29.09:22:58::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-05-29.09:22:58::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:22:58::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:22:58::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:22:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:22:58::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:22:58::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:22:58::SCWReader::No isolation master present  
+LOG::2025-05-29.09:23:59::SCWPlatform::Started generating the artifacts platform microv1_INTC
+TRACE::2025-05-29.09:23:59::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-05-29.09:23:59::SCWPlatform::Started generating the artifacts for system configuration microv1_INTC
+LOG::2025-05-29.09:23:59::SCWSystem::Checking the domain standalone_domain
+LOG::2025-05-29.09:23:59::SCWSystem::Not a boot domain 
+LOG::2025-05-29.09:23:59::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-05-29.09:23:59::SCWDomain::Generating domain artifcats
+TRACE::2025-05-29.09:23:59::SCWMssOS::Generating standalone artifcats
+TRACE::2025-05-29.09:23:59::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-05-29.09:23:59::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:23:59::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:23:59::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:23:59::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:23:59::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:23:59::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:23:59::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:23:59::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:23:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:23:59::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:23:59::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:23:59::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:23:59::SCWMssOS::Completed writing the mss file at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp
+TRACE::2025-05-29.09:23:59::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:23:59::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-05-29.09:23:59::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-05-29.09:23:59::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2025-05-29.09:23:59::SCWMssOS::doing bsp build ... 
+TRACE::2025-05-29.09:23:59::SCWMssOS::System Command Ran  C: & cd  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp & make 
+TRACE::2025-05-29.09:23:59::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::make -j --no-print-directory par_libs
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-05-29.09:24:00::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g 
+TRACE::2025-05-29.09:24:00::SCWMssOS::-ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/clk_wiz_v1_4/src"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2025-05-29.09:24:00::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=
+TRACE::2025-05-29.09:24:00::SCWMssOS::-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-05-29.09:24:00::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g 
+TRACE::2025-05-29.09:24:00::SCWMssOS::-ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-05-29.09:24:00::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g 
+TRACE::2025-05-29.09:24:00::SCWMssOS::-ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2025-05-29.09:24:00::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g
+TRACE::2025-05-29.09:24:00::SCWMssOS:: -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2025-05-29.09:24:00::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLA
+TRACE::2025-05-29.09:24:00::SCWMssOS::GS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2025-05-29.09:24:00::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2025-05-29.09:24:00::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS
+TRACE::2025-05-29.09:24:00::SCWMssOS::=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-05-29.09:24:01::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ff
+TRACE::2025-05-29.09:24:01::SCWMssOS::unction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/clk_wiz_v1_4/src"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-05-29.09:24:01::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g 
+TRACE::2025-05-29.09:24:01::SCWMssOS::-ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-05-29.09:24:01::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ff
+TRACE::2025-05-29.09:24:01::SCWMssOS::unction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-05-29.09:24:01::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ff
+TRACE::2025-05-29.09:24:01::SCWMssOS::unction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2025-05-29.09:24:01::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -f
+TRACE::2025-05-29.09:24:01::SCWMssOS::function-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2025-05-29.09:24:01::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=
+TRACE::2025-05-29.09:24:01::SCWMssOS::-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2025-05-29.09:24:01::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2025-05-29.09:24:01::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g
+TRACE::2025-05-29.09:24:01::SCWMssOS:: -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.09:24:03::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2025-05-29.09:24:04::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2025-05-29.09:24:04::SCWMssOS::make --no-print-directory archive
+
+TRACE::2025-05-29.09:24:04::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/microblaze_
+TRACE::2025-05-29.09:24:04::SCWMssOS::disable_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/_exit.o microblaze_0/lib/xil_testio.o microblaze_0/lib/microblaz
+TRACE::2025-05-29.09:24:04::SCWMssOS::e_disable_dcache.o microblaze_0/lib/microblaze_flush_dcache_range.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/
+TRACE::2025-05-29.09:24:04::SCWMssOS::lib/xbram_sinit.o microblaze_0/lib/inbyte.o microblaze_0/lib/xclk_wiz_g.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/
+TRACE::2025-05-29.09:24:04::SCWMssOS::lib/xil_cache.o microblaze_0/lib/xil_util.o microblaze_0/lib/xclk_wiz_sinit.o microblaze_0/lib/xuartlite_stats.o microblaze_0/l
+TRACE::2025-05-29.09:24:04::SCWMssOS::ib/microblaze_exception_handler.o microblaze_0/lib/xbram_g.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_in
+TRACE::2025-05-29.09:24:04::SCWMssOS::validate_dcache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib/xbram_selftest.o microblaze_0/lib/microblaz
+TRACE::2025-05-29.09:24:04::SCWMssOS::e_interrupt_handler.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/xgpio_g.o microblaze_0/lib/xil_mem.o microb
+TRACE::2025-05-29.09:24:04::SCWMssOS::laze_0/lib/xclk_wiz_intr.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/xbram_intr.o microblaze_0/lib/x
+TRACE::2025-05-29.09:24:04::SCWMssOS::il_sleepcommon.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xintc
+TRACE::2025-05-29.09:24:04::SCWMssOS::_selftest.o microblaze_0/lib/xintc_l.o microblaze_0/lib/outbyte.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/microblaze_inv
+TRACE::2025-05-29.09:24:04::SCWMssOS::alidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/microblaze_sleep.o microblaze_0/lib/
+TRACE::2025-05-29.09:24:04::SCWMssOS::xuartlite_sinit.o microblaze_0/lib/hw_exception_handler.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xgpio_sinit.o 
+TRACE::2025-05-29.09:24:04::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/microblaze_selftest.o microblaze_
+TRACE::2025-05-29.09:24:04::SCWMssOS::0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/xio.o microblaze_0/lib/xclk_wi
+TRACE::2025-05-29.09:24:04::SCWMssOS::z.o microblaze_0/lib/microblaze_enable_dcache.o microblaze_0/lib/xbram.o microblaze_0/lib/microblaze_invalidate_icache_range.o 
+TRACE::2025-05-29.09:24:04::SCWMssOS::microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/errno.o microb
+TRACE::2025-05-29.09:24:04::SCWMssOS::laze_0/lib/xuartlite_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0
+TRACE::2025-05-29.09:24:04::SCWMssOS::/lib/xintc_intr.o microblaze_0/lib/xil_exception.o microblaze_0/lib/pvr.o microblaze_0/lib/xgpio.o microblaze_0/lib/xil_testmem
+TRACE::2025-05-29.09:24:04::SCWMssOS::.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/microblaze_flush_dcache.o mic
+TRACE::2025-05-29.09:24:04::SCWMssOS::roblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_assert.o microblaze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/xgp
+TRACE::2025-05-29.09:24:04::SCWMssOS::io_extra.o microblaze_0/lib/microblaze_enable_icache.o microblaze_0/lib/xintc.o microblaze_0/lib/microblaze_init_icache_range.o
+TRACE::2025-05-29.09:24:04::SCWMssOS:: microblaze_0/lib/fcntl.o microblaze_0/lib/xgpio_selftest.o
+
+TRACE::2025-05-29.09:24:05::SCWMssOS::'Finished building libraries'
+
+TRACE::2025-05-29.09:24:05::SCWMssOS::Copying to export directory.
+TRACE::2025-05-29.09:24:05::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-05-29.09:24:05::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-05-29.09:24:05::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-05-29.09:24:05::SCWSystem::Completed Processing the sysconfig microv1_INTC
+LOG::2025-05-29.09:24:05::SCWPlatform::Completed generating the artifacts for system configuration microv1_INTC
+TRACE::2025-05-29.09:24:05::SCWPlatform::Started preparing the platform 
+TRACE::2025-05-29.09:24:05::SCWSystem::Writing the bif file for system config microv1_INTC
+TRACE::2025-05-29.09:24:05::SCWSystem::dir created 
+TRACE::2025-05-29.09:24:05::SCWSystem::Writing the bif 
+TRACE::2025-05-29.09:24:05::SCWPlatform::Started writing the spfm file 
+TRACE::2025-05-29.09:24:05::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-05-29.09:24:05::SCWPlatform::Completed generating the platform
+TRACE::2025-05-29.09:24:05::SCWMssOS::Saving the mss changes C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:24:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-29.09:24:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-29.09:24:05::SCWMssOS::Commit changes completed.
+TRACE::2025-05-29.09:24:05::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:24:05::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:24:05::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:24:05::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:24:05::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:24:05::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:24:05::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:24:05::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:24:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:24:05::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:24:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:24:05::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:24:05::SCWWriter::formatted JSON is {
+	"platformName":	"microv1_INTC",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microv1_INTC",
+	"platHandOff":	"C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple_INTC/micro_core_v1_INTC.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_core_v1_INTC.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microv1_INTC",
+	"systems":	[{
+			"systemName":	"microv1_INTC",
+			"systemDesc":	"microv1_INTC",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microv1_INTC",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"5f905889939a4ca30bdb1f6c0f2f362c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-05-29.09:24:05::SCWPlatform::updated the xpfm file.
+TRACE::2025-05-29.09:24:05::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:24:05::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:24:05::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:24:05::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.09:24:05::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.09:24:05::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.09:24:05::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:24:05::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.09:24:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.09:24:05::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.09:24:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.09:24:05::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:02::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:02::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:02::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:10::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.14:43:10::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:10::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.14:43:10::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-05-29.14:43:11::SCWPlatform::Opened new HwDB with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWReader::Active system found as  microv1_INTC
+TRACE::2025-05-29.14:43:11::SCWReader::Handling sysconfig microv1_INTC
+TRACE::2025-05-29.14:43:11::SCWDomain::checking for install qemu data   : 
+TRACE::2025-05-29.14:43:11::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.14:43:11::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.14:43:11::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.14:43:11::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.14:43:11::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.14:43:11::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.14:43:11::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.14:43:11::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.14:43:11::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.14:43:11::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.14:43:11::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.14:43:11::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.14:43:11::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:11::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-05-29.14:43:11::SCWMssOS::No sw design opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:11::SCWMssOS::mss exists loading the mss file  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:11::SCWMssOS::Opened the sw design from mss  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:11::SCWMssOS::Adding the swdes entry C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2025-05-29.14:43:11::SCWMssOS::updating the scw layer about changes
+TRACE::2025-05-29.14:43:11::SCWMssOS::Opened the sw design.  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:11::SCWMssOS::Saving the mss changes C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:11::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-29.14:43:11::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-29.14:43:11::SCWMssOS::Commit changes completed.
+TRACE::2025-05-29.14:43:11::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-05-29.14:43:11::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-05-29.14:43:11::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.14:43:11::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:11::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.14:43:11::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.14:43:11::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:11::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.14:43:11::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:11::SCWReader::No isolation master present  
+TRACE::2025-05-29.14:43:11::SCWMssOS::cleaning the bsp 
+TRACE::2025-05-29.14:43:11::SCWMssOS::System Command Ran  C: & cd  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2025-05-29.14:43:11::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s clean 
+
+TRACE::2025-05-29.14:43:11::SCWMssOS::make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s clean 
+
+TRACE::2025-05-29.14:43:11::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s clean 
+
+TRACE::2025-05-29.14:43:11::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s clean 
+
+TRACE::2025-05-29.14:43:12::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s clean 
+
+TRACE::2025-05-29.14:43:12::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s clean 
+
+TRACE::2025-05-29.14:43:13::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s clean 
+
+TRACE::2025-05-29.14:43:13::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+
+LOG::2025-05-29.14:43:17::SCWPlatform::Started generating the artifacts platform microv1_INTC
+TRACE::2025-05-29.14:43:17::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-05-29.14:43:17::SCWPlatform::Started generating the artifacts for system configuration microv1_INTC
+LOG::2025-05-29.14:43:17::SCWSystem::Checking the domain standalone_domain
+LOG::2025-05-29.14:43:17::SCWSystem::Not a boot domain 
+LOG::2025-05-29.14:43:17::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-05-29.14:43:17::SCWDomain::Generating domain artifcats
+TRACE::2025-05-29.14:43:17::SCWMssOS::Generating standalone artifcats
+TRACE::2025-05-29.14:43:17::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-05-29.14:43:17::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:17::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:17::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:17::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.14:43:17::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:17::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.14:43:17::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:17::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.14:43:17::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:17::SCWMssOS::Completed writing the mss file at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp
+TRACE::2025-05-29.14:43:17::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:17::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-05-29.14:43:17::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-05-29.14:43:17::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2025-05-29.14:43:17::SCWMssOS::doing bsp build ... 
+TRACE::2025-05-29.14:43:17::SCWMssOS::System Command Ran  C: & cd  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp & make 
+TRACE::2025-05-29.14:43:17::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::make -j --no-print-directory par_libs
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-05-29.14:43:17::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g 
+TRACE::2025-05-29.14:43:17::SCWMssOS::-ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/clk_wiz_v1_4/src"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2025-05-29.14:43:17::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=
+TRACE::2025-05-29.14:43:17::SCWMssOS::-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-05-29.14:43:17::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g 
+TRACE::2025-05-29.14:43:17::SCWMssOS::-ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-05-29.14:43:17::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g 
+TRACE::2025-05-29.14:43:17::SCWMssOS::-ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2025-05-29.14:43:17::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g
+TRACE::2025-05-29.14:43:17::SCWMssOS:: -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2025-05-29.14:43:17::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLA
+TRACE::2025-05-29.14:43:17::SCWMssOS::GS=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2025-05-29.14:43:17::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2025-05-29.14:43:17::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS
+TRACE::2025-05-29.14:43:17::SCWMssOS::=-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-05-29.14:43:18::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ff
+TRACE::2025-05-29.14:43:18::SCWMssOS::unction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/clk_wiz_v1_4/src"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-05-29.14:43:18::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g 
+TRACE::2025-05-29.14:43:18::SCWMssOS::-ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-05-29.14:43:18::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ff
+TRACE::2025-05-29.14:43:18::SCWMssOS::unction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-05-29.14:43:18::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ff
+TRACE::2025-05-29.14:43:18::SCWMssOS::unction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2025-05-29.14:43:18::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -f
+TRACE::2025-05-29.14:43:18::SCWMssOS::function-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2025-05-29.14:43:18::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=
+TRACE::2025-05-29.14:43:18::SCWMssOS::-g -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2025-05-29.14:43:18::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2025-05-29.14:43:18::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g
+TRACE::2025-05-29.14:43:18::SCWMssOS:: -ffunction-sections -fdata-sections -Wall -Wextra"
+
+TRACE::2025-05-29.14:43:20::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2025-05-29.14:43:23::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2025-05-29.14:43:23::SCWMssOS::make --no-print-directory archive
+
+TRACE::2025-05-29.14:43:23::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/microblaze_
+TRACE::2025-05-29.14:43:23::SCWMssOS::disable_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/_exit.o microblaze_0/lib/xil_testio.o microblaze_0/lib/microblaz
+TRACE::2025-05-29.14:43:23::SCWMssOS::e_disable_dcache.o microblaze_0/lib/microblaze_flush_dcache_range.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/
+TRACE::2025-05-29.14:43:23::SCWMssOS::lib/xbram_sinit.o microblaze_0/lib/inbyte.o microblaze_0/lib/xclk_wiz_g.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/
+TRACE::2025-05-29.14:43:23::SCWMssOS::lib/xil_cache.o microblaze_0/lib/xil_util.o microblaze_0/lib/xclk_wiz_sinit.o microblaze_0/lib/xuartlite_stats.o microblaze_0/l
+TRACE::2025-05-29.14:43:23::SCWMssOS::ib/microblaze_exception_handler.o microblaze_0/lib/xbram_g.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_in
+TRACE::2025-05-29.14:43:23::SCWMssOS::validate_dcache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib/xbram_selftest.o microblaze_0/lib/microblaz
+TRACE::2025-05-29.14:43:23::SCWMssOS::e_interrupt_handler.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/xgpio_g.o microblaze_0/lib/xil_mem.o microb
+TRACE::2025-05-29.14:43:23::SCWMssOS::laze_0/lib/xclk_wiz_intr.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/xbram_intr.o microblaze_0/lib/x
+TRACE::2025-05-29.14:43:23::SCWMssOS::il_sleepcommon.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xintc
+TRACE::2025-05-29.14:43:23::SCWMssOS::_selftest.o microblaze_0/lib/xintc_l.o microblaze_0/lib/outbyte.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/microblaze_inv
+TRACE::2025-05-29.14:43:23::SCWMssOS::alidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/microblaze_sleep.o microblaze_0/lib/
+TRACE::2025-05-29.14:43:23::SCWMssOS::xuartlite_sinit.o microblaze_0/lib/hw_exception_handler.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xgpio_sinit.o 
+TRACE::2025-05-29.14:43:23::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/microblaze_selftest.o microblaze_
+TRACE::2025-05-29.14:43:23::SCWMssOS::0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/xio.o microblaze_0/lib/xclk_wi
+TRACE::2025-05-29.14:43:23::SCWMssOS::z.o microblaze_0/lib/microblaze_enable_dcache.o microblaze_0/lib/xbram.o microblaze_0/lib/microblaze_invalidate_icache_range.o 
+TRACE::2025-05-29.14:43:23::SCWMssOS::microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/errno.o microb
+TRACE::2025-05-29.14:43:23::SCWMssOS::laze_0/lib/xuartlite_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0
+TRACE::2025-05-29.14:43:23::SCWMssOS::/lib/xintc_intr.o microblaze_0/lib/xil_exception.o microblaze_0/lib/pvr.o microblaze_0/lib/xgpio.o microblaze_0/lib/xil_testmem
+TRACE::2025-05-29.14:43:23::SCWMssOS::.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/microblaze_flush_dcache.o mic
+TRACE::2025-05-29.14:43:23::SCWMssOS::roblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_assert.o microblaze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/xgp
+TRACE::2025-05-29.14:43:23::SCWMssOS::io_extra.o microblaze_0/lib/microblaze_enable_icache.o microblaze_0/lib/xintc.o microblaze_0/lib/microblaze_init_icache_range.o
+TRACE::2025-05-29.14:43:23::SCWMssOS:: microblaze_0/lib/fcntl.o microblaze_0/lib/xgpio_selftest.o
+
+TRACE::2025-05-29.14:43:23::SCWMssOS::'Finished building libraries'
+
+TRACE::2025-05-29.14:43:24::SCWMssOS::Copying to export directory.
+TRACE::2025-05-29.14:43:24::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-05-29.14:43:24::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-05-29.14:43:24::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-05-29.14:43:24::SCWSystem::Completed Processing the sysconfig microv1_INTC
+LOG::2025-05-29.14:43:24::SCWPlatform::Completed generating the artifacts for system configuration microv1_INTC
+TRACE::2025-05-29.14:43:24::SCWPlatform::Started preparing the platform 
+TRACE::2025-05-29.14:43:24::SCWSystem::Writing the bif file for system config microv1_INTC
+TRACE::2025-05-29.14:43:24::SCWSystem::dir created 
+TRACE::2025-05-29.14:43:24::SCWSystem::Writing the bif 
+TRACE::2025-05-29.14:43:24::SCWPlatform::Started writing the spfm file 
+TRACE::2025-05-29.14:43:24::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-05-29.14:43:24::SCWPlatform::Completed generating the platform
+TRACE::2025-05-29.14:43:24::SCWMssOS::Saving the mss changes C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-29.14:43:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-29.14:43:24::SCWMssOS::Commit changes completed.
+TRACE::2025-05-29.14:43:24::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:24::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:24::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:24::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.14:43:24::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:24::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.14:43:24::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:24::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.14:43:24::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:24::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.14:43:24::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:24::SCWWriter::formatted JSON is {
+	"platformName":	"microv1_INTC",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"microv1_INTC",
+	"platHandOff":	"C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple_INTC/micro_core_v1_INTC.xsa",
+	"platIntHandOff":	"<platformDir>/hw/micro_core_v1_INTC.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"microv1_INTC",
+	"systems":	[{
+			"systemName":	"microv1_INTC",
+			"systemDesc":	"microv1_INTC",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"microv1_INTC",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"5f905889939a4ca30bdb1f6c0f2f362c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-05-29.14:43:24::SCWPlatform::updated the xpfm file.
+TRACE::2025-05-29.14:43:25::SCWPlatform::Trying to open the hw design at C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:25::SCWPlatform::DSA given C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:25::SCWPlatform::DSA absoulate path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:25::SCWPlatform::DSA directory C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw
+TRACE::2025-05-29.14:43:25::SCWPlatform:: Platform Path C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/hw/micro_core_v1_INTC.xsa
+TRACE::2025-05-29.14:43:25::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2025-05-29.14:43:25::SCWPlatform::Trying to set the existing hwdb with name micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:25::SCWPlatform::Opened existing hwdb micro_core_v0_wrapper_1
+TRACE::2025-05-29.14:43:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-29.14:43:25::SCWMssOS::Checking the sw design at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-05-29.14:43:25::SCWMssOS::DEBUG:  swdes dump  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-05-29.14:43:25::SCWMssOS::Sw design exists and opened at  C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv1_INTC/microblaze_0/standalone_domain/bsp/system.mss

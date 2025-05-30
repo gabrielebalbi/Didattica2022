@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="RecvHandler"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="RecvHandler"/>
+			<item value="SetupUartLite"/>
+			<item value="SetupInterruptSyste"/>
+			<item value="ReceiveBufferPtr"/>
+			<item value="ptr"/>
+			<item value="UARTLITE"/>
+			<item value="UARTLITE_DEVICE_ID"/>
+			<item value="UartLite_Cfg"/>
+			<item value="XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR"/>
+			<item value="UARTLITE_INT_IRQ"/>
+			<item value="UARTLITE_INT_"/>
+			<item value="UARTLITE_"/>
+			<item value="UARTLITE_INT"/>
+			<item value="UART"/>
+			<item value="WIZ"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1113"/>
+		<item key="DIALOG_Y_ORIGIN" value="435"/>
+		<item key="DIALOG_WIDTH" value="350"/>
+		<item key="DIALOG_HEIGHT" value="435"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|12.75|0|WINDOWS|1|-17|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

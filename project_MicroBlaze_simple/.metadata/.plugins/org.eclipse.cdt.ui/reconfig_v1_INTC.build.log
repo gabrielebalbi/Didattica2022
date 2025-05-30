@@ -1,0 +1,43 @@
+15:54:59 **** Incremental Build of configuration Debug for project reconfig_v1_INTC ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv5_INTC_emc_8nstris/export/microv5_INTC_emc_8nstris/sw/microv5_INTC_emc_8nstris/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv5_INTC_emc_8nstris/export/microv5_INTC_emc_8nstris/sw/microv5_INTC_emc_8nstris/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from ../src/main.c:50:
+../src/main.c: In function 'main':
+C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv5_INTC_emc_8nstris/export/microv5_INTC_emc_8nstris/sw/microv5_INTC_emc_8nstris/standalone_domain/bspinclude/include/xparameters.h:564:33: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1151336448' to '0' [-Woverflow]
+  564 | #define XPAR_CLK_WIZ_0_BASEADDR 0x44A00000
+      |                                 ^~~~~~~~~~
+../src/main.c:126:32: note: in expansion of macro 'XPAR_CLK_WIZ_0_BASEADDR'
+  126 |     readConfiguration_AXI_LITE(XPAR_CLK_WIZ_0_BASEADDR); //XPAR_CLK_WIZ_0_DEVICE_ID);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:132:19: warning: unused variable 'inp' [-Wunused-variable]
+  132 |     unsigned char inp;
+      |                   ^~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/uart_comm.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_comm.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv5_INTC_emc_8nstris/export/microv5_INTC_emc_8nstris/sw/microv5_INTC_emc_8nstris/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_comm.d" -MT"src/uart_comm.o" -o "src/uart_comm.o" "../src/uart_comm.c"
+../src/uart_comm.c: In function 'RecvHandler':
+../src/uart_comm.c:24:21: warning: implicit declaration of function 'XUartLite_RecvByte'; did you mean 'XUartLite_Recv'? [-Wimplicit-function-declaration]
+   24 |    ReceiveBuffer[i]=XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+      |                     ^~~~~~~~~~~~~~~~~~
+      |                     XUartLite_Recv
+'Finished building: ../src/uart_comm.c'
+' '
+'Building target: reconfig_v1_INTC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/microv5_INTC_emc_8nstris/export/microv5_INTC_emc_8nstris/sw/microv5_INTC_emc_8nstris/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "reconfig_v1_INTC.elf"  ./src/main.o ./src/mmcm_reconfig.o ./src/platform.o ./src/uart_comm.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: reconfig_v1_INTC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size reconfig_v1_INTC.elf  |tee "reconfig_v1_INTC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14716	    404	  82260	  97380	  17c64	reconfig_v1_INTC.elf
+'Finished building: reconfig_v1_INTC.elf.size'
+' '
+
+15:55:02 Build Finished (took 3s.8ms)
+

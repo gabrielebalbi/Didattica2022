@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_reconfig_v0-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_reconfig_v0-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_test_emcv0-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_testHW_v0-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_test_emcv1-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_testemcv3-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_testv4-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_reconfig_v1_INTC-Default
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_reconfig_v0-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_reconfig_v0-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_reconfig_v1_INTC-Default/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_testHW_v0-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_testHW_v0-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_testv4-Default/activeLaunchMode=run

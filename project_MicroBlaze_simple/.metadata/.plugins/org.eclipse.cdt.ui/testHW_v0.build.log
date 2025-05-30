@@ -1,0 +1,26 @@
+21:41:06 **** Incremental Build of configuration Release for project testHW_v0 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/micro_core_v0_wrapper_12MHZ/export/micro_core_v0_wrapper_12MHZ/sw/micro_core_v0_wrapper_12MHZ/standalone_microblaze_0/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/micro_core_v0_wrapper_12MHZ/export/micro_core_v0_wrapper_12MHZ/sw/micro_core_v0_wrapper_12MHZ/standalone_microblaze_0/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: testHW_v0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/micro_core_v0_wrapper_12MHZ/export/micro_core_v0_wrapper_12MHZ/sw/micro_core_v0_wrapper_12MHZ/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "testHW_v0.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: testHW_v0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size testHW_v0.elf  |tee "testHW_v0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2332	    332	   3112	   5776	   1690	testHW_v0.elf
+'Finished building: testHW_v0.elf.size'
+' '
+
+21:41:08 Build Finished (took 1s.393ms)
+

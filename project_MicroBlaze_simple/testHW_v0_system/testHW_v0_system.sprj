@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="testHW_v0_system" platform="C:/Users/ilpes/Desktop/Antenne_e_clocks/project_MicroBlaze_simple/micro_core_v0_wrapper_12MHZ/export/micro_core_v0_wrapper_12MHZ/micro_core_v0_wrapper_12MHZ.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" sysConfig="micro_core_v0_wrapper_12MHZ" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.1163757900">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="testHW_v0" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.903143250">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="testHW_v0" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Release"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="testHW_v0" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Release"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </lastBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

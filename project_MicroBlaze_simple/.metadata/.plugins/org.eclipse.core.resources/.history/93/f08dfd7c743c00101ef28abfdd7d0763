@@ -1,0 +1,13 @@
+/*
+ * uart_comm.h
+ *
+ *  Created on: 29 mag 2025
+ *      Author: balbi
+ */
+
+#ifndef SRC_UART_COMM_H_
+#define SRC_UART_COMM_H_
+
+
+
+#endif /* SRC_UART_COMM_H_ */
