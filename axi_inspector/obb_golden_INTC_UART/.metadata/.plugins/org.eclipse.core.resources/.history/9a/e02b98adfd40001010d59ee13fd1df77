@@ -1,0 +1,113 @@
+#include <xuartlite_l.h>
+#include <xintc_l.h>
+#include <xparameters.h>
+
+
+#define TEST_BUFFER_SIZE        50
+
+u8 ReceiveBuffer[TEST_BUFFER_SIZE];
+
+
+
+typedef struct {
+	u8 commandReceived[2];
+	u8 firstOp[10];
+	u8 secondOp[10];
+} comando;
+
+
+unsigned int jj=0;
+unsigned int kk=0;
+void printBuffer();
+void uart_int_handler(void *baseaddr_p);
+struct comando parser(char z);
+
+
+
+/* uartlite interrupt service routine */
+void uart_int_handler(void *baseaddr_p) {
+	char c;
+	c = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+	xil_printf ("0x%x %c \r\n",c, c);
+	jj++;
+	ReceiveBuffer[jj]=c;
+	if ((c==0xD)) {
+		xil_printf ("command received!\r\n");
+		kk=jj;
+		jj=0;
+
+		for(int i=0;i<kk;i++){
+				xil_printf("%c",ReceiveBuffer[i]);
+		        }
+
+		for(int i=0;i<TEST_BUFFER_SIZE;i++){
+				ReceiveBuffer[i]=0;
+		        }
+
+	}
+}
+
+void printBuffer()
+{
+    //return the message
+    xil_printf(&ReceiveBuffer[0]);
+
+}
+
+
+
+//
+//void uart_int_handler(void *baseaddr_p) {
+//	char c;
+//	/* till uart FIFOs are empty */
+//	c = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+//
+//	while (!XUartLite_IsReceiveEmpty(XPAR_AXI_UARTLITE_0_BASEADDR)) {
+//		/* read a character */
+//
+//		/* print character on hyperterminal (STDOUT) */
+//		xil_printf ("Character: %c \r\n", c);
+//		c = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+//	}
+//}
+
+
+int main(void)
+{
+
+	/* Enable MicroBlaze exception */
+   microblaze_enable_interrupts();
+    xil_printf ("####################################################### \r\n");
+	xil_printf ("# AXI inspector: \r\n");
+	xil_printf ("# Indirizzi e dati sono a 32bit formato HEX: \r\n");
+	xil_printf ("# Leggi --->  rd indirizzo \r\n");
+	xil_printf ("# Scrivi--->  wr indirizzo dato\r\n");
+	   xil_printf ("####################################################### \r\n");
+	/* Connect uart interrupt handler that will be called when an interrupt
+	* for the uart occurs*/
+	XIntc_RegisterHandler(XPAR_INTC_0_BASEADDR,XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR,(XInterruptHandler)uart_int_handler,(void *)XPAR_AXI_UARTLITE_0_BASEADDR);
+
+	/* Start the interrupt controller */
+	XIntc_MasterEnable(XPAR_INTC_0_BASEADDR);
+
+	/* Enable uart interrupt in the interrupt controller */
+	XIntc_EnableIntr(XPAR_INTC_0_BASEADDR, XPAR_AXI_UARTLITE_0_INTERRUPT_MASK);
+
+	/* Enable Uartlite interrupt */
+	XUartLite_EnableIntr(XPAR_AXI_UARTLITE_0_BASEADDR);
+
+	/* Wait for interrupts to occur */
+	while (1);
+}
+
+
+
+
+struct comando parser(char z)
+{
+	struct comando s1;
+	s1.commandReceived[0]='r';
+	s1.commandReceived[1]='d';
+
+	return s1;
+}

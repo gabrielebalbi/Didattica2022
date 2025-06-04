@@ -1,0 +1,74 @@
+22:44:10 **** Incremental Build of configuration Release for project axi_commander_v0 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupUartLite':
+../src/helloworld.c:153:40: warning: passing argument 2 of 'XUartLite_SetRecvHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+  153 |     XUartLite_SetRecvHandler(&UartLite,(XInterruptHandler) uart_int_handler, &UartLite);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                        |
+      |                                        void (*)(void *)
+In file included from ../src/helloworld.c:10:
+C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include/xuartlite.h:256:73: note: expected 'XUartLite_Handler' {aka 'void (*)(void *, unsigned int)'} but argument is of type 'void (*)(void *)'
+  256 | void XUartLite_SetRecvHandler(XUartLite *InstancePtr, XUartLite_Handler FuncPtr,
+      |                                                       ~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include/xintc.h:220,
+                 from ../src/helloworld.c:7:
+../src/helloworld.c: In function 'Init_Interrupt':
+C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include/xintc_l.h:181:28: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+  181 |  XIntc_Out32((BaseAddress) + XIN_MER_OFFSET, \
+      |                            ^
+      |                            |
+      |                            XIntc * {aka struct <anonymous> *}
+../src/helloworld.c:334:2: note: in expansion of macro 'XIntc_MasterEnable'
+  334 |  XIntc_MasterEnable(&Intc);
+      |  ^~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:
+C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include/xil_io.h:203:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'XIntc *' {aka 'struct <anonymous> *'}
+  203 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+In file included from C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include/xintc.h:220,
+                 from ../src/helloworld.c:7:
+../src/helloworld.c: In function 'Init_Interrupt_uart':
+C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include/xintc_l.h:181:28: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+  181 |  XIntc_Out32((BaseAddress) + XIN_MER_OFFSET, \
+      |                            ^
+      |                            |
+      |                            XIntc * {aka struct <anonymous> *}
+../src/helloworld.c:380:2: note: in expansion of macro 'XIntc_MasterEnable'
+  380 |  XIntc_MasterEnable(&Intc);
+      |  ^~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:5:
+C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include/xil_io.h:203:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'XIntc *' {aka 'struct <anonymous> *'}
+  203 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/helloworld.c:396:42: warning: passing argument 2 of 'XUartLite_SetRecvHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+  396 |      XUartLite_SetRecvHandler(&UartLite, InterruptHandler_command, &UartLite);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          void (*)(void *)
+In file included from ../src/helloworld.c:10:
+C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include/xuartlite.h:256:73: note: expected 'XUartLite_Handler' {aka 'void (*)(void *, unsigned int)'} but argument is of type 'void (*)(void *)'
+  256 | void XUartLite_SetRecvHandler(XUartLite *InstancePtr, XUartLite_Handler FuncPtr,
+      |                                                       ~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/helloworld.c: In function 'uart_int_handler':
+../src/helloworld.c:412:10: warning: implicit declaration of function 'XUartLite_IsReceiveEmpty' [-Wimplicit-function-declaration]
+  412 |  while (!XUartLite_IsReceiveEmpty(XPAR_AXI_UARTLITE_0_BASEADDR)) {
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:414:7: warning: implicit declaration of function 'XUartLite_RecvByte'; did you mean 'XUartLite_Recv'? [-Wimplicit-function-declaration]
+  414 |   c = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+      |       ^~~~~~~~~~~~~~~~~~
+      |       XUartLite_Recv
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: axi_commander_v0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "axi_commander_v0.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xvitis/vitis/2020.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/9.2.0/real-ld.exe: ./src/helloworld.o: in function `uart_int_handler':
+(.text.uart_int_handler+0x40): undefined reference to `XUartLite_IsReceiveEmpty'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: axi_commander_v0.elf] Error 1
+
+22:44:11 Build Finished (took 966ms)
+

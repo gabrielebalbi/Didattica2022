@@ -1,0 +1,204 @@
+timestamp=[2025-06-02 23:58:17], mode=WORKBENCH_START, duration=0:00:05.687, duration_ms=5687, data={}
+timestamp=[2025-06-02 23:58:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.389, duration_ms=389, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-06-02 23:58:22], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.455, duration_ms=3455, data={}
+timestamp=[2025-06-02 23:59:32], mode=PLATFORM_CREATION, duration=0:00:07.091, duration_ms=7091, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-06-03 00:00:45], mode=APP_CREATION, duration=0:00:01.796, duration_ms=1796, data={name=axi_commander_v0, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=micro_v9_INTC_uart, application_type=application}
+timestamp=[2025-06-03 00:03:47], mode=APP_CREATION, duration=0:00:00.947, duration_ms=947, data={name=hello1, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=micro_v9_INTC_uart, application_type=application}
+timestamp=[2025-06-03 00:04:01], mode=PLATFORM_GENERATION, duration=0:00:08.209, duration_ms=8209, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-03 00:04:04], mode=BUILD, duration=0:00:02.423, duration_ms=2423, data={name=hello1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 00:04:06], mode=BUILD, duration=0:00:01.639, duration_ms=1639, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 10:35:15], mode=WORKBENCH_START, duration=0:00:12.774, duration_ms=12774, data={}
+timestamp=[2025-06-03 10:35:16], mode=WORKBENCH_UI_INIT, duration=0:00:00.683, duration_ms=683, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_commander_v0,axi_commander_v0_system,micro_v9_INTC_uart}
+timestamp=[2025-06-03 10:35:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.169, duration_ms=169, data={}
+timestamp=[2025-06-03 11:14:34], mode=WORKBENCH_START, duration=0:00:14.513, duration_ms=14513, data={}
+timestamp=[2025-06-03 11:14:34], mode=WORKBENCH_UI_INIT, duration=0:00:00.852, duration_ms=852, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_commander_v0,axi_commander_v0_system,micro_v9_INTC_uart}
+timestamp=[2025-06-03 11:14:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.135, duration_ms=135, data={}
+timestamp=[2025-06-03 12:14:18], mode=PLATFORM_GENERATION, duration=0:00:16.226, duration_ms=16226, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-03 12:14:20], mode=BUILD, duration=0:00:00.923, duration_ms=923, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:14:21], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=axi_commander_v0_system, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:16:15], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:17:10], mode=PLATFORM_GENERATION, duration=0:00:02.870, duration_ms=2870, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-03 12:17:10], mode=BUILD, duration=0:00:00.280, duration_ms=280, data={name=axi_commander_v0, configuration=Release, clean_build=true}
+timestamp=[2025-06-03 12:17:23], mode=PLATFORM_GENERATION, duration=0:00:09.974, duration_ms=9974, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-03 12:17:26], mode=BUILD, duration=0:00:02.376, duration_ms=2376, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:18:37], mode=BUILD, duration=0:00:00.988, duration_ms=988, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:19:13], mode=BUILD, duration=0:00:00.940, duration_ms=940, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:25:15], mode=BUILD, duration=0:00:00.368, duration_ms=368, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:26:26], mode=BUILD, duration=0:00:00.325, duration_ms=325, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:26:53], mode=BUILD, duration=0:00:00.328, duration_ms=328, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:27:25], mode=BUILD, duration=0:00:00.312, duration_ms=312, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:27:50], mode=BUILD, duration=0:00:00.740, duration_ms=740, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:28:29], mode=PLATFORM_GENERATION, duration=0:00:06.667, duration_ms=6667, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-03 12:28:29], mode=BUILD, duration=0:00:00.245, duration_ms=245, data={name=axi_commander_v0, configuration=Release, clean_build=true}
+timestamp=[2025-06-03 12:29:20], mode=PLATFORM_GENERATION, duration=0:00:07.913, duration_ms=7913, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-03 12:29:22], mode=BUILD, duration=0:00:01.823, duration_ms=1823, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 12:30:10], mode=BUILD, duration=0:00:00.740, duration_ms=740, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:12:57], mode=BUILD, duration=0:00:02.764, duration_ms=2764, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:20:38], mode=BUILD, duration=0:00:02.484, duration_ms=2484, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:23:15], mode=BUILD, duration=0:00:00.677, duration_ms=677, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:23:49], mode=BUILD, duration=0:00:00.968, duration_ms=968, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:27:57], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:28:38], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:29:15], mode=BUILD, duration=0:00:01.053, duration_ms=1053, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:34:48], mode=BUILD, duration=0:00:01.275, duration_ms=1275, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:35:18], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:35:51], mode=BUILD, duration=0:00:00.311, duration_ms=311, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:36:22], mode=BUILD, duration=0:00:01.517, duration_ms=1517, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:39:34], mode=BUILD, duration=0:00:00.920, duration_ms=920, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:44:41], mode=BUILD, duration=0:00:00.906, duration_ms=906, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:46:19], mode=BUILD, duration=0:00:01.059, duration_ms=1059, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:48:07], mode=BUILD, duration=0:00:02.238, duration_ms=2238, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:49:04], mode=BUILD, duration=0:00:00.858, duration_ms=858, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:50:04], mode=BUILD, duration=0:00:00.865, duration_ms=865, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:51:04], mode=BUILD, duration=0:00:00.888, duration_ms=888, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:51:59], mode=BUILD, duration=0:00:01.033, duration_ms=1033, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:53:07], mode=BUILD, duration=0:00:00.853, duration_ms=853, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 14:53:49], mode=BUILD, duration=0:00:00.864, duration_ms=864, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 21:25:44], mode=WORKBENCH_START, duration=0:00:14.169, duration_ms=14169, data={}
+timestamp=[2025-06-03 21:25:45], mode=WORKBENCH_UI_INIT, duration=0:00:00.796, duration_ms=796, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_commander_v0,axi_commander_v0_system,micro_v9_INTC_uart}
+timestamp=[2025-06-03 21:25:46], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.232, duration_ms=232, data={}
+timestamp=[2025-06-03 21:27:36], mode=PLATFORM_GENERATION, duration=0:00:09.083, duration_ms=9083, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-03 21:27:38], mode=BUILD, duration=0:00:02.642, duration_ms=2642, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 21:31:54], mode=BUILD, duration=0:00:02.303, duration_ms=2303, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 21:32:50], mode=BUILD, duration=0:00:00.890, duration_ms=890, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 21:32:59], mode=BUILD, duration=0:00:00.156, duration_ms=156, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 21:52:55], mode=BUILD, duration=0:00:02.619, duration_ms=2619, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 21:54:55], mode=BUILD, duration=0:00:01.015, duration_ms=1015, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:17:04], mode=BUILD, duration=0:00:02.525, duration_ms=2525, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:17:53], mode=BUILD, duration=0:00:00.146, duration_ms=146, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:18:34], mode=BUILD, duration=0:00:00.360, duration_ms=360, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:19:05], mode=BUILD, duration=0:00:00.965, duration_ms=965, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:21:49], mode=BUILD, duration=0:00:01.060, duration_ms=1060, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:21:50], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=axi_commander_v0_system, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:22:57], mode=BUILD, duration=0:00:01.037, duration_ms=1037, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:24:30], mode=BUILD, duration=0:00:01.099, duration_ms=1099, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:39:02], mode=BUILD, duration=0:00:02.660, duration_ms=2660, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:40:30], mode=BUILD, duration=0:00:01.010, duration_ms=1010, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:43:16], mode=BUILD, duration=0:00:00.927, duration_ms=927, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:44:11], mode=BUILD, duration=0:00:00.976, duration_ms=976, data={name=axi_commander_v0, configuration=Release, clean_build=false}
+timestamp=[2025-06-03 22:45:35], mode=APP_CREATION, duration=0:00:02.879, duration_ms=2879, data={name=axi_commander_v1, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=micro_v9_INTC_uart, application_type=application}
+timestamp=[2025-06-03 22:47:35], mode=BUILD, duration=0:00:02.499, duration_ms=2499, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 22:49:16], mode=BUILD, duration=0:00:00.392, duration_ms=392, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 22:49:44], mode=BUILD, duration=0:00:01.325, duration_ms=1325, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 22:51:21], mode=BUILD, duration=0:00:01.353, duration_ms=1353, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 22:51:22], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 22:56:16], mode=BUILD, duration=0:00:01.201, duration_ms=1201, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 23:00:04], mode=BUILD, duration=0:00:02.864, duration_ms=2864, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 23:07:20], mode=BUILD, duration=0:00:00.382, duration_ms=382, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 23:07:21], mode=BUILD, duration=0:00:00.225, duration_ms=225, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 23:07:41], mode=BUILD, duration=0:00:01.139, duration_ms=1139, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 23:07:42], mode=BUILD, duration=0:00:00.249, duration_ms=249, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-03 23:10:02], mode=BUILD, duration=0:00:01.449, duration_ms=1449, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:28:21], mode=WORKBENCH_START, duration=0:00:13.094, duration_ms=13094, data={}
+timestamp=[2025-06-04 05:28:22], mode=WORKBENCH_UI_INIT, duration=0:00:00.648, duration_ms=648, data={editors_count=9, platform_editors_count=2, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_commander_v0,axi_commander_v0_system,axi_commander_v1,axi_commander_v1_system,micro_v9_INTC_uart}
+timestamp=[2025-06-04 05:28:22], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.111, duration_ms=111, data={}
+timestamp=[2025-06-04 05:30:13], mode=BUILD, duration=0:00:02.034, duration_ms=2034, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:33:50], mode=BUILD, duration=0:00:01.467, duration_ms=1467, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:35:06], mode=BUILD, duration=0:00:01.720, duration_ms=1720, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:35:35], mode=BUILD, duration=0:00:01.715, duration_ms=1715, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:37:31], mode=BUILD, duration=0:00:00.874, duration_ms=874, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:39:46], mode=BUILD, duration=0:00:00.756, duration_ms=756, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:42:58], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:43:39], mode=BUILD, duration=0:00:00.262, duration_ms=262, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:43:49], mode=BUILD, duration=0:00:00.247, duration_ms=247, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:44:29], mode=BUILD, duration=0:00:00.847, duration_ms=847, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:44:29], mode=BUILD, duration=0:00:00.210, duration_ms=210, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:52:52], mode=BUILD, duration=0:00:00.980, duration_ms=980, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:53:58], mode=BUILD, duration=0:00:00.846, duration_ms=846, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 05:57:48], mode=BUILD, duration=0:00:00.822, duration_ms=822, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:00:05], mode=BUILD, duration=0:00:00.752, duration_ms=752, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:10:12], mode=BUILD, duration=0:00:00.854, duration_ms=854, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:12:40], mode=BUILD, duration=0:00:00.796, duration_ms=796, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:13:30], mode=BUILD, duration=0:00:00.925, duration_ms=925, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:15:17], mode=BUILD, duration=0:00:00.795, duration_ms=795, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:15:58], mode=BUILD, duration=0:00:00.915, duration_ms=915, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:27:25], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:27:48], mode=BUILD, duration=0:00:00.916, duration_ms=916, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:27:48], mode=BUILD, duration=0:00:00.164, duration_ms=164, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:28:50], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:28:50], mode=BUILD, duration=0:00:00.124, duration_ms=124, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:29:19], mode=BUILD, duration=0:00:00.343, duration_ms=343, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:29:20], mode=BUILD, duration=0:00:00.202, duration_ms=202, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:34:23], mode=BUILD, duration=0:00:00.290, duration_ms=290, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:37:15], mode=BUILD, duration=0:00:00.323, duration_ms=323, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:37:56], mode=BUILD, duration=0:00:00.241, duration_ms=241, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:39:50], mode=BUILD, duration=0:00:00.242, duration_ms=242, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:41:07], mode=BUILD, duration=0:00:00.244, duration_ms=244, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:41:52], mode=BUILD, duration=0:00:00.711, duration_ms=711, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:49:18], mode=BUILD, duration=0:00:00.249, duration_ms=249, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:49:18], mode=BUILD, duration=0:00:00.179, duration_ms=179, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:49:41], mode=BUILD, duration=0:00:00.307, duration_ms=307, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:50:40], mode=BUILD, duration=0:00:00.254, duration_ms=254, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:50:58], mode=BUILD, duration=0:00:00.256, duration_ms=256, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:50:58], mode=BUILD, duration=0:00:00.178, duration_ms=178, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:51:28], mode=BUILD, duration=0:00:00.301, duration_ms=301, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:51:54], mode=BUILD, duration=0:00:00.251, duration_ms=251, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:52:08], mode=BUILD, duration=0:00:00.854, duration_ms=854, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 06:54:31], mode=BUILD, duration=0:00:00.787, duration_ms=787, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:04:34], mode=BUILD, duration=0:00:01.811, duration_ms=1811, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:04:34], mode=BUILD, duration=0:00:00.194, duration_ms=194, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:04:48], mode=BUILD, duration=0:00:00.191, duration_ms=191, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:05:09], mode=BUILD, duration=0:00:00.144, duration_ms=144, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:06:16], mode=BUILD, duration=0:00:00.795, duration_ms=795, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:06:56], mode=BUILD, duration=0:00:01.218, duration_ms=1218, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:13:31], mode=BUILD, duration=0:00:00.304, duration_ms=304, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:13:31], mode=BUILD, duration=0:00:00.178, duration_ms=178, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:14:05], mode=BUILD, duration=0:00:00.848, duration_ms=848, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:14:05], mode=BUILD, duration=0:00:00.150, duration_ms=150, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:16:04], mode=BUILD, duration=0:00:00.799, duration_ms=799, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:16:59], mode=BUILD, duration=0:00:00.798, duration_ms=798, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:16:59], mode=BUILD, duration=0:00:00.197, duration_ms=197, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:19:13], mode=BUILD, duration=0:00:00.793, duration_ms=793, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:19:14], mode=BUILD, duration=0:00:00.142, duration_ms=142, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:45:36], mode=BUILD, duration=0:00:01.669, duration_ms=1669, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:53:49], mode=BUILD, duration=0:00:00.779, duration_ms=779, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:55:31], mode=BUILD, duration=0:00:00.783, duration_ms=783, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 09:56:50], mode=BUILD, duration=0:00:00.775, duration_ms=775, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 12:57:28], mode=WORKBENCH_START, duration=0:00:21.281, duration_ms=21281, data={}
+timestamp=[2025-06-04 12:57:29], mode=WORKBENCH_UI_INIT, duration=0:00:01.030, duration_ms=1030, data={editors_count=9, platform_editors_count=2, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_commander_v0,axi_commander_v0_system,axi_commander_v1,axi_commander_v1_system,micro_v9_INTC_uart}
+timestamp=[2025-06-04 12:57:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.329, duration_ms=329, data={}
+timestamp=[2025-06-04 13:27:46], mode=BUILD, duration=0:00:02.454, duration_ms=2454, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 13:30:50], mode=BUILD, duration=0:00:02.140, duration_ms=2140, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 13:34:53], mode=PLATFORM_GENERATION, duration=0:00:14.092, duration_ms=14092, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-04 13:34:53], mode=BUILD, duration=0:00:00.214, duration_ms=214, data={name=axi_commander_v1, configuration=Release, clean_build=true}
+timestamp=[2025-06-04 13:36:13], mode=PLATFORM_GENERATION, duration=0:00:07.766, duration_ms=7766, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-04 13:36:15], mode=BUILD, duration=0:00:01.763, duration_ms=1763, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 13:36:35], mode=BUILD, duration=0:00:00.196, duration_ms=196, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 13:37:21], mode=BUILD, duration=0:00:00.196, duration_ms=196, data={name=axi_commander_v1, configuration=Debug, clean_build=true}
+timestamp=[2025-06-04 13:37:22], mode=BUILD, duration=0:00:01.341, duration_ms=1341, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 14:03:03], mode=BUILD, duration=0:00:01.173, duration_ms=1173, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 14:06:53], mode=BUILD, duration=0:00:00.337, duration_ms=337, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 14:07:10], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 14:10:41], mode=BUILD, duration=0:00:00.320, duration_ms=320, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 15:03:58], mode=BUILD, duration=0:00:02.330, duration_ms=2330, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 15:06:17], mode=BUILD, duration=0:00:00.992, duration_ms=992, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 15:11:09], mode=PLATFORM_GENERATION, duration=0:00:06.343, duration_ms=6343, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-04 15:11:10], mode=BUILD, duration=0:00:00.247, duration_ms=247, data={name=axi_commander_v1, configuration=Debug, clean_build=true}
+timestamp=[2025-06-04 15:11:17], mode=PLATFORM_GENERATION, duration=0:00:07.420, duration_ms=7420, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-04 15:11:19], mode=BUILD, duration=0:00:01.701, duration_ms=1701, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 15:17:57], mode=BUILD, duration=0:00:01.235, duration_ms=1235, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 15:17:57], mode=BUILD, duration=0:00:00.190, duration_ms=190, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 15:18:13], mode=BUILD, duration=0:00:01.171, duration_ms=1171, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 15:21:57], mode=BUILD, duration=0:00:01.030, duration_ms=1030, data={name=axi_commander_v1, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 15:21:57], mode=BUILD, duration=0:00:00.235, duration_ms=235, data={name=axi_commander_v1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-06-04 15:23:10], mode=BUILD, duration=0:00:00.258, duration_ms=258, data={name=axi_commander_v1, configuration=Release, clean_build=true}
+timestamp=[2025-06-04 15:23:12], mode=BUILD, duration=0:00:01.407, duration_ms=1407, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 15:25:22], mode=BUILD, duration=0:00:00.879, duration_ms=879, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 15:33:31], mode=BUILD, duration=0:00:02.135, duration_ms=2135, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 15:33:32], mode=BUILD, duration=0:00:00.197, duration_ms=197, data={name=axi_commander_v1_system, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 15:35:50], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 15:35:50], mode=BUILD, duration=0:00:00.146, duration_ms=146, data={name=axi_commander_v1_system, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 15:37:09], mode=BUILD, duration=0:00:00.803, duration_ms=803, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 16:45:52], mode=WORKBENCH_START, duration=0:00:21.700, duration_ms=21700, data={}
+timestamp=[2025-06-04 16:45:53], mode=WORKBENCH_UI_INIT, duration=0:00:00.584, duration_ms=584, data={editors_count=11, platform_editors_count=3, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_commander_v0,axi_commander_v0_system,axi_commander_v1,axi_commander_v1_system,micro_v9_INTC_uart}
+timestamp=[2025-06-04 16:45:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.173, duration_ms=173, data={}
+timestamp=[2025-06-04 16:52:43], mode=PLATFORM_GENERATION, duration=0:00:16.003, duration_ms=16003, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-04 16:52:44], mode=BUILD, duration=0:00:01.176, duration_ms=1176, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 16:53:28], mode=BUILD, duration=0:00:00.358, duration_ms=358, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 16:54:16], mode=BUILD, duration=0:00:01.486, duration_ms=1486, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 16:57:07], mode=BUILD, duration=0:00:01.024, duration_ms=1024, data={name=axi_commander_v1, configuration=Release, clean_build=false}
+timestamp=[2025-06-04 16:58:02], mode=PLATFORM_GENERATION, duration=0:00:02.627, duration_ms=2627, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-04 16:58:02], mode=BUILD, duration=0:00:00.249, duration_ms=249, data={name=axi_commander_v1, configuration=Release, clean_build=true}
+timestamp=[2025-06-04 16:58:02], mode=BUILD, duration=0:00:00.181, duration_ms=181, data={name=axi_commander_v1_system, configuration=Release, clean_build=true}
+timestamp=[2025-06-04 16:58:24], mode=PLATFORM_GENERATION, duration=0:00:06.504, duration_ms=6504, data={name=micro_v9_INTC_uart}
+timestamp=[2025-06-04 16:58:26], mode=BUILD, duration=0:00:01.881, duration_ms=1881, data={name=axi_commander_v1, configuration=Release, clean_build=false}

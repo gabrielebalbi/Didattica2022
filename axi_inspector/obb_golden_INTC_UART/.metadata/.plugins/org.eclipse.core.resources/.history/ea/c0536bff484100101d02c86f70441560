@@ -1,0 +1,186 @@
+#include <xuartlite_l.h>
+#include <xintc_l.h>
+#include <xparameters.h>
+#include <stdio.h>
+#include <string.h>
+
+
+
+#define TEST_BUFFER_SIZE        50
+
+volatile u8 ReceiveBuffer[TEST_BUFFER_SIZE];
+
+
+struct comando {
+	u8 commandReceived[2];
+	u8 firstOp[10];
+	u8 secondOp[10];
+	char cr[2];
+	int select; //0 write e 1 è read, -1 comando sconosciuto
+};
+
+volatile struct comando myComando;
+unsigned int jj=0;
+unsigned int kk=0;
+void uart_int_handler(void *baseaddr_p);
+
+volatile struct comando parser(u8* buffer);
+//volatile struct comando parser( struct comando t, u8* buffer);
+
+
+/* uartlite interrupt service routine */
+void uart_int_handler(void *baseaddr_p) {
+	char c;
+	c = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+
+	xil_printf ("%c",c);
+
+	jj++;
+	ReceiveBuffer[jj]=c;
+	if ((c==0xD)) {
+		xil_printf ("\r\n",c);
+		xil_printf ("command received!\r\n");
+		kk=jj;
+		jj=0;
+
+		for(int i=0;i<kk;i++){
+				xil_printf("%c",ReceiveBuffer[i]);
+		        }
+
+		xil_printf ("\r\n",c);
+
+		myComando=parser(&ReceiveBuffer);
+
+
+		int address = (int)strtol(myComando.firstOp, NULL, 16);
+
+
+
+		if (myComando.select==1)
+			{
+				xil_printf ("Selezionata lettura!\r\n");
+				xil_printf("Address 0x%x---- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+
+			}
+		else if (myComando.select==0)
+					{
+					int value = (int)strtol(myComando.secondOp, NULL, 16);
+					xil_printf ("Selezionata scrittura!\r\n");
+					xil_printf("Address 0x%x---- >> 0x%x\n\r", address,Xil_Out32((u32)address, (u32)value));
+
+					}
+		else if (myComando.select==-1)
+		{
+			xil_printf ("Comando inesistente \r\n");
+		}
+
+		for(int i=0;i<TEST_BUFFER_SIZE;i++){
+				ReceiveBuffer[i]=0;
+		        }
+
+	}
+
+
+
+
+
+}
+
+
+
+
+int main(void)
+{
+
+
+	/* Enable MicroBlaze exception */
+   microblaze_enable_interrupts();
+    xil_printf ("####################################################### \r\n");
+	xil_printf ("# AXI inspector: \r\n");
+	xil_printf ("# Indirizzi e dati sono a 32bit formato HEX: \r\n");
+	xil_printf ("# Leggi --->  rd indirizzo \r\n");
+	xil_printf ("# Scrivi--->  wr indirizzo dato\r\n");
+	   xil_printf ("####################################################### \r\n");
+	/* Connect uart interrupt handler that will be called when an interrupt
+	* for the uart occurs*/
+	XIntc_RegisterHandler(XPAR_INTC_0_BASEADDR,XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR,(XInterruptHandler)uart_int_handler,(void *)XPAR_AXI_UARTLITE_0_BASEADDR);
+
+	/* Start the interrupt controller */
+	XIntc_MasterEnable(XPAR_INTC_0_BASEADDR);
+
+	/* Enable uart interrupt in the interrupt controller */
+	XIntc_EnableIntr(XPAR_INTC_0_BASEADDR, XPAR_AXI_UARTLITE_0_INTERRUPT_MASK);
+
+	/* Enable Uartlite interrupt */
+	XUartLite_EnableIntr(XPAR_AXI_UARTLITE_0_BASEADDR);
+
+	/* Wait for interrupts to occur */
+	while (1);
+}
+
+
+
+
+struct comando parser( u8* buffer)
+{
+	int i=0;
+
+	struct comando t;
+
+//	while (i < 2) //TEST_BUFFER_SIZE)
+	//{
+	t.commandReceived[i]=buffer[i+1];
+	i++;
+	t.commandReceived[i]=buffer[i+1];
+	i++;
+	//}
+/*
+	sprintf(t.cr, "%c%c",t.commandReceived[0],t.commandReceived[1]);
+
+	switch (t.cr) {
+	        case "rd":
+	        	xil_printf ("Leggo \r\n");
+	        	break;
+	        case "wr":
+	        	xil_printf ("Scrivo \r\n");
+	        	break;
+	        default:
+	        	xil_printf ("Comando non trovato \r\n");
+	            break;
+	        }*/
+
+	if (( t.commandReceived[0]=='w')&&( t.commandReceived[1]=='r'))
+	{
+		myComando.select=0;
+	}else if (( t.commandReceived[0]=='r')&&( t.commandReceived[1]=='d'))
+			{
+		t.select=1;
+			}
+	else
+		t.select=-1;
+
+
+
+	i++; //salto lo spazio
+	int j=0;
+
+	while (i < 13)  // address
+		{
+		t.firstOp[j]=buffer[i+1];
+			j++;
+			i++;
+		}
+
+	j=0;
+	if (( t.commandReceived[0]=='w')&&( t.commandReceived[1]=='r'))  // se debbo scrivere serve il dato
+	{
+		while (i < 26)
+			{
+			t.secondOp[j]=buffer[i+1];
+				j++;
+				i++;
+			}
+	}
+
+	return t;
+}

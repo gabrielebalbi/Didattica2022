@@ -1,0 +1,26 @@
+00:04:01 **** Build of configuration Debug for project hello1 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: hello1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello1.elf  |tee "hello1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4096	    408	   3104	   7608	   1db8	hello1.elf
+'Finished building: hello1.elf.size'
+' '
+
+00:04:04 Build Finished (took 2s.399ms)
+

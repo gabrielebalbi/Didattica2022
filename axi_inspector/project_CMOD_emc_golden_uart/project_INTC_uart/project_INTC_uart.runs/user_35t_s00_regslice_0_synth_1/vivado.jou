@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun  2 21:54:16 2025
+# Process ID: 18280
+# Current directory: C:/Users/ilpes/Downloads/project_CMOD_emc_golden_uart/project_INTC_uart/project_INTC_uart.runs/user_35t_s00_regslice_0_synth_1
+# Command line: vivado.exe -log user_35t_s00_regslice_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_35t_s00_regslice_0.tcl
+# Log file: C:/Users/ilpes/Downloads/project_CMOD_emc_golden_uart/project_INTC_uart/project_INTC_uart.runs/user_35t_s00_regslice_0_synth_1/user_35t_s00_regslice_0.vds
+# Journal file: C:/Users/ilpes/Downloads/project_CMOD_emc_golden_uart/project_INTC_uart/project_INTC_uart.runs/user_35t_s00_regslice_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source user_35t_s00_regslice_0.tcl -notrace

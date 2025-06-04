@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="axi_commander_v0_system-bitFile" value="${project_loc:axi_commander_v0}/_ide/bitstream/user_35t_wrapper_INTC_uart.bit"/>
+	<item key="axi_commander_v0_system-bmmFile" value="${project_loc:axi_commander_v0}/_ide/bitstream/user_35t_wrapper_INTC_uart.mmi"/>
+	<item key="axi_commander_v0_system-target" value="Local"/>
+	<item key="axi_commander_v0_system-device" value="Auto Detect"/>
+	<item key="axi_commander_v0_system-partial_bit" value="false"/>
+	<item key="axi_commander_v0_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="axi_commander_v0_system"/>
+	<item key="axi_commander_v0_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Cmod A7 - 35T 210328B25054A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Cmod A7 - 35T-210328B25054A-0362d093-0&quot;}}]}"/>
+</section>

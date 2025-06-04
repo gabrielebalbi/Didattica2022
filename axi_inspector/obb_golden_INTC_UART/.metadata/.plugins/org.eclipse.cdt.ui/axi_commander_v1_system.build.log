@@ -1,0 +1,8 @@
+16:58:02 **** Clean-only build of configuration Release for project axi_commander_v1_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+16:58:02 Build Finished (took 170ms)
+

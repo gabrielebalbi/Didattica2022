@@ -1,0 +1,46 @@
+16:58:24 **** Build of configuration Release for project axi_commander_v1 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'uart_int_handler':
+../src/helloworld.c:56:20: warning: passing argument 1 of 'parser' from incompatible pointer type [-Wincompatible-pointer-types]
+   56 |   myComando=parser(&ReceiveBuffer);
+      |                    ^~~~~~~~~~~~~~
+      |                    |
+      |                    volatile u8 (*)[50] {aka volatile unsigned char (*)[50]}
+../src/helloworld.c:32:36: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'volatile u8 (*)[50]' {aka 'volatile unsigned char (*)[50]'}
+   32 | volatile struct comando parser(u8* buffer);
+      |                                ~~~~^~~~~~
+../src/helloworld.c:59:22: warning: implicit declaration of function 'strtol'; did you mean 'strtok'? [-Wimplicit-function-declaration]
+   59 |   int address = (int)strtol(myComando.firstOp, NULL, 16);
+      |                      ^~~~~~
+      |                      strtok
+../src/helloworld.c: In function 'parser':
+../src/helloworld.c:200:17: warning: iteration 10 invokes undefined behavior [-Waggressive-loop-optimizations]
+  200 |    t.secondOp[j]=buffer[i+1];
+      |    ~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/helloworld.c:198:9: note: within this loop
+  198 |   while (i < 26)
+      |         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: axi_commander_v1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "axi_commander_v1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_commander_v1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size axi_commander_v1.elf  |tee "axi_commander_v1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9492	    444	   3224	  13160	   3368	axi_commander_v1.elf
+'Finished building: axi_commander_v1.elf.size'
+' '
+
+16:58:26 Build Finished (took 1s.870ms)
+

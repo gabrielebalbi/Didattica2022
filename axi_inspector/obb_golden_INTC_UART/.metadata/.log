@@ -1,0 +1,1036 @@
+!SESSION 2025-06-04 16:43:35.890 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\ilpes\Desktop\Antenne_e_clocks\obb_golden_INTC_UART\.metadata\.bak_0.log
+Created Time: 2025-06-04 16:46:32.072
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.072
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.076
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_1_S_AXI": {"name": "axi_gpio_1",
+"base": "0x40010000",
+"high": "0x4001FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40600000",
+"high": "0x4060FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_intc_0_s_axi": {"name": "axi_intc_0",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "s_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_timer_0_S_AXI": {"name": "axi_timer_0",
+"base": "0x41C00000",
+"high": "0x41C0FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x00007FFF",
+"size": "32768",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+"axi_emc_0_S_AXI_MEM_Mem0": {"name": "axi_emc_0",
+"base": "0x60000000",
+"high": "0x6007FFFF",
+"size": "524288",
+"slaveintf": "S_AXI_MEM",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.076
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_DEBUG_ENABLED], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.082
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.082
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.098
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.099
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.100
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, 1]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.100
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.104
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.104
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_FREQ], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.109
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_FREQ], Result: [null, 100000000]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.126
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.127
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0 C_CPU_CLK_FREQ_HZ], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.127
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.127
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+}]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.127
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa mdm_1], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.168
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa mdm_1], Result: [null, {}]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.168
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa mdm_1], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.171
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.171
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa mdm_1], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.171
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa mdm_1], Result: [null, microblaze_0]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:32.177
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:34.486
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:34.486
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:34.915
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:34.915
+!MESSAGE XSCT Command: [version -server], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:34.928
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:34.928
+!MESSAGE XSCT Command: [version], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:34.934
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:34.945
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:34.975
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:34.975
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.030
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.043
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.063
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.064
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.102
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.109
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.115
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.115
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.174
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.174
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.187
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.187
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.240
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.243
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.262
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.262
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.302
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.302
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level == 0}], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.345
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level == 0}], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.345
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.349
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.349
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.366
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa microblaze_0], Result: [null, {"Clk": "100000000",
+"Dbg_Clk": "",
+}]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.409
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.424
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.424
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.460
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.478
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==0 && jtag_device_ctx=="jsn-Cmod A7 - 35T-210328B25054A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.547
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==0 && jtag_device_ctx=="jsn-Cmod A7 - 35T-210328B25054A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:35.563
+!MESSAGE XSCT Command: [fpga -file C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/_ide/bitstream/user_35t_wrapper_INTC_uart.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:36.861
+!MESSAGE XSCT command with result: [fpga -file C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/_ide/bitstream/user_35t_wrapper_INTC_uart.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:36.888
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:36.921
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:36.927
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa -regs], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:36.977
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa -regs], Result: [null, user_35t_wrapper]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:36.977
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:36.977
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:36.977
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:36.989
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:36.989
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:37.005
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:37.006
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:40.010
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:40.013
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:40.030
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:40.030
+!MESSAGE XSCT Command: [dow C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/Release/axi_commander_v1.elf], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:40.136
+!MESSAGE XSCT command with result: [dow C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/Release/axi_commander_v1.elf], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:40.232
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:40.252
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:40.252
+!MESSAGE XSCT Command: [con], Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:46:40.396
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-0: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:52:43.229
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss ], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:52:43.234
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:52:43.234
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:52:43.239
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-06-04 16:52:43.242
+!MESSAGE Generating MD5 hash for file: C:\Users\ilpes\Desktop\Antenne_e_clocks\obb_golden_INTC_UART\micro_v9_INTC_uart\export\micro_v9_INTC_uart\sw\micro_v9_INTC_uart\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:52:43.246
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:52:43.250
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:53:28.414
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:53:28.435
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:53:28.436
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:53:28.441
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-06-04 16:53:28.441
+!MESSAGE Generating MD5 hash for file: C:\Users\ilpes\Desktop\Antenne_e_clocks\obb_golden_INTC_UART\micro_v9_INTC_uart\export\micro_v9_INTC_uart\sw\micro_v9_INTC_uart\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:53:28.442
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:53:28.445
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:14.658
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss ], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:14.663
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:14.664
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:14.664
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-06-04 16:54:14.669
+!MESSAGE Generating MD5 hash for file: C:\Users\ilpes\Desktop\Antenne_e_clocks\obb_golden_INTC_UART\micro_v9_INTC_uart\export\micro_v9_INTC_uart\sw\micro_v9_INTC_uart\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:14.669
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:14.669
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:24.001
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-159
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:24.017
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-159
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.025
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.034
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.034
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.048
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.048
+!MESSAGE XSCT Command: [version -server], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.048
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.048
+!MESSAGE XSCT Command: [version], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.048
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.048
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.058
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.058
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.078
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.080
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.083
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.083
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.099
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.099
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.102
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.102
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.118
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.118
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.126
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.126
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.143
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.143
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.154
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.154
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.169
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.169
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level == 0}], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.185
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level == 0}], Result: [null, ]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.193
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.193
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.214
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.222
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.223
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.243
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.243
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==0 && jtag_device_ctx=="jsn-Cmod A7 - 35T-210328B25054A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.286
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==0 && jtag_device_ctx=="jsn-Cmod A7 - 35T-210328B25054A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:25.286
+!MESSAGE XSCT Command: [fpga -file C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/_ide/bitstream/user_35t_wrapper_INTC_uart.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.574
+!MESSAGE XSCT command with result: [fpga -file C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/_ide/bitstream/user_35t_wrapper_INTC_uart.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.602
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.620
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.620
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa -regs], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.763
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa -regs], Result: [null, user_35t_wrapper_1]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.763
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.763
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.763
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.780
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.780
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.787
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:26.788
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:29.802
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:29.802
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:29.838
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:29.838
+!MESSAGE XSCT Command: [dow C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/Release/axi_commander_v1.elf], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:30.004
+!MESSAGE XSCT command with result: [dow C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/Release/axi_commander_v1.elf], Result: [null, ]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:30.153
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:30.245
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:30.245
+!MESSAGE XSCT Command: [con], Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:54:30.753
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-9: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:06.863
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss ], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:06.869
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:06.870
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:06.875
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-06-04 16:57:06.876
+!MESSAGE Generating MD5 hash for file: C:\Users\ilpes\Desktop\Antenne_e_clocks\obb_golden_INTC_UART\micro_v9_INTC_uart\export\micro_v9_INTC_uart\sw\micro_v9_INTC_uart\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:06.878
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:06.881
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:21.257
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-218
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:21.262
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-218
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.263
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.265
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.265
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.280
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.280
+!MESSAGE XSCT Command: [version -server], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.284
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.284
+!MESSAGE XSCT Command: [version], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.284
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.284
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.295
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.295
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.316
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.317
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.325
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.325
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.335
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.343
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.352
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.352
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.370
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.372
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.372
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.372
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.397
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.397
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.406
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.407
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.430
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.430
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level == 0}], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.442
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level == 0}], Result: [null, ]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.442
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.442
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.466
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.466
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.466
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.488
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.488
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==0 && jtag_device_ctx=="jsn-Cmod A7 - 35T-210328B25054A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.525
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==0 && jtag_device_ctx=="jsn-Cmod A7 - 35T-210328B25054A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:22.525
+!MESSAGE XSCT Command: [fpga -file C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/_ide/bitstream/user_35t_wrapper_INTC_uart.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.801
+!MESSAGE XSCT command with result: [fpga -file C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/_ide/bitstream/user_35t_wrapper_INTC_uart.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.838
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.856
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.856
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa -regs], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.866
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa -regs], Result: [null, user_35t_wrapper_1]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.866
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.874
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.874
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.882
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.890
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.890
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:23.890
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:26.907
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:26.907
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:26.925
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:26.925
+!MESSAGE XSCT Command: [dow C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/Debug/axi_commander_v1.elf], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:27.014
+!MESSAGE XSCT command with result: [dow C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/Debug/axi_commander_v1.elf], Result: [null, ]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:27.071
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:27.081
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:27.081
+!MESSAGE XSCT Command: [con], Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:57:27.105
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-7: Launching Debugger_axi_commander_v1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:24.199
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:24.206
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:24.207
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:24.213
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-06-04 16:58:24.214
+!MESSAGE Generating MD5 hash for file: C:\Users\ilpes\Desktop\Antenne_e_clocks\obb_golden_INTC_UART\micro_v9_INTC_uart\export\micro_v9_INTC_uart\sw\micro_v9_INTC_uart\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:24.215
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:24.218
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/sw/micro_v9_INTC_uart/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:44.085
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-273
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:44.097
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-273
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.096
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.100
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#7]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.100
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.114
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.114
+!MESSAGE XSCT Command: [version -server], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.116
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.116
+!MESSAGE XSCT Command: [version], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.117
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.117
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.124
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.124
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.133
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.141
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.141
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.141
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.165
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.166
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.172
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.172
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.180
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.180
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.190
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.190
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.208
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.208
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.215
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.215
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.231
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.231
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level == 0}], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.248
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level == 0}], Result: [null, ]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.248
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.248
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.270
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.279
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cmod A7 - 35T 210328B25054A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.279
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.296
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.296
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==0 && jtag_device_ctx=="jsn-Cmod A7 - 35T-210328B25054A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.340
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328B25054A" && level==0 && jtag_device_ctx=="jsn-Cmod A7 - 35T-210328B25054A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:45.340
+!MESSAGE XSCT Command: [fpga -file C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/_ide/bitstream/user_35t_wrapper_INTC_uart.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.618
+!MESSAGE XSCT command with result: [fpga -file C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/_ide/bitstream/user_35t_wrapper_INTC_uart.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.646
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.683
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.691
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa -regs], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.712
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/micro_v9_INTC_uart/export/micro_v9_INTC_uart/hw/user_35t_wrapper_INTC_uart.xsa -regs], Result: [null, user_35t_wrapper_1]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.712
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.718
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.718
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.760
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.760
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.773
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:46.775
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:49.778
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:49.781
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:49.818
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:49.825
+!MESSAGE XSCT Command: [dow C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/Release/axi_commander_v1.elf], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:49.982
+!MESSAGE XSCT command with result: [dow C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART/axi_commander_v1/Release/axi_commander_v1.elf], Result: [null, ]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:50.100
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:50.210
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:50.218
+!MESSAGE XSCT Command: [con], Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 16:58:50.643
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-15: Launching Debugger_axi_commander_v1-Default_6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 17:00:21.164
+!MESSAGE XSCT Command: [disconnect tcfchan#7], Thread: Thread-314
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-06-04 17:00:21.181
+!MESSAGE XSCT command with result: [disconnect tcfchan#7], Result: [null, ]. Thread: Thread-314
