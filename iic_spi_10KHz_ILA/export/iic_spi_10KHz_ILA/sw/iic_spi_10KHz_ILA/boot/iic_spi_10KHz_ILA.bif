@@ -1,0 +1,6 @@
+/*iic_spi_10KHz_ILA*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}
