@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="ssd1306_drawImage" location="C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART_MMCM/ssd1306_drawImage" platform="C:/Users/ilpes/Desktop/Antenne_e_clocks/obb_golden_INTC_UART_MMCM/iic_spi_10KHz_ILA/export/iic_spi_10KHz_ILA/iic_spi_10KHz_ILA.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" systemProject="ssd1306_drawImage_system" sysConfig="iic_spi_10KHz_ILA" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="8beba0b891c86ec3231510e8e26f069d">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1625992973" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.604753424">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
