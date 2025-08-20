@@ -1,0 +1,6 @@
+23:04:03 **** Build of configuration Release for project test_XADC_temp ****
+make all 
+make: Nothing to be done for 'all'.
+
+23:04:03 Build Finished (took 179ms)
+

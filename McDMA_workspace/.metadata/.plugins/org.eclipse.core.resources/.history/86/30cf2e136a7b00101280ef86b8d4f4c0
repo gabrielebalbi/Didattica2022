@@ -1,0 +1,398 @@
+#include <xuartlite_l.h>
+#include <xintc_l.h>
+#include <xparameters.h>
+#include <stdio.h>
+#include <string.h>
+#include "xgpio.h"
+#include "xtrafgen.h"
+
+
+
+#define TEST_BUFFER_SIZE        50
+
+
+#define GPIO_LED_ID XPAR_LED_BUT_GPIO_DEVICE_ID
+#define LED_CHANNEL 1
+
+
+
+#define GPIO_CTRL_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define CTRL_CHANNEL 1
+
+#define STOP_TF 29
+#define START_TF 28
+#define ENABLE_COUNTERS 26
+#define INIT_COUNTERS 27
+#define START_COUNTERS 25
+
+#define TRAFGEN_BASE XPAR_AXI_TRAFFIC_GEN_0_BASEADDR
+#define STREAMING_CTRL 0x30
+#define STREAMING_CFG 0x34
+#define STREAMING_TRANSFER_LENGTH 0x38
+#define STREAMING_TRANSFER_COUNT 0x3C
+#define STREAMING_ERROR_STATUS 0x70
+#define STREAMING_ERROR_ENABLE 0x74
+#define STATIC_MODE 0x60
+
+XGpio Gpio;
+XGpio GpioCtrl;
+
+volatile u8 ReceiveBuffer[TEST_BUFFER_SIZE];
+
+
+struct comando {
+	u8 commandReceived[2];
+	u8 firstOp[10];
+	u8 secondOp[10];
+	char cr[2];
+	int select; //0 write e 1 è read, -1 comando sconosciuto
+};
+
+
+
+XTrafGen XTrafGenInstance;
+
+volatile struct comando myComando;
+unsigned int jj=0;
+unsigned int kk=0;
+void uart_int_handler(void *baseaddr_p);
+void traffic_gen_status();
+int XTrafGenStremingModeMasterExample(XTrafGen *InstancePtr, u16 DeviceId);
+
+
+
+volatile struct comando parser(u8* buffer);
+
+
+/* uartlite interrupt service routine */
+void uart_int_handler(void *baseaddr_p) {
+	char c;
+	c = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+
+	xil_printf ("%c",c);
+
+	jj++;
+	ReceiveBuffer[jj]=c;
+	if ((c==0xD)) {
+		xil_printf ("\r\n",c);
+		xil_printf ("command received!\r\n\r\n");
+		kk=jj;
+		jj=0;
+
+		for(int i=0;i<kk;i++){
+				xil_printf("%c",ReceiveBuffer[i]);
+		        }
+
+		xil_printf ("\r\n",c);
+
+		myComando=parser(&ReceiveBuffer);
+
+
+		int address = (int)strtol(myComando.firstOp, NULL, 16);
+
+
+
+		if (myComando.select==1)
+			{
+				xil_printf ("READ!\r\n");
+				xil_printf("Address 0x%x---- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+
+			}
+		else if (myComando.select==0)
+					{
+					int value = (int)strtol(myComando.secondOp, NULL, 16);
+					xil_printf ("WRITE!\r\n");
+					xil_printf("Pre  0x%x---- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+					Xil_Out32((u32)address, (u32)value);
+					xil_printf("Post 0x%x---- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+
+					}
+		else if (myComando.select==2)
+					{
+					xil_printf ("Traffic Generator INFO \r\n");
+					traffic_gen_status();
+
+					}
+		else if (myComando.select==-1)
+		{
+			xil_printf ("Comando inesistente \r\n");
+		}
+
+		for(int i=0;i<TEST_BUFFER_SIZE;i++){
+				ReceiveBuffer[i]=0;
+		        }
+
+	}
+
+
+
+
+	return;
+}
+
+
+void traffic_gen_status()
+{
+
+	u32 address;
+	xil_printf ("############################################################## \r\n");
+	xil_printf ("#### TRAFFIC GENERATOR  \r\n");
+	xil_printf ("############################################################## \r\n");
+	address= TRAFGEN_BASE;
+	xil_printf("|TRAFFIC GEN BASE ADDRESS\t 0x%x --- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+	address= TRAFGEN_BASE + STREAMING_CTRL;
+	xil_printf("|STREAMING_CTRL\t\t\t 0x%x --- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+	address= TRAFGEN_BASE + STREAMING_CFG;
+	xil_printf("|STREAMING_CFG\t\t\t 0x%x --- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+	xil_printf ("-------------------------------------------------------------- \r\n");
+	address= TRAFGEN_BASE + STREAMING_TRANSFER_LENGTH;
+	xil_printf("|STREAMING_TRANSFER_LENGTH\t 0x%x --- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+	address= TRAFGEN_BASE + STREAMING_TRANSFER_COUNT;
+	xil_printf("|STREAMING_TRANSFER_COUNT\t 0x%x --- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+	address= TRAFGEN_BASE + STREAMING_ERROR_STATUS;
+	xil_printf("|STREAMING_ERROR_STATUS\t\t 0x%x --- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+	address= TRAFGEN_BASE + STREAMING_ERROR_ENABLE;
+	xil_printf("|STREAMING_ERROR_ENABLE\t\t 0x%x --- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+	xil_printf ("-------------------------------------------------------------- \r\n");
+	address= TRAFGEN_BASE + STATIC_MODE;
+	xil_printf("|STATIC_MODE\t\t\t 0x%x --- >> 0x%x\n\r", address,Xil_In32((u32)address	));
+	xil_printf ("############################################################## \r\n");
+	return;
+
+}
+
+
+
+int main(void)
+{
+
+
+
+	int status;
+	int statusCtrl;
+
+	    // Initialize the GPIO driver
+	    status = XGpio_Initialize(&Gpio, GPIO_LED_ID);
+	    if (status != XST_SUCCESS) {
+	        return XST_FAILURE;
+	    }
+
+	    statusCtrl = XGpio_Initialize(&GpioCtrl, GPIO_CTRL_ID);
+		    if (statusCtrl != XST_SUCCESS) {
+		        return XST_FAILURE;
+		    }
+
+	    // Set GPIO direction to output for the LED channel
+	    XGpio_SetDataDirection(&Gpio, LED_CHANNEL, 0x0);
+	    XGpio_SetDataDirection(&GpioCtrl, CTRL_CHANNEL, 0x0);
+
+	    // Turn on the LED (set GPIO output to 1)
+	    XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, 0x3);
+
+
+	    // Turn on counters
+	    u32 ctrl_reg = (0xF |  (1  << ENABLE_COUNTERS) | (1  << INIT_COUNTERS) );
+	    XGpio_DiscreteWrite(&GpioCtrl, CTRL_CHANNEL, ctrl_reg);
+
+
+	/* Enable MicroBlaze exception */
+    microblaze_enable_interrupts();
+    xil_printf ("####################################################### \r\n");
+	xil_printf ("# AXI inspector: \r\n");
+	xil_printf ("# Indirizzi e dati sono a 32bit formato HEX: \r\n");
+	xil_printf ("# Leggi --->  rd indirizzo \r\n");
+	xil_printf ("# Scrivi--->  wr indirizzo dato\r\n");
+	xil_printf ("# Scrivi--->  tg TRAFFIC GENERATOR INFO\r\n");
+	xil_printf ("####################################################### \r\n");
+	/* Connect uart interrupt handler that will be called when an interrupt
+	* for the uart occurs*/
+	XIntc_RegisterHandler(XPAR_INTC_0_BASEADDR,XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR,(XInterruptHandler)uart_int_handler,(void *)XPAR_AXI_UARTLITE_0_BASEADDR);
+
+	/* Start the interrupt controller */
+	XIntc_MasterEnable(XPAR_INTC_0_BASEADDR);
+
+	/* Enable uart interrupt in the interrupt controller */
+	XIntc_EnableIntr(XPAR_INTC_0_BASEADDR, XPAR_AXI_UARTLITE_0_INTERRUPT_MASK);
+
+	/* Enable Uartlite interrupt */
+	XUartLite_EnableIntr(XPAR_AXI_UARTLITE_0_BASEADDR);
+
+
+
+
+//	int Status = XTrafGenStremingModeMasterExample(&XTrafGenInstance,
+	//		XPAR_XTRAFGEN_0_DEVICE_ID);
+
+//	traffic_gen_status();
+
+
+	/* Wait for interrupts to occur */
+	while (1);
+}
+
+
+
+
+struct comando parser( u8* buffer)
+{
+	int i=0;
+
+	struct comando t;
+
+//	while (i < 2) //TEST_BUFFER_SIZE)
+	//{
+	t.commandReceived[i]=buffer[i+1];
+	i++;
+	t.commandReceived[i]=buffer[i+1];
+	i++;
+	//}
+/*
+	sprintf(t.cr, "%c%c",t.commandReceived[0],t.commandReceived[1]);
+
+	switch (t.cr) {
+	        case "rd":
+	        	xil_printf ("Leggo \r\n");
+	        	break;
+	        case "wr":
+	        	xil_printf ("Scrivo \r\n");
+	        	break;
+	        default:
+	        	xil_printf ("Comando non trovato \r\n");
+	            break;
+	        }*/
+
+	if (( t.commandReceived[0]=='w')&&( t.commandReceived[1]=='r'))
+	{
+		myComando.select=0;
+	}else if (( t.commandReceived[0]=='r')&&( t.commandReceived[1]=='d'))
+			{
+		t.select=1;
+			}
+	else if (( t.commandReceived[0]=='t')&&( t.commandReceived[1]=='g'))
+				{
+			t.select=2;
+				}
+	else
+		t.select=-1;
+
+
+
+	i++; //salto lo spazio
+	int j=0;
+
+	while (i < 13)  // address
+		{
+		t.firstOp[j]=buffer[i+1];
+			j++;
+			i++;
+		}
+
+	j=0;
+	if (( t.commandReceived[0]=='w')&&( t.commandReceived[1]=='r'))  // se debbo scrivere serve il dato
+	{
+		while (i < 26)
+			{
+			t.secondOp[j]=buffer[i+1];
+				j++;
+				i++;
+			}
+	}
+
+	return t;
+}
+
+
+
+
+
+/*****************************************************************************/
+/**
+*
+* This function demonstrates the usage Traffic Generator
+* It does the following:
+*       - Set up the output terminal if UART16550 is in the hardware build
+*       - Initialize the AXI Traffic Generator device
+*       - Initialize the Streaming FIFO device
+*	- Set the Desired Transfer Count and Transfer Length
+*	- Enable the Traffic Generation on the Core
+*	- Check for the Streaming data on the FIFO
+*       - Return test status and exit
+*
+* @param	InstancePtr is a pointer to the instance of the
+*		XTrafGen component.
+* @param	DeviceId is Device ID of the Axi Traffic Generator Device,
+*
+*
+* @param	InstancePtr is a pointer to the instance of the
+*			XTrafGen component.
+* @param	DeviceId is Device ID of the Axi Traffic Generator Device,
+*			typically XPAR_<TRAFGEN_instance>_DEVICE_ID value from
+*			xparameters.h.
+*
+* @return
+*			-XST_SUCCESS to indicate success
+*			-XST_FAILURE to indicate failure
+*
+******************************************************************************/
+int XTrafGenStremingModeMasterExample(XTrafGen *InstancePtr, u16 DeviceId)
+{
+
+	XTrafGen_Config *Config;
+	int Status = XST_SUCCESS;
+	u32 Len;
+	u32 TransferCnt;
+	u32 AtgPacket;
+	u32 FifoOcy;
+	u32 FifoLen;
+
+
+	/* Initialize the Device Configuration Interface driver */
+	Config = XTrafGen_LookupConfig(DeviceId);
+
+	if (!Config) {
+		xil_printf("No config found for %d\r\n", DeviceId);
+		return XST_FAILURE;
+	}
+
+	/*
+	 * This is where the virtual address would be used, this example
+	 * uses physical address.
+	 */
+	Status = XTrafGen_CfgInitialize(InstancePtr, Config,
+				Config->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Initialization failed\n\r");
+		return Status;
+	}
+
+	/* Check for the Streaming Mode */
+	if(InstancePtr->OperatingMode != XTG_MODE_STREAMING) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Set the Required transaction length
+	 * and required transaction count
+	 */
+	XTrafGen_ResetStreamingRandomLen(InstancePtr);
+	XTrafGen_SetStreamingTransLen(InstancePtr , 3);
+	XTrafGen_SetStreamingTransCnt(InstancePtr , 2);
+
+	Len = XTrafGen_GetStreamingTransLen(InstancePtr);
+	TransferCnt = XTrafGen_GetStreamingTransCnt(InstancePtr);
+
+	/*
+	 * Calculate the ATG data that is sent on the
+	 * CORE when Streaming is Enabled
+	 */
+	AtgPacket = (Len +1) * TransferCnt;
+
+	/* Enable the traffic generation */
+	   xil_printf ("###############################ENABLING### \r\n");
+	XTrafGen_StreamEnable(InstancePtr);
+	   xil_printf ("###############################WAIT### \r\n");
+
+	XTrafGen_StreamDisable(InstancePtr);
+	   xil_printf ("###############################DISABLED### \r\n");
+	return XST_SUCCESS;
+}

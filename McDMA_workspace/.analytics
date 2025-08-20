@@ -1,0 +1,291 @@
+timestamp=[2025-08-14 13:50:47], mode=WORKBENCH_START, duration=0:00:19.489, duration_ms=19489, data={}
+timestamp=[2025-08-14 13:50:49], mode=WORKBENCH_UI_INIT, duration=0:00:02.162, duration_ms=2162, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-08-14 13:51:12], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:19.159, duration_ms=19159, data={}
+timestamp=[2025-08-14 13:52:16], mode=PLATFORM_CREATION, duration=0:00:18.390, duration_ms=18390, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-08-14 13:54:03], mode=APP_CREATION, duration=0:00:04.130, duration_ms=4130, data={name=McDMA_app0, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=McDMA_bsp, application_type=application}
+timestamp=[2025-08-14 13:54:59], mode=PLATFORM_GENERATION, duration=0:00:19.811, duration_ms=19811, data={name=McDMA_bsp}
+timestamp=[2025-08-14 13:55:15], mode=BUILD, duration=0:00:15.770, duration_ms=15770, data={name=McDMA_app0, configuration=Debug, clean_build=false}
+timestamp=[2025-08-14 14:01:02], mode=BUILD, duration=0:00:05.434, duration_ms=5434, data={name=McDMA_app0, configuration=Release, clean_build=false}
+timestamp=[2025-08-14 14:02:49], mode=BUILD, duration=0:00:01.509, duration_ms=1509, data={name=McDMA_app0, configuration=Release, clean_build=false}
+timestamp=[2025-08-14 14:41:01], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.039, duration_ms=39, data={}
+timestamp=[2025-08-14 14:41:02], mode=WORKBENCH_START, duration=0:00:11.114, duration_ms=11114, data={}
+timestamp=[2025-08-14 14:41:03], mode=WORKBENCH_UI_INIT, duration=0:00:00.824, duration_ms=824, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=McDMA_app0,McDMA_app0_system,McDMA_bsp,RemoteSystemsTempFiles}
+timestamp=[2025-08-14 15:09:40], mode=APP_CREATION, duration=0:00:01.708, duration_ms=1708, data={name=axi_inspector_v0, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=McDMA_bsp, application_type=application}
+timestamp=[2025-08-14 15:10:30], mode=PLATFORM_GENERATION, duration=0:00:06.875, duration_ms=6875, data={name=McDMA_bsp}
+timestamp=[2025-08-14 15:10:32], mode=BUILD, duration=0:00:01.965, duration_ms=1965, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-14 15:25:05], mode=BUILD, duration=0:00:01.122, duration_ms=1122, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-14 15:29:15], mode=BUILD, duration=0:00:01.044, duration_ms=1044, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-15 08:54:49], mode=WORKBENCH_START, duration=0:00:16.894, duration_ms=16894, data={}
+timestamp=[2025-08-15 08:54:50], mode=WORKBENCH_UI_INIT, duration=0:00:01.339, duration_ms=1339, data={editors_count=11, platform_editors_count=2, projects_count=6, platform_projects_count=1, active_platform_editor=true, projects=McDMA_app0,McDMA_app0_system,McDMA_bsp,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system}
+timestamp=[2025-08-15 08:54:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.114, duration_ms=114, data={}
+timestamp=[2025-08-15 08:55:53], mode=PLATFORM_CREATION, duration=0:00:08.624, duration_ms=8624, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-08-15 08:57:14], mode=PLATFORM_GENERATION, duration=0:00:10.339, duration_ms=10339, data={name=MCDMA_ila_bsp}
+timestamp=[2025-08-15 08:57:17], mode=BUILD, duration=0:00:03.255, duration_ms=3255, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-15 09:02:48], mode=BUILD, duration=0:00:01.279, duration_ms=1279, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-15 09:05:17], mode=PLATFORM_GENERATION, duration=0:00:07.821, duration_ms=7821, data={name=McDMA_bsp}
+timestamp=[2025-08-15 09:05:19], mode=BUILD, duration=0:00:01.811, duration_ms=1811, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-15 09:05:20], mode=BUILD, duration=0:00:00.197, duration_ms=197, data={name=axi_inspector_v0_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-15 09:10:57], mode=BUILD, duration=0:00:01.523, duration_ms=1523, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-15 09:10:58], mode=BUILD, duration=0:00:00.190, duration_ms=190, data={name=axi_inspector_v0_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-15 09:20:47], mode=PLATFORM_GENERATION, duration=0:00:02.235, duration_ms=2235, data={name=MCDMA_ila_bsp}
+timestamp=[2025-08-15 09:20:48], mode=BUILD, duration=0:00:01.531, duration_ms=1531, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-15 14:55:37], mode=WORKBENCH_START, duration=0:00:16.106, duration_ms=16106, data={}
+timestamp=[2025-08-15 14:55:39], mode=WORKBENCH_UI_INIT, duration=0:00:01.356, duration_ms=1356, data={editors_count=10, platform_editors_count=2, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system}
+timestamp=[2025-08-15 14:55:40], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.328, duration_ms=328, data={}
+timestamp=[2025-08-15 15:12:12], mode=BUILD, duration=0:00:03.220, duration_ms=3220, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-15 20:42:52], mode=WORKBENCH_START, duration=0:00:10.728, duration_ms=10728, data={}
+timestamp=[2025-08-15 20:42:53], mode=WORKBENCH_UI_INIT, duration=0:00:01.019, duration_ms=1019, data={editors_count=10, platform_editors_count=2, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system}
+timestamp=[2025-08-15 20:42:54], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.275, duration_ms=275, data={}
+timestamp=[2025-08-15 20:43:59], mode=PLATFORM_CREATION, duration=0:00:08.383, duration_ms=8383, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-08-15 20:49:02], mode=PLATFORM_GENERATION, duration=0:00:10.844, duration_ms=10844, data={name=McDMA_v1}
+timestamp=[2025-08-15 20:49:05], mode=BUILD, duration=0:00:02.849, duration_ms=2849, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-15 21:03:33], mode=BUILD, duration=0:00:01.294, duration_ms=1294, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 08:33:46], mode=WORKBENCH_START, duration=0:00:48.579, duration_ms=48579, data={}
+timestamp=[2025-08-16 08:33:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.181, duration_ms=1181, data={}
+timestamp=[2025-08-16 08:33:56], mode=WORKBENCH_UI_INIT, duration=0:00:09.634, duration_ms=9634, data={editors_count=11, platform_editors_count=3, projects_count=8, platform_projects_count=3, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system}
+timestamp=[2025-08-16 13:07:33], mode=WORKBENCH_START, duration=0:00:11.186, duration_ms=11186, data={}
+timestamp=[2025-08-16 13:07:34], mode=WORKBENCH_UI_INIT, duration=0:00:00.988, duration_ms=988, data={editors_count=11, platform_editors_count=3, projects_count=8, platform_projects_count=3, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system}
+timestamp=[2025-08-16 13:07:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.402, duration_ms=402, data={}
+timestamp=[2025-08-16 15:23:06], mode=PLATFORM_CREATION, duration=0:00:16.305, duration_ms=16305, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-08-16 15:26:29], mode=PLATFORM_GENERATION, duration=0:00:11.923, duration_ms=11923, data={name=McDMA_v2_TF}
+timestamp=[2025-08-16 15:26:32], mode=BUILD, duration=0:00:02.406, duration_ms=2406, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 16:57:40], mode=APP_CREATION, duration=0:00:01.859, duration_ms=1859, data={name=McDMA_v2_TRAFGEN, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=McDMA_v2_TF, application_type=application}
+timestamp=[2025-08-16 16:58:27], mode=BUILD, duration=0:00:02.398, duration_ms=2398, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-16 16:58:27], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=McDMA_v2_TRAFGEN_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-16 17:17:26], mode=BUILD, duration=0:00:01.647, duration_ms=1647, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 22:53:02], mode=BUILD, duration=0:00:00.545, duration_ms=545, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=true}
+timestamp=[2025-08-16 22:53:34], mode=BUILD, duration=0:00:03.173, duration_ms=3173, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 22:57:27], mode=BUILD, duration=0:00:01.298, duration_ms=1298, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 22:58:53], mode=BUILD, duration=0:00:01.182, duration_ms=1182, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 23:00:38], mode=BUILD, duration=0:00:01.167, duration_ms=1167, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 23:02:54], mode=BUILD, duration=0:00:01.233, duration_ms=1233, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 23:04:20], mode=BUILD, duration=0:00:01.160, duration_ms=1160, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 23:06:10], mode=BUILD, duration=0:00:01.176, duration_ms=1176, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 23:19:16], mode=BUILD, duration=0:00:00.402, duration_ms=402, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-16 23:22:45], mode=BUILD, duration=0:00:01.240, duration_ms=1240, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 00:32:36], mode=PLATFORM_GENERATION, duration=0:00:02.805, duration_ms=2805, data={name=McDMA_v2_TF}
+timestamp=[2025-08-17 00:32:38], mode=BUILD, duration=0:00:01.749, duration_ms=1749, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 00:39:00], mode=PLATFORM_GENERATION, duration=0:00:02.635, duration_ms=2635, data={name=McDMA_v2_TF}
+timestamp=[2025-08-17 00:39:02], mode=BUILD, duration=0:00:01.500, duration_ms=1500, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 00:42:57], mode=PLATFORM_GENERATION, duration=0:00:10.711, duration_ms=10711, data={name=McDMA_v2_TF}
+timestamp=[2025-08-17 00:42:59], mode=BUILD, duration=0:00:01.609, duration_ms=1609, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 00:45:24], mode=BUILD, duration=0:00:00.254, duration_ms=254, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=true}
+timestamp=[2025-08-17 00:45:26], mode=BUILD, duration=0:00:01.630, duration_ms=1630, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-17 00:45:27], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=McDMA_v2_TRAFGEN_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-17 07:53:41], mode=WORKBENCH_START, duration=0:00:12.245, duration_ms=12245, data={}
+timestamp=[2025-08-17 07:53:42], mode=WORKBENCH_UI_INIT, duration=0:00:00.723, duration_ms=723, data={editors_count=5, platform_editors_count=2, projects_count=11, platform_projects_count=4, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,McDMA_v2_TF,McDMA_v2_TRAFGEN,McDMA_v2_TRAFGEN_system,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system}
+timestamp=[2025-08-17 07:53:43], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.283, duration_ms=283, data={}
+timestamp=[2025-08-17 07:55:40], mode=APP_CREATION, duration=0:00:03.256, duration_ms=3256, data={name=led_blinking_bootloop, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=McDMA_v2_TF, application_type=application}
+timestamp=[2025-08-17 08:02:37], mode=PLATFORM_GENERATION, duration=0:00:20.853, duration_ms=20853, data={name=McDMA_v2_TF}
+timestamp=[2025-08-17 08:02:43], mode=BUILD, duration=0:00:05.837, duration_ms=5837, data={name=led_blinking_bootloop, configuration=Debug, clean_build=false}
+timestamp=[2025-08-17 08:04:36], mode=BUILD, duration=0:00:01.939, duration_ms=1939, data={name=led_blinking_bootloop, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 08:12:05], mode=BUILD, duration=0:00:00.308, duration_ms=308, data={name=led_blinking_bootloop, configuration=Release, clean_build=true}
+timestamp=[2025-08-17 08:12:07], mode=BUILD, duration=0:00:01.948, duration_ms=1948, data={name=led_blinking_bootloop, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 09:18:25], mode=BUILD, duration=0:00:01.842, duration_ms=1842, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 09:21:26], mode=PLATFORM_GENERATION, duration=0:00:04.393, duration_ms=4393, data={name=McDMA_v2_TF}
+timestamp=[2025-08-17 09:21:27], mode=BUILD, duration=0:00:01.072, duration_ms=1072, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 09:26:49], mode=PLATFORM_GENERATION, duration=0:00:02.085, duration_ms=2085, data={name=McDMA_v2_TF}
+timestamp=[2025-08-17 09:26:50], mode=BUILD, duration=0:00:00.985, duration_ms=985, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 09:32:15], mode=PLATFORM_CREATION, duration=0:00:07.172, duration_ms=7172, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2025-08-17 09:33:00], mode=PLATFORM_GENERATION, duration=0:00:11.824, duration_ms=11824, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-17 09:33:03], mode=BUILD, duration=0:00:02.313, duration_ms=2313, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 09:34:05], mode=BUILD, duration=0:00:01.170, duration_ms=1170, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 09:36:47], mode=BUILD, duration=0:00:01.780, duration_ms=1780, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-17 14:50:35], mode=WORKBENCH_START, duration=0:00:18.686, duration_ms=18686, data={}
+timestamp=[2025-08-17 14:50:36], mode=WORKBENCH_UI_INIT, duration=0:00:01.055, duration_ms=1055, data={editors_count=10, platform_editors_count=4, projects_count=14, platform_projects_count=5, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,McDMA_v2_TF,McDMA_v2_TRAFGEN,McDMA_v2_TRAFGEN_system,McDMA_v2_bootloop,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system,led_blinking_bootloop,led_blinking_bootloop_system}
+timestamp=[2025-08-17 14:50:39], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.392, duration_ms=392, data={}
+timestamp=[2025-08-17 14:55:18], mode=PLATFORM_GENERATION, duration=0:00:06.126, duration_ms=6126, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-17 14:55:22], mode=BUILD, duration=0:00:02.502, duration_ms=2502, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-17 14:55:23], mode=BUILD, duration=0:00:00.304, duration_ms=304, data={name=McDMA_v2_TRAFGEN_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-17 14:56:06], mode=BUILD, duration=0:00:01.149, duration_ms=1149, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-17 14:58:53], mode=BUILD, duration=0:00:01.180, duration_ms=1180, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-17 15:00:23], mode=BUILD, duration=0:00:00.289, duration_ms=289, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=true}
+timestamp=[2025-08-17 15:00:24], mode=BUILD, duration=0:00:01.459, duration_ms=1459, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 15:11:16], mode=PLATFORM_GENERATION, duration=0:00:02.477, duration_ms=2477, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-17 15:11:18], mode=BUILD, duration=0:00:01.483, duration_ms=1483, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 15:26:00], mode=BUILD, duration=0:00:02.049, duration_ms=2049, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 15:36:16], mode=BUILD, duration=0:00:01.324, duration_ms=1324, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 21:26:18], mode=WORKBENCH_START, duration=0:00:13.304, duration_ms=13304, data={}
+timestamp=[2025-08-17 21:26:19], mode=WORKBENCH_UI_INIT, duration=0:00:00.726, duration_ms=726, data={editors_count=11, platform_editors_count=5, projects_count=14, platform_projects_count=5, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,McDMA_v2_TF,McDMA_v2_TRAFGEN,McDMA_v2_TRAFGEN_system,McDMA_v2_bootloop,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system,led_blinking_bootloop,led_blinking_bootloop_system}
+timestamp=[2025-08-17 21:26:20], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.614, duration_ms=614, data={}
+timestamp=[2025-08-17 22:44:51], mode=BUILD, duration=0:00:03.259, duration_ms=3259, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 22:44:52], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=McDMA_v2_TRAFGEN_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-17 23:10:49], mode=BUILD, duration=0:00:00.273, duration_ms=273, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=true}
+timestamp=[2025-08-17 23:10:50], mode=BUILD, duration=0:00:01.757, duration_ms=1757, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 01:09:54], mode=WORKBENCH_START, duration=0:00:12.065, duration_ms=12065, data={}
+timestamp=[2025-08-18 01:09:54], mode=WORKBENCH_UI_INIT, duration=0:00:00.583, duration_ms=583, data={editors_count=12, platform_editors_count=6, projects_count=14, platform_projects_count=5, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,McDMA_v2_TF,McDMA_v2_TRAFGEN,McDMA_v2_TRAFGEN_system,McDMA_v2_bootloop,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system,led_blinking_bootloop,led_blinking_bootloop_system}
+timestamp=[2025-08-18 01:09:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.291, duration_ms=291, data={}
+timestamp=[2025-08-18 01:14:52], mode=BUILD, duration=0:00:00.434, duration_ms=434, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 01:15:25], mode=BUILD, duration=0:00:01.134, duration_ms=1134, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 01:17:55], mode=BUILD, duration=0:00:00.995, duration_ms=995, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 01:18:26], mode=BUILD, duration=0:00:00.153, duration_ms=153, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 01:19:46], mode=BUILD, duration=0:00:00.981, duration_ms=981, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 09:52:31], mode=WORKBENCH_START, duration=0:00:14.752, duration_ms=14752, data={}
+timestamp=[2025-08-18 09:52:32], mode=WORKBENCH_UI_INIT, duration=0:00:00.980, duration_ms=980, data={editors_count=13, platform_editors_count=7, projects_count=14, platform_projects_count=5, active_platform_editor=true, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,McDMA_v2_TF,McDMA_v2_TRAFGEN,McDMA_v2_TRAFGEN_system,McDMA_v2_bootloop,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system,led_blinking_bootloop,led_blinking_bootloop_system}
+timestamp=[2025-08-18 09:52:33], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.430, duration_ms=430, data={}
+timestamp=[2025-08-18 11:08:33], mode=BUILD, duration=0:00:02.072, duration_ms=2072, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 11:08:34], mode=BUILD, duration=0:00:00.182, duration_ms=182, data={name=McDMA_v2_TRAFGEN_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 11:17:10], mode=BUILD, duration=0:00:02.558, duration_ms=2558, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 11:17:10], mode=BUILD, duration=0:00:00.191, duration_ms=191, data={name=McDMA_v2_TRAFGEN_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 11:18:17], mode=BUILD, duration=0:00:01.038, duration_ms=1038, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 11:26:04], mode=BUILD, duration=0:00:02.896, duration_ms=2896, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 12:43:35], mode=PLATFORM_GENERATION, duration=0:00:12.330, duration_ms=12330, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-18 12:43:39], mode=BUILD, duration=0:00:02.986, duration_ms=2986, data={name=McDMA_v2_TRAFGEN, configuration=Debug, clean_build=false}
+timestamp=[2025-08-18 12:45:52], mode=PLATFORM_GENERATION, duration=0:00:05.432, duration_ms=5432, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-18 12:45:55], mode=BUILD, duration=0:00:02.757, duration_ms=2757, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 12:57:48], mode=PLATFORM_GENERATION, duration=0:00:07.129, duration_ms=7129, data={name=MCDMA_ila_bsp}
+timestamp=[2025-08-18 12:57:55], mode=PLATFORM_GENERATION, duration=0:00:06.648, duration_ms=6648, data={name=McDMA_bsp}
+timestamp=[2025-08-18 12:57:55], mode=BUILD, duration=0:00:00.406, duration_ms=406, data={name=McDMA_app0, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 12:57:56], mode=BUILD, duration=0:00:00.202, duration_ms=202, data={name=McDMA_app0_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 12:58:03], mode=PLATFORM_GENERATION, duration=0:00:06.848, duration_ms=6848, data={name=McDMA_v1}
+timestamp=[2025-08-18 12:58:10], mode=PLATFORM_GENERATION, duration=0:00:07.908, duration_ms=7908, data={name=McDMA_v2_TF}
+timestamp=[2025-08-18 12:58:12], mode=BUILD, duration=0:00:01.037, duration_ms=1037, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 12:58:12], mode=BUILD, duration=0:00:00.338, duration_ms=338, data={name=McDMA_v2_TRAFGEN_system, configuration=Release, clean_build=true}
+timestamp=[2025-08-18 12:58:13], mode=BUILD, duration=0:00:00.225, duration_ms=225, data={name=McDMA_v2_TRAFGEN_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 12:58:13], mode=BUILD, duration=0:00:00.267, duration_ms=267, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 12:58:14], mode=BUILD, duration=0:00:00.207, duration_ms=207, data={name=axi_inspector_v0_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 12:58:14], mode=BUILD, duration=0:00:00.197, duration_ms=197, data={name=led_blinking_bootloop, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 12:58:15], mode=BUILD, duration=0:00:00.197, duration_ms=197, data={name=led_blinking_bootloop_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 13:19:15], mode=BUILD, duration=0:00:01.523, duration_ms=1523, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 13:19:33], mode=BUILD, duration=0:00:01.422, duration_ms=1422, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 13:44:04], mode=PLATFORM_GENERATION, duration=0:00:04.985, duration_ms=4985, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-18 13:44:07], mode=BUILD, duration=0:00:02.811, duration_ms=2811, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-18 13:53:39], mode=PLATFORM_GENERATION, duration=0:00:05.152, duration_ms=5152, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-18 13:53:42], mode=BUILD, duration=0:00:02.687, duration_ms=2687, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:25:47], mode=WORKBENCH_START, duration=0:00:25.979, duration_ms=25979, data={}
+timestamp=[2025-08-19 09:25:48], mode=WORKBENCH_UI_INIT, duration=0:00:01.045, duration_ms=1045, data={editors_count=14, platform_editors_count=8, projects_count=14, platform_projects_count=5, active_platform_editor=true, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,McDMA_v2_TF,McDMA_v2_TRAFGEN,McDMA_v2_TRAFGEN_system,McDMA_v2_bootloop,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system,led_blinking_bootloop,led_blinking_bootloop_system}
+timestamp=[2025-08-19 09:25:50], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.068, duration_ms=1068, data={}
+timestamp=[2025-08-19 09:33:11], mode=PLATFORM_GENERATION, duration=0:00:11.548, duration_ms=11548, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 09:33:18], mode=BUILD, duration=0:00:04.519, duration_ms=4519, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:37:08], mode=BUILD, duration=0:00:00.887, duration_ms=887, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:44:46], mode=BUILD, duration=0:00:00.258, duration_ms=258, data={name=McDMA_app0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:44:46], mode=BUILD, duration=0:00:00.304, duration_ms=304, data={name=McDMA_app0_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:44:48], mode=BUILD, duration=0:00:00.969, duration_ms=969, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:44:48], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=McDMA_v2_TRAFGEN_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:44:48], mode=BUILD, duration=0:00:00.193, duration_ms=193, data={name=axi_inspector_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:44:49], mode=BUILD, duration=0:00:00.243, duration_ms=243, data={name=axi_inspector_v0_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:44:49], mode=BUILD, duration=0:00:00.259, duration_ms=259, data={name=led_blinking_bootloop, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:44:50], mode=BUILD, duration=0:00:00.187, duration_ms=187, data={name=led_blinking_bootloop_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 09:58:30], mode=BUILD, duration=0:00:02.305, duration_ms=2305, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 10:04:06], mode=BUILD, duration=0:00:01.070, duration_ms=1070, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 10:05:56], mode=BUILD, duration=0:00:01.033, duration_ms=1033, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 10:05:57], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=McDMA_v2_TRAFGEN_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 10:14:41], mode=BUILD, duration=0:00:00.977, duration_ms=977, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 10:33:01], mode=APP_CREATION, duration=0:00:02.402, duration_ms=2402, data={name=test_XADC_DMA_v0, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=McDMA_v2_bootloop, application_type=application}
+timestamp=[2025-08-19 10:35:37], mode=BUILD, duration=0:00:00.405, duration_ms=405, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 10:36:18], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 10:36:46], mode=PLATFORM_GENERATION, duration=0:00:07.677, duration_ms=7677, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 10:36:46], mode=BUILD, duration=0:00:00.259, duration_ms=259, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=true}
+timestamp=[2025-08-19 10:36:57], mode=PLATFORM_GENERATION, duration=0:00:10.914, duration_ms=10914, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 10:36:58], mode=BUILD, duration=0:00:00.579, duration_ms=579, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 10:37:54], mode=BUILD, duration=0:00:01.224, duration_ms=1224, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 10:38:13], mode=BUILD, duration=0:00:01.109, duration_ms=1109, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 10:40:02], mode=BUILD, duration=0:00:01.326, duration_ms=1326, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 10:40:45], mode=BUILD, duration=0:00:00.191, duration_ms=191, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=true}
+timestamp=[2025-08-19 10:40:46], mode=BUILD, duration=0:00:01.280, duration_ms=1280, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 10:43:47], mode=BUILD, duration=0:00:00.697, duration_ms=697, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 10:45:15], mode=BUILD, duration=0:00:00.981, duration_ms=981, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 10:48:31], mode=BUILD, duration=0:00:00.980, duration_ms=980, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 11:17:09], mode=BUILD, duration=0:00:01.402, duration_ms=1402, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 11:20:36], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 11:21:25], mode=BUILD, duration=0:00:00.305, duration_ms=305, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 11:21:26], mode=BUILD, duration=0:00:00.196, duration_ms=196, data={name=test_XADC_DMA_v0_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 11:22:02], mode=BUILD, duration=0:00:01.286, duration_ms=1286, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 11:27:39], mode=BUILD, duration=0:00:01.053, duration_ms=1053, data={name=test_XADC_DMA_v0, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 11:28:44], mode=PLATFORM_GENERATION, duration=0:00:04.803, duration_ms=4803, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 11:28:44], mode=BUILD, duration=0:00:00.192, duration_ms=192, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 11:31:17], mode=BUILD, duration=0:00:01.365, duration_ms=1365, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 11:37:40], mode=BUILD, duration=0:00:01.279, duration_ms=1279, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 11:39:45], mode=BUILD, duration=0:00:01.946, duration_ms=1946, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 11:41:32], mode=BUILD, duration=0:00:01.050, duration_ms=1050, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 12:06:10], mode=PLATFORM_GENERATION, duration=0:00:04.979, duration_ms=4979, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 12:06:11], mode=BUILD, duration=0:00:01.372, duration_ms=1372, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 12:08:54], mode=BUILD, duration=0:00:00.329, duration_ms=329, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 12:09:20], mode=BUILD, duration=0:00:01.463, duration_ms=1463, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 12:14:32], mode=BUILD, duration=0:00:00.190, duration_ms=190, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=true}
+timestamp=[2025-08-19 12:14:33], mode=BUILD, duration=0:00:00.382, duration_ms=382, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 12:15:33], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 12:17:38], mode=BUILD, duration=0:00:02.801, duration_ms=2801, data={name=McDMA_v2_TRAFGEN, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 12:18:58], mode=APP_CREATION, duration=0:00:01.550, duration_ms=1550, data={name=test_XADC_temp, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=McDMA_v2_bootloop, application_type=application}
+timestamp=[2025-08-19 12:23:56], mode=BUILD, duration=0:00:01.357, duration_ms=1357, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:24:20], mode=BUILD, duration=0:00:00.735, duration_ms=735, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:29:19], mode=BUILD, duration=0:00:00.917, duration_ms=917, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:34:01], mode=BUILD, duration=0:00:02.359, duration_ms=2359, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:37:01], mode=PLATFORM_GENERATION, duration=0:00:04.916, duration_ms=4916, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 12:37:02], mode=BUILD, duration=0:00:00.201, duration_ms=201, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:39:28], mode=PLATFORM_GENERATION, duration=0:00:02.017, duration_ms=2017, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 12:39:29], mode=BUILD, duration=0:00:01.273, duration_ms=1273, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:43:53], mode=BUILD, duration=0:00:00.986, duration_ms=986, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:43:53], mode=BUILD, duration=0:00:00.263, duration_ms=263, data={name=test_XADC_temp_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:44:30], mode=BUILD, duration=0:00:00.965, duration_ms=965, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:46:48], mode=PLATFORM_GENERATION, duration=0:00:02.151, duration_ms=2151, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 12:46:50], mode=BUILD, duration=0:00:01.238, duration_ms=1238, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:52:39], mode=BUILD, duration=0:00:01.175, duration_ms=1175, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 12:59:24], mode=BUILD, duration=0:00:00.324, duration_ms=324, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 13:00:02], mode=BUILD, duration=0:00:00.323, duration_ms=323, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 13:00:25], mode=BUILD, duration=0:00:01.407, duration_ms=1407, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 13:00:26], mode=BUILD, duration=0:00:00.180, duration_ms=180, data={name=test_XADC_temp_system, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 13:43:14], mode=PLATFORM_GENERATION, duration=0:00:05.162, duration_ms=5162, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 13:43:17], mode=BUILD, duration=0:00:02.672, duration_ms=2672, data={name=test_XADC_temp, configuration=Debug, clean_build=false}
+timestamp=[2025-08-19 14:39:42], mode=PLATFORM_GENERATION, duration=0:00:05.168, duration_ms=5168, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 14:39:45], mode=BUILD, duration=0:00:02.684, duration_ms=2684, data={name=test_XADC_temp, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 14:43:42], mode=BUILD, duration=0:00:01.036, duration_ms=1036, data={name=test_XADC_temp, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 14:46:00], mode=BUILD, duration=0:00:00.988, duration_ms=988, data={name=test_XADC_temp, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 14:57:53], mode=BUILD, duration=0:00:02.699, duration_ms=2699, data={name=test_XADC_temp, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 14:58:07], mode=BUILD, duration=0:00:00.190, duration_ms=190, data={name=test_XADC_temp, configuration=Release, clean_build=true}
+timestamp=[2025-08-19 14:58:08], mode=BUILD, duration=0:00:01.222, duration_ms=1222, data={name=test_XADC_temp, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 15:00:59], mode=BUILD, duration=0:00:01.038, duration_ms=1038, data={name=test_XADC_temp, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 15:04:36], mode=BUILD, duration=0:00:02.195, duration_ms=2195, data={name=test_XADC_temp, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 22:59:00], mode=WORKBENCH_START, duration=0:00:22.885, duration_ms=22885, data={}
+timestamp=[2025-08-19 22:59:01], mode=WORKBENCH_UI_INIT, duration=0:00:01.824, duration_ms=1824, data={editors_count=10, platform_editors_count=4, projects_count=18, platform_projects_count=5, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,McDMA_v2_TF,McDMA_v2_TRAFGEN,McDMA_v2_TRAFGEN_system,McDMA_v2_bootloop,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system,led_blinking_bootloop,led_blinking_bootloop_system,test_XADC_DMA_v0,test_XADC_DMA_v0_system,test_XADC_temp,test_XADC_temp_system}
+timestamp=[2025-08-19 22:59:02], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.785, duration_ms=785, data={}
+timestamp=[2025-08-19 23:01:03], mode=APP_CREATION, duration=0:00:02.196, duration_ms=2196, data={name=testXADC_vaux12_single, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=McDMA_v2_bootloop, application_type=application}
+timestamp=[2025-08-19 23:03:53], mode=PLATFORM_GENERATION, duration=0:00:10.652, duration_ms=10652, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-19 23:03:55], mode=BUILD, duration=0:00:02.164, duration_ms=2164, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 23:04:03], mode=BUILD, duration=0:00:00.197, duration_ms=197, data={name=test_XADC_temp, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 23:04:11], mode=BUILD, duration=0:00:00.209, duration_ms=209, data={name=test_XADC_DMA_v0, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 23:04:12], mode=BUILD, duration=0:00:00.198, duration_ms=198, data={name=test_XADC_DMA_v0_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 23:16:35], mode=BUILD, duration=0:00:01.248, duration_ms=1248, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-19 23:58:56], mode=BUILD, duration=0:00:01.120, duration_ms=1120, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 00:00:57], mode=BUILD, duration=0:00:01.112, duration_ms=1112, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 00:03:16], mode=BUILD, duration=0:00:01.169, duration_ms=1169, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 00:05:16], mode=PLATFORM_GENERATION, duration=0:00:02.796, duration_ms=2796, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-20 00:05:17], mode=BUILD, duration=0:00:01.356, duration_ms=1356, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 00:05:18], mode=BUILD, duration=0:00:00.201, duration_ms=201, data={name=testXADC_vaux12_single_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 00:13:29], mode=BUILD, duration=0:00:01.049, duration_ms=1049, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 00:13:30], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=testXADC_vaux12_single_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 08:36:31], mode=WORKBENCH_START, duration=0:00:36.668, duration_ms=36668, data={}
+timestamp=[2025-08-20 08:36:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.141, duration_ms=1141, data={}
+timestamp=[2025-08-20 08:36:35], mode=WORKBENCH_UI_INIT, duration=0:00:04.145, duration_ms=4145, data={editors_count=14, platform_editors_count=4, projects_count=20, platform_projects_count=5, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,McDMA_v2_TF,McDMA_v2_TRAFGEN,McDMA_v2_TRAFGEN_system,McDMA_v2_bootloop,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system,led_blinking_bootloop,led_blinking_bootloop_system,testXADC_vaux12_single,testXADC_vaux12_single_system,test_XADC_DMA_v0,test_XADC_DMA_v0_system,test_XADC_temp,test_XADC_temp_system}
+timestamp=[2025-08-20 22:23:58], mode=WORKBENCH_START, duration=0:00:20.134, duration_ms=20134, data={}
+timestamp=[2025-08-20 22:24:00], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.712, duration_ms=712, data={}
+timestamp=[2025-08-20 22:24:00], mode=WORKBENCH_UI_INIT, duration=0:00:02.089, duration_ms=2089, data={editors_count=14, platform_editors_count=4, projects_count=20, platform_projects_count=5, active_platform_editor=false, projects=MCDMA_ila_bsp,McDMA_app0,McDMA_app0_system,McDMA_bsp,McDMA_v1,McDMA_v2_TF,McDMA_v2_TRAFGEN,McDMA_v2_TRAFGEN_system,McDMA_v2_bootloop,RemoteSystemsTempFiles,axi_inspector_v0,axi_inspector_v0_system,led_blinking_bootloop,led_blinking_bootloop_system,testXADC_vaux12_single,testXADC_vaux12_single_system,test_XADC_DMA_v0,test_XADC_DMA_v0_system,test_XADC_temp,test_XADC_temp_system}
+timestamp=[2025-08-20 22:37:42], mode=PLATFORM_GENERATION, duration=0:00:16.316, duration_ms=16316, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-20 22:37:46], mode=BUILD, duration=0:00:02.262, duration_ms=2262, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 22:37:47], mode=BUILD, duration=0:00:00.369, duration_ms=369, data={name=testXADC_vaux12_single_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 22:38:11], mode=BUILD, duration=0:00:00.482, duration_ms=482, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 22:38:41], mode=BUILD, duration=0:00:00.740, duration_ms=740, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 22:41:29], mode=BUILD, duration=0:00:00.472, duration_ms=472, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 22:42:11], mode=BUILD, duration=0:00:02.044, duration_ms=2044, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 22:54:19], mode=PLATFORM_GENERATION, duration=0:00:02.449, duration_ms=2449, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-20 22:54:21], mode=BUILD, duration=0:00:01.540, duration_ms=1540, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 22:57:28], mode=BUILD, duration=0:00:00.922, duration_ms=922, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:03:11], mode=BUILD, duration=0:00:01.052, duration_ms=1052, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:04:22], mode=BUILD, duration=0:00:01.097, duration_ms=1097, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:04:57], mode=BUILD, duration=0:00:01.415, duration_ms=1415, data={name=testXADC_vaux12_single, configuration=Debug, clean_build=false}
+timestamp=[2025-08-20 23:07:56], mode=BUILD, duration=0:00:00.395, duration_ms=395, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:08:13], mode=BUILD, duration=0:00:01.121, duration_ms=1121, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:11:08], mode=BUILD, duration=0:00:01.048, duration_ms=1048, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:16:09], mode=BUILD, duration=0:00:01.165, duration_ms=1165, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:16:09], mode=BUILD, duration=0:00:00.182, duration_ms=182, data={name=testXADC_vaux12_single_system, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:17:26], mode=BUILD, duration=0:00:00.926, duration_ms=926, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:19:24], mode=PLATFORM_GENERATION, duration=0:00:02.291, duration_ms=2291, data={name=McDMA_v2_bootloop}
+timestamp=[2025-08-20 23:19:24], mode=BUILD, duration=0:00:00.213, duration_ms=213, data={name=testXADC_vaux12_single, configuration=Release, clean_build=true}
+timestamp=[2025-08-20 23:19:26], mode=BUILD, duration=0:00:01.744, duration_ms=1744, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:21:55], mode=BUILD, duration=0:00:01.003, duration_ms=1003, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:23:16], mode=BUILD, duration=0:00:01.048, duration_ms=1048, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:24:20], mode=BUILD, duration=0:00:01.175, duration_ms=1175, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:25:18], mode=BUILD, duration=0:00:01.063, duration_ms=1063, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:26:32], mode=BUILD, duration=0:00:01.006, duration_ms=1006, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:53:35], mode=BUILD, duration=0:00:01.058, duration_ms=1058, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}
+timestamp=[2025-08-20 23:56:26], mode=BUILD, duration=0:00:01.171, duration_ms=1171, data={name=testXADC_vaux12_single, configuration=Release, clean_build=false}

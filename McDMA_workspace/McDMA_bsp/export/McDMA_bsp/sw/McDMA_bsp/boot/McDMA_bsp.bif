@@ -1,0 +1,6 @@
+/*McDMA_bsp*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

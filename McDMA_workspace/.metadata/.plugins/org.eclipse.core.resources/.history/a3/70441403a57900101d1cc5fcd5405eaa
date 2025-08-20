@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="axi_inspector_v0" location="C:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/axi_inspector_v0" platform="C:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_bsp/export/McDMA_bsp/McDMA_bsp.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" systemProject="axi_inspector_v0_system" sysConfig="McDMA_bsp" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="ab1a3b78a505bbcc11575fe1344079be">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1714174120" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1739506225">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

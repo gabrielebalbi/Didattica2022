@@ -1,0 +1,6 @@
+13:00:25 **** Incremental Build of configuration Debug for project test_XADC_temp_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+13:00:26 Build Finished (took 175ms)
+

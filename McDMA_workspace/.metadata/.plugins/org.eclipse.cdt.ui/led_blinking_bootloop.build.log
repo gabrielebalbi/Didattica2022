@@ -1,0 +1,6 @@
+09:44:49 **** Incremental Build of configuration Release for project led_blinking_bootloop ****
+make all 
+make: Nothing to be done for 'all'.
+
+09:44:49 Build Finished (took 240ms)
+

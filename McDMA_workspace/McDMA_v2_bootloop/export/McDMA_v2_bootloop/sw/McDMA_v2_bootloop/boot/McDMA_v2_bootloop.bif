@@ -1,0 +1,6 @@
+/*McDMA_v2_bootloop*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

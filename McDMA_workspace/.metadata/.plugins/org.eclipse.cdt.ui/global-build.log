@@ -1,0 +1,89 @@
+Nothing to build in platform 'McDMA_v2_bootloop'
+
+23:56:25 **** Incremental Build of configuration Release for project testXADC_vaux12_single ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v2_bootloop/export/McDMA_v2_bootloop/sw/McDMA_v2_bootloop/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from C:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v2_bootloop/export/McDMA_v2_bootloop/sw/McDMA_v2_bootloop/standalone_domain/bspinclude/include/xsysmon.h:219,
+                 from ../src/helloworld.c:29:
+../src/helloworld.c: In function 'main':
+C:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v2_bootloop/export/McDMA_v2_bootloop/sw/McDMA_v2_bootloop/standalone_domain/bspinclude/include/xsysmon_hw.h:572:26: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '268435456' to '0' [-Woverflow]
+  572 | #define XSM_SEQ_CH_AUX12 0x10000000 /**< 13th Aux Channel */
+      |                          ^~~~~~~~~~
+../src/helloworld.c:117:41: note: in expansion of macro 'XSM_SEQ_CH_AUX12'
+  117 |                                         XSM_SEQ_CH_AUX12, // == channel index of VAUX[12] --> 28
+      |                                         ^~~~~~~~~~~~~~~~
+C:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v2_bootloop/export/McDMA_v2_bootloop/sw/McDMA_v2_bootloop/standalone_domain/bspinclude/include/xsysmon_hw.h:572:26: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '268435456' to '0' [-Woverflow]
+  572 | #define XSM_SEQ_CH_AUX12 0x10000000 /**< 13th Aux Channel */
+      |                          ^~~~~~~~~~
+../src/helloworld.c:143:52: note: in expansion of macro 'XSM_SEQ_CH_AUX12'
+  143 |   VccAux12RawData = XSysMon_GetAdcData(XADCInstPtr,XSM_SEQ_CH_AUX12);
+      |                                                    ^~~~~~~~~~~~~~~~
+../src/helloworld.c:193:9: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  193 |         usleep(5000);
+      |         ^~~~~~
+../src/helloworld.c:83:8: warning: unused variable 'VDDRData' [-Wunused-variable]
+   83 |  float VDDRData;
+      |        ^~~~~~~~
+../src/helloworld.c:82:15: warning: unused variable 'VDDRRawData' [-Wunused-variable]
+   82 |  volatile u32 VDDRRawData;
+      |               ^~~~~~~~~~~
+../src/helloworld.c:79:8: warning: unused variable 'VccPAuxData' [-Wunused-variable]
+   79 |  float VccPAuxData;
+      |        ^~~~~~~~~~~
+../src/helloworld.c:78:15: warning: unused variable 'VccPAuxRawData' [-Wunused-variable]
+   78 |  volatile u32 VccPAuxRawData;
+      |               ^~~~~~~~~~~~~~
+../src/helloworld.c:75:8: warning: unused variable 'VccPIntData' [-Wunused-variable]
+   75 |  float VccPIntData;
+      |        ^~~~~~~~~~~
+../src/helloworld.c:74:15: warning: unused variable 'VccPIntRawData' [-Wunused-variable]
+   74 |  volatile u32 VccPIntRawData;
+      |               ^~~~~~~~~~~~~~
+../src/helloworld.c:71:8: warning: unused variable 'VBramData' [-Wunused-variable]
+   71 |  float VBramData;
+      |        ^~~~~~~~~
+../src/helloworld.c:70:16: warning: unused variable 'VBramRawData' [-Wunused-variable]
+   70 |  volatile  u32 VBramRawData;
+      |                ^~~~~~~~~~~~
+../src/helloworld.c:67:8: warning: unused variable 'VccAux12Data' [-Wunused-variable]
+   67 |  float VccAux12Data;
+      |        ^~~~~~~~~~~~
+../src/helloworld.c:65:8: warning: unused variable 'VccAux4Data' [-Wunused-variable]
+   65 |  float VccAux4Data;
+      |        ^~~~~~~~~~~
+../src/helloworld.c:64:16: warning: unused variable 'VccAux4RawData' [-Wunused-variable]
+   64 |  volatile  u32 VccAux4RawData;
+      |                ^~~~~~~~~~~~~~
+../src/helloworld.c:60:8: warning: unused variable 'VccAuxData' [-Wunused-variable]
+   60 |  float VccAuxData;
+      |        ^~~~~~~~~~
+../src/helloworld.c:59:16: warning: unused variable 'VccAuxRawData' [-Wunused-variable]
+   59 |  volatile  u32 VccAuxRawData;
+      |                ^~~~~~~~~~~~~
+../src/helloworld.c:56:8: warning: unused variable 'VccIntData' [-Wunused-variable]
+   56 |  float VccIntData;
+      |        ^~~~~~~~~~
+../src/helloworld.c:55:16: warning: unused variable 'VccIntRawData' [-Wunused-variable]
+   55 |  volatile  u32 VccIntRawData;
+      |                ^~~~~~~~~~~~~
+../src/helloworld.c:52:8: warning: unused variable 'TempData' [-Wunused-variable]
+   52 |  float TempData;
+      |        ^~~~~~~~
+../src/helloworld.c:51:15: warning: unused variable 'TempRawData' [-Wunused-variable]
+   51 |  volatile u32 TempRawData;
+      |               ^~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: testXADC_vaux12_single.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v2_bootloop/export/McDMA_v2_bootloop/sw/McDMA_v2_bootloop/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "testXADC_vaux12_single.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: testXADC_vaux12_single.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size testXADC_vaux12_single.elf  |tee "testXADC_vaux12_single.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15412	    444	  85064	 100920	  18a38	testXADC_vaux12_single.elf
+'Finished building: testXADC_vaux12_single.elf.size'
+' '

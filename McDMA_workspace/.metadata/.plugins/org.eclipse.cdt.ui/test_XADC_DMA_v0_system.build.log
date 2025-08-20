@@ -1,0 +1,6 @@
+23:04:12 **** Build of configuration Release for project test_XADC_DMA_v0_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+23:04:12 Build Finished (took 187ms)
+

@@ -1,0 +1,6 @@
+10:05:56 **** Incremental Build of configuration Release for project McDMA_v2_TRAFGEN_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+10:05:57 Build Finished (took 208ms)
+

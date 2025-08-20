@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Cmod A7 - 35T 210328B250E8A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Cmod A7 - 35T-210328B250E8A-0362d093-0&quot;}}]}"/>
+	<item key="axi_inspector_v0_system-bitFile" value="C:\Users\ilpes\Desktop\Antenne_e_clocks\McDMA_workspace\McDMA_v2_bootloop\hw\McDMA_v2_bootloop.bit"/>
+	<item key="axi_inspector_v0_system-bmmFile" value="C:\Users\ilpes\Desktop\Antenne_e_clocks\McDMA_workspace\McDMA_v2_bootloop\hw\McDMA_v2_bootloop.mmi"/>
+	<item key="axi_inspector_v0_system-target" value="Local"/>
+	<item key="axi_inspector_v0_system-device" value="Auto Detect"/>
+	<item key="axi_inspector_v0_system-partial_bit" value="false"/>
+	<item key="axi_inspector_v0_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="axi_inspector_v0_system"/>
+	<item key="axi_inspector_v0_system-microblaze_0-initElf" value="bootloop"/>
+</section>

@@ -1,0 +1,17 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_McDMA_app0-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_axi_inspector_v0-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_led_blinking_bootloop-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_test_XADC_DMA_v0-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_test_XADC_DMA_v0-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_McDMA_v2_TRAFGEN-Emulation,org.eclipse.launchbar.core.descriptorType.default\:Debugger_McDMA_v2_TRAFGEN-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_McDMA_v2_TRAFGEN-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_test_XADC_temp-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_test_XADC_temp-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_testXADC_vaux12_single-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_testXADC_vaux12_single-Default
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_McDMA_app0-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_McDMA_app0-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_McDMA_v2_TRAFGEN-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_McDMA_v2_TRAFGEN-Default_1/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_McDMA_v2_TRAFGEN-Emulation/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_led_blinking_bootloop-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_testXADC_vaux12_single-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_testXADC_vaux12_single-Default_1/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_test_XADC_DMA_v0-Default/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_test_XADC_DMA_v0-Default_1/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_test_XADC_temp-Default/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_test_XADC_temp-Default_1/activeLaunchMode=run

@@ -1,0 +1,75 @@
+12:17:35 **** Incremental Build of configuration Release for project McDMA_v2_TRAFGEN ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v2_bootloop/export/McDMA_v2_bootloop/sw/McDMA_v2_bootloop/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:72: warning: "XADC_VREFP" redefined
+   72 | #define XADC_VREFP 0x214
+      | 
+../src/main.c:71: note: this is the location of the previous definition
+   71 | #define XADC_VREFP 0x210
+      | 
+../src/main.c: In function 'uart_int_handler':
+../src/main.c:155:20: warning: passing argument 1 of 'parser' from incompatible pointer type [-Wincompatible-pointer-types]
+  155 |   myComando=parser(&ReceiveBuffer);
+      |                    ^~~~~~~~~~~~~~
+      |                    |
+      |                    volatile u8 (*)[50] {aka volatile unsigned char (*)[50]}
+../src/main.c:131:36: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'volatile u8 (*)[50]' {aka 'volatile unsigned char (*)[50]'}
+  131 | volatile struct comando parser(u8* buffer);
+      |                                ~~~~^~~~~~
+../src/main.c:158:22: warning: implicit declaration of function 'strtol'; did you mean 'strtok'? [-Wimplicit-function-declaration]
+  158 |   int address = (int)strtol(myComando.firstOp, NULL, 16);
+      |                      ^~~~~~
+      |                      strtok
+../src/main.c: In function 'main':
+../src/main.c:413:6: warning: unused variable 'Xadc_VoltageRemainder' [-Wunused-variable]
+  413 |  int Xadc_VoltageRemainder;
+      |      ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:412:6: warning: unused variable 'Xadc_Voltage' [-Wunused-variable]
+  412 |  int Xadc_Voltage; // x100 from actual value. Two decimal point precision.
+      |      ^~~~~~~~~~~~
+../src/main.c:411:6: warning: unused variable 'Xadc_RawData' [-Wunused-variable]
+  411 |  u16 Xadc_RawData[2];
+      |      ^~~~~~~~~~~~
+../src/main.c:408:12: warning: unused variable 'Xadc_VoltageScaler_SingleEnded' [-Wunused-variable]
+  408 |  const int Xadc_VoltageScaler_SingleEnded = (0xFFFF) / (100 * 3.3);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'XTrafGenStremingModeMasterExample':
+../src/main.c:600:6: warning: unused variable 'FifoLen' [-Wunused-variable]
+  600 |  u32 FifoLen;
+      |      ^~~~~~~
+../src/main.c:599:6: warning: unused variable 'FifoOcy' [-Wunused-variable]
+  599 |  u32 FifoOcy;
+      |      ^~~~~~~
+../src/main.c:598:6: warning: variable 'AtgPacket' set but not used [-Wunused-but-set-variable]
+  598 |  u32 AtgPacket;
+      |      ^~~~~~~~~
+../src/main.c: In function 'parser':
+../src/main.c:549:17: warning: iteration 10 invokes undefined behavior [-Waggressive-loop-optimizations]
+  549 |    t.secondOp[j]=buffer[i+1];
+      |    ~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/main.c:547:9: note: within this loop
+  547 |   while (i < 26)
+      |         ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v2_bootloop/export/McDMA_v2_bootloop/sw/McDMA_v2_bootloop/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: McDMA_v2_TRAFGEN.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v2_bootloop/export/McDMA_v2_bootloop/sw/McDMA_v2_bootloop/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "McDMA_v2_TRAFGEN.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: McDMA_v2_TRAFGEN.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size McDMA_v2_TRAFGEN.elf  |tee "McDMA_v2_TRAFGEN.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	    476	  94456	 117500	  1cafc	McDMA_v2_TRAFGEN.elf
+'Finished building: McDMA_v2_TRAFGEN.elf.size'
+' '
+
+12:17:38 Build Finished (took 2s.785ms)
+

@@ -1,0 +1,6 @@
+09:44:49 **** Incremental Build of configuration Release for project axi_inspector_v0_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+09:44:49 Build Finished (took 213ms)
+

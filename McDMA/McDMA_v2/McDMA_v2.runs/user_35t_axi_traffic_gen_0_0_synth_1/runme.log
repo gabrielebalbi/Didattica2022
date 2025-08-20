@@ -1,0 +1,384 @@
+
+*** Running vivado
+    with args -log user_35t_axi_traffic_gen_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_35t_axi_traffic_gen_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source user_35t_axi_traffic_gen_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1126.195 ; gain = 0.000
+Command: synth_design -top user_35t_axi_traffic_gen_0_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 40484
+WARNING: [Synth 8-2507] parameter declaration becomes local in axi_traffic_gen_v3_0_8_systeminit_dmg with formal parameter declaration list [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/1c6c/hdl/axi_traffic_gen_v3_0_rfs.v:13768]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1183.371 ; gain = 57.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_traffic_gen_0_0' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ip/user_35t_axi_traffic_gen_0_0/synth/user_35t_axi_traffic_gen_0_0.v:62]
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_8_top' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/1c6c/hdl/axi_traffic_gen_v3_0_rfs.v:15240]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_BASEADDR bound to: 1151467520 - type: integer 
+	Parameter C_HIGHADDR bound to: 1151533055 - type: integer 
+	Parameter C_ZERO_INVALID bound to: 1 - type: integer 
+	Parameter C_NO_EXCL bound to: 0 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS1_HAS_TKEEP bound to: 1 - type: integer 
+	Parameter C_AXIS1_HAS_TSTRB bound to: 1 - type: integer 
+	Parameter C_AXIS2_HAS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS2_HAS_TSTRB bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 8 - type: integer 
+	Parameter C_ATG_BASIC_AXI4 bound to: 0 - type: integer 
+	Parameter C_ATG_REPEAT_TYPE bound to: 0 - type: integer 
+	Parameter C_ATG_HLTP_MODE bound to: 0 - type: integer 
+	Parameter C_ATG_STATIC bound to: 0 - type: integer 
+	Parameter C_ATG_SYSTEM_INIT bound to: 0 - type: integer 
+	Parameter C_ATG_SYSTEM_TEST bound to: 0 - type: integer 
+	Parameter C_ATG_STREAMING bound to: 1 - type: integer 
+	Parameter C_ATG_STREAMING_MST_ONLY bound to: 1 - type: integer 
+	Parameter C_ATG_STREAMING_MST_LPBK bound to: 0 - type: integer 
+	Parameter C_ATG_STREAMING_SLV_LPBK bound to: 0 - type: integer 
+	Parameter C_ATG_STREAMING_MAX_LEN_BITS bound to: 16 - type: integer 
+	Parameter C_ATG_STREAMING_MEM_FILE bound to: no_mem_file_loaded - type: string 
+	Parameter C_ATG_AXIS_DATA_GEN_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_SPARSE_EN bound to: 1 - type: integer 
+	Parameter C_ATG_SLAVE_ONLY bound to: 0 - type: integer 
+	Parameter C_ATG_STATIC_WR_ADDRESS bound to: 64'b0000000000000000000000000000000000010010101000000000000000000000 
+	Parameter C_ATG_STATIC_RD_ADDRESS bound to: 64'b0000000000000000000000000000000000010011101000000000000000000000 
+	Parameter C_ATG_STATIC_WR_HIGH_ADDRESS bound to: 64'b0000000000000000000000000000000000010010101000000000111111111111 
+	Parameter C_ATG_STATIC_RD_HIGH_ADDRESS bound to: 64'b0000000000000000000000000000000000010011101000000000111111111111 
+	Parameter C_ATG_STATIC_INCR bound to: 0 - type: integer 
+	Parameter C_ATG_STATIC_EN_READ bound to: 1 - type: integer 
+	Parameter C_ATG_STATIC_EN_WRITE bound to: 1 - type: integer 
+	Parameter C_ATG_STATIC_FREE_RUN bound to: 1 - type: integer 
+	Parameter C_ATG_STATIC_RD_PIPELINE bound to: 3 - type: integer 
+	Parameter C_ATG_STATIC_WR_PIPELINE bound to: 3 - type: integer 
+	Parameter C_ATG_STATIC_TRANGAP bound to: 0 - type: integer 
+	Parameter C_ATG_STATIC_LENGTH bound to: 16 - type: integer 
+	Parameter C_ATG_SYSTEM_INIT_DATA_MIF bound to: user_35t_axi_traffic_gen_0_0_data.mem - type: string 
+	Parameter C_ATG_SYSTEM_INIT_ADDR_MIF bound to: user_35t_axi_traffic_gen_0_0_addr.mem - type: string 
+	Parameter C_ATG_SYSTEM_INIT_CTRL_MIF bound to: user_35t_axi_traffic_gen_0_0_ctrl.mem - type: string 
+	Parameter C_ATG_SYSTEM_INIT_MASK_MIF bound to: user_35t_axi_traffic_gen_0_0_mask.mem - type: string 
+	Parameter C_ATG_MIF_DATA_DEPTH bound to: 16 - type: integer 
+	Parameter C_ATG_MIF_ADDR_BITS bound to: 4 - type: integer 
+	Parameter C_ATG_SYSTEM_CMD_MAX_RETRY bound to: 256 - type: integer 
+	Parameter C_ATG_SYSTEM_TEST_MAX_CLKS bound to: 5000 - type: integer 
+	Parameter C_ATG_SYSTEM_MAX_CHANNELS bound to: 1 - type: integer 
+	Parameter C_ATG_SYSTEM_CH1_LOW bound to: 0 - type: integer 
+	Parameter C_ATG_SYSTEM_CH1_HIGH bound to: -1 - type: integer 
+	Parameter C_ATG_SYSTEM_CH2_LOW bound to: 256 - type: integer 
+	Parameter C_ATG_SYSTEM_CH2_HIGH bound to: 511 - type: integer 
+	Parameter C_ATG_SYSTEM_CH3_LOW bound to: 512 - type: integer 
+	Parameter C_ATG_SYSTEM_CH3_HIGH bound to: 767 - type: integer 
+	Parameter C_ATG_SYSTEM_CH4_LOW bound to: 768 - type: integer 
+	Parameter C_ATG_SYSTEM_CH4_HIGH bound to: 1023 - type: integer 
+	Parameter C_ATG_SYSTEM_CH5_LOW bound to: 1024 - type: integer 
+	Parameter C_ATG_SYSTEM_CH5_HIGH bound to: 1279 - type: integer 
+	Parameter C_RAMINIT_CMDRAM0_F bound to: user_35t_axi_traffic_gen_0_0_default_cmdram.mem - type: string 
+	Parameter C_RAMINIT_CMDRAM1_F bound to: NONE - type: string 
+	Parameter C_RAMINIT_CMDRAM2_F bound to: NONE - type: string 
+	Parameter C_RAMINIT_CMDRAM3_F bound to: NONE - type: string 
+	Parameter C_RAMINIT_SRAM0_F bound to: user_35t_axi_traffic_gen_0_0_default_mstram.mem - type: string 
+	Parameter C_RAMINIT_PARAMRAM0_F bound to: user_35t_axi_traffic_gen_0_0_default_prmram.mem - type: string 
+	Parameter C_RAMINIT_ADDRRAM0_F bound to: user_35t_axi_traffic_gen_0_0_default_addrram.mem - type: string 
+	Parameter C_REPEAT_COUNT bound to: 254 - type: integer 
+	Parameter C_STRM_DATA_SEED bound to: 16'b1010101111001101 
+	Parameter C_AXI_WR_ADDR_SEED bound to: 16'b0111110010011011 
+	Parameter C_AXI_RD_ADDR_SEED bound to: 16'b0101101001011010 
+	Parameter C_READ_ONLY bound to: 0 - type: integer 
+	Parameter C_WRITE_ONLY bound to: 0 - type: integer 
+	Parameter ATG_VERSAL_400 bound to: 0 - type: integer 
+	Parameter C_CMDRAM_F bound to: none - type: string 
+	Parameter C_SRAM_F bound to: none - type: string 
+	Parameter C_PRAM_F bound to: none - type: string 
+	Parameter C_ADDR_F bound to: none - type: string 
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_8_streaming_top' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/1c6c/hdl/axi_traffic_gen_v3_0_rfs.v:12541]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXIS1_HAS_TKEEP bound to: 1 - type: integer 
+	Parameter C_AXIS1_HAS_TSTRB bound to: 1 - type: integer 
+	Parameter C_AXIS2_HAS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS2_HAS_TSTRB bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 8 - type: integer 
+	Parameter ZERO_INVALID bound to: 1'b0 
+	Parameter C_ATG_STREAMING_MST_ONLY bound to: 1 - type: integer 
+	Parameter C_ATG_STREAMING_MST_LPBK bound to: 0 - type: integer 
+	Parameter C_ATG_STREAMING_SLV_LPBK bound to: 0 - type: integer 
+	Parameter C_ATG_STREAMING_MAX_LEN_BITS bound to: 16 - type: integer 
+	Parameter C_FIRST_AXIS bound to: 0 - type: integer 
+	Parameter C_AXIS_SPARSE_EN bound to: 1 - type: integer 
+	Parameter C_BASEADDR bound to: 1151467520 - type: integer 
+	Parameter C_HIGHADDR bound to: 1151533055 - type: integer 
+	Parameter C_STRM_DATA_SEED bound to: 16'b1010101111001101 
+	Parameter ATG_VERSAL_400 bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_BYTE_WIDTH bound to: 2 - type: integer 
+	Parameter C_AXIS_TDATA_2BYTE_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_8_randgen' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/1c6c/hdl/axi_traffic_gen_v3_0_rfs.v:906]
+	Parameter seed bound to: 16'b1010101111001101 
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_8_randgen' (1#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/1c6c/hdl/axi_traffic_gen_v3_0_rfs.v:906]
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_8_streaming_top' (2#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/1c6c/hdl/axi_traffic_gen_v3_0_rfs.v:12541]
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_8_asynch_rst_ff' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/1c6c/hdl/axi_traffic_gen_v3_0_rfs.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_8_asynch_rst_ff' (3#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/1c6c/hdl/axi_traffic_gen_v3_0_rfs.v:56]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 1 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_8_top' (5#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ipshared/1c6c/hdl/axi_traffic_gen_v3_0_rfs.v:15240]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_traffic_gen_0_0' (6#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ip/user_35t_axi_traffic_gen_0_0/synth/user_35t_axi_traffic_gen_0_0.v:62]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 1340.562 ; gain = 214.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 1340.562 ; gain = 214.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 1340.562 ; gain = 214.367
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1340.562 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ip/user_35t_axi_traffic_gen_0_0/user_35t_axi_traffic_gen_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ip/user_35t_axi_traffic_gen_0_0/user_35t_axi_traffic_gen_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ip/user_35t_axi_traffic_gen_0_0/user_35t_axi_traffic_gen_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ip/user_35t_axi_traffic_gen_0_0/user_35t_axi_traffic_gen_0_0.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v2/McDMA_v2.runs/user_35t_axi_traffic_gen_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v2/McDMA_v2.runs/user_35t_axi_traffic_gen_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1354.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  FDR => FDRE: 12 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1366.520 ; gain = 11.609
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:01:09 . Memory (MB): peak = 1366.520 ; gain = 240.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:01:09 . Memory (MB): peak = 1366.520 ; gain = 240.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v2/McDMA_v2.runs/user_35t_axi_traffic_gen_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:09 . Memory (MB): peak = 1366.520 ; gain = 240.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:56 ; elapsed = 00:01:11 . Memory (MB): peak = 1366.520 ; gain = 240.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   16 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               24 Bit    Registers := 3     
+	               16 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 14    
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 11    
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 30    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:24 . Memory (MB): peak = 1366.520 ; gain = 240.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:42 . Memory (MB): peak = 1366.520 ; gain = 240.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:46 . Memory (MB): peak = 1382.418 ; gain = 256.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:47 . Memory (MB): peak = 1384.457 ; gain = 258.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:57 . Memory (MB): peak = 1384.457 ; gain = 258.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:57 . Memory (MB): peak = 1384.457 ; gain = 258.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:57 . Memory (MB): peak = 1384.457 ; gain = 258.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:01:58 . Memory (MB): peak = 1384.457 ; gain = 258.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 1384.457 ; gain = 258.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 1384.457 ; gain = 258.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    22|
+|2     |LUT1   |    19|
+|3     |LUT2   |    36|
+|4     |LUT3   |    60|
+|5     |LUT4   |   107|
+|6     |LUT5   |    79|
+|7     |LUT6   |   131|
+|8     |FDPE   |     4|
+|9     |FDR    |     8|
+|10    |FDRE   |   519|
+|11    |FDSE   |    13|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 1384.457 ; gain = 258.262
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:48 . Memory (MB): peak = 1384.457 ; gain = 232.305
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 1384.457 ; gain = 258.262
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1384.457 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1386.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  FDR => FDRE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:53 ; elapsed = 00:02:53 . Memory (MB): peak = 1386.293 ; gain = 260.098
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v2/McDMA_v2.runs/user_35t_axi_traffic_gen_0_0_synth_1/user_35t_axi_traffic_gen_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP user_35t_axi_traffic_gen_0_0, cache-ID = 54b1a56b1afec684
+INFO: [Coretcl 2-1174] Renamed 9 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v2/McDMA_v2.runs/user_35t_axi_traffic_gen_0_0_synth_1/user_35t_axi_traffic_gen_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file user_35t_axi_traffic_gen_0_0_utilization_synth.rpt -pb user_35t_axi_traffic_gen_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 16 08:19:20 2025...

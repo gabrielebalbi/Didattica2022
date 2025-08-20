@@ -1,0 +1,417 @@
+// Including necessary header files for Xilinx hardware and software libraries
+#include "xsysmon.h"    // Header for XADC system monitor functions
+#include "xparameters.h" // System parameters definitions
+#include "xil_types.h"   // Basic data type definitions for Xilinx systems
+
+
+#include "xaxidma.h"     // Header for AXI DMA controller functions
+#include "platform.h"    // Platform-specific definitions
+#include "xil_printf.h"  // Functions for formatted output
+#include <stdio.h>       // Standard I/O functions
+#include <stdint.h>      // Standard integer type definitions
+#include <string.h>      // String manipulation functions
+
+// Define the number of samples to be transferred in one DMA operation
+#define SAMPLE_COUNT 1000
+
+// Define the GPIO pin for button BTN0
+#define BTN0_PIN 81 // This is GPIO pin 0 in Bank 2 (EMIO pins)
+
+// Ensure the sample count does not exceed the AXI DMA maximum transfer size
+#if SAMPLE_COUNT > 0x01FFFFFF
+    #error "SAMPLECOUNT exceeds the maximum limit"
+#endif
+
+// Define whether the XADC should average samples or not
+#define AVERAGING_MODE XSM_AVG_0_SAMPLES
+
+// Buffer to hold data for DMA transfers, aligned to 4 bytes for efficiency
+static u16 DataBuffer[SAMPLE_COUNT + 8] __attribute__((aligned(4)));
+
+// Instances for peripherals
+static XGpioPs GpioInstance;      // GPIO instance for controlling inputs and outputs
+static XSysMon XADCInstance;     // XADC system monitor instance
+static XAxiDma AxiDmaInstance;   // AXI DMA instance for data transfer
+
+// Enum for selecting XADC input channels
+typedef enum eXADCInput {
+    VAUX14, // Auxiliary analog input channel 14
+    VPVN    // Dedicated bipolar channel VP/VN
+} eXADCInput;
+
+// Variable to hold the currently activated XADC input
+eXADCInput ActivateXADCInput;
+
+// Pointer to a function for converting raw XADC data to voltage
+static float (*Xadc_RawToVoltageFunc)(u16 RawData);
+
+// Define system clock frequency in Hz (used for delay calculations)
+#define SYSTEM_CLOCK_FREQUENCY_HZ 100000000 // 100 MHz
+
+// Function to create a delay in milliseconds using a busy-wait loop
+void delay_ms(uint32_t milliseconds) {
+    // Calculate delay in clock cycles
+    uint32_t delay_cycles = SYSTEM_CLOCK_FREQUENCY_HZ / 1000 * milliseconds;
+    // Busy-wait loop
+    for (uint32_t i = 0; i < delay_cycles; i++) {
+        // Do nothing, just wait for the cycles to pass
+    }
+}
+
+// Initialize GPIO pins for use
+static int GPIOInitalize() {
+    XGpioPs_Config *GpioConfig; // Configuration pointer
+    int Status;
+
+    // Lookup configuration for the GPIO controller
+    GpioConfig = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+    if (GpioConfig == NULL) {
+        xil_printf("XGpioPs_LookupConfig failed! Terminating\n");
+        return XST_FAILURE;
+    }
+
+    // Initialize GPIO controller with the configuration
+    Status = XGpioPs_CfgInitialize(&GpioInstance, GpioConfig, GpioConfig->BaseAddr);
+    if (Status != XST_SUCCESS) {
+        xil_printf("XGpioPs_CfgInitialize failed! Terminating\n");
+        return XST_FAILURE;
+    }
+
+    // Set the direction of GPIO Bank 2 pins (pins 54–80) as outputs
+    XGpioPs_SetDirection(&GpioInstance, 2 /*Bank 2*/, 0x03FFFFFF);
+
+    // Write initial values: sample count and stop/start signal
+    XGpioPs_Write(&GpioInstance, 2 /*Bank 2*/, SAMPLE_COUNT << 1);
+
+    // Enable output on the configured pins
+    XGpioPs_SetOutputEnable(&GpioInstance, 2 /*Bank 2*/, 0x03FFFFFF);
+
+    return XST_SUCCESS;
+}
+
+// Conversion function for XADC raw data to voltage for channel VAUX14
+static float Xadc_RawToVoltageAUX14(u16 RAWDATA) {
+    const float Scale = 3.32; // Scale factor for conversion to voltage
+
+#if AVERAGING_MODE == XSM_AVG_0_SAMPLES
+    // If averaging is disabled, use only the top 12 bits
+    return Scale * ((float)(RAWDATA >> 4) / (float)(0xFFF));
+#else
+    // If averaging is enabled, use all 16 bits
+    return Scale * ((float)RAWDATA / (float)(0xFFFF));
+#endif
+}
+
+// Conversion function for XADC raw data to voltage for bipolar VP/VN channel
+static float Xadc_RawToVoltageVPVN(u16 RawData) {
+#if AVERAGING_MODE == XSM_AVG_0_SAMPLES
+    // Handle special cases for the lowest negative value
+    if ((RawData >> 4) == 0x800)
+        return -0.5;
+
+    float sign;
+
+    // Determine the sign and convert raw data to absolute value if negative
+    if (RawData & 0x8000) {
+        sign = -1.0;
+        RawData = ~RawData + 1;
+    } else {
+        sign = 1.0;
+    }
+
+    // Scale the raw data to voltage
+    return sign * ((float)(RawData >> 4) * (1.0 / 4096.0));
+#else
+    if (RawData == 0x8000)
+        return -0.5;
+
+    float sign;
+
+    if (RawData & 0x8000) {
+        sign = -1.0;
+        RawData = ~RawData + 1;
+    } else {
+        sign = 1.0;
+    }
+
+    return sign * ((float)RawData * (1.0 / 65535.0));
+#endif
+}
+// Function to convert 12-bit unsigned value to signed 16-bit integer
+static int16_t Convert12BitToSigned16Bit(u16 num)
+{
+    // Check if the number is negative by checking the 12th bit (sign bit)
+    if (num & 0x800) {
+        // If negative, sign-extend to 16 bits by setting the upper 4 bits
+        num |= 0xF000;
+    }
+    // Return the signed 16-bit result
+    return (int16_t)num;
+} // Convert12BitToSigned16Bit
+
+// Function to convert raw value of the XADC Gain Calibration Coefficient to a percentage of gain correction
+static float ConvertRawGainCoefToPercents(u16 num)
+{
+    // Bottom 6 bits contain the number of tenths of a percent
+    float res = (num & 0x3F) * 0.1;
+
+    // The 7th bit is the sign bit, value 0 means negative coefficient
+    if ((num & 0x40) == 0) {
+        res *= -1; // If the 7th bit is 0, the coefficient is negative
+    }
+
+    // Return the calculated percentage value
+    return res;
+} // ConvertRawGainCoefToPercents
+
+// Initialize the XADC (Xilinx Analog-to-Digital Converter)
+static int XADCInitialize()
+{
+    XSysMon_Config *ConfigPtr;
+    XStatus Status;
+
+    // Look up the XADC configuration using the device ID
+    ConfigPtr = XSysMon_LookupConfig(XPAR_XADC_WIZ_0_DEVICE_ID);
+    if (ConfigPtr == NULL) {
+        printf("XSysMon_LookupConfig failed! Terminating.\n");
+        return XST_FAILURE;
+    }
+
+    // Initialize the XADC system monitor with the configuration
+    Status = XSysMon_CfgInitialize(&XADCInstance, ConfigPtr, ConfigPtr->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        printf("XSysMon_CfgInitialize failed! Terminating.\n");
+        return XST_FAILURE;
+    }
+
+    // Print calibration coefficients (Offset and Gain Error)
+    u16 ADCOffsetCoeff = XSysMon_GetCalibCoefficient(&XADCInstance, XSM_CALIB_ADC_OFFSET_COEFF);
+    printf("calib coefficient ADC offset: %04X (%d bits)\n",
+           ADCOffsetCoeff,
+           Convert12BitToSigned16Bit(ADCOffsetCoeff >> 4));
+
+    u16 GainCoeff = XSysMon_GetCalibCoefficient(&XADCInstance, XSM_CALIB_GAIN_ERROR_COEFF);
+    printf("calib coefficient gain error: %04X (%.1f%%)\n",
+           GainCoeff,
+           ConvertRawGainCoefToPercents(GainCoeff));
+
+    // Disable interrupts
+    XSysMon_IntrGlobalDisable(&XADCInstance);
+
+    // Set XADC to use Single Channel mode (not sequencer mode)
+    XSysMon_SetSequencerMode(&XADCInstance, XSM_SEQ_MODE_SINGCHAN);
+
+    // Disable alarms
+    XSysMon_SetAlarmEnables(&XADCInstance, 0);
+
+    // Disable averaging for calibration coefficient calculations
+    u32 RegValue = XSysMon_ReadReg(XADCInstance.Config.BaseAddress, XSM_CFR0_OFFSET);
+    RegValue |= XSM_CFR0_CAL_AVG_MASK; // Set bit to disable averaging
+    XSysMon_WriteReg(XADCInstance.Config.BaseAddress, XSM_CFR0_OFFSET, RegValue);
+
+    // Set averaging mode for measurements (value of AVERAGING_MODE macro is defined elsewhere)
+    XSysMon_SetAvg(&XADCInstance, AVERAGING_MODE);
+
+    // Enable offset and gain calibration based on the external/internal voltage reference
+    u16 CalibrationEnables;
+    if (GainCoeff != 0x007F) {
+        // External voltage reference used
+        CalibrationEnables = XSM_CFR1_CAL_ADC_GAIN_OFFSET_MASK | XSM_CFR1_CAL_PS_GAIN_OFFSET_MASK;
+    } else {
+        // Internal voltage reference used
+        CalibrationEnables = XSM_CFR1_CAL_ADC_OFFSET_MASK | XSM_CFR1_CAL_PS_OFFSET_MASK;
+    }
+
+    // Apply the calibration enables based on reference selection
+    XSysMon_SetCalibEnables(&XADCInstance, CalibrationEnables);
+
+    return XST_SUCCESS;
+} // XADCInitialize
+
+// Activate the XADC input (either VAUX14 or VP/VN)
+static int ActivateXADCInput1()
+{
+    XStatus Status;
+
+    // Set ADC clock frequency to 1/4 of the XADC input clock for 1 Msps sampling rate
+    XSysMon_SetAdcClkDivisor(&XADCInstance, 4);
+
+    // If VAUX14 is selected as input
+    if (ActivateXADCInput == VAUX14) {
+        // Set parameters for VAUX14 input channel (single-ended unipolar mode)
+        Status = XSysMon_SetSingleChParams(&XADCInstance,
+                                           XSM_CH_AUX_MIN + 14, // Channel index for VAUX14
+                                           0,                  // No additional acquisition cycles
+                                           0,                  // Continuous sampling mode
+                                           0);                 // Unipolar mode
+        if (Status != XST_SUCCESS) {
+            printf("XSysMon_SetSingleChParams for VAUX[1] failed! Terminating.\n");
+            return XST_FAILURE;
+        }
+
+        // Assign the function pointer to convert raw samples from VAUX14 to voltage
+        Xadc_RawToVoltageFunc = Xadc_RawToVoltageAUX14;
+        printf("VAUX[1] is activated as the input.\n");
+    }
+    // If VP/VN is selected as input
+    else if (ActivateXADCInput == VPVN) {
+        // Set parameters for VP/VN input channel (differential bipolar mode)
+        Status = XSysMon_SetSingleChParams(&XADCInstance,
+                                           XSM_CH_VPVN,      // Channel for VP/VN
+                                           0,                // No additional acquisition cycles
+                                           0,                // Continuous sampling mode
+                                           1);               // Differential mode (bipolar)
+        if (Status != XST_SUCCESS) {
+            printf("XSysMon_SetSingleChParams for VP/VN failed! Terminating.\n");
+            return XST_FAILURE;
+        }
+
+        // Assign the function pointer to convert raw samples from VP/VN to voltage
+        Xadc_RawToVoltageFunc = Xadc_RawToVoltageVPVN;
+        printf("VPVN is activated as the input.\n");
+    } else {
+        printf("Called ActivateXADCInput() for an unknown input!\n");
+        return XST_FAILURE;
+    }
+
+    return XST_SUCCESS;
+} // ActivateXADCInput
+
+// Initialize AXI DMA (Direct Memory Access)
+static int DMAInitialize()
+{
+    XAxiDma_Config *cfgptr;
+    XStatus Status;
+
+    // Lookup the DMA configuration
+    cfgptr = XAxiDma_LookupConfig(XPAR_AXI_DMA_0_DEVICE_ID);
+    if (cfgptr == NULL) {
+        printf("XAxiDma_LookupConfig failed! Terminating.\n");
+        return XST_FAILURE;
+    }
+
+    // Initialize DMA with the configuration
+    Status = XAxiDma_CfgInitialize(&AxiDmaInstance, cfgptr);
+    if (Status != XST_SUCCESS) {
+        printf("XAxiDma_CfgInitialize failed! Terminating.\n");
+        return XST_FAILURE;
+    }
+
+    // Disable interrupts for DMA
+    XAxiDma_IntrDisable(&AxiDmaInstance, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+    XAxiDma_IntrDisable(&AxiDmaInstance, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+
+    return 0;
+} // DMAInitialize
+
+// Perform a DMA transfer from XADC into RAM
+static int ReceiveData()
+{
+    // Flush any data held in CPU cache to RAM for DataBuffer
+    Xil_DCacheFlushRange((UINTPTR)DataBuffer, sizeof(DataBuffer));
+
+    // Start the DMA transfer from XADC to RAM
+    XStatus Status;
+    Status = XAxiDma_SimpleTransfer(&AxiDmaInstance, (UINTPTR)DataBuffer, SAMPLE_COUNT * sizeof(u16), XAXIDMA_DEVICE_TO_DMA);
+    if (Status != XST_SUCCESS) {
+        printf("XAxiDma_SimpleTransfer failed! Terminating.\n");
+        return XST_FAILURE;
+    }
+
+    // Trigger the start signal to begin data generation
+    XGpioPs_WritePin(&GpioInstance, 54, 1 /*high*/);
+    XGpioPs_WritePin(&GpioInstance, 54, 0 /*low*/);  // Reset the signal
+
+    // Wait for the DMA transfer to complete
+    while (XAxiDma_Busy(&AxiDmaInstance, XAXIDMA_DEVICE_TO_DMA)) {
+        delay_ms(1); // Wait for 1 ms
+    }
+
+    // Invalidate the CPU cache to ensure the CPU fetches data from RAM
+    Xil_DCacheInvalidateRange((UINTPTR)DataBuffer, sizeof(DataBuffer));
+
+    return 0;
+} // ReceiveData
+// Additional functions omitted here for brevity but should follow the same detailed commenting structure
+int XADC_function(void) {
+    // Print the start message for XADC function
+    xil_printf("***** XADC FUNCTION STARTED *****\n");
+    xil_printf("Samples per DMA transfer: %d\n", SAMPLE_COUNT);
+
+    // Initialize the GPIO, XADC, and DMA subsystems
+    if (GPIOInitalize() == XST_FAILURE) {
+        xil_printf("GPIO initialization failed!\n");
+    }
+    if (XADCInitialize() == XST_FAILURE) {
+        xil_printf("XADC initialization failed!\n");
+    }
+    if (DMAInitialize() == XST_FAILURE) {
+        xil_printf("DMA initialization failed!\n");
+    }
+
+    // Set the parameters for the XADC channel (VAUX14 in this case)
+    if (XSysMon_SetSingleChParams(&XADCInstance, XSM_CH_AUX_MIN + 14, 0, 0, 0) != XST_SUCCESS) {
+        printf("Failed to set VAUX14 as input!\n");
+        return -1;  // Return error if setting the channel fails
+    }
+
+    // Set the channel to VAUX14 for activation
+    ActivateXADCInput = VAUX14;
+
+    // Activate the XADC input (VAUX14)
+    if (ActivateXADCInput1() == XST_FAILURE) {
+        xil_printf("ADC activation failed!\n");
+        return -1;  // Return error if activation fails
+    }
+    printf("VAUX14 is activated as the input\n");
+
+    // Enter the infinite loop to continuously check the button press and fetch data
+    while (1) {
+        // Read the button state from GPIO pin 2 (assuming BTN0_PIN is correctly defined)
+        u32 buttonState = XGpioPs_Read(&GpioInstance, 2) & (1 << (BTN0_PIN - 54));
+
+        // Check if BTN0 is pressed (buttonState will be non-zero when the button is pressed)
+        if (buttonState) {
+            // Print a debug message indicating the button was pressed
+            // printf("Button has been pressed");
+
+            // Perform a DMA transfer to fetch samples into RAM
+            if (ReceiveData() == XST_FAILURE) {
+                // Print an error message if the DMA transfer fails
+                printf("DMA transfer failed!\n");
+                return -1;  // Return error if DMA transfer fails
+            }
+
+            // Uncomment the next line to print the sample header (optional)
+            // printf("\n***** XADC DATA SAMPLES *****\n");
+
+            // Loop through the data samples and convert raw data to voltage
+            for (int i = 0; i < SAMPLE_COUNT; i++) {
+                float voltage = Xadc_RawToVoltageAUX14(DataBuffer[i]);  // Convert raw data to voltage
+                // Print the voltage value for each sample
+                printf("%.7f\n", voltage);  // Print each voltage sample with 7 decimal precision
+            }
+
+            // Add a short delay to debounce the button press (optional)
+            for (volatile int delay = 0; delay < 1000000; delay++);
+        }
+    }
+
+    // Return success (although the loop will run indefinitely)
+    return 0;
+}
+
+int main() {
+    // Print the start message for the main program
+    printf("\n*************** PROGRAM STARTED ***************\n");
+
+    // Call the XADC function and check for errors
+    if (XADC_function() != 0) {
+        // If the XADC function encounters an error, print an error message and exit
+        printf("XADC function encountered an error. Exiting.\n");
+        return -1;  // Return error code
+    }
+
+    // Return success (this point is never reached due to the infinite loop in XADC_function)
+    return 0;
+}

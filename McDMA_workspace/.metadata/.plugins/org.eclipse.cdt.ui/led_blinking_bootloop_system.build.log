@@ -1,0 +1,6 @@
+09:44:50 **** Incremental Build of configuration Release for project led_blinking_bootloop_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+09:44:50 Build Finished (took 172ms)
+
