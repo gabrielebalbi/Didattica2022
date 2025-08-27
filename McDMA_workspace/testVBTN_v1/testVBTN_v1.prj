@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="testVBTN_v1" location="C:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/testVBTN_v1" platform="C:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v4_fast_logic/export/McDMA_v4_fast_logic/McDMA_v4_fast_logic.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" systemProject="testVBTN_v1_system" sysConfig="McDMA_v4_fast_logic" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="fa379ec430f65ea72b962d791b7e257e">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.815858876" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.306511685">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

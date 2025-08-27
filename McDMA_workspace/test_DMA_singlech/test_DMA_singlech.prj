@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="test_DMA_singlech" location="C:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/test_DMA_singlech" platform="C:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v3_singlechDMA/export/McDMA_v3_singlechDMA/McDMA_v3_singlechDMA.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" systemProject="test_DMA_singlech_system" sysConfig="McDMA_v3_singlechDMA" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="012e2663771afd06a3cda21ff9f30bc6">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1261809619" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1299786344">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

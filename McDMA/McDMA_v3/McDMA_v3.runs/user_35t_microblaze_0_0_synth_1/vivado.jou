@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Aug 23 10:30:47 2025
+# Process ID: 63996
+# Current directory: C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/user_35t_microblaze_0_0_synth_1
+# Command line: vivado.exe -log user_35t_microblaze_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_35t_microblaze_0_0.tcl
+# Log file: C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/user_35t_microblaze_0_0_synth_1/user_35t_microblaze_0_0.vds
+# Journal file: C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/user_35t_microblaze_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source user_35t_microblaze_0_0.tcl -notrace

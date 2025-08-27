@@ -1,0 +1,4 @@
+Running: xsim.dir/stream_tlaster_behav/xsimk.exe -simmode gui -wdb stream_tlaster_behav.wdb -simrunnum 0 -socket 58648
+Design successfully loaded
+Design Loading Memory Usage: 6604 KB (Peak: 6604 KB)
+Design Loading CPU Usage: 30 ms

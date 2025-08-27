@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Aug 23 10:56:27 2025
+# Process ID: 71016
+# Current directory: C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/user_35t_axi_gpio_1_0_synth_1
+# Command line: vivado.exe -log user_35t_axi_gpio_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_35t_axi_gpio_1_0.tcl
+# Log file: C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/user_35t_axi_gpio_1_0_synth_1/user_35t_axi_gpio_1_0.vds
+# Journal file: C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/user_35t_axi_gpio_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source user_35t_axi_gpio_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1126.051 ; gain = 0.000
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP user_35t_axi_gpio_1_0, cache-ID = 14c0855fe49648c5.
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 23 10:56:43 2025...

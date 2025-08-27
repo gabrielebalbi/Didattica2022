@@ -1,0 +1,6 @@
+/*McDMA_v4_fast_logic*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

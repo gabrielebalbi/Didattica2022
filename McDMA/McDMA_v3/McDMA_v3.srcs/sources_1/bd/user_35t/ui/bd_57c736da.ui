@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-166,-25",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port m_axis -pg 1 -lvl 3 -x 560 -y 250 -defaultsOSRD
+preplace port start -pg 1 -lvl 0 -x -20 -y 280 -defaultsOSRD
+preplace port SINIT -pg 1 -lvl 0 -x -20 -y 90 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x -20 -y 0 -defaultsOSRD
+preplace port CE -pg 1 -lvl 0 -x -20 -y 30 -defaultsOSRD
+preplace portBus count -pg 1 -lvl 0 -x -20 -y 310 -defaultsOSRD
+preplace inst c0 -pg 1 -lvl 1 -x 110 -y 70 -defaultsOSRD
+preplace inst streamer_c0 -pg 1 -lvl 2 -x 380 -y 270 -defaultsOSRD
+preplace netloc Net 1 0 2 10 290 190J
+preplace netloc c_counter_binary_1_Q 1 1 1 190 70n
+preplace netloc start_0_1 1 0 2 0J 300 NJ
+preplace netloc count_0_1 1 0 2 NJ 310 200J
+preplace netloc SINIT_1_1 1 0 1 N 90
+preplace netloc CE_1 1 0 2 20 -10 200
+preplace netloc Conn1 1 2 1 530 250n
+levelinfo -pg 1 -20 110 380 560
+pagesize -pg 1 -db -bbox -sgen -140 -20 650 390
+"
+}
+0

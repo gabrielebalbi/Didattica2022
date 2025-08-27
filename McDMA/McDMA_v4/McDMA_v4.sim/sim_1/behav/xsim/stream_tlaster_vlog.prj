@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../McDMA_v4.srcs/sources_1/bd/user_35t/ipshared/d0f7" --include "../../../../McDMA_v4.srcs/sources_1/bd/user_35t/ipshared/8713/hdl" --include "../../../../McDMA_v4.srcs/sources_1/bd/user_35t/ipshared/ec67/hdl" \
+"../../../../McDMA_v4.srcs/sources_1/new/stream_tlaster_v1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

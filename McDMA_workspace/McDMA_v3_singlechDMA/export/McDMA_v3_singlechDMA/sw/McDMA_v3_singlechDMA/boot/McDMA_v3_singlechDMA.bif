@@ -1,0 +1,6 @@
+/*McDMA_v3_singlechDMA*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

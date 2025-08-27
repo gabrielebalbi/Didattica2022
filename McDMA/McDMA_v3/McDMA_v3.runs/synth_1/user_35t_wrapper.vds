@@ -1,0 +1,1074 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Aug 23 11:00:58 2025
+# Process ID: 65284
+# Current directory: C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1
+# Command line: vivado.exe -log user_35t_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_35t_wrapper.tcl
+# Log file: C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/user_35t_wrapper.vds
+# Journal file: C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source user_35t_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XVITIS/Vivado/2020.2/data/ip'.
+WARNING: [filemgmt 56-12] File 'C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/imports/Release/led_blinking_bootloop.elf' cannot be added to the project because it already exists in the project, skipping this file
+INFO: [Project 1-1697] Successfully associated ELF file C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/imports/Release/led_blinking_bootloop.elf to BD user_35t and cell microblaze_0.
+INFO: [Project 1-1697] Successfully associated ELF file C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sim_1/imports/Release/led_blinking_bootloop.elf to BD user_35t and cell microblaze_0.
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 1143.383 ; gain = 0.000
+Command: synth_design -top user_35t_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 62252
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1268.801 ; gain = 125.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'user_35t_wrapper' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/imports/hdl/user_35t_wrapper.v:15]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-6157] synthesizing module 'user_35t' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4177]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_dma_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_dma_0_0' (2#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'user_35t_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4832]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'user_35t_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4832]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'user_35t_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4832]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'user_35t_axi_dma_0_0' has 43 connections declared, but only 40 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4832]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_dma_0_1' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_dma_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_dma_0_1' (3#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_dma_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'user_35t_axi_dma_0_1' is unconnected for instance 'axi_dma_16counters' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4873]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'user_35t_axi_dma_0_1' is unconnected for instance 'axi_dma_16counters' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4873]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'user_35t_axi_dma_0_1' is unconnected for instance 'axi_dma_16counters' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4873]
+WARNING: [Synth 8-7023] instance 'axi_dma_16counters' of module 'user_35t_axi_dma_0_1' has 43 connections declared, but only 40 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4873]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_emc_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_emc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_emc_0_0' (4#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_emc_0_0_stub.v:6]
+WARNING: [Synth 8-689] width (19) of port connection 'mem_a' does not match port width (32) of module 'user_35t_axi_emc_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4915]
+WARNING: [Synth 8-7071] port 'mem_ce' of module 'user_35t_axi_emc_0_0' is unconnected for instance 'axi_emc_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4914]
+WARNING: [Synth 8-7071] port 'mem_ben' of module 'user_35t_axi_emc_0_0' is unconnected for instance 'axi_emc_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4914]
+WARNING: [Synth 8-7071] port 'mem_qwen' of module 'user_35t_axi_emc_0_0' is unconnected for instance 'axi_emc_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4914]
+WARNING: [Synth 8-7071] port 'mem_rpn' of module 'user_35t_axi_emc_0_0' is unconnected for instance 'axi_emc_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4914]
+WARNING: [Synth 8-7071] port 'mem_adv_ldn' of module 'user_35t_axi_emc_0_0' is unconnected for instance 'axi_emc_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4914]
+WARNING: [Synth 8-7071] port 'mem_lbon' of module 'user_35t_axi_emc_0_0' is unconnected for instance 'axi_emc_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4914]
+WARNING: [Synth 8-7071] port 'mem_cken' of module 'user_35t_axi_emc_0_0' is unconnected for instance 'axi_emc_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4914]
+WARNING: [Synth 8-7071] port 'mem_rnw' of module 'user_35t_axi_emc_0_0' is unconnected for instance 'axi_emc_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4914]
+WARNING: [Synth 8-7071] port 'mem_cre' of module 'user_35t_axi_emc_0_0' is unconnected for instance 'axi_emc_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4914]
+WARNING: [Synth 8-7023] instance 'axi_emc_0' of module 'user_35t_axi_emc_0_0' has 51 connections declared, but only 42 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4914]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_gpio_0_1' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_gpio_0_1' (5#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_iic_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_iic_0_0' (6#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpo' of module 'user_35t_axi_iic_0_0' is unconnected for instance 'axi_iic' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4978]
+WARNING: [Synth 8-7023] instance 'axi_iic' of module 'user_35t_axi_iic_0_0' has 27 connections declared, but only 26 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4978]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_intc_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_intc_0_0' (7#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_interconnect_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6036]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_4POLXX' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:999]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_auto_ds_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_auto_ds_0' (8#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_auto_ds_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'user_35t_auto_ds_0' is unconnected for instance 'auto_ds' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1294]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'user_35t_auto_ds_0' is unconnected for instance 'auto_ds' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1294]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'user_35t_auto_ds_0' is unconnected for instance 'auto_ds' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1294]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'user_35t_auto_ds_0' is unconnected for instance 'auto_ds' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1294]
+WARNING: [Synth 8-7023] instance 'auto_ds' of module 'user_35t_auto_ds_0' has 76 connections declared, but only 72 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1294]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_4POLXX' (9#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:999]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1SUY5HZ' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3189]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1SUY5HZ' (10#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3189]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1TKO8M' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3460]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_auto_us_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_auto_us_0' (11#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'user_35t_auto_us_0' is unconnected for instance 'auto_us' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3611]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'user_35t_auto_us_0' has 40 connections declared, but only 39 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3611]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1TKO8M' (12#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3460]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1TI7GLW' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3653]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_auto_us_1' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_auto_us_1' (13#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_auto_us_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'user_35t_auto_us_1' is unconnected for instance 'auto_us' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3932]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'user_35t_auto_us_1' is unconnected for instance 'auto_us' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3932]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'user_35t_auto_us_1' has 72 connections declared, but only 70 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3932]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1TI7GLW' (14#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3653]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_WNMT1' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4005]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_auto_us_2' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_auto_us_2' (15#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_auto_us_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'user_35t_auto_us_2' is unconnected for instance 'auto_us' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4140]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'user_35t_auto_us_2' has 34 connections declared, but only 33 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4140]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_WNMT1' (16#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4005]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_xbar_4' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_xbar_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_xbar_4' (17#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_xbar_4_stub.v:6]
+WARNING: [Synth 8-689] width (3) of port connection 's_axi_awready' does not match port width (4) of module 'user_35t_xbar_4' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6955]
+WARNING: [Synth 8-689] width (6) of port connection 's_axi_bresp' does not match port width (8) of module 'user_35t_xbar_4' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6959]
+WARNING: [Synth 8-689] width (3) of port connection 's_axi_bvalid' does not match port width (4) of module 'user_35t_xbar_4' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6960]
+WARNING: [Synth 8-689] width (3) of port connection 's_axi_wready' does not match port width (4) of module 'user_35t_xbar_4' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6968]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'user_35t_xbar_4' is unconnected for instance 'xbar' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6894]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'user_35t_xbar_4' is unconnected for instance 'xbar' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6894]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'user_35t_xbar_4' has 78 connections declared, but only 76 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6894]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_interconnect_0_0' (18#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6036]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_interconnect_1_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6973]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_267VTH' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:867]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_267VTH' (19#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:867]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1SIM6GK' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1369]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1SIM6GK' (20#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1369]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_K08YE' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1494]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_K08YE' (21#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1494]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1TUJLX3' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1626]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1TUJLX3' (22#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1626]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_3GPZV7' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1758]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_3GPZV7' (23#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1758]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1R19K4Y' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1890]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1R19K4Y' (24#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:1890]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_2OGG9C' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2022]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_2OGG9C' (25#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2022]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1S36NQP' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2154]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1S36NQP' (26#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2154]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_4L0CM1' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2286]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_4L0CM1' (27#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2286]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_1YZJFW8' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2418]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_1YZJFW8' (28#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2418]
+INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_1LRRMOD' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2543]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_auto_pc_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_auto_pc_0' (29#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'user_35t_auto_pc_0' is unconnected for instance 'auto_pc' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2766]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'user_35t_auto_pc_0' is unconnected for instance 'auto_pc' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2766]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'user_35t_auto_pc_0' has 56 connections declared, but only 54 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2766]
+INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_1LRRMOD' (30#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2543]
+INFO: [Synth 8-6157] synthesizing module 'm11_couplers_imp_HL7QSS' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2823]
+INFO: [Synth 8-6155] done synthesizing module 'm11_couplers_imp_HL7QSS' (31#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:2823]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1YQ9YTZ' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3314]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1YQ9YTZ' (32#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3314]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_xbar_5' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_xbar_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_xbar_5' (33#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_xbar_5_stub.v:6]
+WARNING: [Synth 8-689] width (33) of port connection 'm_axi_arprot' does not match port width (36) of module 'user_35t_xbar_5' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:8739]
+WARNING: [Synth 8-689] width (33) of port connection 'm_axi_awprot' does not match port width (36) of module 'user_35t_xbar_5' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:8743]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_interconnect_1_0' (34#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6973]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_quad_spi_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_quad_spi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_quad_spi_0_0' (35#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_quad_spi_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'cfgclk' of module 'user_35t_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5417]
+WARNING: [Synth 8-7071] port 'cfgmclk' of module 'user_35t_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5417]
+WARNING: [Synth 8-7071] port 'eos' of module 'user_35t_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5417]
+WARNING: [Synth 8-7071] port 'preq' of module 'user_35t_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5417]
+WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'user_35t_axi_quad_spi_0_0' has 34 connections declared, but only 30 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5417]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_timer_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_timer_0_0' (36#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_traffic_gen_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_traffic_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_traffic_gen_0_0' (37#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_traffic_gen_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'err_out' of module 'user_35t_axi_traffic_gen_0_0' is unconnected for instance 'axi_traffic_gen_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5475]
+WARNING: [Synth 8-7023] instance 'axi_traffic_gen_0' of module 'user_35t_axi_traffic_gen_0_0' has 47 connections declared, but only 46 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5475]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_uartlite_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_uartlite_0_0' (38#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axis_combiner_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axis_combiner_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axis_combiner_0_0' (39#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axis_combiner_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axis_data_fifo_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axis_data_fifo_0_0' (40#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'channel_0_imp_1HF6LOH' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:12]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c_counter_binary_0_1' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c_counter_binary_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c_counter_binary_0_1' (41#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c_counter_binary_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_stream_tlaster_0_2' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_stream_tlaster_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_stream_tlaster_0_2' (42#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_stream_tlaster_0_2_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_stream_tlaster_0_2' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:57]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_stream_tlaster_0_2' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'channel_0_imp_1HF6LOH' (43#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:12]
+INFO: [Synth 8-6157] synthesizing module 'channel_1_imp_1NX0N42' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:411]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_0' (44#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_0' (45#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_0' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:456]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_0' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:456]
+INFO: [Synth 8-6155] done synthesizing module 'channel_1_imp_1NX0N42' (46#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:411]
+INFO: [Synth 8-6157] synthesizing module 'channel_10_imp_119EKIU' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:69]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_9' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_9_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_9' (47#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_9_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_9' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_9_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_9' (48#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_9_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_9' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:114]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_9' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'channel_10_imp_119EKIU' (49#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:69]
+INFO: [Synth 8-6157] synthesizing module 'channel_11_imp_14AAVJ9' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:126]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_10' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_10' (50#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_10_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_10' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_10' (51#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_10_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_10' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:171]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_10' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:171]
+INFO: [Synth 8-6155] done synthesizing module 'channel_11_imp_14AAVJ9' (52#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:126]
+INFO: [Synth 8-6157] synthesizing module 'channel_12_imp_1ATGOGW' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:183]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_11' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_11' (53#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_11_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_11' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_11' (54#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_11_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_11' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:228]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_11' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'channel_12_imp_1ATGOGW' (55#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:183]
+INFO: [Synth 8-6157] synthesizing module 'channel_13_imp_1H7MOIR' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:240]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_12' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_12_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_12' (56#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_12_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_12' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_12_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_12' (57#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_12_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_12' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:285]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_12' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:285]
+INFO: [Synth 8-6155] done synthesizing module 'channel_13_imp_1H7MOIR' (58#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:240]
+INFO: [Synth 8-6157] synthesizing module 'channel_14_imp_1OY1JZE' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:297]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_13' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_13_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_13' (59#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_13_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_13' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_13_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_13' (60#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_13_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_13' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:342]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_13' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:342]
+INFO: [Synth 8-6155] done synthesizing module 'channel_14_imp_1OY1JZE' (61#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:297]
+INFO: [Synth 8-6157] synthesizing module 'channel_15_imp_1KUCYSP' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:354]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_14' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_14_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_14' (62#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_14_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_14' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_14_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_14' (63#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_14_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_14' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:399]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_14' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:399]
+INFO: [Synth 8-6155] done synthesizing module 'channel_15_imp_1KUCYSP' (64#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:354]
+INFO: [Synth 8-6157] synthesizing module 'channel_2_imp_1U6A3LZ' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:468]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_1' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_1' (65#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_1' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_1' (66#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_1' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:513]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_1' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:513]
+INFO: [Synth 8-6155] done synthesizing module 'channel_2_imp_1U6A3LZ' (67#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:468]
+INFO: [Synth 8-6157] synthesizing module 'channel_3_imp_1X3CQYS' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:525]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_2' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_2' (68#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_2' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_2' (69#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_2_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_2' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:570]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_2' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:570]
+INFO: [Synth 8-6155] done synthesizing module 'channel_3_imp_1X3CQYS' (70#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:525]
+INFO: [Synth 8-6157] synthesizing module 'channel_4_imp_17O6IJ1' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:582]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_3' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_3' (71#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_3' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_3' (72#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_3_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_3' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:627]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_3' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:627]
+INFO: [Synth 8-6155] done synthesizing module 'channel_4_imp_17O6IJ1' (73#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:582]
+INFO: [Synth 8-6157] synthesizing module 'channel_5_imp_12BMK9A' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:639]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_4' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_4' (74#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_4' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_4' (75#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_4_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_4' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:684]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_4' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:684]
+INFO: [Synth 8-6155] done synthesizing module 'channel_5_imp_12BMK9A' (76#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:639]
+INFO: [Synth 8-6157] synthesizing module 'channel_6_imp_1DTQF2J' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:696]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_5' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_5' (77#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_5_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_5' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_5' (78#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_5_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_5' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:741]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_5' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:741]
+INFO: [Synth 8-6155] done synthesizing module 'channel_6_imp_1DTQF2J' (79#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:696]
+INFO: [Synth 8-6157] synthesizing module 'channel_7_imp_19R7YX4' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:753]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_6' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_6' (80#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_6_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_6' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_6' (81#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_6_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_6' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:798]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_6' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:798]
+INFO: [Synth 8-6155] done synthesizing module 'channel_7_imp_19R7YX4' (82#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:753]
+INFO: [Synth 8-6157] synthesizing module 'channel_8_imp_Y7STP5' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:810]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_c0_7' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_c0_7' (83#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_c0_7_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_streamer_c0_7' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_streamer_c0_7' (84#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_streamer_c0_7_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'user_35t_streamer_c0_7' is unconnected for instance 'streamer_c0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:855]
+WARNING: [Synth 8-7023] instance 'streamer_c0' of module 'user_35t_streamer_c0_7' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:855]
+INFO: [Synth 8-6155] done synthesizing module 'channel_8_imp_Y7STP5' (85#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:810]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_clk_wiz_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_clk_wiz_0_0' (86#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_init_counters_0' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_init_counters_0/synth/user_35t_init_counters_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 26 - type: integer 
+	Parameter DIN_TO bound to: 26 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (87#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_init_counters_0' (88#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_init_counters_0/synth/user_35t_init_counters_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_gpio_1_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_gpio_1_0' (89#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_gpio_1_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5757]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_ila_ch0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_ila_ch0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_ila_ch0_0' (90#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_ila_ch0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5768]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_ila_TF_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_ila_TF_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_ila_TF_0' (91#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_ila_TF_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5779]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_ila_combiner_1' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_ila_combiner_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_ila_combiner_1' (92#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_ila_combiner_1_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5790]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_ila_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_ila_0_0' (93#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_xlslice_1_0' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xlslice_1_0/synth/user_35t_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 27 - type: integer 
+	Parameter DIN_TO bound to: 27 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (93#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_xlslice_1_0' (94#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xlslice_1_0/synth/user_35t_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_xlconcat_0_0' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xlconcat_0_0/synth/user_35t_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 5 - type: integer 
+	Parameter NUM_PORTS bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (95#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_xlconcat_0_0' (96#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xlconcat_0_0/synth/user_35t_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'user_35t_axi_gpio_0_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_gpio_0_0_stub.v:6]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_axi_gpio_0_0' (97#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/.Xil/Vivado-65284-LAPTOP-IMI5H5SA/realtime/user_35t_axi_gpio_0_0_stub.v:6]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 24 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (97#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'user_35t_xlslice_0_0' (98#1) [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xlslice_0_0/synth/user_35t_xlslice_0_0.v:57]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWID' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWADDR' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWLEN' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWSIZE' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWBURST' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWLOCK' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWCACHE' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWPROT' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWQOS' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWVALID' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_WDATA' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_WSTRB' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_WLAST' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_WVALID' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_BREADY' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_ARID' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_DC_AWID' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'M_AXI_DC_ARID' of module 'user_35t_microblaze_0_0' is unconnected for instance 'microblaze_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'user_35t_microblaze_0_0' has 126 connections declared, but only 107 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5852]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'user_35t_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3101]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'user_35t_dlmb_v10_0' has 25 connections declared, but only 24 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3101]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'user_35t_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3147]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'user_35t_ilmb_v10_0' has 25 connections declared, but only 24 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:3147]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'user_35t_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5982]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'user_35t_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 9 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5982]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 28 - type: integer 
+	Parameter DIN_TO bound to: 28 - type: integer 
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 25 - type: integer 
+	Parameter DIN_TO bound to: 25 - type: integer 
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 29 - type: integer 
+	Parameter DIN_TO bound to: 29 - type: integer 
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'user_35t_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+WARNING: [Synth 8-7071] port 'channel_out' of module 'user_35t_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+WARNING: [Synth 8-7071] port 'busy_out' of module 'user_35t_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+WARNING: [Synth 8-7071] port 'eoc_out' of module 'user_35t_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+WARNING: [Synth 8-7071] port 'eos_out' of module 'user_35t_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+WARNING: [Synth 8-7071] port 'vccaux_alarm_out' of module 'user_35t_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+WARNING: [Synth 8-7071] port 'user_temp_alarm_out' of module 'user_35t_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+WARNING: [Synth 8-7071] port 'alarm_out' of module 'user_35t_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+WARNING: [Synth 8-7071] port 'muxaddr_out' of module 'user_35t_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+WARNING: [Synth 8-7023] instance 'xadc_wiz_0' of module 'user_35t_xadc_wiz_0_0' has 39 connections declared, but only 30 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6032]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+WARNING: [Synth 8-7071] port 'dout' of module 'user_35t_xlconstant_0_0' is unconnected for instance 'xlconstant_0' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6032]
+WARNING: [Synth 8-7023] instance 'xlconstant_0' of module 'user_35t_xlconstant_0_0' has 1 connections declared, but only 0 given [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6032]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_TF'. This will prevent further optimization [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5757]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_traffic_gen_0'. This will prevent further optimization [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5475]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axis_combiner_0'. This will prevent further optimization [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5545]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xadc_wiz_0'. This will prevent further optimization [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:6001]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_XADC'. This will prevent further optimization [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5768]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_ch0'. This will prevent further optimization [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5779]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'channel_1'. This will prevent further optimization [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5588]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_dma_16counters'. This will prevent further optimization [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:4873]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_combiner'. This will prevent further optimization [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/synth/user_35t.v:5790]
+INFO: [Synth 8-638] synthesizing module 'pwm' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/imports/Progetto_EPM240_ITIS_forQuartus_18.1/pwm.vhd:21]
+	Parameter sys_clk bound to: 50000000 - type: integer 
+	Parameter pwm_freq bound to: 100000 - type: integer 
+	Parameter bits_resolution bound to: 8 - type: integer 
+	Parameter phases bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pwm' (115#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/imports/Progetto_EPM240_ITIS_forQuartus_18.1/pwm.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'sine_rom' [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/imports/Progetto_EPM240_ITIS_forQuartus_18.1/sine_rom.vhd:21]
+	Parameter addr_bits bound to: 8 - type: integer 
+	Parameter data_bits bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sine_rom' (116#1) [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/imports/Progetto_EPM240_ITIS_forQuartus_18.1/sine_rom.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1350.719 ; gain = 207.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1368.641 ; gain = 225.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1368.641 ; gain = 225.258
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.240 . Memory (MB): peak = 1380.621 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_emc_0_0/user_35t_axi_emc_0_0/user_35t_axi_emc_0_0_in_context.xdc] for cell 'user_35t_i/axi_emc_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_emc_0_0/user_35t_axi_emc_0_0/user_35t_axi_emc_0_0_in_context.xdc] for cell 'user_35t_i/axi_emc_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_gpio_0_0/user_35t_axi_gpio_0_0/user_35t_axi_gpio_0_0_in_context.xdc] for cell 'user_35t_i/led_but_gpio'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_gpio_0_0/user_35t_axi_gpio_0_0/user_35t_axi_gpio_0_0_in_context.xdc] for cell 'user_35t_i/led_but_gpio'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_intc_0_0/user_35t_axi_intc_0_0/user_35t_axi_intc_0_0_in_context.xdc] for cell 'user_35t_i/axi_intc_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_intc_0_0/user_35t_axi_intc_0_0/user_35t_axi_intc_0_0_in_context.xdc] for cell 'user_35t_i/axi_intc_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_timer_0_0/user_35t_axi_timer_0_0/user_35t_axi_timer_0_0_in_context.xdc] for cell 'user_35t_i/axi_timer_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_timer_0_0/user_35t_axi_timer_0_0/user_35t_axi_timer_0_0_in_context.xdc] for cell 'user_35t_i/axi_timer_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_uartlite_0_0/user_35t_axi_uartlite_0_0/user_35t_axi_uartlite_0_0_in_context.xdc] for cell 'user_35t_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_uartlite_0_0/user_35t_axi_uartlite_0_0/user_35t_axi_uartlite_0_0_in_context.xdc] for cell 'user_35t_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_clk_wiz_0_0/user_35t_clk_wiz_0_0/user_35t_clk_wiz_0_0_in_context.xdc] for cell 'user_35t_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_clk_wiz_0_0/user_35t_clk_wiz_0_0/user_35t_clk_wiz_0_0_in_context.xdc] for cell 'user_35t_i/clk_wiz_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_mdm_1_0/user_35t_mdm_1_0/user_35t_mdm_1_0_in_context.xdc] for cell 'user_35t_i/mdm_1'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_mdm_1_0/user_35t_mdm_1_0/user_35t_mdm_1_0_in_context.xdc] for cell 'user_35t_i/mdm_1'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_microblaze_0_0/user_35t_microblaze_0_0/user_35t_microblaze_0_0_in_context.xdc] for cell 'user_35t_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_microblaze_0_0/user_35t_microblaze_0_0/user_35t_microblaze_0_0_in_context.xdc] for cell 'user_35t_i/microblaze_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_rst_clk_wiz_0_100M_0/user_35t_rst_clk_wiz_0_100M_0/user_35t_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'user_35t_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_rst_clk_wiz_0_100M_0/user_35t_rst_clk_wiz_0_100M_0/user_35t_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'user_35t_i/rst_clk_wiz_0_100M'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_dlmb_bram_if_cntlr_0/user_35t_dlmb_bram_if_cntlr_0/user_35t_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'user_35t_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_dlmb_bram_if_cntlr_0/user_35t_dlmb_bram_if_cntlr_0/user_35t_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'user_35t_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_dlmb_v10_0/user_35t_dlmb_v10_0/user_35t_dlmb_v10_0_in_context.xdc] for cell 'user_35t_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_dlmb_v10_0/user_35t_dlmb_v10_0/user_35t_dlmb_v10_0_in_context.xdc] for cell 'user_35t_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ilmb_bram_if_cntlr_0/user_35t_ilmb_bram_if_cntlr_0/user_35t_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'user_35t_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ilmb_bram_if_cntlr_0/user_35t_ilmb_bram_if_cntlr_0/user_35t_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'user_35t_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ilmb_v10_0/user_35t_ilmb_v10_0/user_35t_dlmb_v10_0_in_context.xdc] for cell 'user_35t_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ilmb_v10_0/user_35t_ilmb_v10_0/user_35t_dlmb_v10_0_in_context.xdc] for cell 'user_35t_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_lmb_bram_0/user_35t_lmb_bram_0/user_35t_lmb_bram_0_in_context.xdc] for cell 'user_35t_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_lmb_bram_0/user_35t_lmb_bram_0/user_35t_lmb_bram_0_in_context.xdc] for cell 'user_35t_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_iic_0_0/user_35t_axi_iic_0_0/user_35t_axi_iic_0_0_in_context.xdc] for cell 'user_35t_i/axi_iic'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_iic_0_0/user_35t_axi_iic_0_0/user_35t_axi_iic_0_0_in_context.xdc] for cell 'user_35t_i/axi_iic'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_quad_spi_0_0/user_35t_axi_quad_spi_0_0/user_35t_axi_quad_spi_0_0_in_context.xdc] for cell 'user_35t_i/axi_quad_spi_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_quad_spi_0_0/user_35t_axi_quad_spi_0_0/user_35t_axi_quad_spi_0_0_in_context.xdc] for cell 'user_35t_i/axi_quad_spi_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xadc_wiz_0_0/user_35t_xadc_wiz_0_0/user_35t_xadc_wiz_0_0_in_context.xdc] for cell 'user_35t_i/xadc_wiz_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xadc_wiz_0_0/user_35t_xadc_wiz_0_0/user_35t_xadc_wiz_0_0_in_context.xdc] for cell 'user_35t_i/xadc_wiz_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_dma_0_0/user_35t_axi_dma_0_0/user_35t_axi_dma_0_0_in_context.xdc] for cell 'user_35t_i/axi_dma_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_dma_0_0/user_35t_axi_dma_0_0/user_35t_axi_dma_0_0_in_context.xdc] for cell 'user_35t_i/axi_dma_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_gpio_0_1/user_35t_axi_gpio_0_1/user_35t_axi_gpio_0_1_in_context.xdc] for cell 'user_35t_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_gpio_0_1/user_35t_axi_gpio_0_1/user_35t_axi_gpio_0_1_in_context.xdc] for cell 'user_35t_i/axi_gpio_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axis_combiner_0_0/user_35t_axis_combiner_0_0/user_35t_axis_combiner_0_0_in_context.xdc] for cell 'user_35t_i/axis_combiner_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axis_combiner_0_0/user_35t_axis_combiner_0_0/user_35t_axis_combiner_0_0_in_context.xdc] for cell 'user_35t_i/axis_combiner_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c_counter_binary_0_1/user_35t_c_counter_binary_0_1/user_35t_c_counter_binary_0_1_in_context.xdc] for cell 'user_35t_i/channel_0/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c_counter_binary_0_1/user_35t_c_counter_binary_0_1/user_35t_c_counter_binary_0_1_in_context.xdc] for cell 'user_35t_i/channel_0/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_stream_tlaster_0_2/user_35t_stream_tlaster_0_2/user_35t_stream_tlaster_0_2_in_context.xdc] for cell 'user_35t_i/channel_0/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_stream_tlaster_0_2/user_35t_stream_tlaster_0_2/user_35t_stream_tlaster_0_2_in_context.xdc] for cell 'user_35t_i/channel_0/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_0/user_35t_c0_0/user_35t_c0_0_in_context.xdc] for cell 'user_35t_i/channel_1/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_0/user_35t_c0_0/user_35t_c0_0_in_context.xdc] for cell 'user_35t_i/channel_1/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_0/user_35t_streamer_c0_0/user_35t_streamer_c0_0_in_context.xdc] for cell 'user_35t_i/channel_1/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_0/user_35t_streamer_c0_0/user_35t_streamer_c0_0_in_context.xdc] for cell 'user_35t_i/channel_1/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_1/user_35t_c0_1/user_35t_c0_1_in_context.xdc] for cell 'user_35t_i/channel_2/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_1/user_35t_c0_1/user_35t_c0_1_in_context.xdc] for cell 'user_35t_i/channel_2/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_1/user_35t_streamer_c0_1/user_35t_streamer_c0_1_in_context.xdc] for cell 'user_35t_i/channel_2/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_1/user_35t_streamer_c0_1/user_35t_streamer_c0_1_in_context.xdc] for cell 'user_35t_i/channel_2/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_2/user_35t_c0_2/user_35t_c0_2_in_context.xdc] for cell 'user_35t_i/channel_3/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_2/user_35t_c0_2/user_35t_c0_2_in_context.xdc] for cell 'user_35t_i/channel_3/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_2/user_35t_streamer_c0_2/user_35t_streamer_c0_2_in_context.xdc] for cell 'user_35t_i/channel_3/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_2/user_35t_streamer_c0_2/user_35t_streamer_c0_2_in_context.xdc] for cell 'user_35t_i/channel_3/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_4/user_35t_c0_4/user_35t_c0_4_in_context.xdc] for cell 'user_35t_i/channel_5/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_4/user_35t_c0_4/user_35t_c0_4_in_context.xdc] for cell 'user_35t_i/channel_5/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_4/user_35t_streamer_c0_4/user_35t_streamer_c0_4_in_context.xdc] for cell 'user_35t_i/channel_5/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_4/user_35t_streamer_c0_4/user_35t_streamer_c0_4_in_context.xdc] for cell 'user_35t_i/channel_5/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_5/user_35t_c0_5/user_35t_c0_5_in_context.xdc] for cell 'user_35t_i/channel_6/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_5/user_35t_c0_5/user_35t_c0_5_in_context.xdc] for cell 'user_35t_i/channel_6/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_5/user_35t_streamer_c0_5/user_35t_streamer_c0_5_in_context.xdc] for cell 'user_35t_i/channel_6/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_5/user_35t_streamer_c0_5/user_35t_streamer_c0_5_in_context.xdc] for cell 'user_35t_i/channel_6/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_6/user_35t_c0_6/user_35t_c0_6_in_context.xdc] for cell 'user_35t_i/channel_7/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_6/user_35t_c0_6/user_35t_c0_6_in_context.xdc] for cell 'user_35t_i/channel_7/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_6/user_35t_streamer_c0_6/user_35t_streamer_c0_6_in_context.xdc] for cell 'user_35t_i/channel_7/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_6/user_35t_streamer_c0_6/user_35t_streamer_c0_6_in_context.xdc] for cell 'user_35t_i/channel_7/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_7/user_35t_c0_7/user_35t_c0_7_in_context.xdc] for cell 'user_35t_i/channel_8/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_7/user_35t_c0_7/user_35t_c0_7_in_context.xdc] for cell 'user_35t_i/channel_8/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_7/user_35t_streamer_c0_7/user_35t_streamer_c0_7_in_context.xdc] for cell 'user_35t_i/channel_8/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_7/user_35t_streamer_c0_7/user_35t_streamer_c0_7_in_context.xdc] for cell 'user_35t_i/channel_8/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_9/user_35t_c0_9/user_35t_c0_9_in_context.xdc] for cell 'user_35t_i/channel_10/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_9/user_35t_c0_9/user_35t_c0_9_in_context.xdc] for cell 'user_35t_i/channel_10/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_9/user_35t_streamer_c0_9/user_35t_streamer_c0_9_in_context.xdc] for cell 'user_35t_i/channel_10/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_9/user_35t_streamer_c0_9/user_35t_streamer_c0_9_in_context.xdc] for cell 'user_35t_i/channel_10/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_10/user_35t_c0_10/user_35t_c0_10_in_context.xdc] for cell 'user_35t_i/channel_11/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_10/user_35t_c0_10/user_35t_c0_10_in_context.xdc] for cell 'user_35t_i/channel_11/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_10/user_35t_streamer_c0_10/user_35t_streamer_c0_10_in_context.xdc] for cell 'user_35t_i/channel_11/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_10/user_35t_streamer_c0_10/user_35t_streamer_c0_10_in_context.xdc] for cell 'user_35t_i/channel_11/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_11/user_35t_c0_11/user_35t_c0_11_in_context.xdc] for cell 'user_35t_i/channel_12/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_11/user_35t_c0_11/user_35t_c0_11_in_context.xdc] for cell 'user_35t_i/channel_12/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_11/user_35t_streamer_c0_11/user_35t_streamer_c0_11_in_context.xdc] for cell 'user_35t_i/channel_12/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_11/user_35t_streamer_c0_11/user_35t_streamer_c0_11_in_context.xdc] for cell 'user_35t_i/channel_12/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_12/user_35t_c0_12/user_35t_c0_12_in_context.xdc] for cell 'user_35t_i/channel_13/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_12/user_35t_c0_12/user_35t_c0_12_in_context.xdc] for cell 'user_35t_i/channel_13/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_12/user_35t_streamer_c0_12/user_35t_streamer_c0_12_in_context.xdc] for cell 'user_35t_i/channel_13/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_12/user_35t_streamer_c0_12/user_35t_streamer_c0_12_in_context.xdc] for cell 'user_35t_i/channel_13/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_13/user_35t_c0_13/user_35t_c0_13_in_context.xdc] for cell 'user_35t_i/channel_14/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_13/user_35t_c0_13/user_35t_c0_13_in_context.xdc] for cell 'user_35t_i/channel_14/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_13/user_35t_streamer_c0_13/user_35t_streamer_c0_13_in_context.xdc] for cell 'user_35t_i/channel_14/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_13/user_35t_streamer_c0_13/user_35t_streamer_c0_13_in_context.xdc] for cell 'user_35t_i/channel_14/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_14/user_35t_c0_14/user_35t_c0_14_in_context.xdc] for cell 'user_35t_i/channel_15/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_14/user_35t_c0_14/user_35t_c0_14_in_context.xdc] for cell 'user_35t_i/channel_15/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_14/user_35t_streamer_c0_14/user_35t_streamer_c0_14_in_context.xdc] for cell 'user_35t_i/channel_15/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_14/user_35t_streamer_c0_14/user_35t_streamer_c0_14_in_context.xdc] for cell 'user_35t_i/channel_15/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_3/user_35t_c0_3/user_35t_c0_3_in_context.xdc] for cell 'user_35t_i/channel_4/c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_c0_3/user_35t_c0_3/user_35t_c0_3_in_context.xdc] for cell 'user_35t_i/channel_4/c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_3/user_35t_streamer_c0_3/user_35t_streamer_c0_3_in_context.xdc] for cell 'user_35t_i/channel_4/streamer_c0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_streamer_c0_3/user_35t_streamer_c0_3/user_35t_streamer_c0_3_in_context.xdc] for cell 'user_35t_i/channel_4/streamer_c0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_dma_0_1/user_35t_axi_dma_0_1/user_35t_axi_dma_0_1_in_context.xdc] for cell 'user_35t_i/axi_dma_16counters'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_dma_0_1/user_35t_axi_dma_0_1/user_35t_axi_dma_0_1_in_context.xdc] for cell 'user_35t_i/axi_dma_16counters'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ila_0_0/user_35t_ila_0_0/user_35t_ila_0_0_in_context.xdc] for cell 'user_35t_i/ila_combiner'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ila_0_0/user_35t_ila_0_0/user_35t_ila_0_0_in_context.xdc] for cell 'user_35t_i/ila_combiner'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ila_combiner_1/user_35t_ila_combiner_1/user_35t_ila_combiner_1_in_context.xdc] for cell 'user_35t_i/ila_ch0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ila_combiner_1/user_35t_ila_combiner_1/user_35t_ila_combiner_1_in_context.xdc] for cell 'user_35t_i/ila_ch0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xbar_4/user_35t_xbar_4/user_35t_xbar_4_in_context.xdc] for cell 'user_35t_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xbar_4/user_35t_xbar_4/user_35t_xbar_4_in_context.xdc] for cell 'user_35t_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xbar_5/user_35t_xbar_5/user_35t_xbar_5_in_context.xdc] for cell 'user_35t_i/axi_interconnect_1/xbar'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_xbar_5/user_35t_xbar_5/user_35t_xbar_5_in_context.xdc] for cell 'user_35t_i/axi_interconnect_1/xbar'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ip/user_35t_axi_traffic_gen_0_0/user_35t_axi_traffic_gen_0_0/user_35t_axi_traffic_gen_0_0_in_context.xdc] for cell 'user_35t_i/axi_traffic_gen_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v1/McDMA_v1.srcs/sources_1/bd/user_35t/ip/user_35t_axi_traffic_gen_0_0/user_35t_axi_traffic_gen_0_0/user_35t_axi_traffic_gen_0_0_in_context.xdc] for cell 'user_35t_i/axi_traffic_gen_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ila_ch0_0/user_35t_ila_ch0_0/user_35t_ila_ch0_0_in_context.xdc] for cell 'user_35t_i/ila_TF'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ila_ch0_0/user_35t_ila_ch0_0/user_35t_ila_ch0_0_in_context.xdc] for cell 'user_35t_i/ila_TF'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ila_TF_0/user_35t_ila_TF_0/user_35t_ila_TF_0_in_context.xdc] for cell 'user_35t_i/ila_XADC'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_ila_TF_0/user_35t_ila_TF_0/user_35t_ila_TF_0_in_context.xdc] for cell 'user_35t_i/ila_XADC'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axis_data_fifo_0_0/user_35t_axis_data_fifo_0_0/user_35t_axis_data_fifo_0_0_in_context.xdc] for cell 'user_35t_i/axis_data_fifo_0'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axis_data_fifo_0_0/user_35t_axis_data_fifo_0_0/user_35t_axis_data_fifo_0_0_in_context.xdc] for cell 'user_35t_i/axis_data_fifo_0'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_gpio_1_0/user_35t_axi_gpio_1_0/user_35t_axi_gpio_1_0_in_context.xdc] for cell 'user_35t_i/gpio_1_cnt_axidata_fifo'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_axi_gpio_1_0/user_35t_axi_gpio_1_0/user_35t_axi_gpio_1_0_in_context.xdc] for cell 'user_35t_i/gpio_1_cnt_axidata_fifo'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_auto_us_0/user_35t_auto_us_0/user_35t_auto_us_0_in_context.xdc] for cell 'user_35t_i/axi_interconnect_0/s01_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_auto_us_0/user_35t_auto_us_0/user_35t_auto_us_0_in_context.xdc] for cell 'user_35t_i/axi_interconnect_0/s01_couplers/auto_us'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_auto_us_1/user_35t_auto_us_1/user_35t_auto_us_1_in_context.xdc] for cell 'user_35t_i/axi_interconnect_0/s02_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_auto_us_1/user_35t_auto_us_1/user_35t_auto_us_1_in_context.xdc] for cell 'user_35t_i/axi_interconnect_0/s02_couplers/auto_us'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_auto_us_2/user_35t_auto_us_2/user_35t_auto_us_2_in_context.xdc] for cell 'user_35t_i/axi_interconnect_0/s03_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_auto_us_2/user_35t_auto_us_2/user_35t_auto_us_2_in_context.xdc] for cell 'user_35t_i/axi_interconnect_0/s03_couplers/auto_us'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_auto_ds_0/user_35t_auto_ds_0/user_35t_auto_ds_0_in_context.xdc] for cell 'user_35t_i/axi_interconnect_0/m00_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_auto_ds_0/user_35t_auto_ds_0/user_35t_auto_ds_0_in_context.xdc] for cell 'user_35t_i/axi_interconnect_0/m00_couplers/auto_ds'
+Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_auto_pc_0/user_35t_auto_pc_0/user_35t_auto_pc_0_in_context.xdc] for cell 'user_35t_i/axi_interconnect_1/m10_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_auto_pc_0/user_35t_auto_pc_0/user_35t_auto_pc_0_in_context.xdc] for cell 'user_35t_i/axi_interconnect_1/m10_couplers/auto_pc'
+Parsing XDC File [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc]
+Finished Parsing XDC File [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/user_35t_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/user_35t_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1474.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 15 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1474.320 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'user_35t_i/axi_quad_spi_0' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'user_35t_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1474.340 ; gain = 330.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1474.340 ; gain = 330.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_clk_wiz_0_0/user_35t_clk_wiz_0_0/user_35t_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.srcs/sources_1/bd/user_35t/ip/user_35t_clk_wiz_0_0/user_35t_clk_wiz_0_0/user_35t_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_emc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/led_but_gpio. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_intc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/interrupt_gatherer. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_iic. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_quad_spi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_dma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/max_size_packet_24_to_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/start_sig_25. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/init_counters_27. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axis_combiner_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_0/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_0/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_1/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_1/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_2/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_2/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_3/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_3/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_5/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_5/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_6/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_6/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_7/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_7/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_8/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_8/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_10/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_10/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_11/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_11/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_12/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_12/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_13/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_13/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_14/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_14/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_15/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_15/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_4/c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/channel_4/streamer_c0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_dma_16counters. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/ila_combiner. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/ila_ch0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/enable_counters_26. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_interconnect_1/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_interconnect_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_traffic_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/start_TF_28. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/stop_TF_29. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/ila_TF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/ila_XADC. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axis_data_fifo_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/gpio_1_cnt_axidata_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_interconnect_0/s01_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_interconnect_0/s02_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_interconnect_0/s03_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_interconnect_0/m00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for user_35t_i/axi_interconnect_1/m10_couplers/auto_pc. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1474.340 ; gain = 330.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1474.340 ; gain = 330.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	               8x32  Multipliers := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP pwm0/half_duty_new_reg, operation Mode is: ((A:0x1f4)*B2)'.
+DSP Report: register sine_rom0/data_reg is absorbed into DSP pwm0/half_duty_new_reg.
+DSP Report: register pwm0/half_duty_new_reg is absorbed into DSP pwm0/half_duty_new_reg.
+DSP Report: operator pwm0/half_duty_new2 is absorbed into DSP pwm0/half_duty_new_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1474.340 ; gain = 330.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-----------------+------------------+---------------+----------------+
+|Module Name      | RTL Object       | Depth x Width | Implemented As | 
++-----------------+------------------+---------------+----------------+
+|user_35t_wrapper | sine_rom0/rom[0] | 256x8         | LUT            | 
++-----------------+------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping	Report (see note below)
++-----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|user_35t_wrapper | ((A:0x1f4)*B2)' | 8      | 17     | -      | -      | 17     | 1    | 0    | -    | -    | -     | 1    | 0    | 
++-----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1474.340 ; gain = 330.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1481.020 ; gain = 337.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1483.047 ; gain = 339.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1487.852 ; gain = 344.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1487.852 ; gain = 344.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1487.852 ; gain = 344.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1487.852 ; gain = 344.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1487.852 ; gain = 344.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1487.852 ; gain = 344.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |user_35t_xbar_4               |         1|
+|2     |user_35t_auto_ds_0            |         1|
+|3     |user_35t_auto_us_0            |         1|
+|4     |user_35t_auto_us_1            |         1|
+|5     |user_35t_auto_us_2            |         1|
+|6     |user_35t_xbar_5               |         1|
+|7     |user_35t_auto_pc_0            |         1|
+|8     |user_35t_c0_0                 |         1|
+|9     |user_35t_streamer_c0_0        |         1|
+|10    |user_35t_axi_dma_0_0          |         1|
+|11    |user_35t_axi_dma_0_1          |         1|
+|12    |user_35t_axi_emc_0_0          |         1|
+|13    |user_35t_axi_gpio_0_1         |         1|
+|14    |user_35t_axi_iic_0_0          |         1|
+|15    |user_35t_axi_intc_0_0         |         1|
+|16    |user_35t_axi_quad_spi_0_0     |         1|
+|17    |user_35t_axi_timer_0_0        |         1|
+|18    |user_35t_axi_traffic_gen_0_0  |         1|
+|19    |user_35t_axi_uartlite_0_0     |         1|
+|20    |user_35t_axis_combiner_0_0    |         1|
+|21    |user_35t_axis_data_fifo_0_0   |         1|
+|22    |user_35t_clk_wiz_0_0          |         1|
+|23    |user_35t_axi_gpio_1_0         |         1|
+|24    |user_35t_ila_ch0_0            |         1|
+|25    |user_35t_ila_TF_0             |         1|
+|26    |user_35t_ila_combiner_1       |         1|
+|27    |user_35t_ila_0_0              |         1|
+|28    |user_35t_axi_gpio_0_0         |         1|
+|29    |user_35t_mdm_1_0              |         1|
+|30    |user_35t_microblaze_0_0       |         1|
+|31    |user_35t_rst_clk_wiz_0_100M_0 |         1|
+|32    |user_35t_xadc_wiz_0_0         |         1|
+|33    |user_35t_c_counter_binary_0_1 |         1|
+|34    |user_35t_stream_tlaster_0_2   |         1|
+|35    |user_35t_c0_9                 |         1|
+|36    |user_35t_streamer_c0_9        |         1|
+|37    |user_35t_c0_10                |         1|
+|38    |user_35t_streamer_c0_10       |         1|
+|39    |user_35t_c0_11                |         1|
+|40    |user_35t_streamer_c0_11       |         1|
+|41    |user_35t_c0_12                |         1|
+|42    |user_35t_streamer_c0_12       |         1|
+|43    |user_35t_c0_13                |         1|
+|44    |user_35t_streamer_c0_13       |         1|
+|45    |user_35t_c0_14                |         1|
+|46    |user_35t_streamer_c0_14       |         1|
+|47    |user_35t_c0_1                 |         1|
+|48    |user_35t_streamer_c0_1        |         1|
+|49    |user_35t_c0_2                 |         1|
+|50    |user_35t_streamer_c0_2        |         1|
+|51    |user_35t_c0_3                 |         1|
+|52    |user_35t_streamer_c0_3        |         1|
+|53    |user_35t_c0_4                 |         1|
+|54    |user_35t_streamer_c0_4        |         1|
+|55    |user_35t_c0_5                 |         1|
+|56    |user_35t_streamer_c0_5        |         1|
+|57    |user_35t_c0_6                 |         1|
+|58    |user_35t_streamer_c0_6        |         1|
+|59    |user_35t_c0_7                 |         1|
+|60    |user_35t_streamer_c0_7        |         1|
+|61    |user_35t_dlmb_bram_if_cntlr_0 |         1|
+|62    |user_35t_dlmb_v10_0           |         1|
+|63    |user_35t_ilmb_bram_if_cntlr_0 |         1|
+|64    |user_35t_ilmb_v10_0           |         1|
+|65    |user_35t_lmb_bram_0           |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |user_35t_auto_ds            |     1|
+|2     |user_35t_auto_pc            |     1|
+|3     |user_35t_auto_us            |     3|
+|6     |user_35t_axi_dma_0          |     2|
+|8     |user_35t_axi_emc_0          |     1|
+|9     |user_35t_axi_gpio_0         |     2|
+|11    |user_35t_axi_gpio_1         |     1|
+|12    |user_35t_axi_iic_0          |     1|
+|13    |user_35t_axi_intc_0         |     1|
+|14    |user_35t_axi_quad_spi_0     |     1|
+|15    |user_35t_axi_timer_0        |     1|
+|16    |user_35t_axi_traffic_gen_0  |     1|
+|17    |user_35t_axi_uartlite_0     |     1|
+|18    |user_35t_axis_combiner_0    |     1|
+|19    |user_35t_axis_data_fifo_0   |     1|
+|20    |user_35t_c0                 |    14|
+|34    |user_35t_c_counter_binary_0 |     1|
+|35    |user_35t_clk_wiz_0          |     1|
+|36    |user_35t_dlmb_bram_if_cntlr |     1|
+|37    |user_35t_dlmb_v10           |     1|
+|38    |user_35t_ila_0              |     1|
+|39    |user_35t_ila_TF             |     1|
+|40    |user_35t_ila_ch0            |     1|
+|41    |user_35t_ila_combiner       |     1|
+|42    |user_35t_ilmb_bram_if_cntlr |     1|
+|43    |user_35t_ilmb_v10           |     1|
+|44    |user_35t_lmb_bram           |     1|
+|45    |user_35t_mdm_1              |     1|
+|46    |user_35t_microblaze_0       |     1|
+|47    |user_35t_rst_clk_wiz_0_100M |     1|
+|48    |user_35t_stream_tlaster_0   |     1|
+|49    |user_35t_streamer_c0        |    14|
+|63    |user_35t_xadc_wiz_0         |     1|
+|64    |user_35t_xbar               |     2|
+|66    |CARRY4                      |     9|
+|67    |DSP48E1                     |     1|
+|68    |LUT1                        |     3|
+|69    |LUT2                        |     4|
+|70    |LUT3                        |     3|
+|71    |LUT4                        |     5|
+|72    |LUT5                        |     8|
+|73    |LUT6                        |    33|
+|74    |MUXF7                       |    12|
+|75    |MUXF8                       |     5|
+|76    |FDCE                        |    36|
+|77    |IBUF                        |    12|
+|78    |IOBUF                       |    15|
+|79    |OBUF                        |    29|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1487.852 ; gain = 344.469
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 1487.852 ; gain = 238.770
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1487.852 ; gain = 344.469
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1487.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1500.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 15 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+238 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 1500.832 ; gain = 357.449
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ilpes/Desktop/INSEGNAMENTO/Didattica2023/McDMA/McDMA_v3/McDMA_v3.runs/synth_1/user_35t_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file user_35t_wrapper_utilization_synth.rpt -pb user_35t_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 23 11:02:36 2025...

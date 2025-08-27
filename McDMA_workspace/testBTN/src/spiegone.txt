@@ -1,0 +1,13 @@
+Allora questo codice, compilato come ELF release, fa le seguenti cose.
+Si tratta di un esempio di interrupt di livello sul pushbutton1. Tutte le volte che il tasto viene premuto viene eseguito un
+trasferimento (simple) dall'XADC di 100 records da 2 bytes ciascuno nella locazione di memoria esterna all'indirizzo 0x60007000.
+L'indirizzo può essere cambiato nella definizione DMA_RX_BUFFER_ADDR.
+
+1)Caricare il fw (C:/Users/ilpes/Desktop/Antenne_e_clocks/McDMA_workspace/McDMA_v4_fast_logic/hw/McDMA_v4_fast_logic.bit)
+2)Lanciare l'elf in modalità Release ma con perspective DEBUG e andare a spiare la memoria (Memory section di SDK) all'indirizzo
+DMA_RX_BUFFER_ADDR
+3)premere il pulsante e mettere in pause l'esecuzione dell'elf
+4)Nel monitor della memoria compariranno 100 numeri in rosso, valori che sono stati aggiornati dalla DMA engine.
+
+27 Agosto 2025
+Pesse
