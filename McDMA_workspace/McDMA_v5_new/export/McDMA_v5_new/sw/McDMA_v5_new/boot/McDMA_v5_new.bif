@@ -1,0 +1,6 @@
+/*McDMA_v5_new*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}
