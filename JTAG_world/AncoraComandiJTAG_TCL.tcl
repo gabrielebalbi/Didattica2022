@@ -20,6 +20,22 @@ program_hw_devices [lindex [get_hw_devices] 0]; ## PROGRAM!!!!
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]  ;## controlla le ila istanziate
 
 
+
+#############################################
+####   LETTURA DNA FUSE  				 ####
+#############################################
+
+set DEV [get_hw_devices]
+puts $DEV
+refresh_hw_device -quiet $DEV
+## get_property PROGRAM.IS_SUPPORTED $DEV
+set DNA_HEX [get_property REGISTER.EFUSE.FUSE_DNA $DEV]
+puts "FPGA  DNA(hex)=$DNA_HEX"
+
+
+
+
+
 #############################################
 ####   metodo                      JTAG  ####
 #############################################
