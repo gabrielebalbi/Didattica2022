@@ -71,7 +71,7 @@ run_state_hw_jtag IDLE
 run_state_hw_jtag RESET
 run_state_hw_jtag IDLE
 #CMD_IN
-scan_ir_hw_jtag 32 -tdi 00900000
+scan_ir_hw_jtag 6 -tdi 9
 
 run_state_hw_jtag RESET
 run_state_hw_jtag IDLE
