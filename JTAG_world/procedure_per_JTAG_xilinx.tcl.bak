@@ -1,0 +1,285 @@
+scan_ir_hw_jtag 6 -tdi 5
+scan_dr_hw_jtag 32 -tdi FFFFFFFF
+scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+
+
+scan_dr_hw_jtag 128 -tdi 00000004480000008001000c00000004 ; # BSPI read  
+
+scan_dr_hw_jtag 128 -tdi 00000004000000008001000c00000004 ; # NULL
+
+scan_dr_hw_jtag 128 -tdi 00000004e00000008001000c00000004 ; # RCRC
+
+scan_dr_hw_jtag 128 -tdi 00000004c00000008001000c00000004 ;# DGHIGH
+
+scan_dr_hw_jtag 128 -tdi 00000004a00000008001000c00000004 ;# START 
+
+scan_dr_hw_jtag 128 -tdi 00000004e00000008001000c00000004 ; # RCRC
+
+scan_dr_hw_jtag 128 -tdi 00000004b00000008001000c00000004 ;# DESYNC
+
+
+scan_ir_hw_jtag 6 -tdi 5
+scan_dr_hw_jtag 32 -tdi FFFFFFFF
+scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+
+scan_dr_hw_jtag 128 -tdi 00000004080000008001000C00000004; # CRCC
+
+
+
+proc dghigh {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+
+	scan_dr_hw_jtag 128 -tdi 00000004c00000008001000c00000004 ;# DGHIGH
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+}
+
+
+proc shutdown {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+	
+	scan_dr_hw_jtag 128 -tdi 00000004d00000008001000C00000004;  #SHUTDOWN
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+
+proc aghigh {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop	
+	scan_dr_hw_jtag 128 -tdi  00000004100000008001000C00000004; #AGHIGH
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+proc crcc {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+
+	scan_dr_hw_jtag 128 -tdi 00000004080000008001000C00000004; # CRCC
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+proc start {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+	scan_dr_hw_jtag 128 -tdi 00000004a00000008001000c00000004 ;# START 
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+
+proc desynch {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	
+	
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+	scan_dr_hw_jtag 128 -tdi 00000004b00000008001000c00000004 ;# DESYNC
+	
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+proc iprog {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+	scan_dr_hw_jtag 128 -tdi 00000004F00000008001000C00000004 ;# IPROG
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+
+proc switcho {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+
+	scan_dr_hw_jtag 128 -tdi 00000004900000008001000C00000004 ;# SWITCH
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+proc fall {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+
+	scan_dr_hw_jtag 128 -tdi 00000004C80000008001000C00000004 ;# FALL
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+proc bspi_read {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+	scan_dr_hw_jtag 128 -tdi 00000004480000008001000c00000004 ; # BSPI read  
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+
+proc ltimer {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop	
+	scan_dr_hw_jtag 128 -tdi  00000004880000008001000C00000004; #LTIMER
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+proc null {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop	
+	scan_dr_hw_jtag 128 -tdi  00000004000000008001000C00000004; #NULL
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+proc lfrm {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop	
+	scan_dr_hw_jtag 128 -tdi  00000004C00000008001000C00000004; #LFRM
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+proc rcfg {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop	
+	scan_dr_hw_jtag 128 -tdi  00000004400000008001000C00000004; #LFRM
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+
+proc uram {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop	
+	scan_dr_hw_jtag 128 -tdi  00000004600000008001000C00000004; #LFRM
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+
+
+proc rcrc {} {
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+	scan_ir_hw_jtag 6 -tdi 5
+	scan_dr_hw_jtag 32 -tdi FFFFFFFF
+	scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+	scan_dr_hw_jtag 32 -tdi 00000004 ; # nop	
+	scan_dr_hw_jtag 128 -tdi  00000004e00000008001000C00000004; #NULL
+	run_state_hw_jtag RESET
+	run_state_hw_jtag IDLE
+
+}
+
+
+proc ripartenza{} {
+	bspi_read 
+	null
+	rcrc
+	switcho
+	wcfg
+	dghigh
+	start
+	desynch
+}    # NULL
+    
+     # RCRC
+    
+    # SWITCH
+    
+    ;# WCFG
+    
+    # GRESTORE 
+    
+    # DGHIGH
+    
+    # START 
+    
+    
+    # DESYNC

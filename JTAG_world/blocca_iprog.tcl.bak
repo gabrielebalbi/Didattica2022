@@ -1,0 +1,22 @@
+run_state_hw_jtag RESET
+run_state_hw_jtag IDLE
+scan_ir_hw_jtag 6 -tdi 5
+
+ 
+
+
+run_state_hw_jtag DRPAUSE
+scan_dr_hw_jtag 32 -tdi FFFFFFFF
+scan_dr_hw_jtag 32 -tdi 66AA9955 ; # sync   
+scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+scan_dr_hw_jtag 32 -tdi 8001000C ; # scrivi 1 parola a cmd
+scan_dr_hw_jtag 32 -tdi F0000000 ; # scrivi  codice comando
+scan_dr_hw_jtag 32 -tdi 00000004 ; # nop
+
+
+
+
+#CMD_OUT
+
+scan_ir_hw_jtag 6 -tdi 4
+scan_dr_hw_jtag 32 -tdi 0
