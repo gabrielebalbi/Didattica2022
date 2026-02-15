@@ -1,0 +1,16 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/uart_data_reg[4]/D|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/uart_data_reg[5]/D|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/uart_data_reg[1]/D|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/uart_data_reg[6]/D|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/uart_data_reg[0]/D|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/uart_data_reg[2]/D|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/uart_data_reg[3]/D|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                   converter/FSM_sequential_state_reg[0]/D|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/char_idx_reg[0]/CE|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/char_idx_reg[2]/CE|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/char_idx_reg[3]/CE|
+|           clk_out1_PLL_A |              sys_clk_pin |                                                                              converter/char_idx_reg[1]/CE|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

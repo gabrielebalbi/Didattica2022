@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/sim/axi_gpio_0.vhd" \
+
+nosort

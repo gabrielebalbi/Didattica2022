@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb 13 12:03:54 2026
+# Process ID: 25272
+# Current directory: C:/Users/ilpes/TDC_a35t/TDC_a35t_v3/TDC_a35t_v3.runs/synth_1
+# Command line: vivado.exe -log TDCchannel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TDCchannel.tcl
+# Log file: C:/Users/ilpes/TDC_a35t/TDC_a35t_v3/TDC_a35t_v3.runs/synth_1/TDCchannel.vds
+# Journal file: C:/Users/ilpes/TDC_a35t/TDC_a35t_v3/TDC_a35t_v3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TDCchannel.tcl -notrace

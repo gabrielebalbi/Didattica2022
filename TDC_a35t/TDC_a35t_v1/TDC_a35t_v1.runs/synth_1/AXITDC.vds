@@ -1,0 +1,1210 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 24 23:55:15 2025
+# Process ID: 27380
+# Current directory: C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.runs/synth_1
+# Command line: vivado.exe -log AXITDC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXITDC.tcl
+# Log file: C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.runs/synth_1/AXITDC.vds
+# Journal file: C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AXITDC.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1104.684 ; gain = 0.000
+Command: synth_design -top AXITDC -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32600
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1182.742 ; gain = 78.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AXITDC' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/AXITDC.v:8]
+	Parameter NTaps bound to: 192 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_gpio_0' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/synth/axi_gpio_0.vhd:85]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 2 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/synth/axi_gpio_0.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 2 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000111111111 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 9 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b00 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b01 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b10 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b11 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+	Parameter C_DW bound to: 32 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 2 - type: integer 
+	Parameter C_MAX_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-226] default block is never used [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 0 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio_0' (8#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/synth/axi_gpio_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_0' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:108]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 4096 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31357' bound to instance 'U0' of component 'axi_bram_ctrl' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:263]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 4096 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
+	Parameter C_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'full_axi' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+	Parameter C_ENABLE_AXI_CTRL_REG_IF bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+WARNING: [Synth 8-6774] Null subtype or type declaration found [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350]
+INFO: [Synth 8-3919] null assignment ignored [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350]
+INFO: [Synth 8-638] synthesizing module 'sng_port_arb' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11456]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sng_port_arb' (9#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11456]
+INFO: [Synth 8-638] synthesizing module 'wr_chnl' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159]
+	Parameter C_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_NARROW bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-506] null port 'FaultInjectECC' ignored [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24126]
+INFO: [Synth 8-638] synthesizing module 'wrap_brst' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455]
+	Parameter C_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'wrap_brst' (10#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:133]
+	Parameter C_DATA_BITS bound to: 12 - type: integer 
+	Parameter C_DEPTH bound to: 8 - type: integer 
+	Parameter C_XON bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'FDR' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13711' bound to instance 'Data_Exists_DFF' of component 'FDR' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:230]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13711]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (11#1) [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13711]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (12#1) [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-6157] synthesizing module 'XORCY' [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372]
+INFO: [Synth 8-6155] done synthesizing module 'XORCY' (13#1) [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (14#1) [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372' bound to instance 'XORCY_I' of component 'XORCY' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724' bound to instance 'FDRE_I' of component 'FDRE' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (15#1) [C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/XVITIS/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (16#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'wr_chnl' (17#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30020]
+INFO: [Synth 8-638] synthesizing module 'rd_chnl' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14746]
+	Parameter C_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_NARROW bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rd_chnl' (18#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14746]
+INFO: [Synth 8-256] done synthesizing module 'full_axi' (19#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (20#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (21#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_0' (22#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:78]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 1 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 4096 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 4096 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_RSTB bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 64 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 64 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 4 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     20.9432 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/blk_mem_gen_0/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:253]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (33#1) [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'TDCchannel' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/TDCchannel.vhd:60]
+	Parameter NTaps bound to: 192 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delayLine' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:42]
+	Parameter NTaps bound to: 192 - type: integer 
+INFO: [Synth 8-113] binding component instance 'firstCarry' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:88]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'risingEdgeDetector' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/risingEdgeDetector.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'risingEdgeDetector' (34#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/risingEdgeDetector.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'delayLine' (35#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'encoder' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:43]
+	Parameter NTaps bound to: 192 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:61]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 32 - type: integer 
+	Parameter BITS bound to: 3 - type: integer 
+	Parameter LEVEL bound to: 5 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized0' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 16 - type: integer 
+	Parameter BITS bound to: 4 - type: integer 
+	Parameter LEVEL bound to: 4 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized1' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 8 - type: integer 
+	Parameter BITS bound to: 5 - type: integer 
+	Parameter LEVEL bound to: 3 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized2' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 4 - type: integer 
+	Parameter BITS bound to: 6 - type: integer 
+	Parameter LEVEL bound to: 2 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized3' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 2 - type: integer 
+	Parameter BITS bound to: 7 - type: integer 
+	Parameter LEVEL bound to: 1 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized3' (36#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized2' (36#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized1' (36#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized0' (36#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy' (36#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'encoder' (37#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/counter.vhd:35]
+	Parameter BITS bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (38#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/counter.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'control' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/control.vhd:51]
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'control' (39#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/control.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'TDCchannel' (40#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/TDCchannel.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/sync.vhd:37]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'sync' (41#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/sync.vhd:37]
+INFO: [Synth 8-6155] done synthesizing module 'AXITDC' (42#1) [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/AXITDC.v:8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.194 . Memory (MB): peak = 1499.648 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/axi_gpio_0_board.xdc] for cell 'AXI_control/U0'
+Finished Parsing XDC File [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/axi_gpio_0_board.xdc] for cell 'AXI_control/U0'
+Parsing XDC File [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/axi_gpio_0.xdc] for cell 'AXI_control/U0'
+Finished Parsing XDC File [c:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v0.gen/sources_1/ip/axi_gpio_0/axi_gpio_0.xdc] for cell 'AXI_control/U0'
+Parsing XDC File [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:14]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sys_clock]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:14]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'led_2bits_tri_io[0]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_2bits_tri_io[1]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb_led_tri_io[0]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb_led_tri_io[1]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb_led_tri_io[2]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'push_buttons_1bit_tri_i'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_bus_ss_io[0]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_bus_io0_io'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_bus_io1_io'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_bus_sck_io'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux4_0_v_n'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux4_0_v_p'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux12_0_v_n'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux12_0_v_p'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'freeze_0'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'generateout0_0'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'generateout1_0'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'capturetrig0_0'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'capturetrig1_0'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm0_0'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Ext_trigger'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o_0[0]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o_0[1]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o_0[2]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_io_o_0[3]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm_general'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm_motor1_n'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm_motor1_p'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm_motor2_n'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm_motor2_p'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'usb_uart_txd'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'usb_uart_rxd'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[0]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[1]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[2]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[3]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[4]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[5]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[6]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[7]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[8]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[9]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[10]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[11]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[12]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[13]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[14]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[15]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[16]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[17]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_addr[18]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_dq_io[0]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_dq_io[1]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_dq_io[2]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_dq_io[3]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_dq_io[4]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_dq_io[5]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_dq_io[6]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_dq_io[7]'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_oen'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_wen'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cellular_ram_ce_n'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_scl_io'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_sda_io'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_scl_io'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_sda_io'. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AXITDC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AXITDC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AXITDC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AXITDC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1499.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 29 instances were transformed.
+  FDR => FDRE: 25 instances
+  MUXCY_L => MUXCY: 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1499.648 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_control/U0. (constraint file  C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.runs/synth_1/dont_touch.xdc, line 21).
+Applied set_property KEEP_HIERARCHY = SOFT for BRAM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_memory. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_control. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'arb_sm_cs_reg' in module 'sng_port_arb'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_WDATA_SM_NO_ECC_SNG_REG_WREADY.wr_data_sng_sm_cs_reg' in module 'wr_chnl'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg' in module 'rd_chnl'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg' in module 'rd_chnl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                 wr_data |                               01 |                               10
+                 rd_data |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'arb_sm_cs_reg' using encoding 'sequential' in module 'sng_port_arb'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+            brst_wr_data |                              010 |                               10
+             sng_wr_data |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_WDATA_SM_NO_ECC_SNG_REG_WREADY.wr_data_sng_sm_cs_reg' using encoding 'one-hot' in module 'wr_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                sng_addr |                             0001 |                             0011
+                sec_addr |                             0010 |                             0100
+               full_pipe |                             0011 |                             0101
+           full_throttle |                             0100 |                             0110
+               last_addr |                             0101 |                             0111
+           last_throttle |                             0110 |                             1000
+               last_data |                             0111 |                             1001
+       last_data_ar_pend |                             1000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg' using encoding 'sequential' in module 'rd_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+          w8_throttle_b2 |                              001 |                              101
+             w8_throttle |                              010 |                              010
+        w8_2nd_last_data |                              011 |                              011
+            w8_last_data |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg' using encoding 'sequential' in module 'rd_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                    idle |                              001 |                              001
+                   clear |                              010 |                              100
+                clr_done |                              011 |                              101
+                 running |                              100 |                              010
+                run_done |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 17    
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	              192 Bit    Registers := 2     
+	               96 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 6     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 135   
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 3     
+	   6 Input   32 Bit        Muxes := 1     
+	   5 Input   12 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 7     
+	   2 Input   11 Bit        Muxes := 1     
+	   6 Input   11 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   6 Input    8 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 15    
+	   9 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   5 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 9     
+	   4 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 71    
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 16    
+	   9 Input    1 Bit        Muxes := 19    
+	   5 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:34 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:34 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:36 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|AXITDC      | TDC/encoder/validOut_reg | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |    60|
+|3     |LUT1     |     5|
+|4     |LUT2     |    91|
+|5     |LUT3     |    98|
+|6     |LUT4     |    92|
+|7     |LUT5     |    56|
+|8     |LUT6     |   281|
+|9     |MUXCY_L  |     3|
+|10    |RAMB36E1 |     4|
+|11    |SRL16E   |    13|
+|12    |XORCY    |     4|
+|13    |FDCE     |     9|
+|14    |FDR      |     9|
+|15    |FDRE     |  1058|
+|16    |FDSE     |     4|
+|17    |IBUF     |   134|
+|18    |OBUF     |   118|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 1499.648 ; gain = 394.965
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:35 . Memory (MB): peak = 1499.648 ; gain = 394.965
+Synthesis Optimization Complete : Time (s): cpu = 00:01:35 ; elapsed = 00:01:44 . Memory (MB): peak = 1499.648 ; gain = 394.965
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 1499.648 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1499.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 1 instance 
+  FDR => FDRE: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+241 Infos, 71 Warnings, 69 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:03:08 . Memory (MB): peak = 1499.648 ; gain = 394.965
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ilpes/TDC_a35t/TDC_a35t_v1/TDC_a35t_v1.runs/synth_1/AXITDC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AXITDC_utilization_synth.rpt -pb AXITDC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 24 23:59:08 2025...

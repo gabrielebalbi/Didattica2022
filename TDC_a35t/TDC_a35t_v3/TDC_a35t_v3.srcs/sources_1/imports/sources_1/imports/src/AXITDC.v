@@ -1,0 +1,250 @@
+// ------------------------------------------------------------------------------------
+// AXI TDC channel top wrapper (Converted to Verilog)
+// Version: 2.0
+//
+// Connects all the components and IPs together into an AXI interfaced TDC channel.
+// ------------------------------------------------------------------------------------
+
+module AXITDC #(
+    // No. of taps; multiple of 12! NTaps <= 200!
+    parameter NTaps = 192 
+    // parameter ADDR_WIDTH = 11 // BRAM buffer address size - Fixed internally to 11
+) (
+    // AXI Clock and Reset
+    input wire s_axi_aclk,
+    input wire s_axi_aresetn,
+    
+    // AXI Lite (GPIO) - Slave Interface 0
+    input wire [8:0] s_axi_awaddr,
+    input wire s_axi_awvalid,
+    output wire s_axi_awready,
+    input wire [31:0] s_axi_wdata,
+    input wire [3:0] s_axi_wstrb,
+    input wire s_axi_wvalid,
+    output wire s_axi_wready,
+    output wire [1:0] s_axi_bresp,
+    output wire s_axi_bvalid,
+    input wire s_axi_bready,
+    input wire [8:0] s_axi_araddr,
+    input wire s_axi_arvalid,
+    output wire s_axi_arready,
+    output wire [31:0] s_axi_rdata,
+    output wire [1:0] s_axi_rresp,
+    output wire s_axi_rvalid,
+    input wire s_axi_rready,
+    
+    // AXI (BRAM Controller) - Slave Interface 1
+    input wire [11:0] s_axi_1_awid,
+    input wire [13:0] s_axi_1_awaddr,
+    input wire [7:0] s_axi_1_awlen,
+    input wire [2:0] s_axi_1_awsize,
+    input wire [1:0] s_axi_1_awburst,
+    input wire s_axi_1_awlock,
+    input wire [3:0] s_axi_1_awcache,
+    input wire [2:0] s_axi_1_awprot,
+    input wire s_axi_1_awvalid,
+    output wire s_axi_1_awready,
+    input wire [31:0] s_axi_1_wdata,
+    input wire [3:0] s_axi_1_wstrb,
+    input wire s_axi_1_wlast,
+    input wire s_axi_1_wvalid,
+    output wire s_axi_1_wready,
+    output wire [11:0] s_axi_1_bid,
+    output wire [1:0] s_axi_1_bresp,
+    output wire s_axi_1_bvalid,
+    input wire s_axi_1_bready,
+    input wire [11:0] s_axi_1_arid,
+    input wire [13:0] s_axi_1_araddr,
+    input wire [7:0] s_axi_1_arlen,
+    input wire [2:0] s_axi_1_arsize,
+    input wire [1:0] s_axi_1_arburst,
+    input wire s_axi_1_arlock,
+    input wire [3:0] s_axi_1_arcache,
+    input wire [2:0] s_axi_1_arprot,
+    input wire s_axi_1_arvalid,
+    output wire s_axi_1_arready,
+    output wire [11:0] s_axi_1_rid,
+    output wire [31:0] s_axi_1_rdata,
+    output wire [1:0] s_axi_1_rresp,
+    output wire s_axi_1_rlast,
+    output wire s_axi_1_rvalid,
+    input wire s_axi_1_rready,
+    
+    // TDC Interface
+    input wire clk,
+    input wire hit,
+    input wire [10:0] trigger_in,
+    output wire [10:0] trigger_out
+);
+
+// Constants
+localparam ADDR_WIDTH = 11; // fixed to 2K [cite: 18]
+
+// Internal Signals
+// AXI GPIO signals [cite: 22]
+wire [1:0] gpio_in;
+wire [1:0] gpio_out;
+
+// AXI BRAM Controller signals [cite: 33, 34]
+wire bram_rst_a;
+wire bram_clk_a;
+wire bram_en_a;
+wire [3:0] bram_we_a;
+wire [13:0] bram_addr_a;
+wire [31:0] bram_wrdata_a;
+wire [31:0] bram_rddata_a;
+
+// TDC component signals [cite: 37, 38]
+wire run, clr, rdy, full;
+wire [ADDR_WIDTH-1:0] addr;
+wire [63:0] data;
+wire [7:0] we;
+
+// ------------------------------------------------------------------
+// Component Instantiations (Modulo di interconnessione)
+// ------------------------------------------------------------------
+
+// AXI GPIO port map 
+axi_gpio_0 AXI_control (
+    .s_axi_aclk(s_axi_aclk),
+    .s_axi_aresetn(s_axi_aresetn),
+    .s_axi_awaddr(s_axi_awaddr),
+    .s_axi_awvalid(s_axi_awvalid),
+    .s_axi_awready(s_axi_awready),
+    .s_axi_wdata(s_axi_wdata),
+    .s_axi_wstrb(s_axi_wstrb),
+    .s_axi_wvalid(s_axi_wvalid),
+    .s_axi_wready(s_axi_wready),
+    .s_axi_bresp(s_axi_bresp),
+    .s_axi_bvalid(s_axi_bvalid),
+    .s_axi_bready(s_axi_bready),
+    .s_axi_araddr(s_axi_araddr),
+    .s_axi_arvalid(s_axi_arvalid),
+    .s_axi_arready(s_axi_arready),
+    .s_axi_rdata(s_axi_rdata),
+    .s_axi_rresp(s_axi_rresp),
+    .s_axi_rvalid(s_axi_rvalid),
+    .s_axi_rready(s_axi_rready),
+    .gpio_io_i(gpio_in),
+    .gpio2_io_o(gpio_out)
+);
+
+// AXI BRAM Controller port map [cite: 41]
+axi_bram_ctrl_0 AXI_memory (
+    .s_axi_aclk(s_axi_aclk),
+    .s_axi_aresetn(s_axi_aresetn),
+    .s_axi_awid(s_axi_1_awid),
+    .s_axi_awaddr(s_axi_1_awaddr),
+    .s_axi_awlen(s_axi_1_awlen),
+    .s_axi_awsize(s_axi_1_awsize),
+    .s_axi_awburst(s_axi_1_awburst),
+    .s_axi_awlock(s_axi_1_awlock),
+    .s_axi_awcache(s_axi_1_awcache),
+    .s_axi_awprot(s_axi_1_awprot),
+    .s_axi_awvalid(s_axi_1_awvalid),
+    .s_axi_awready(s_axi_1_awready),
+    .s_axi_wdata(s_axi_1_wdata),
+    .s_axi_wstrb(s_axi_1_wstrb),
+    .s_axi_wlast(s_axi_1_wlast),
+    .s_axi_wvalid(s_axi_1_wvalid),
+    .s_axi_wready(s_axi_1_wready),
+    .s_axi_bid(s_axi_1_bid),
+    .s_axi_bresp(s_axi_1_bresp),
+    .s_axi_bvalid(s_axi_1_bvalid),
+    .s_axi_bready(s_axi_1_bready),
+    .s_axi_arid(s_axi_1_arid),
+    .s_axi_araddr(s_axi_1_araddr),
+    .s_axi_arlen(s_axi_1_arlen),
+    .s_axi_arsize(s_axi_1_arsize),
+    .s_axi_arburst(s_axi_1_arburst),
+    .s_axi_arlock(s_axi_1_arlock),
+    .s_axi_arcache(s_axi_1_arcache),
+    .s_axi_arprot(s_axi_1_arprot),
+    .s_axi_arvalid(s_axi_1_arvalid),
+    .s_axi_arready(s_axi_1_arready),
+    .s_axi_rid(s_axi_1_rid),
+    .s_axi_rdata(s_axi_1_rdata),
+    .s_axi_rresp(s_axi_1_rresp),
+    .s_axi_rlast(s_axi_1_rlast),
+    .s_axi_rvalid(s_axi_1_rvalid),
+    .s_axi_rready(s_axi_1_rready),
+    .bram_rst_a(bram_rst_a),
+    .bram_clk_a(bram_clk_a),
+    .bram_en_a(bram_en_a),
+    .bram_we_a(bram_we_a),
+    .bram_addr_a(bram_addr_a),
+    .bram_wrdata_a(bram_wrdata_a),
+    .bram_rddata_a(bram_rddata_a)
+);
+
+// BRAM port map 
+blk_mem_gen_0 BRAM (
+    // BRAM Controller side (Port A)
+    .clka(bram_clk_a),
+    .rsta(bram_rst_a),
+    .ena(bram_en_a),
+    .wea(bram_we_a),
+    // addra(31 downto 14) => (others => '0')
+    // addra(13 downto 0) => bram_addr_a
+    .addra({18'b0, bram_addr_a}), 
+    .dina(bram_wrdata_a),
+    .douta(bram_rddata_a),
+
+    // TDC side (Port B) [cite: 46]
+    .clkb(clk),
+    .rstb(1'b0),
+    .enb(1'b1),
+    .web(we),
+    // addrb(31 downto ADDR_WIDTH+3) => (others => '0')
+    // addrb(ADDR_WIDTH-1+3 downto 3) => addr
+    // addrb(2 downto 0) => "000"
+	.addrb({{18{1'b0}}, addr, 3'b000}),
+//	.addrb({(32 - (ADDR_WIDTH + 3))'b0, addr, 3'b000}),
+    .dinb(data),
+    .doutb() // open is empty parentheses () in Verilog
+);
+
+// TDC port map [cite: 48]
+TDCchannel # (
+    .NTaps(NTaps),
+    .ADDR_WIDTH(ADDR_WIDTH)
+) TDC (
+    .clk(clk),
+    .hit(hit),
+    .addr(addr),
+    .data(data),
+    .we(we),
+    .run(run),
+    .clr(clr),
+    .rdy(rdy),
+    .full(full),
+    .trigger_in(trigger_in),
+    .trigger_out(trigger_out)
+);
+
+// synchronizers (Instance) [cite: 50]
+sync sync_0 (
+    .target_clk(clk),
+    .asyn(gpio_out[0]),
+    .syn(clr)
+);
+
+sync sync_1 (
+    .target_clk(clk),
+    .asyn(gpio_out[1]),
+    .syn(run)
+);
+
+sync sync_2 (
+    .target_clk(s_axi_aclk),
+    .asyn(rdy),
+    .syn(gpio_in[0])
+);
+
+sync sync_3 (
+    .target_clk(s_axi_aclk),
+    .asyn(full),
+    .syn(gpio_in[1])
+);
+
+endmodule

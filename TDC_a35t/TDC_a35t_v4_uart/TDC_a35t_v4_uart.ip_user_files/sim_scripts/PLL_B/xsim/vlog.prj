@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "../../../../TDC_a35t_v3.gen/sources_1/ip/PLL_B" \
+"../../../../TDC_a35t_v3.gen/sources_1/ip/PLL_B/PLL_B_sim_netlist.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
