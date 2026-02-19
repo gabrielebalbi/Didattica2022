@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../TDC_a35t_v4_uart.srcs/sim_1/new/TDC_tb.vhd" \
+
+# Do not sort compile order
+nosort

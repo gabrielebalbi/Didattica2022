@@ -1,0 +1,14 @@
+restart
+add_force {/TDCchannel/clk} -radix hex {0 0ns} {1 41666ps} -repeat_every 83333ps
+add_force {/TDCchannel/hit} -radix hex {0 0ns}
+add_force {/TDCchannel/reset} -radix hex {1 0ns}
+add_force {/TDCchannel/DLenable} -radix hex {1 0ns}
+
+run 4000 ns
+add_force {/TDCchannel/clk_200} -radix hex {0 0ns} {1 3333ps} -repeat_every 6666ps
+add_force {/TDCchannel/clk_10sblisga} -radix hex {0 0ns} {1 49999ps} -repeat_every 99999ps
+
+run 5000 ns
+add_force {/TDCchannel/reset} -radix hex {0 0ns}
+
+run 10000 ns

@@ -1,0 +1,5 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v5_uart_simulating/TDC_a35t_v5_uart_simulating.sim/sim_1/impl/timing/xsim/TDCchannel_time_impl.v,1771504704,verilog,,,,PLL_A;PLL_A_PLL_A_clk_wiz;TDCchannel;adderTreeLegacy;adderTreeLegacy__parameterized0;adderTreeLegacy__parameterized1;adderTreeLegacy__parameterized2;counter;delayLine;encoder;glbl;numbers2ascii_serial;risingEdgeDetector,,,../../../../../TDC_a35t_v5_uart_simulating.gen/sources_1/ip/PLL_A,,,,,

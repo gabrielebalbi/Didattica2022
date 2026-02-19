@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../TDC_a35t_v5_uart_simulating.gen/sources_1/ip/PLL_A" \
+"TDCchannel_time_impl.v" \
+
+# Do not sort compile order
+nosort

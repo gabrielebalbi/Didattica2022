@@ -1,0 +1,17 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.gen/sources_1/ip/PLL_A/PLL_A_sim_netlist.v,1770997386,verilog,C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/TDCchannel.vhd,C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.gen/sources_1/ip/PLL_B/PLL_B_sim_netlist.v,,\PLL_A\,,,../../../../TDC_a35t_v4_uart.gen/sources_1/ip/PLL_A;../../../../TDC_a35t_v4_uart.gen/sources_1/ip/PLL_B,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.gen/sources_1/ip/PLL_B/PLL_B_sim_netlist.v,1770935411,verilog,C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/TDCchannel.vhd,,,\PLL_B\,,,../../../../TDC_a35t_v4_uart.gen/sources_1/ip/PLL_A;../../../../TDC_a35t_v4_uart.gen/sources_1/ip/PLL_B,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sim_1/new/TDC_tb.vhd,1771349795,vhdl,,,,tdc_tb,,,,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/sources_1/imports/src/adderTreeLegacy.vhd,1770587784,vhdl,C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/encoder.vhd,,,addertreelegacy,,,,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/MyPkg.vhd,1631634353,vhdl,C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/sources_1/imports/src/adderTreeLegacy.vhd;C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/TDCchannel.vhd;C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/encoder.vhd,,,mypkg,,,,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/TDCchannel.vhd,1771284295,vhdl,,,,tdcchannel,,,,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/counter.vhd,1631634353,vhdl,C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/TDCchannel.vhd,,,counter,,,,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/delayLine.vhd,1631634353,vhdl,C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sim_1/new/TDC_tb.vhd,,,delayline,,,,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/encoder.vhd,1764021225,vhdl,C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/TDCchannel.vhd,,,encoder,,,,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/risingEdgeDetector.vhd,1631634353,vhdl,C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/imports/src/delayLine.vhd,,,risingedgedetector,,,,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/new/numbers2ascii_serial.vhd,1771284306,vhdl,,,,numbers2ascii_serial,,,,,,,,
+C:/Users/ilpes/TDC_a35t/TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/new/uart_8bits.vhd,1771108281,vhdl,,,,uart_8bits,,,,,,,,

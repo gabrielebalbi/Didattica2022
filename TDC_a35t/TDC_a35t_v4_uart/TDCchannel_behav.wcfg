@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TDCchannel_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="TDCchannel" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="162362393fs"></ZoomStartTime>
+      <ZoomEndTime time="162652894fs"></ZoomEndTime>
+      <Cursor1Time time="162599278fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="147"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="115" />
+   <wvobject fp_name="/TDCchannel/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/hit" type="logic">
+      <obj_property name="ElementShortName">hit</obj_property>
+      <obj_property name="ObjectShortName">hit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/encoder/validOut" type="logic">
+      <obj_property name="ElementShortName">validOut</obj_property>
+      <obj_property name="ObjectShortName">validOut</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/final_stage/coarse_reg" type="array">
+      <obj_property name="ElementShortName">coarse_reg[23:0]</obj_property>
+      <obj_property name="ObjectShortName">coarse_reg[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/final_stage/fine_reg" type="array">
+      <obj_property name="ElementShortName">fine_reg[5:0]</obj_property>
+      <obj_property name="ObjectShortName">fine_reg[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/final_stage/D" type="array">
+      <obj_property name="ElementShortName">D[23:0]</obj_property>
+      <obj_property name="ObjectShortName">D[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/usb_uart_txd" type="logic">
+      <obj_property name="ElementShortName">usb_uart_txd</obj_property>
+      <obj_property name="ObjectShortName">usb_uart_txd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/DLenable" type="logic">
+      <obj_property name="ElementShortName">DLenable</obj_property>
+      <obj_property name="ObjectShortName">DLenable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/timestamp_valid_LED" type="logic">
+      <obj_property name="ElementShortName">timestamp_valid_LED</obj_property>
+      <obj_property name="ObjectShortName">timestamp_valid_LED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/timestamp_valid" type="logic">
+      <obj_property name="ElementShortName">timestamp_valid</obj_property>
+      <obj_property name="ObjectShortName">timestamp_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/timestamp_result" type="array">
+      <obj_property name="ElementShortName">timestamp_result[11:0]</obj_property>
+      <obj_property name="ObjectShortName">timestamp_result[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/thermo" type="array">
+      <obj_property name="ElementShortName">thermo[59:0]</obj_property>
+      <obj_property name="ObjectShortName">thermo[59:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/Q" type="array">
+      <obj_property name="ElementShortName">Q[59:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[59:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider411">
+      <obj_property name="label">encoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/encoder/Adder_tree_n_0" type="logic">
+      <obj_property name="ElementShortName">Adder_tree_n_0</obj_property>
+      <obj_property name="ObjectShortName">Adder_tree_n_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/encoder/LUTout" type="array">
+      <obj_property name="ElementShortName">LUTout[29:0]</obj_property>
+      <obj_property name="ObjectShortName">LUTout[29:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/encoder/Q" type="array">
+      <obj_property name="ElementShortName">Q[59:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[59:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/encoder/clk_out1" type="logic">
+      <obj_property name="ElementShortName">clk_out1</obj_property>
+      <obj_property name="ObjectShortName">clk_out1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/encoder/\ones_reg[5]_0 " type="array">
+      <obj_property name="ElementShortName">\ones_reg[5]_0 [5:0]</obj_property>
+      <obj_property name="ObjectShortName">\ones_reg[5]_0 [5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/encoder/sum" type="array">
+      <obj_property name="ElementShortName">sum[5:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/encoder/validIn" type="logic">
+      <obj_property name="ElementShortName">validIn</obj_property>
+      <obj_property name="ObjectShortName">validIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/encoder/validOut" type="logic">
+      <obj_property name="ElementShortName">validOut</obj_property>
+      <obj_property name="ObjectShortName">validOut</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider412">
+      <obj_property name="label">fineEncoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/counter_TDC/out" type="array">
+      <obj_property name="ElementShortName">out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">out[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/clk_10sblisga" type="logic">
+      <obj_property name="ElementShortName">clk_10sblisga</obj_property>
+      <obj_property name="ObjectShortName">clk_10sblisga</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/clk_200" type="logic">
+      <obj_property name="ElementShortName">clk_200</obj_property>
+      <obj_property name="ObjectShortName">clk_200</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider414">
+      <obj_property name="label">final_stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/final_stage/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/final_stage/validOut" type="logic">
+      <obj_property name="ElementShortName">validOut</obj_property>
+      <obj_property name="ObjectShortName">validOut</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/final_stage/coarse_reg" type="array">
+      <obj_property name="ElementShortName">coarse_reg[23:0]</obj_property>
+      <obj_property name="ObjectShortName">coarse_reg[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/final_stage/start_prev" type="logic">
+      <obj_property name="ElementShortName">start_prev</obj_property>
+      <obj_property name="ObjectShortName">start_prev</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/final_stage/state" type="logic">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/final_stage/fine_reg" type="array">
+      <obj_property name="ElementShortName">fine_reg[5:0]</obj_property>
+      <obj_property name="ObjectShortName">fine_reg[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/count_reg" type="array">
+      <obj_property name="ElementShortName">count_reg[23:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/CI" type="logic">
+      <obj_property name="ElementShortName">CI</obj_property>
+      <obj_property name="ObjectShortName">CI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/CO" type="array">
+      <obj_property name="ElementShortName">CO[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CO[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/CYINIT" type="logic">
+      <obj_property name="ElementShortName">CYINIT</obj_property>
+      <obj_property name="ObjectShortName">CYINIT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/DLenable_IBUF" type="logic">
+      <obj_property name="ElementShortName">DLenable_IBUF</obj_property>
+      <obj_property name="ObjectShortName">DLenable_IBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[10].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[10].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[10].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[10].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[10].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[10].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[10].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[10].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[10].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[10].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[10].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[10].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[11].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[11].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[11].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[11].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[11].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[11].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[11].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[11].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[11].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[11].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[11].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[11].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[12].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[12].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[12].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[12].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[12].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[12].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[12].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[12].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[12].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[12].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[12].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[12].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[13].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[13].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[13].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[13].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[13].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[13].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[13].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[13].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[13].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[13].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[13].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[13].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[1].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[1].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[1].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[1].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[1].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[1].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[1].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[1].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[1].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[1].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[1].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[1].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[2].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[2].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[2].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[2].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[2].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[2].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[2].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[2].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[2].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[2].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[2].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[2].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[3].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[3].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[3].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[3].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[3].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[3].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[3].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[3].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[3].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[3].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[3].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[3].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[4].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[4].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[4].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[4].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[4].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[4].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[4].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[4].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[4].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[4].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[4].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[4].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[5].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[5].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[5].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[5].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[5].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[5].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[5].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[5].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[5].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[5].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[5].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[5].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[6].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[6].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[6].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[6].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[6].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[6].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[6].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[6].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[6].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[6].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[6].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[6].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[7].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[7].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[7].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[7].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[7].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[7].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[7].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[7].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[7].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[7].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[7].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[7].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[8].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[8].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[8].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[8].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[8].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[8].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[8].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[8].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[8].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[8].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[8].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[8].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[9].CARRY4_inst_n_0 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[9].CARRY4_inst_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[9].CARRY4_inst_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[9].CARRY4_inst_n_1 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[9].CARRY4_inst_n_1 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[9].CARRY4_inst_n_1 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[9].CARRY4_inst_n_2 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[9].CARRY4_inst_n_2 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[9].CARRY4_inst_n_2 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\GEN_CarryChain[9].CARRY4_inst_n_3 " type="logic">
+      <obj_property name="ElementShortName">\GEN_CarryChain[9].CARRY4_inst_n_3 </obj_property>
+      <obj_property name="ObjectShortName">\GEN_CarryChain[9].CARRY4_inst_n_3 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/Q" type="array">
+      <obj_property name="ElementShortName">Q[59:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[59:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/clk_out1" type="logic">
+      <obj_property name="ElementShortName">clk_out1</obj_property>
+      <obj_property name="ObjectShortName">clk_out1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/firstCarry_n_1" type="logic">
+      <obj_property name="ElementShortName">firstCarry_n_1</obj_property>
+      <obj_property name="ObjectShortName">firstCarry_n_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/firstCarry_n_2" type="logic">
+      <obj_property name="ElementShortName">firstCarry_n_2</obj_property>
+      <obj_property name="ObjectShortName">firstCarry_n_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/firstCarry_n_3" type="logic">
+      <obj_property name="ElementShortName">firstCarry_n_3</obj_property>
+      <obj_property name="ObjectShortName">firstCarry_n_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/hitQ_i_1_n_0" type="logic">
+      <obj_property name="ElementShortName">hitQ_i_1_n_0</obj_property>
+      <obj_property name="ObjectShortName">hitQ_i_1_n_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/hitQ_reg_0" type="logic">
+      <obj_property name="ElementShortName">hitQ_reg_0</obj_property>
+      <obj_property name="ObjectShortName">hitQ_reg_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/metaThermo" type="array">
+      <obj_property name="ElementShortName">metaThermo[59:0]</obj_property>
+      <obj_property name="ObjectShortName">metaThermo[59:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/validIn" type="logic">
+      <obj_property name="ElementShortName">validIn</obj_property>
+      <obj_property name="ObjectShortName">validIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[10].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[10].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[10].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[11].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[11].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[11].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[12].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[12].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[12].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[13].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[13].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[13].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[14].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[14].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[14].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[1].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[1].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[1].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[2].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[2].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[2].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[3].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[3].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[3].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[4].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[4].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[4].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[5].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[5].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[5].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[6].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[6].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[6].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[7].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[7].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[7].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[8].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[8].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[8].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/\NLW_GEN_CarryChain[9].CARRY4_inst_O_UNCONNECTED " type="array">
+      <obj_property name="ElementShortName">\NLW_GEN_CarryChain[9].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+      <obj_property name="ObjectShortName">\NLW_GEN_CarryChain[9].CARRY4_inst_O_UNCONNECTED [3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/Delay_line/NLW_firstCarry_O_UNCONNECTED" type="array">
+      <obj_property name="ElementShortName">NLW_firstCarry_O_UNCONNECTED[3:0]</obj_property>
+      <obj_property name="ObjectShortName">NLW_firstCarry_O_UNCONNECTED[3:0]</obj_property>
+   </wvobject>
+</wave_config>

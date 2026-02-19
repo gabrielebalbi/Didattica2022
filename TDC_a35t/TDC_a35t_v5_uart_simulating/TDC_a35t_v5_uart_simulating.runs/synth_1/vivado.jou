@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Feb 19 14:26:04 2026
+# Process ID: 40580
+# Current directory: C:/Users/ilpes/TDC_a35t/TDC_a35t_v5_uart_simulating/TDC_a35t_v5_uart_simulating.runs/synth_1
+# Command line: vivado.exe -log TDCchannel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TDCchannel.tcl
+# Log file: C:/Users/ilpes/TDC_a35t/TDC_a35t_v5_uart_simulating/TDC_a35t_v5_uart_simulating.runs/synth_1/TDCchannel.vds
+# Journal file: C:/Users/ilpes/TDC_a35t/TDC_a35t_v5_uart_simulating/TDC_a35t_v5_uart_simulating.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TDCchannel.tcl -notrace

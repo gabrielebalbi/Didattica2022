@@ -1,0 +1,1 @@
+-wto "370de4ce046f446aafc7792fea961235" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "TDCchannel_behav" "xil_defaultlib.TDCchannel" "xil_defaultlib.glbl" -log "elaborate.log" 
