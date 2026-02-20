@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1771538285">
+  <File Type="PA-TCL" Name="TDCchannel.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="TDCchannel_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="TDCchannel_reports.tcl"/>
+  <File Type="RDS-RDS" Name="TDCchannel.vds"/>
+  <File Type="RDS-UTIL" Name="TDCchannel_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="TDCchannel_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="TDCchannel.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="TDCchannel_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="TDCchannel_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/MyPkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/MyPkg.vhd"/>
+        <Attr Name="ImportTime" Val="1631634353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/risingEdgeDetector.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/risingEdgeDetector.vhd"/>
+        <Attr Name="ImportTime" Val="1631634353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/delayLine.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/delayLine.vhd"/>
+        <Attr Name="ImportTime" Val="1631634353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/adderTreeLegacy.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TDC_a35t_v1/TDC_a35t_v1.srcs/sources_1/imports/src/adderTreeLegacy.vhd"/>
+        <Attr Name="ImportTime" Val="1764022178"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1764021225"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/counter.vhd"/>
+        <Attr Name="ImportTime" Val="1631634353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/TDCchannel.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TDC_a35t_v0/TDC_a35t_v0.srcs/sources_1/imports/src/TDCchannel.vhd"/>
+        <Attr Name="ImportTime" Val="1764022499"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/numbers2ascii_serial.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TDC_a35t_v4_uart/TDC_a35t_v4_uart.srcs/sources_1/new/numbers2ascii_serial.vhd"/>
+        <Attr Name="ImportTime" Val="1771284306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/encoder_safe.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TDC_a35t_v5_uart_simulating/TDC_a35t_v5_uart_simulating.srcs/sources_1/imports/src/encoder_safe.vhd"/>
+        <Attr Name="ImportTime" Val="1771534131"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TDCchannel"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Cmod-A7-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TDC_a35t_v1/TDC_a35t_v1.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1760093391"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Downloads/Cmod-A7-Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="PLL_A"/>
+</GenRun>

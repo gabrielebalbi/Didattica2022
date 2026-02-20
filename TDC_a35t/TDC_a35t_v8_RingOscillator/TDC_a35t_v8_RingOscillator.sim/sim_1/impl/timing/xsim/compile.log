@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ilpes/TDC_a35t/TDC_a35t_v7_noFFHit/TDC_a35t_v7_noFFHit.sim/sim_1/impl/timing/xsim/TDCchannel_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_A
+INFO: [VRFC 10-311] analyzing module PLL_A_PLL_A_clk_wiz
+INFO: [VRFC 10-311] analyzing module TDCchannel
+INFO: [VRFC 10-311] analyzing module adderTreeLegacy
+INFO: [VRFC 10-311] analyzing module adderTreeLegacy__parameterized0
+INFO: [VRFC 10-311] analyzing module adderTreeLegacy__parameterized1
+INFO: [VRFC 10-311] analyzing module adderTreeLegacy__parameterized2
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module delayLine
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-311] analyzing module numbers2ascii_serial
+INFO: [VRFC 10-311] analyzing module ring_oscillator
+INFO: [VRFC 10-311] analyzing module risingEdgeDetector
+INFO: [VRFC 10-311] analyzing module glbl

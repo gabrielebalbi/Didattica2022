@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TDCchannel_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="TDCchannel" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="32004000fs"></ZoomEndTime>
+      <Cursor1Time time="19952536fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="434"></NameColumnWidth>
+      <ValueColumnWidth column_width="212"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="78" />
+   <wvobject fp_name="/TDCchannel/hit" type="logic">
+      <obj_property name="ElementShortName">hit</obj_property>
+      <obj_property name="ObjectShortName">hit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/DLenable" type="logic">
+      <obj_property name="ElementShortName">DLenable</obj_property>
+      <obj_property name="ObjectShortName">DLenable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/DLenable_IBUF" type="logic">
+      <obj_property name="ElementShortName">DLenable_IBUF</obj_property>
+      <obj_property name="ObjectShortName">DLenable_IBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/clk_10sblisga" type="logic">
+      <obj_property name="ElementShortName">clk_10sblisga</obj_property>
+      <obj_property name="ObjectShortName">clk_10sblisga</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/clk_200" type="logic">
+      <obj_property name="ElementShortName">clk_200</obj_property>
+      <obj_property name="ObjectShortName">clk_200</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/clk_IBUF" type="logic">
+      <obj_property name="ElementShortName">clk_IBUF</obj_property>
+      <obj_property name="ObjectShortName">clk_IBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/clk_IBUF_BUFG" type="logic">
+      <obj_property name="ElementShortName">clk_IBUF_BUFG</obj_property>
+      <obj_property name="ObjectShortName">clk_IBUF_BUFG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/count_reg" type="array">
+      <obj_property name="ElementShortName">count_reg[23:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/counter" type="array">
+      <obj_property name="ElementShortName">counter[0:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/ones" type="array">
+      <obj_property name="ElementShortName">ones[5:0]</obj_property>
+      <obj_property name="ObjectShortName">ones[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/reset_IBUF" type="logic">
+      <obj_property name="ElementShortName">reset_IBUF</obj_property>
+      <obj_property name="ObjectShortName">reset_IBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/sl_iport0_o_0" type="array">
+      <obj_property name="ElementShortName">sl_iport0_o_0[36:0]</obj_property>
+      <obj_property name="ObjectShortName">sl_iport0_o_0[36:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/sl_oport0_i_0" type="array">
+      <obj_property name="ElementShortName">sl_oport0_i_0[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sl_oport0_i_0[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/thermo" type="array">
+      <obj_property name="ElementShortName">thermo[59:0]</obj_property>
+      <obj_property name="ObjectShortName">thermo[59:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/timestamp_result" type="array">
+      <obj_property name="ElementShortName">timestamp_result[11:0]</obj_property>
+      <obj_property name="ObjectShortName">timestamp_result[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/timestamp_result_OBUF" type="array">
+      <obj_property name="ElementShortName">timestamp_result_OBUF[11:0]</obj_property>
+      <obj_property name="ObjectShortName">timestamp_result_OBUF[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/timestamp_valid" type="logic">
+      <obj_property name="ElementShortName">timestamp_valid</obj_property>
+      <obj_property name="ObjectShortName">timestamp_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/timestamp_valid_LED" type="logic">
+      <obj_property name="ElementShortName">timestamp_valid_LED</obj_property>
+      <obj_property name="ObjectShortName">timestamp_valid_LED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/timestamp_valid_OBUF" type="logic">
+      <obj_property name="ElementShortName">timestamp_valid_OBUF</obj_property>
+      <obj_property name="ObjectShortName">timestamp_valid_OBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/timestamp_valid_reg_lopt_replica_1" type="logic">
+      <obj_property name="ElementShortName">timestamp_valid_reg_lopt_replica_1</obj_property>
+      <obj_property name="ObjectShortName">timestamp_valid_reg_lopt_replica_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/trigger_out_reg_n_0" type="logic">
+      <obj_property name="ElementShortName">trigger_out_reg_n_0</obj_property>
+      <obj_property name="ObjectShortName">trigger_out_reg_n_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[0] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[0] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[0] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[10] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[10] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[10] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[1] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[1] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[1] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[2] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[2] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[2] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[3] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[3] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[3] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[4] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[4] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[4] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[5] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[5] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[5] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[6] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[6] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[6] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[7] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[7] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[7] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[8] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[8] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[8] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_baud_cnt[9] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_baud_cnt[9] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_baud_cnt[9] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_char_to_send[0] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_char_to_send[0] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_char_to_send[0] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_char_to_send[1] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_char_to_send[1] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_char_to_send[1] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_char_to_send[2] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_char_to_send[2] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_char_to_send[2] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_char_to_send[3] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_char_to_send[3] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_char_to_send[3] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_char_to_send[4] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_char_to_send[4] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_char_to_send[4] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_char_to_send[5] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_char_to_send[5] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_char_to_send[5] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_char_to_send[6] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_char_to_send[6] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_char_to_send[6] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[0] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[0] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[0] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[10] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[10] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[10] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[11] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[11] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[11] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[12] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[12] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[12] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[13] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[13] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[13] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[14] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[14] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[14] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[15] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[15] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[15] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[16] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[16] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[16] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[17] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[17] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[17] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[18] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[18] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[18] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[19] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[19] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[19] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[1] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[1] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[1] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[20] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[20] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[20] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[21] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[21] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[21] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[22] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[22] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[22] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[23] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[23] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[23] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[2] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[2] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[2] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[3] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[3] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[3] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[4] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[4] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[4] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[5] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[5] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[5] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[6] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[6] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[6] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[7] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[7] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[7] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[8] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[8] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[8] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_coarse_reg[9] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_coarse_reg[9] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_coarse_reg[9] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_fine_reg[0] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_fine_reg[0] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_fine_reg[0] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_fine_reg[1] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_fine_reg[1] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_fine_reg[1] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_fine_reg[2] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_fine_reg[2] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_fine_reg[2] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_fine_reg[3] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_fine_reg[3] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_fine_reg[3] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_fine_reg[4] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_fine_reg[4] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_fine_reg[4] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_fine_reg[5] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_fine_reg[5] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_fine_reg[5] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/u_ila_0_start_prev" type="logic">
+      <obj_property name="ElementShortName">u_ila_0_start_prev</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_start_prev</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_state__0[0] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_state__0[0] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_state__0[0] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/\u_ila_0_state__0[1] " type="logic">
+      <obj_property name="ElementShortName">\u_ila_0_state__0[1] </obj_property>
+      <obj_property name="ObjectShortName">\u_ila_0_state__0[1] </obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/usb_uart_txd" type="logic">
+      <obj_property name="ElementShortName">usb_uart_txd</obj_property>
+      <obj_property name="ObjectShortName">usb_uart_txd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/usb_uart_txd_OBUF" type="logic">
+      <obj_property name="ElementShortName">usb_uart_txd_OBUF</obj_property>
+      <obj_property name="ObjectShortName">usb_uart_txd_OBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/validIn" type="logic">
+      <obj_property name="ElementShortName">validIn</obj_property>
+      <obj_property name="ObjectShortName">validIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TDCchannel/validOut" type="logic">
+      <obj_property name="ElementShortName">validOut</obj_property>
+      <obj_property name="ObjectShortName">validOut</obj_property>
+   </wvobject>
+</wave_config>

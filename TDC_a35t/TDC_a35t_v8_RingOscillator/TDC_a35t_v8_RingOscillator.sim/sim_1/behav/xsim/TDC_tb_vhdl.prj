@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TDC_a35t_v4_uart.srcs/sources_1/new/uart_8bits.vhd" \
+"../../../../TDC_a35t_v4_uart.srcs/sources_1/imports/src/MyPkg.vhd" \
+"../../../../TDC_a35t_v4_uart.srcs/sources_1/imports/src/risingEdgeDetector.vhd" \
+"../../../../TDC_a35t_v4_uart.srcs/sources_1/imports/src/delayLine.vhd" \
+"../../../../TDC_a35t_v4_uart.srcs/sources_1/imports/sources_1/imports/src/adderTreeLegacy.vhd" \
+"../../../../TDC_a35t_v4_uart.srcs/sources_1/imports/src/encoder.vhd" \
+"../../../../TDC_a35t_v4_uart.srcs/sources_1/imports/src/counter.vhd" \
+"../../../../TDC_a35t_v4_uart.srcs/sources_1/imports/src/TDCchannel.vhd" \
+"../../../../TDC_a35t_v4_uart.srcs/sources_1/new/numbers2ascii_serial.vhd" \
+"../../../../TDC_a35t_v4_uart.srcs/sim_1/new/TDC_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,37 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/ilpes/TDC_a35t/TDC_a35t_v7_noFFHit/TDC_a35t_v7_noFFHit.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc rfile:../../../TDC_a35t_v7_noFFHit.srcs/constrs_1/imports/Downloads/Cmod-A7-Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC SLICE_X28Y0 [get_cells Delay_line/firstCarry]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_false_path -from [get_cells {trigger_out_reg}] -to [get_cells {Delay_line/hitQ_reg}]
+set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
+create_pblock pblock_TDC_core
+add_cells_to_pblock [get_pblocks pblock_TDC_core] [get_cells Delay_line/GEN_CarryChain*]
+add_cells_to_pblock [get_pblocks pblock_TDC_core] [get_cells Delay_line/metaThermo*]
+add_cells_to_pblock [get_pblocks pblock_TDC_core] [get_cells Delay_line/hitQ_reg]
+resize_pblock [get_pblocks pblock_TDC_core] -add {SLICE_X28Y0:SLICE_X29Y24}
+set_property CONTAIN_ROUTING 1 [get_pblocks pblock_TDC_core]
+set_property EXCLUDE_PLACEMENT 1 [get_pblocks pblock_TDC_core]
+set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
+create_pblock pblock_thermo_core
+add_cells_to_pblock [get_pblocks pblock_thermo_core] [get_cells encoder/LUTs*]
+resize_pblock [get_pblocks pblock_thermo_core] -add {SLICE_X30Y0:SLICE_X31Y24}
+set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
+add_cells_to_pblock [get_pblocks pblock_thermo_core] [get_cells counter_reg*]
+set_property src_info {type:XDC file:1 line:50 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN L17 IOSTANDARD LVCMOS33} [get_ports clk]
+set_property src_info {type:XDC file:1 line:54 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN A17 IOSTANDARD LVCMOS33} [get_ports timestamp_valid_LED]
+set_property src_info {type:XDC file:1 line:64 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN A18 IOSTANDARD LVCMOS33} [get_ports reset]
+set_property src_info {type:XDC file:1 line:67 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN B18 IOSTANDARD LVCMOS33} [get_ports DLenable]
+set_property src_info {type:XDC file:1 line:110 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN L2 IOSTANDARD LVCMOS33} [get_ports hit]
+set_property src_info {type:XDC file:1 line:160 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN J18 IOSTANDARD LVCMOS33} [get_ports usb_uart_txd]
+set_property src_info {type:XDC file:1 line:161 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN J17 IOSTANDARD LVCMOS33} [get_ports usb_uart_rxd]
+set_property src_info {type:XDC file:1 line:544 export:INPUT save:INPUT read:READ} [current_design]
+create_pblock pblock_RO
+add_cells_to_pblock [get_pblocks pblock_RO] [get_cells -quiet [list ro]]
+resize_pblock [get_pblocks pblock_RO] -add {SLICE_X0Y0:SLICE_X5Y10}
